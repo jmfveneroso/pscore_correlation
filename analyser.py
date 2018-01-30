@@ -24,37 +24,57 @@ def get_kendall_tau(df):
 def get_line_coefficients(angle):
   return math.tan(math.pi / 4 - angle), math.tan(math.pi / 4 + angle) 
 
+def trim_dataset(df, angle):
+  min_a, max_a = get_line_coefficients(angle)
+  
+  df1 = df [df ['h-index-rank'] > df ['pscore-rank'] * min_a]
+  df1 = df1[df1['h-index-rank'] < df1['pscore-rank'] * max_a]
+  return df1
+
+def calculate_kendall_tau(df1, angle):
+  fig = plt.figure()
+  df1.plot(kind='scatter', x='pscore-rank', y='h-index-rank')
+  plt.savefig('figs/' + str(math.degrees(angle)) + '.png')
+  plt.close(fig)
+
+  kendall_tau, z_score = get_kendall_tau(df1)
+  print ', '.join([str(math.degrees(angle)), str(kendall_tau), str(z_score), str(len(df1.index))])
+
+def calculate_all(df):
+  step = math.pi / 180 # 1 degree steps.
+  angle = math.pi / 4
+
+  print 'Angle, Kendall-Tau, Z-Score'
+  while angle > 0:
+    df1 = trim_dataset(df, angle)
+    calculate_kendall_tau(df1, angle)
+    angle -= step
+
+def list_conferences(df, angle):
+  min_a, max_a = get_line_coefficients(math.radians(angle))
+
+  df1 = df[df['h-index-rank'] >= df['pscore-rank'] * max_a]
+  print 'Above:', len(df1.index)
+  for i in range(0, len(df1.index)):
+    print df1['conference'].iloc[i], '-', df1['name'].iloc[i]
+
+  df1 = df[df['h-index-rank'] <= df['pscore-rank'] * min_a]
+  print 'Below:', len(df1.index)
+  for i in range(0, len(df1.index)):
+    print df1['conference'].iloc[i], '-', df1['name'].iloc[i], df1['pscore-rank'].iloc[i], df1['h-index-rank'].iloc[i]
 
 if __name__ == "__main__":
   warnings.simplefilter(action='ignore', category=FutureWarning)
 
   df = pd.read_csv("data.csv")
   num_rows = len(df.index)
-  
+
   # Calculate pscore and h-index ranks.
   rank = np.array(range(1, num_rows + 1))
   df['pscore-rank'] = pd.Series(rank, index=df.index)
   df = df.sort_values(by=['h-index'], ascending=False)
   df['h-index-rank'] = pd.Series(rank, index=df.index)
   df = df.sort_values(by=['pscore-rank'])
-  
-  step = math.pi / 180 # 1 degree steps.
-  angle = math.pi / 4
 
-  print 'Angle, Kendall-Tau, Z-Score'
-  while angle > 0:
-    min_a, max_a = get_line_coefficients(angle)
-    
-    df1 = df [df ['h-index-rank'] > df ['pscore-rank'] * min_a]
-    df1 = df1[df1['h-index-rank'] < df1['pscore-rank'] * max_a]
-  
-    # Save plot.
-    fig = plt.figure()
-    df1.plot(kind='scatter', x='pscore-rank', y='h-index-rank')
-    plt.savefig('figs/' + str(math.degrees(angle)) + '.png')
-    plt.close(fig)
-  
-    kendall_tau, z_score = get_kendall_tau(df1)
-    print ', '.join([str(math.degrees(angle)), str(kendall_tau), str(z_score)])
-
-    angle -= step
+  # calculate_all(df)
+  list_conferences(df, 15.0)

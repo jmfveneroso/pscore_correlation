@@ -1,883 +1,883 @@
-Conference,pscore,h-index,Qualis
-conf/icra,1200,116,A1
-conf/chi,1128,147,A1
-conf/cvpr,1047,167,A1
-conf/aaai,1022,93,A1
-conf/nips,993,88,A1
-conf/dac,904,102,A1
-conf/icassp,867,84,A1
-conf/stoc,843,100,A1
-conf/focs,831,94,A1
-conf/iros,803,58,A1
-conf/interspeech,656,80,A1
-conf/iccad,619,75,A1
-conf/ijcai,610,90,A1
-conf/soda,586,85,A1
-conf/infocom,574,204,A1
-conf/icml,571,124,A1
-conf/icip,537,69,A1
-conf/sigmod,499,151,A1
-conf/icse,477,117,A1
-conf/ipps,471,71,A1
-conf/iccv,469,120,A1
-conf/icde,431,113,A1
-conf/acl,421,110,A1
-conf/eccv,408,95,A1
-conf/isca,390,110,A1
-conf/kdd,366,133,A1
-conf/sigcomm,362,145,A1
-conf/sc,340,76,A1
-conf/www,322,145,A1
-conf/icdcs,320,78,A1
-conf/date,319,79,A1
-conf/ccs,309,100,A1
-conf/icmcs,308,6,B3
-conf/uai,305,70,A1
-conf/cikm,293,85,A1
-conf/globecom,289,90,A1
-conf/podc,275,61,A1
-conf/uist,274,77,A1
-conf/cscw,266,78,A1
-conf/popl,265,89,A1
-conf/pldi,263,98,A1
-conf/isit,259,31,B1
-conf/icalp,254,61,A1
-conf/iccd,245,41,A2
-conf/cdc,244,30,B1
-conf/icpp,240,42,A2
-conf/crypto,240,92,A1
-conf/naacl,232,73,A1
-conf/sigmetrics,232,73,A1
-conf/oopsla,232,76,A1
-conf/mobicom,227,112,A1
-conf/icc,226,53,A2
-conf/sigir,222,122,A1
-conf/recomb,218,54,A2
-conf/spaa,208,46,A2
-conf/asplos,206,72,A1
-conf/sigcse,205,53,A2
-conf/nsdi,202,69,A1
-conf/icdm,199,77,A1
-conf/sensys,197,86,A1
-conf/micro,194,86,A1
-conf/icpr,193,81,A1
-conf/emnlp,192,72,A1
-conf/dsn,192,65,A1
-conf/colt,192,46,A2
-conf/sosp,187,71,A1
-conf/hpca,173,73,A1
-conf/ipsn,164,88,A1
-conf/islped,161,66,A1
-conf/rtss,160,57,A1
-conf/usenix,160,67,A1
-conf/pods,159,69,A1
-conf/miccai,157,56,A1
-conf/iscas,153,159,A1
-conf/ics,150,52,A2
-conf/mobisys,146,66,A1
-conf/cav,145,82,A1
-conf/wcnc,144,34,A2
-conf/fpga,143,53,A2
-conf/lcpc,142,9,B4
-conf/ppopp,140,53,A2
-conf/hicss,138,97,A1
-conf/itc,137,62,A1
-conf/osdi,136,76,A1
-conf/iui,134,62,A1
-conf/eurocrypt,130,97,A1
-conf/isqed,128,34,B1
-conf/imc,127,93,A1
-conf/approx,127,31,B1
-conf/iser,126,7,B3
-conf/ndss,125,64,A1
-conf/lics,125,52,A2
-conf/sdm,125,51,A2
-conf/wacv,123,33,B1
-conf/its,122,17,B2
-conf/tcc,121,47,A2
-conf/ispd,121,42,A2
-conf/coling,120,62,A1
-conf/icwsm,118,26,B1
-conf/icnp,116,65,A1
-conf/aied,116,29,B1
-conf/gis,114,33,B1
-conf/hri,111,38,A2
-conf/wsc,111,56,A1
-conf/hpdc,108,62,A1
-conf/srds,108,40,A2
-conf/fccm,103,46,A2
-conf/trec,100,51,A2
-conf/rss,100,39,A2
-conf/cccg,97,19,B2
-conf/issta,95,52,A2
-conf/vts,94,47,A2
-conf/hotos,93,44,A2
-conf/percom,90,54,A2
-conf/icmi,88,46,A2
-conf/pkdd,88,52,A2
-conf/fpl,88,50,A2
-conf/amia,87,39,A2
-conf/bmvc,86,48,A2
-conf/iswc,86,89,A1
-conf/dcc,86,45,A2
-conf/rtas,86,42,A2
-conf/hotnets,86,15,B3
-conf/secon,85,30,B1
-conf/humanoids,83,17,B2
-conf/icccn,82,34,B1
-conf/ppsc,82,6,B4
-conf/lrec,81,49,A2
-conf/dgo,81,23,B1
-conf/edbt,81,52,A2
-conf/sca,79,39,A2
-conf/vlsid,77,40,A2
-conf/hipc,75,25,B1
-conf/wafr,75,5,B4
-conf/wsdm,74,35,B1
-conf/smc,74,19,B2
-conf/isbi,74,34,B1
-conf/iva,73,30,B1
-conf/esa,71,46,A2
-conf/assets,71,38,A2
-conf/asiacrypt,71,69,A1
-conf/cicc,70,11,B2
-conf/fsttcs,70,33,B1
-conf/re,70,55,A1
-conf/kr,70,46,A2
-conf/ssdbm,69,38,A2
-conf/iptps,69,63,A1
-conf/ismb,69,91,A1
-conf/mmsp,68,12,B2
-conf/ecoop,67,61,A1
-conf/pads,67,27,B1
-conf/middleware,66,49,A2
-conf/mascots,66,42,A2
-conf/cade,64,41,A2
-conf/tacas,64,68,A1
-conf/sac,64,61,A1
-conf/isscc,63,28,B1
-conf/csfw,62,57,A1
-conf/cluster,61,39,A2
-conf/edm,61,13,B3
-conf/jcdl,60,53,A2
-conf/cidr,60,41,A2
-conf/er,59,42,A2
-conf/conll,57,22,B1
-conf/ccgrid,57,60,A1
-conf/mobihoc,56,110,A1
-conf/concur,56,50,A2
-conf/emsoft,56,42,A2
-conf/icfp,56,53,A2
-conf/soups,55,29,B1
-conf/icdt,55,27,B1
-conf/acsac,54,63,A1
-conf/vtc,54,98,A1
-conf/isaac,53,27,B1
-conf/cloud,53,19,B2
-conf/icsm,52,53,A2
-conf/conext,52,34,B1
-conf/stacs,51,44,A2
-conf/psb,51,57,A1
-conf/fast,51,55,A1
-conf/wads,51,25,B1
-conf/lcn,51,48,A2
-conf/ipco,51,26,B1
-conf/ro-man,50,22,B1
-conf/flairs,49,25,B1
-conf/mfcs,49,33,B1
-conf/tark,49,19,B2
-conf/cgo,48,41,A2
-conf/ispass,48,32,B1
-conf/isrr,48,3,B4
-conf/sas,48,48,A2
-conf/cases,47,44,A2
-conf/raid,47,53,A2
-conf/vr,47,40,A2
-conf/eurosys,47,47,A2
-conf/interact,47,30,B1
-conf/fc,46,36,B1
-conf/mass,44,35,B1
-conf/cscl,44,35,B1
-conf/fsr,44,4,B4
-conf/ancs,43,25,B1
-conf/nossdav,43,41,A2
-conf/gecco,42,66,A1
-conf/icws,42,58,A1
-conf/iscc,41,43,A2
-conf/fm,41,35,B1
-conf/pam,41,40,A2
-conf/wabi,40,34,B1
-conf/3dim,40,29,B1
-conf/clef,40,16,B2
-conf/aiide,40,19,B2
-conf/icac,40,43,A2
-conf/iticse,40,35,B1
-conf/csb,39,34,B1
-conf/hoti,39,23,B1
-conf/icer,39,7,B4
-conf/tei,39,25,B1
-conf/issre,38,41,A2
-conf/ismar,38,48,A2
-conf/asap,38,29,B1
-conf/cocoon,37,28,B1
-conf/pervasive,37,48,A2
-conf/wicsa,37,32,B1
-conf/fmcad,37,33,B1
-conf/ecml,37,47,A2
-conf/iclp,36,35,B1
-conf/ismis,36,21,B2
-conf/haptics,36,28,B1
-conf/esop,36,53,A2
-conf/esorics,36,45,A2
-conf/ac,36,9,B4
-conf/ecai,35,49,A2
-conf/iri,34,21,B2
-conf/ism,34,19,B2
-conf/networking,34,31,B1
-conf/aamas,34,84,A1
-conf/dl,33,36,B1
-conf/icst,33,21,B2
-conf/sat,33,32,B1
-conf/compsac,33,40,A2
-conf/rtcsa,33,26,B1
-conf/icpads,33,28,B1
-conf/pkc,32,54,A2
-conf/slt,32,16,B2
-conf/cp,32,48,A2
-conf/csee,32,2,B5
-conf/mobiquitous,32,32,B1
-conf/cpm,32,33,B1
-conf/pdpta,32,21,B2
-conf/latin,31,26,B1
-conf/fusion,31,25,B1
-conf/ismir,31,61,A1
-conf/robio,30,22,B1
-conf/ride,30,24,B1
-conf/socialcom,30,10,B4
-conf/webdb,30,34,B1
-conf/nime,30,32,B1
-conf/icis,29,47,A2
-conf/imr,29,28,B1
-conf/nca,29,31,B1
-conf/group,29,45,A2
-conf/sigdial,29,15,B2
-conf/qest,29,27,B1
-conf/iwqos,29,44,A2
-conf/wiopt,28,24,B1
-conf/avi,28,38,A2
-conf/seke,28,35,B1
-conf/bcb,28,5,B4
-conf/rta,28,33,B1
-conf/fase,27,42,A2
-conf/asru,27,20,B2
-conf/dasfaa,27,29,B1
-conf/esem,26,44,A2
-conf/ecrts,26,47,A2
-conf/gpce,26,37,A2
-conf/mswim,26,35,B1
-conf/iccbr,25,4,B4
-conf/eacl,25,37,A2
-conf/usits,25,31,B1
-conf/random,25,24,B1
-conf/vmcai,25,40,A2
-conf/fse,24,46,A2
-conf/opodis,24,19,B2
-conf/amcis,24,32,B1
-conf/alt,24,24,B1
-conf/ictai,24,38,A2
-conf/smi,23,38,A2
-conf/icarcv,23,23,B1
-conf/forte,23,29,B1
-conf/alenex,23,27,B1
-conf/igarss,23,14,B1
-conf/icls,22,24,B1
-conf/pimrc,22,60,A1
-conf/acii,22,24,B1
-conf/gi,22,51,A2
-conf/icfem,22,27,B1
-conf/bibm,22,9,B4
-conf/cc,22,38,A2
-conf/amta,22,4,B4
-conf/prdc,22,23,B1
-conf/reconfig,22,9,B4
-conf/csl,21,33,B1
-conf/ceas,21,36,B1
-conf/iccl,21,2,B5
-conf/iwcmc,21,25,B1
-conf/cira,21,22,B1
-conf/icmla,21,17,B2
-conf/securecomm,20,25,B1
-conf/ersa,20,15,B3
-conf/fdg,20,11,B3
-conf/mobicase,20,5,B4
-conf/waim,20,21,B2
-conf/sacmat,20,55,A1
-conf/sbac-pad,20,18,B2
-conf/pepm,20,25,B1
-conf/iceis,20,24,B1
-conf/sgp,20,7,B4
-conf/broadnets,20,30,B1
-conf/lfcs,20,12,B3
-conf/isi,20,27,B1
-conf/mse,20,10,B4
-conf/bibe,20,27,B1
-conf/policy,20,39,A2
-conf/dexa,19,34,B1
-conf/noms,19,37,A2
-conf/ecir,19,39,A2
-conf/ijcnlp,19,20,B2
-conf/iciap,19,25,B1
-conf/wowmom,19,6,B3
-conf/ants,18,27,B1
-conf/coopis,18,22,B1
-conf/debs,18,21,B2
-conf/fct,18,18,B2
-conf/pg,18,40,A2
-conf/iaai,18,14,B2
-conf/ewsn,18,37,A2
-conf/cse,18,8,B4
-conf/anss,18,28,B1
-conf/cicling,18,29,B1
-conf/w4a,18,26,B1
-conf/wuwnet,18,16,B2
-conf/hase,17,22,B1
-conf/mva,17,15,B3
-conf/fskd,17,18,B2
-conf/msr,17,32,B1
-conf/p2p,17,46,A2
-conf/ih,17,26,B1
-conf/ipaw,17,20,B2
-conf/swat,17,26,B1
-conf/dft,17,30,B1
-conf/dis,17,49,A2
-conf/ds,16,25,B1
-conf/ipccc,16,24,B1
-conf/grid,16,46,A2
-conf/icdcn,16,10,B4
-conf/icids,16,13,B3
-conf/models,16,54,A2
-conf/mdm,16,38,A2
-conf/cbms,16,26,B1
-conf/parco,15,14,B3
-conf/icsoc,15,47,A2
-conf/nocs,15,28,B1
-conf/cis,15,12,B3
-conf/cf,15,27,B1
-conf/icnc,15,5,B4
-conf/iccabs,15,3,B5
-conf/dars,15,25,B1
-conf/aplas,15,28,B1
-conf/mmm,15,22,B1
-conf/aina,15,39,A2
-conf/arvlsi,15,9,B4
-conf/vrst,14,32,B1
-conf/dsd,14,27,B1
-conf/icaisc,14,17,B2
-conf/ecis,14,33,B1
-conf/wcre,14,43,A2
-conf/isvlsi,14,29,B1
-conf/amast,14,27,B1
-conf/ijcnn,14,46,A2
-conf/dimva,14,24,B1
-conf/async,14,37,A2
-conf/apgv,14,19,B2
-conf/lpar,14,32,B1
-conf/euc,14,20,B2
-conf/hipeac,14,17,B2
-conf/gd,13,18,B2
-conf/nmr,13,20,B2
-conf/visapp,13,14,B3
-conf/wicon,13,13,B3
-conf/icalt,13,35,B1
-conf/bmei,13,7,B4
-conf/mmsys,13,11,B3
-conf/fossacs,13,37,A2
-conf/icail,13,26,B1
-conf/aosd,13,55,A1
-conf/ihi,13,6,B4
-conf/tools,13,27,B1
-conf/hldvt,13,6,B3
-conf/iceccs,12,24,B1
-conf/icvs,12,26,B1
-conf/esscirc,12,33,B1
-conf/tapp,12,4,B4
-conf/dbpl,12,17,B2
-conf/words,12,24,B1
-conf/mfps,12,2,B4
-conf/im,12,32,B1
-conf/vcip,12,31,B1
-conf/widm,12,32,B1
-conf/arcs,12,17,B2
-conf/charme,11,25,B1
-conf/wisec,11,22,B1
-conf/hvc,11,5,B4
-conf/formats,11,22,B1
-conf/avbpa,11,45,A2
-conf/pdp,11,27,B1
-conf/spire,11,33,B1
-conf/ppdp,11,32,B1
-conf/wise,11,35,B1
-conf/tridentcom,11,22,B1
-conf/indocrypt,11,30,B1
-conf/mmvr,11,4,B4
-conf/splc,11,43,A2
-conf/scn,11,16,B2
-conf/acsd,11,23,B1
-conf/wetice,11,33,B1
-conf/npar,11,39,A2
-conf/vnc,10,6,B4
-conf/xp,10,20,B2
-conf/cscwd,10,18,B2
-conf/patmos,10,17,B2
-conf/cpaior,10,21,B2
-conf/icdar,10,48,A2
-conf/iolts,10,25,B1
-conf/arc,10,14,B3
-conf/rsp,10,20,B2
-conf/sew,10,20,B2
-conf/acns,10,34,B1
-conf/caise,10,51,A2
-conf/worm,10,36,B1
-conf/saso,10,15,B3
-conf/lpnmr,10,30,B1
-conf/icwe,9,28,B1
-conf/robocomm,9,10,B4
-conf/caip,9,20,B2
-conf/services,9,16,B2
-conf/agi,9,9,B4
-conf/isorc,9,33,B1
-conf/recsys,9,29,B1
-conf/cgi,9,31,B1
-conf/samos,9,16,B2
-conf/cloudcom,9,19,B2
-conf/aaecc,9,17,B2
-conf/bpm,9,49,A2
-conf/petra,9,12,B3
-conf/weis,9,26,B1
-conf/mobide,9,20,B2
-conf/jsspp,9,32,B1
-conf/iat,9,25,B1
-conf/ias,9,16,B1
-conf/sasp,9,8,B4
-conf/waoa,9,4,B4
-conf/qshine,9,17,B2
-conf/time,9,23,B1
-conf/saint,9,32,B1
-conf/vecpar,9,10,B4
-conf/dsom,9,24,B1
-conf/icann,9,30,B1
-conf/grapp,9,9,B4
-conf/dna,9,10,B4
-conf/ecscw,9,27,B1
-conf/wg,9,25,B1
-conf/cascon,8,30,B1
-conf/visual,8,16,B2
-conf/itng,8,22,B1
-conf/iccbss,8,20,B2
-conf/edcc,8,17,B2
-conf/dawak,8,29,B1
-conf/hpcn,8,14,B3
-conf/gcc,8,18,B2
-conf/icee,8,16,B2
-conf/isbra,8,11,B3
-conf/icai,8,16,B2
-conf/isads,8,25,B1
-conf/eusipco,8,23,B1
-conf/spw,8,5,B4
-conf/qosa,8,2,B5
-conf/sec,8,28,B1
-conf/ngits,8,7,B4
-conf/tsd,8,23,B1
-conf/kes,8,27,B1
-conf/ecsqaru,8,25,B1
-conf/ches,8,65,A1
-conf/ecbs,8,29,B1
-conf/cie,8,16,B2
-conf/mlsp,8,16,B2
-conf/eccb,8,34,B1
-conf/isda,8,16,B2
-conf/wons,8,9,B4
-conf/host,8,14,B3
-conf/iciss,8,13,B3
-conf/ismvl,8,21,B2
-conf/iconip,8,23,B1
-conf/algosensors,8,15,B3
-conf/cbse,8,25,B1
-conf/epia,7,19,B2
-conf/vizsec,7,23,B1
-conf/ilp,7,27,B1
-conf/dgci,7,20,B2
-conf/ssr,7,3,B4
-conf/sies,7,13,B3
-conf/iccc,7,7,B4
-conf/fmoods,7,28,B1
-conf/mpc,7,22,B1
-conf/ims,7,4,B4
-conf/c5,7,13,B3
-conf/estimedia,7,13,B3
-conf/iscis,7,18,B2
-conf/icgse,7,20,B2
-conf/icics,7,33,B1
-conf/apweb,7,20,B2
-conf/wimob,7,23,B1
-conf/ai,7,24,B1
-conf/sips,7,15,B3
-conf/msn,7,14,B3
-conf/icmlc,7,6,B4
-conf/ssiri,7,7,B4
-conf/dnis,7,11,B3
-conf/bncod,7,18,B2
-conf/cec,7,27,B1
-conf/ccnc,7,31,B1
-conf/iccsa,7,27,B1
-conf/alife,6,6,B4
-conf/npc,6,12,B3
-conf/iwls,6,19,B2
-conf/itp,6,10,B4
-conf/cosit,6,29,B1
-conf/icira,6,8,B4
-conf/webnet,6,16,B2
-conf/sab,6,16,B2
-conf/jcis,6,18,B2
-conf/etra,6,3,B5
-conf/ftrtft,6,20,B2
-conf/dsl,6,5,B4
-conf/ecal,6,27,B1
-conf/socc,6,20,B2
-conf/wd,6,8,B4
-conf/codaspy,6,6,B4
-conf/sbcci,6,24,B1
-conf/mis,6,10,B4
-conf/bica,6,4,B4
-conf/tlca,6,23,B1
-conf/vamos,6,14,B3
-conf/haskell,6,22,B1
-conf/iwann,6,20,B2
-conf/trust,6,8,B4
-conf/mmns,6,15,B3
-conf/eumas,6,14,B3
-conf/micai,6,19,B2
-conf/iv,6,32,B1
-conf/tcs,6,25,B1
-conf/ranlp,6,17,B2
-conf/iwpt,6,13,B3
-conf/ladc,6,12,B3
-conf/crowncom,6,24,B1
-conf/sofsem,5,22,B1
-conf/cocoa,5,10,B4
-conf/comsware,5,18,B2
-conf/amw,5,5,B4
-conf/icica,5,2,B5
-conf/csmr,5,40,A2
-conf/adma,5,18,B2
-conf/aisc,5,13,B3
-conf/icb,5,21,B2
-conf/ecsa,5,15,B3
-conf/iqis,5,15,B3
-conf/softvis,5,28,B1
-conf/sruti,5,8,B4
-conf/sbm,5,14,B3
-conf/vrcai,5,17,B2
-conf/ipmu,5,16,B2
-conf/profes,5,22,B1
-conf/wasa,5,9,B4
-conf/jelia,5,30,B1
-conf/icad,5,28,B1
-conf/caia,5,1,B5
-conf/gensips,5,8,B4
-conf/isspa,5,8,B3
-conf/ssrr,5,6,B4
-conf/adprl,5,13,B3
-conf/ipcv,5,10,B4
-conf/icinco,5,10,B4
-conf/gmp,5,18,B2
-conf/pst,5,18,B2
-conf/drm,5,22,B1
-conf/dbisp2p,5,6,B4
-conf/ispa,5,13,B3
-conf/sirocco,5,21,B2
-conf/ica3pp,5,10,B3
-conf/digitel,5,11,B3
-conf/fois,5,25,B1
-conf/icwn,5,17,B2
-conf/icnsc,5,12,B3
-conf/ictac,5,15,B3
-conf/aaim,5,14,B3
-conf/mcs,4,34,B1
-conf/lopstr,4,2,B3
-conf/greencom,4,6,B4
-conf/wi,4,39,A2
-conf/giscience,4,23,B1
-conf/padl,4,30,B1
-conf/pcs,4,25,B1
-conf/icoin,4,22,B1
-conf/tidse,4,18,B2
-conf/faabs,4,18,B2
-conf/ike,4,10,B4
-conf/ekaw,4,33,B1
-conf/ic3k,4,8,B4
-conf/netgames,4,34,B1
-conf/atva,4,22,B1
-conf/cnsr,4,17,B2
-conf/promas,4,11,B3
-conf/scopes,4,16,B2
-conf/sera,4,14,B3
-conf/esann,4,27,B1
-conf/doceng,4,32,B1
-conf/dbta,4,5,B4
-conf/icsoft,4,10,B4
-conf/cnsm,4,6,B4
-conf/inlg,4,21,B2
-conf/tableaux,4,24,B1
-conf/icdcit,4,10,B4
-conf/sose,4,16,B2
-conf/icits,4,44,A2
-conf/w2gis,4,11,B3
-conf/analco,4,8,B4
-conf/acivs,4,18,B2
-conf/paap,4,3,B5
-conf/loca,4,21,B2
-conf/icebe,4,20,B2
-conf/wkdd,4,10,B4
-conf/fqas,4,17,B2
-conf/cmmr,4,2,B5
-conf/biocomp,4,8,B4
-conf/fgcn,4,13,B3
-conf/cig,4,24,B1
-conf/nordichi,3,35,B1
-conf/cia,3,24,B1
-conf/flops,3,22,B1
-conf/wacc,3,3,B5
-conf/metmbs,3,8,B4
-conf/dux,3,15,B3
-conf/apscc,3,15,B3
-conf/sefm,3,26,B1
-conf/ruleml,3,22,B1
-conf/ida,3,21,B2
-conf/nfm,3,7,B4
-conf/adhoc-now,3,22,B1
-conf/ozchi,3,22,B1
-conf/edutainment,3,14,B3
-conf/inex,3,8,B4
-conf/tau,3,4,B4
-conf/nas,3,10,B4
-conf/cl,3,17,B2
-conf/frocos,3,1,B3
-conf/gir,3,19,B2
-conf/wsna,3,29,B1
-conf/his,3,18,B2
-conf/sin,3,7,B4
-conf/3dui,3,18,B2
-conf/socinfo,3,4,B4
-conf/samt,3,11,B3
-conf/cibcb,3,15,B3
-conf/amai,3,15,B3
-conf/pact,3,53,A2
-conf/icsc,3,21,B2
-conf/uic,3,17,B2
-conf/nldb,3,22,B1
-conf/adc,3,32,B1
-conf/pe-wasun,3,21,B2
-conf/cata,3,11,B3
-conf/essderc,3,12,B3
-conf/ams,3,9,B4
-conf/sede,3,5,B4
-conf/wwic,3,15,B3
-conf/safecomp,3,22,B1
-conf/icig,3,13,B3
-conf/ease,3,9,B4
-conf/iwcia,3,10,B4
-conf/wcw,3,9,B3
-conf/ideal,3,20,B2
-conf/wism,3,6,B4
-conf/vast,3,24,B1
-conf/gpc,3,12,B3
-conf/canpc,3,6,B4
-conf/cidm,3,12,B3
-conf/vecims,3,4,B4
-conf/isola,3,7,B4
-conf/psc,3,8,B4
-conf/fdl,2,15,B3
-conf/ads,2,3,B5
-conf/sigdoc,2,24,B1
-conf/cso,2,3,B5
-conf/dasc,2,13,B3
-conf/aimsa,2,16,B2
-conf/grec,2,1,B3
-conf/wscg,2,30,B1
-conf/cimca,2,16,B2
-conf/iaw,2,34,B1
-conf/cit,2,22,B1
-conf/gca,2,8,B4
-conf/scam,2,15,B3
-conf/aime,2,19,B2
-conf/jurix,2,12,B3
-conf/airs,2,14,B3
-conf/paams,2,9,B4
-conf/serp,2,17,B2
-conf/eiswt,2,4,B4
-conf/iiwas,2,12,B3
-conf/codas,2,12,B3
-conf/icuimc,2,10,B4
-conf/icmt,2,17,B2
-conf/sbcars,2,6,B4
-conf/hopl,2,2,B5
-conf/scsc,2,15,B3
-conf/ecows,2,27,B1
-conf/ifm,2,24,B1
-conf/ets,2,18,B2
-conf/hpcs,2,15,B3
-conf/ivcnz,2,10,B4
-conf/saicsit,2,12,B3
-conf/adbis,2,24,B1
-conf/ispdc,2,17,B2
-conf/hlt,2,78,A1
-conf/webist,2,11,B3
-conf/bics,2,6,B4
-conf/wcae,2,6,B4
-conf/icci,2,1,B4
-conf/eics,2,30,B1
-conf/ares,2,27,B1
-conf/caine,2,9,B4
-conf/textgraphs,2,10,B4
-conf/aiccsa,2,23,B1
-conf/irma,2,6,B4
-conf/dmdw,2,16,B2
-conf/mobiwac,2,15,B3
-conf/ntms,2,10,B4
-conf/psivt,2,13,B3
-conf/sibgrapi,2,28,B1
-conf/ppsn,2,46,A2
-conf/tase,2,11,B3
-conf/sle,2,3,B5
-conf/lanman,2,17,B2
-conf/ksem,2,11,B3
-conf/indin,2,12,B3
-conf/edoc,2,42,A2
-conf/sigite,2,15,B3
-conf/isica,2,9,B4
-conf/icwl,2,14,B3
-conf/healthcom,2,10,B4
-conf/emnets,2,16,B2
-conf/icete,2,5,B4
-conf/nanoarch,2,8,B4
-conf/dmtcs,2,21,B2
-conf/lanc,2,6,B4
-conf/soco,2,4,B4
-conf/dais,2,18,B2
-conf/mldm,2,19,B2
-conf/btas,2,20,B2
-conf/admi,2,3,B5
-conf/etfa,2,26,B1
-conf/icn,2,24,B1
-conf/eurographics,2,5,A2
-conf/pdc,2,22,B1
-conf/icec,2,34,B1
-conf/wollic,1,11,B3
-conf/eurobot,1,3,B3
-conf/wts,1,14,B3
-conf/ftp,1,5,B4
-conf/imf,1,5,B4
-conf/icdl-epirob,1,19,B2
-conf/automata,1,6,B4
-conf/law,1,13,B3
-conf/cmc,1,9,B4
-conf/esm,1,16,B2
-conf/ismm,1,25,B1
-conf/mkm,1,20,B2
-conf/digra,1,17,B2
-conf/daarc,1,10,B4
-conf/csclp,1,5,B4
-conf/mmbia,1,21,B2
-conf/itbam,1,3,B5
-conf/deon,1,14,B3
-conf/esaw,1,13,B3
-conf/atmos,1,8,B4
-conf/ags,1,6,B4
-conf/sbrn,1,14,B3
-conf/sbmf,1,7,B4
-conf/scc,1,33,B1
-conf/isd,1,3,B4
-conf/dlt,1,19,B2
-conf/egc,1,21,B2
-conf/secrypt,1,9,B4
-conf/mobimedia,1,9,B4
-conf/wisa,1,9,B4
-conf/vg,1,10,B4
-conf/awic,1,16,B2
-conf/educon,1,7,B4
-conf/adhocnets,1,2,B5
-conf/mata,1,17,B2
-conf/soas,1,8,B4
-conf/seal,1,11,B3
-conf/ecctd,1,12,B3
-conf/qsic,1,24,B1
-conf/or,1,5,B4
-conf/ichl,1,6,B4
-conf/dalt,1,10,B4
-conf/ms,1,8,B4
-conf/csndsp,1,11,B3
-conf/e2emon,1,12,B3
-conf/imsa,1,10,B4
-conf/icaart,1,8,B4
-conf/cca,1,6,B3
-conf/fecs,1,5,B4
-conf/iwcc,1,8,B4
-conf/closer,1,4,B4
-conf/icdim,1,11,B3
-conf/ecweb,1,27,B1
-conf/sbia,1,19,B2
-conf/achi,1,11,B3
-conf/somet,1,10,B4
-conf/is,1,4,B4
-conf/ciarp,1,16,B2
-conf/icsr,1,23,B1
-conf/acri,1,20,B2
-conf/icas,1,17,B2
-conf/syroco,1,11,B3
-conf/sccc,1,13,B3
-conf/tes,1,21,B2
-conf/mum,1,21,B2
-conf/mobility,1,13,B3
-conf/birte,1,1,B5
-conf/sspr,1,25,B1
-conf/la-web,1,19,B2
-conf/ict,1,17,B2
-conf/selmas,1,11,B3
-conf/idc,1,16,B2
-conf/delfi,1,10,B4
-conf/csedu,1,6,B4
-conf/ipom,1,9,B3
-conf/pdcat,1,18,B2
-conf/africacrypt,1,15,B3
-conf/iess,1,5,B4
-conf/tap,1,12,B3
-conf/pakm,1,19,B2
-conf/fit,1,5,B4
-conf/plop,1,10,B3
-conf/icps,1,20,B2
-conf/iwpse,1,23,B1
-conf/ssbse,1,7,B4
-conf/icns,1,14,B3
-conf/iberamia,1,16,B2
-conf/aois,1,8,B3
-conf/csc,1,5,B4
-conf/iccs,1,37,A2
-conf/vsmm,1,9,B3
-conf/medinfo,1,27,B1
-conf/ems,1,1,B5
-conf/cbmi,1,12,B3
-conf/cisis,1,15,B3
-conf/enter,1,17,B2
-conf/aia,1,6,B4
-conf/owled,1,26,B1
-conf/icita,1,18,B2
-conf/cason,1,5,B4
-conf/stairs,1,8,B4
-conf/fcs,1,5,B4
-conf/eurogp,1,35,B1
-conf/foiks,1,18,B2
-conf/refsq,1,15,B3
-conf/fedcsis,1,3,B5
-conf/hips,1,10,B4
-conf/ml,1,12,B3
+name,conference,pscore,h-index,qualis
+IEEE International Conference on Robotics and Automation (ICRA)                                                             ,conf/icra,1200,116,A1
+Conference on Human Factors in Computing Systems (CHI)                                                                      ,conf/chi,1128,147,A1
+Computer Vision and Pattern Recognition (CVPR)                                                                              ,conf/cvpr,1047,167,A1
+AAAI Conference on Artificial Intelligence (AAAI)                                                                           ,conf/aaai,1022,93,A1
+Neural Information Processing Systems (NIPS)                                                                                ,conf/nips,993,88,A1
+Design Automation Conference (DAC)                                                                                          ,conf/dac,904,102,A1
+IEEE International Conference on Acoustics\ Speech\ and Signal Processing (ICASSP)                                          ,conf/icassp,867,84,A1
+Symposium on the Theory of Computing (STOC)                                                                                 ,conf/stoc,843,100,A1
+IEEE Symposium on Foundations of Computer Science (FOCS)                                                                    ,conf/focs,831,94,A1
+IEEE/RJS International Conference on Intelligent RObots and Systems (IROS)                                                  ,conf/iros,803,58,A1
+Conference of the International Speech Communication Association (INTERSPEECH)                                              ,conf/interspeech,656,80,A1
+Conference on Computer Aided Design (ICCAD)                                                                                 ,conf/iccad,619,75,A1
+Joint Conference on Artificial Intelligence (IJCAI)                                                                         ,conf/ijcai,610,90,A1
+ACM-SIAM Symposium on Discrete Algorithms (SODA)                                                                            ,conf/soda,586,85,A1
+INFOCOM (IEEE) (INFOCOM)                                                                                                    ,conf/infocom,574,204,A1
+Conference on Machine Learning (ICML)                                                                                       ,conf/icml,571,124,A1
+IEEE International Conference on Image Processing (ICIP)                                                                    ,conf/icip,537,69,A1
+Conference on Management of Data (SIGMOD)                                                                                   ,conf/sigmod,499,151,A1
+Conference on Software Engineering (ICSE)                                                                                   ,conf/icse,477,117,A1
+International Parallel (and Distributed) Processing Symposium (IP(D)PS)                                                     ,conf/ipps,471,71,A1
+IEEE International Conference on Computer Vision (ICCV)                                                                     ,conf/iccv,469,120,A1
+IEEE International Conference on Data Engineering (ICDE)                                                                    ,conf/icde,431,113,A1
+Meeting of the Association for Computational Linguistics (ACL)                                                              ,conf/acl,421,110,A1
+European Conference on Computer Vision (ECCV)                                                                               ,conf/eccv,408,95,A1
+Symposium on Computer Architecture (ISCA)                                                                                   ,conf/isca,390,110,A1
+Knowledge Discovery and Data Mining (KDD)                                                                                   ,conf/kdd,366,133,A1
+Conference on Applications\ Technologies\ Architectures\ and Protocols for Computer Communication (SIGCOMM)                 ,conf/sigcomm,362,145,A1
+Supercomputing (SC)                                                                                                         ,conf/sc,340,76,A1
+World Wide Web Conferences (WWW)                                                                                            ,conf/www,322,145,A1
+IEEE International Conference on Distributed Computing Systems (ICDCS)                                                      ,conf/icdcs,320,78,A1
+Design\ Automation\ and Test in Europe (DATE)                                                                               ,conf/date,319,79,A1
+Conference on Computer and Communications Security (CCS)                                                                    ,conf/ccs,309,100,A1
+International Conference on Multimedia Computing and Systems (ICMCS)                                                        ,conf/icmcs,308,6,B3
+Conference on Uncertainty in Artificial Intelligence (UAI)                                                                  ,conf/uai,305,70,A1
+Conference on Information and Knowledge Management (CIKM)                                                                   ,conf/cikm,293,85,A1
+Global Communications Conference (GLOBECOM)                                                                                 ,conf/globecom,289,90,A1
+ACM SIGACT-SIGOPS Symposium on Principles of Distributed Computing (PODC)                                                   ,conf/podc,275,61,A1
+ACM Symposium on User Interface Software and Technology (UIST)                                                              ,conf/uist,274,77,A1
+Conference on Computer Supported Cooperative Work (CSCW)                                                                    ,conf/cscw,266,78,A1
+ACM-SIGACT Symposium on Principles of Programming Languages (POPL)                                                          ,conf/popl,265,89,A1
+ACM-SIGPLAN Symposium on Programming Language Design and Implementation (PLDI)                                              ,conf/pldi,263,98,A1
+Symposium on Information Theory (ISIT)                                                                                      ,conf/isit,259,31,B1
+Colloquium on Automata\ Languages and Programming (ICALP)                                                                   ,conf/icalp,254,61,A1
+Conference on Computer Design (ICCD)                                                                                        ,conf/iccd,245,41,A2
+IEEE Conference on Decision and Control (CDC)                                                                               ,conf/cdc,244,30,B1
+Conference on Parallel Processing (ICPP)                                                                                    ,conf/icpp,240,42,A2
+Cryptology Conference (CRYPTO)                                                                                              ,conf/crypto,240,92,A1
+North American Chapter of the Association for Computational Linguistics (NAACL)                                             ,conf/naacl,232,73,A1
+Measurement and Modeling of Computer Systems (SIGMETRICS)                                                                   ,conf/sigmetrics,232,73,A1
+SPLASH / OOPSLA / Onward!                                                                                                   ,conf/oopsla,232,76,A1
+ACM/IEEE International Conference on Mobile Computing and Networking (MobiCom)                                              ,conf/mobicom,227,112,A1
+IEEE International Conference on Communications (ICC)                                                                       ,conf/icc,226,53,A2
+ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)                                           ,conf/sigir,222,122,A1
+Conference on Research in Computational Molecular Biology (RECOMB)                                                          ,conf/recomb,218,54,A2
+ACM Symposium on Parallel Algorithms and Architectures (SPAA)                                                               ,conf/spaa,208,46,A2
+Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)                                ,conf/asplos,206,72,A1
+Technical Symposium on Computer Science Education (SIGCSE)                                                                  ,conf/sigcse,205,53,A2
+Symposium on Networked Systems Design and Implementation (NSDI)                                                             ,conf/nsdi,202,69,A1
+IEEE International Conference on Data Mining (ICDM)                                                                         ,conf/icdm,199,77,A1
+ACM International Conference on Embedded Networked Sensor Systems (SenSys)                                                  ,conf/sensys,197,86,A1
+IEEE/ACM International Symposium on Microarchitecture (MICRO)                                                               ,conf/micro,194,86,A1
+Conference on Pattern Recognition (ICPR)                                                                                    ,conf/icpr,193,81,A1
+Conference on Empirical Methods in Natural Language Processing (EMNLP)                                                      ,conf/emnlp,192,72,A1
+Dependable Systems and Networks (DSN)                                                                                       ,conf/dsn,192,65,A1
+Conference Computational Learning Theory (COLT)                                                                             ,conf/colt,192,46,A2
+Symposium on Operating Systems Principles (SOSP)                                                                            ,conf/sosp,187,71,A1
+Symposium on High-Performance Computer Architecture (HPCA)                                                                  ,conf/hpca,173,73,A1
+Symposium on Information Processing in Sensor Networks (IPSN)                                                               ,conf/ipsn,164,88,A1
+Symposium on Low Power Electronics and Design (ISLPED)                                                                      ,conf/islped,161,66,A1
+IEEE Real-Time Systems Symposium (RTSS)                                                                                     ,conf/rtss,160,57,A1
+USENIX Annual Technical Conference (USENIX)                                                                                 ,conf/usenix,160,67,A1
+ACM SIGACT-SIGMOD-SIGART Symposium on Principles of Database Systems (PODS)                                                 ,conf/pods,159,69,A1
+Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)                                           ,conf/miccai,157,56,A1
+IEEE International Symposium on Circuits and Systems (ISCAS)                                                                ,conf/iscas,153,159,A1
+International Conference on Supercomputing (ICS)                                                                            ,conf/ics,150,52,A2
+ACM SIGMOBILE International Conference on Mobile Systems\ Applications\ and Services (MobiSys)                              ,conf/mobisys,146,66,A1
+Conference on Computer Aided Verification (CAV)                                                                             ,conf/cav,145,82,A1
+IEEE Wireless Communications and Networking Conference (WCNC)                                                               ,conf/wcnc,144,34,A2
+Symposium on Field Programmable Gate Arrays (FPGA)                                                                          ,conf/fpga,143,53,A2
+Workshop on Languages and Compilers for Parallel Computing (LCPC)                                                           ,conf/lcpc,142,9,B4
+ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming (PPoPP)                                              ,conf/ppopp,140,53,A2
+Hawaii International Conference on System Sciences (HICSS)                                                                  ,conf/hicss,138,97,A1
+Test Conference (ITC)                                                                                                       ,conf/itc,137,62,A1
+Usenix Symposium on Operating Systems Design and Implementation (OSDI)                                                      ,conf/osdi,136,76,A1
+Conference on Intelligent User Interfaces (IUI)                                                                             ,conf/iui,134,62,A1
+Conference on the Theory and Application of Cryptographic Techniques (EUROCRYPT)                                            ,conf/eurocrypt,130,97,A1
+IEEE International Symposium on Quality Electronic Design (ISQED)                                                           ,conf/isqed,128,34,B1
+ACM/SIGCOMM Internet Measurement Conference (IMC)                                                                           ,conf/imc,127,93,A1
+Workshop on Approximation Algorithms for Combinatorial Optimization (APPROX)                                                ,conf/approx,127,31,B1
+Symposium on Experimental Robotics (ISER)                                                                                   ,conf/iser,126,7,B3
+Network and Distributed System Security Symposium (NDSS)                                                                    ,conf/ndss,125,64,A1
+Logic in Computer Science (LICS)                                                                                            ,conf/lics,125,52,A2
+SIAM International Conference on Data Mining (SDM)                                                                          ,conf/sdm,125,51,A2
+IEEE Workshop/Winter Conference on Applications of Computer Vision (WACV)                                                   ,conf/wacv,123,33,B1
+Conference on Intelligent Tutoring Systems (ITS)                                                                            ,conf/its,122,17,B2
+Theory of Cryptography Conference (TCC)                                                                                     ,conf/tcc,121,47,A2
+ACM International Symposium on Physical Design (ISPD)                                                                       ,conf/ispd,121,42,A2
+Conference on Computational Linguistics (COLING)                                                                            ,conf/coling,120,62,A1
+Conference on Weblogs and Social Media (ICWSM)                                                                              ,conf/icwsm,118,26,B1
+IEEE International Conference on Network Protocols (ICNP)                                                                   ,conf/icnp,116,65,A1
+Conference on Artificial Intelligence in Education (AIED)                                                                   ,conf/aied,116,29,B1
+ACM SIGSPATIAL International Workshop on Advances in Geographic Information Systems (GIS)                                   ,conf/gis,114,33,B1
+IEEE/ACM International Conference on Human-Robot Interaction (HRI)                                                          ,conf/hri,111,38,A2
+Winter Simulation Conference (WSC)                                                                                          ,conf/wsc,111,56,A1
+IEEE International Symposium on High Performance Distributed Computing (HPDC)                                               ,conf/hpdc,108,62,A1
+IEEE International Symposium on Reliable Distributed Systems (SRDS)                                                         ,conf/srds,108,40,A2
+IEEE Symposium on Field-Programmable Custom Computing Machines (FCCM)                                                       ,conf/fccm,103,46,A2
+Text Retrieval Conference (TREC)                                                                                            ,conf/trec,100,51,A2
+Robotics: Science and Systems Conference (RSS)                                                                              ,conf/rss,100,39,A2
+Canadian Conference on Computational Geometry (CCCG)                                                                        ,conf/cccg,97,19,B2
+Symposium on Software Testing and Analysis (ISSTA)                                                                          ,conf/issta,95,52,A2
+IEEE VLSI Test Symposium (VTS)                                                                                              ,conf/vts,94,47,A2
+USENIX Workshop on Hot Topics in Operating Systems (HotOS)                                                                  ,conf/hotos,93,44,A2
+IEEE International Conference on Pervasive Computing and Communications (PerCom)                                            ,conf/percom,90,54,A2
+Conference on Multimodal Interaction (ICMI)                                                                                 ,conf/icmi,88,46,A2
+European Conference on Principles of Data Mining and Knowledge Discovery (PKDD)                                             ,conf/pkdd,88,52,A2
+Conference on Field-Programmable Logic and Applications (FPL)                                                               ,conf/fpl,88,50,A2
+American Medical Informatics Association Annual Symposium (AMIA)                                                            ,conf/amia,87,39,A2
+British Machine Vision Conference (BMVC)                                                                                    ,conf/bmvc,86,48,A2
+IEEE International Symposium on Wearable Computers (ISWC)                                                                   ,conf/iswc,86,89,A1
+Data Compression Conference (DCC)                                                                                           ,conf/dcc,86,45,A2
+IEEE Real Time Technology and Applications Symposium (RTAS)                                                                 ,conf/rtas,86,42,A2
+ACM Workshop on Hot Topics in Networks (HotNets)                                                                            ,conf/hotnets,86,15,B3
+IEEE Communications Society Conference on Sensor\ Mesh and Ad Hoc Communications and Networks (SECON)                       ,conf/secon,85,30,B1
+IEEE-RAS International Conference on Humanoid Robots (Humanoids)                                                            ,conf/humanoids,83,17,B2
+Conference on Computer Communications and Networks (ICCCN)                                                                  ,conf/icccn,82,34,B1
+SIAM Conference on Parallel Processing for Scientific Computing                                                             ,conf/ppsc,82,6,B4
+Conference on Language Resources and Evaluation (LREC)                                                                      ,conf/lrec,81,49,A2
+DG.O (Inter)National Conference on Digital Government Research                                                              ,conf/dgo,81,23,B1
+Conference on Extending Database Technology (EDBT)                                                                          ,conf/edbt,81,52,A2
+Symposium on Computer Animation (SCA)                                                                                       ,conf/sca,79,39,A2
+Conference on VLSI Design (VLSID)                                                                                           ,conf/vlsid,77,40,A2
+Conference on High Performance Computing (HiPC)                                                                             ,conf/hipc,75,25,B1
+Workshop on the Algorithmic Foundations of Robotics (WAFR)                                                                  ,conf/wafr,75,5,B4
+Web Search and Data Mining (WSDM)                                                                                           ,conf/wsdm,74,35,B1
+IEEE International Conference on Systems\ Man and Cybernetics (SMC)                                                         ,conf/smc,74,19,B2
+IEEE International Symposium on Biomedical Imaging: From Nano to Macro (ISBI)                                               ,conf/isbi,74,34,B1
+Conference on Intelligent Virtual Agents (IVA)                                                                              ,conf/iva,73,30,B1
+European Symposium on Algorithms (ESA)                                                                                      ,conf/esa,71,46,A2
+ACM SIGACCESS Conference on Computers and Accessibility (ASSETS)                                                            ,conf/assets,71,38,A2
+ASIACRYPT                                                                                                                   ,conf/asiacrypt,71,69,A1
+IEEE Custom Integrated Circuits Conference (CICC)                                                                           ,conf/cicc,70,11,B2
+Foundations of Software Technology and Theoretical Computer Science (FSTTCS)                                                ,conf/fsttcs,70,33,B1
+IEEE International Requirements Engineering Conference (RE)                                                                 ,conf/re,70,55,A1
+Conference on Principles of Knowledge Representation and Reasoning (KR)                                                     ,conf/kr,70,46,A2
+Conference on Statistical and Scientific Database Management (SSDBM)                                                        ,conf/ssdbm,69,38,A2
+Workshop on Peer-to-Peer Systems (IPTPS)                                                                                    ,conf/iptps,69,63,A1
+Intelligent Systems in Molecular Biology (ISMB)                                                                             ,conf/ismb,69,91,A1
+IEEE International Workshop on Multimedia Signal Processing (MMSP)                                                          ,conf/mmsp,68,12,B2
+European Conference on Object-Oriented Programming (ECOOP)                                                                  ,conf/ecoop,67,61,A1
+Principles of Advanced Discrete Simulation / Parallel and Distributed Simulation (PADS)                                     ,conf/pads,67,27,B1
+Middleware Conference (Middleware)                                                                                          ,conf/middleware,66,49,A2
+IEEE/ACM International Symposium on Modeling\ Analysis\ and Simulation On Computer and Telecommunication Systems (MASCOTS)  ,conf/mascots,66,42,A2
+Conference on Automated Deduction (CADE)                                                                                    ,conf/cade,64,41,A2
+Conference on Tools and Algorithms for Construction and Analysis of Systems (TACAS)                                         ,conf/tacas,64,68,A1
+ACM Symposium on Applied Computing (SAC)                                                                                    ,conf/sac,64,61,A1
+IEEE International Solid-State Circuits Conference (ISSCC)                                                                  ,conf/isscc,63,28,B1
+IEEE Computer Security Foundations Symposium / Workshop (CSF/CSFW)                                                          ,conf/csfw,62,57,A1
+IEEE International Conference on Cluster Computing (CLUSTER)                                                                ,conf/cluster,61,39,A2
+Educational Data Mining (EDM)                                                                                               ,conf/edm,61,13,B3
+ACM/IEEE Joint Conference on Digital Libraries (JCDL)                                                                       ,conf/jcdl,60,53,A2
+Biennial Conference on Innovative Data Systems Research (CIDR)                                                              ,conf/cidr,60,41,A2
+Conference on Conceptual Modeling (ER)                                                                                      ,conf/er,59,42,A2
+Conference on Computational Natural Language Learning (CoNLL)                                                               ,conf/conll,57,22,B1
+IEEE/ACM International Symposium on Cluster Computing and the Grid (CCGRID)                                                 ,conf/ccgrid,57,60,A1
+ACM Interational Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc)                                              ,conf/mobihoc,56,110,A1
+Conference on Concurrency Theory (CONCUR)                                                                                   ,conf/concur,56,50,A2
+Conference on Embedded Software (EMSOFT)                                                                                    ,conf/emsoft,56,42,A2
+ACM SIGPLAN International Conference on Functional Programming (ICFP)                                                       ,conf/icfp,56,53,A2
+Symposium On Usable Privacy and Security (SOUPS)                                                                            ,conf/soups,55,29,B1
+Conference on Database Theory (ICDT)                                                                                        ,conf/icdt,55,27,B1
+Computer Security Applications Conference (ACSAC)                                                                           ,conf/acsac,54,63,A1
+IEEE Vehicular Technology Conference (VTC)                                                                                  ,conf/vtc,54,98,A1
+Symposium on Algorithms and Computation (ISAAC)                                                                             ,conf/isaac,53,27,B1
+Symposium on Cloud Computing\ SoCC                                                                                          ,conf/cloud,53,19,B2
+IEEE International Conference on Software Maintenance [and Evolution]                                                       ,conf/icsm,52,53,A2
+Conference on Emerging Network Experiment and Technology (CoNEXT)                                                           ,conf/conext,52,34,B1
+Symposium on Theoretical Aspects of Computer Science (STACS)                                                                ,conf/stacs,51,44,A2
+Pacific Symposium on Biocomputing (PSB)                                                                                     ,conf/psb,51,57,A1
+USENIX Conference on File and Storage Technologies (FAST)                                                                   ,conf/fast,51,55,A1
+Workshop on Algorithms and Data Structures (WADS)                                                                           ,conf/wads,51,25,B1
+IEEE Conference on Local Computer Networks (LCN)                                                                            ,conf/lcn,51,48,A2
+Conference on Integer Programming and Combinatorial Optimization (IPCO)                                                     ,conf/ipco,51,26,B1
+IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)                                          ,conf/ro-man,50,22,B1
+The Florida AI Research Society (FLAIRS)                                                                                    ,conf/flairs,49,25,B1
+Symposium on Mathematical Foundations of Computer Science (MFCS)                                                            ,conf/mfcs,49,33,B1
+Theoretical Aspects of Rationality and Knowledge (TARK)                                                                     ,conf/tark,49,19,B2
+IEEE/ACM International Symposium on Code Generation and Optimization (CGO)                                                  ,conf/cgo,48,41,A2
+IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)                                       ,conf/ispass,48,32,B1
+International Symposium of Robotics Research                                                                                ,conf/isrr,48,3,B4
+Static Analysis Symposium (SAS)                                                                                             ,conf/sas,48,48,A2
+Conference on Compilers\ Architecture\ and Synthesis for Embedded Systems (CASES)                                           ,conf/cases,47,44,A2
+Symposium on Recent Advances in Intrusion Detection (RAID)                                                                  ,conf/raid,47,53,A2
+IEEE Virtual Reality Conference (VR)                                                                                        ,conf/vr,47,40,A2
+European Conference on Computer Systems (EuroSys)                                                                           ,conf/eurosys,47,47,A2
+IFIP TC13 International Conference on Human-Computer Interaction (INTERACT)                                                 ,conf/interact,47,30,B1
+Financial Cryptography (FC)                                                                                                 ,conf/fc,46,36,B1
+IEEE International Conference on Mobile Adhoc and Sensor Systems (MASS)                                                     ,conf/mass,44,35,B1
+Conference on Computer Supported Collaborative Learning (CSCL)                                                              ,conf/cscl,44,35,B1
+Symposium on Field and Service Robotics (FSR)                                                                               ,conf/fsr,44,4,B4
+Symposium on Architectures for Networking and Communications Systems (ANCS)                                                 ,conf/ancs,43,25,B1
+Workshop on Network and Operating System Support for Digital Audio and Video (NOSSDAV)                                      ,conf/nossdav,43,41,A2
+Genetic and Evolutionary Computation Conference (GECCO)                                                                     ,conf/gecco,42,66,A1
+IEEE International Conference on Web Services (ICWS)                                                                        ,conf/icws,42,58,A1
+Symposium on Computers and Communications (ISCC)                                                                            ,conf/iscc,41,43,A2
+World Congress on Formal Methods (FM)                                                                                       ,conf/fm,41,35,B1
+Passive and Active Network Measurement Conference (PAM)                                                                     ,conf/pam,41,40,A2
+Workshop on Algorithms in Bioinformatics (WABI)                                                                             ,conf/wabi,40,34,B1
+3D Vision / 3-D Imaging and Modeling                                                                                        ,conf/3dim,40,29,B1
+Cross-Language Evaluation Forum Workshop (CLEF)                                                                             ,conf/clef,40,16,B2
+Artificial Intelligence and Interactive Digital Entertainment Conference (AIIDE)                                            ,conf/aiide,40,19,B2
+IEEE International Conference on Autonomic Computing (ICAC)                                                                 ,conf/icac,40,43,A2
+Conference on Integrating Technology into Computer Science Education (ITiCSE)                                               ,conf/iticse,40,35,B1
+IEEE Computer Society Computational Systems Bioinformatics Conference (CSB)                                                 ,conf/csb,39,34,B1
+IEEE Symposium on High Performance Interconnects (HOTI)                                                                     ,conf/hoti,39,23,B1
+Computing Education Research Workshop (ICER)                                                                                ,conf/icer,39,7,B4
+Tangible and Embedded Interaction (TEI)                                                                                     ,conf/tei,39,25,B1
+IEEE International Symposium on Software Reliability Engineering (ISSRE)                                                    ,conf/issre,38,41,A2
+Symposium on Mixed and Augmented Reality (ISMAR)                                                                            ,conf/ismar,38,48,A2
+IEEE International Conference on Application-Specific Systems\ Architectures\ and Processors (ASAP)                         ,conf/asap,38,29,B1
+Computing and Combinatorics Conference (COCOON)                                                                             ,conf/cocoon,37,28,B1
+Conference on Pervasive Computing (Pervasive)                                                                               ,conf/pervasive,37,48,A2
+Working IEEE/IFIP Conference on Software Architecture (WICSA)                                                               ,conf/wicsa,37,32,B1
+Formal Methods in Computer-Aided Design (FMCAD)                                                                             ,conf/fmcad,37,33,B1
+European Conference on Machine Learning (ECML)                                                                              ,conf/ecml,37,47,A2
+Conference on Logic Programming (ICLP)                                                                                      ,conf/iclp,36,35,B1
+Syposium on Methodologies for Intelligent Systems (ISMIS)                                                                   ,conf/ismis,36,21,B2
+Haptics Conferences                                                                                                         ,conf/haptics,36,28,B1
+European Symposium on Programming (ESOP)                                                                                    ,conf/esop,36,53,A2
+European Symposium on Research in Computer Security (ESORICS)                                                               ,conf/esorics,36,45,A2
+Advanced Courses                                                                                                            ,conf/ac,36,9,B4
+European Conference on Artificial Intelligence (ECAI)                                                                       ,conf/ecai,35,49,A2
+IEEE International Conference on Information Reuse and Integration (IRI)                                                    ,conf/iri,34,21,B2
+IEEE International Symposium on Multimedia (ISM)                                                                            ,conf/ism,34,19,B2
+Networking                                                                                                                  ,conf/networking,34,31,B1
+Adaptive Agents and Multi-Agent Systems (AAMAS)                                                                             ,conf/aamas,34,84,A1
+Digital Libraries (DL)                                                                                                      ,conf/dl,33,36,B1
+Conference on Software Testing\ Verification\ and Validation (ICST)                                                         ,conf/icst,33,21,B2
+Conference on Theory and Applications of Satisfiability Testing (SAT)                                                       ,conf/sat,33,32,B1
+Computer Software and Applications Conference (COMPSAC)                                                                     ,conf/compsac,33,40,A2
+IEEE International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)                          ,conf/rtcsa,33,26,B1
+Conference on Parallel and Distributed Systems (ICPADS)                                                                     ,conf/icpads,33,28,B1
+Conference on Theory and Practice of Public Key Cryptography (PKC)                                                          ,conf/pkc,32,54,A2
+Spoken Language Technology Workshop (SLT)                                                                                   ,conf/slt,32,16,B2
+Conference on Principles and Practice of Constraint Programming (CP)                                                        ,conf/cp,32,48,A2
+Conference on Software Engineering Education (and Training)                                                                 ,conf/csee,32,2,B5
+Conference on Mobile and Ubiquitous Systems: Networking and Services (MobiQuitous)                                          ,conf/mobiquitous,32,32,B1
+Symposium on Combinatorial Pattern Matching (CPM)                                                                           ,conf/cpm,32,33,B1
+Conference on Parallel and Distributed Processing Techniques and Applications (PDPTA)                                       ,conf/pdpta,32,21,B2
+Latin American Symposium on Theoretical Informatics (LATIN)                                                                 ,conf/latin,31,26,B1
+Conference on Information Fusion (FUSION)                                                                                   ,conf/fusion,31,25,B1
+Society for Music Information Retrieval Conference (ISMIR)                                                                  ,conf/ismir,31,61,A1
+IEEE International Conference on Robotics and Biomimetics (ROBIO)                                                           ,conf/robio,30,22,B1
+Workshop on Research Issues in Data Engineering (RIDE)                                                                      ,conf/ride,30,24,B1
+IEEE International Conference on Social Computing (SocialCom)                                                               ,conf/socialcom,30,10,B4
+Workshop on the Web and Databases (WebDB)                                                                                   ,conf/webdb,30,34,B1
+New Interfaces for Musical Expression (NIME)                                                                                ,conf/nime,30,32,B1
+Conference on Information Systems (ICIS)                                                                                    ,conf/icis,29,47,A2
+Meshing Roundtable Conference (IMR)                                                                                         ,conf/imr,29,28,B1
+IEEE International Symposium on Network Computing and Applications (NCA)                                                    ,conf/nca,29,31,B1
+Conference on Supporting Group Work (GROUP)                                                                                 ,conf/group,29,45,A2
+SIGDIAL Conferences (SIGDIAL)                                                                                               ,conf/sigdial,29,15,B2
+Conference on Quantitative Evaluation of Systems (QEST)                                                                     ,conf/qest,29,27,B1
+Workshop on Quality of Service (IWQoS)                                                                                      ,conf/iwqos,29,44,A2
+Symposium on Modeling and Optimization in Mobile\ Ad-Hoc and Wireless Networks (WiOpt)                                      ,conf/wiopt,28,24,B1
+Working Conference on Advanced Visual Interfaces (AVI)                                                                      ,conf/avi,28,38,A2
+Conference on Software Engineering and Knowledge Engineering (SEKE)                                                         ,conf/seke,28,35,B1
+ACM International Conference on Bioinformatics\ Computational Biology and Biomedicine (BCB)                                 ,conf/bcb,28,5,B4
+Formal Structures for Computation and Deduction (FSCD) / Rewriting Techniques and Applications (RTA)                        ,conf/rta,28,33,B1
+Fundamental Approaches to Software Engineering (FASE)                                                                       ,conf/fase,27,42,A2
+Automatic Speech Recognition & Understanding (ASRU)                                                                         ,conf/asru,27,20,B2
+Conference on Database Systems for Advanced Applications (DASFAA)                                                           ,conf/dasfaa,27,29,B1
+Symposium on Empirical Software Engineering and Measurement (ESEM)                                                          ,conf/esem,26,44,A2
+Euromicro Conference on Real-Time Systems (ECRTS)                                                                           ,conf/ecrts,26,47,A2
+Conference on Generative Programming and Component Engineering (GPCE)                                                       ,conf/gpce,26,37,A2
+Symposium on Modeling Analysis and Simulation of Wireless and Mobile Systems (MSWiM)                                        ,conf/mswim,26,35,B1
+Conference on Case-Based Reasoning (ICCBR)                                                                                  ,conf/iccbr,25,4,B4
+Conference of the European Chapter of the Association for Computational Linguistics (EACL)                                  ,conf/eacl,25,37,A2
+USENIX Symposium on Internet Technologies and Systems (USITS)                                                               ,conf/usits,25,31,B1
+Randomization and Approximation Techniques in Computer Science (RANDOM)                                                     ,conf/random,25,24,B1
+Conference on Verification\ Model Checking and Abstract Interpretation (VMCAI)                                              ,conf/vmcai,25,40,A2
+Fast Software Encryption Workshop (FSE)                                                                                     ,conf/fse,24,46,A2
+Conference on Principles of Distributed Systems (OPODIS)                                                                    ,conf/opodis,24,19,B2
+Americas Conference on Information Systems (AMCIS)                                                                          ,conf/amcis,24,32,B1
+Conferences on Algorithmic Learning Theory (ALT)                                                                            ,conf/alt,24,24,B1
+IEEE International Conference on Tools with Artificial Intelligence (ICTAI)                                                 ,conf/ictai,24,38,A2
+Shape Modeling International Conference (SMI)                                                                               ,conf/smi,23,38,A2
+Conference on Control\ Automation\ Robotics and Vision (ICARCV)                                                             ,conf/icarcv,23,23,B1
+IFIP WG 6.1 International Conference on Formal Techniques for (Networked and) Distributed Systems (FORTE)                   ,conf/forte,23,29,B1
+Workshop on Algorithm Engineering and Experimentation (ALENEX)                                                              ,conf/alenex,23,27,B1
+IEEE International Geoscience and Remote Sensing Symposium (IGARSS)                                                         ,conf/igarss,23,14,B1
+Conference of the Learning Sciences (ICLS)                                                                                  ,conf/icls,22,24,B1
+IEEE International Symposium on Personal\ Indoor and Mobile Radio Communications (PIMRC)                                    ,conf/pimrc,22,60,A1
+Affective Computing and Intelligent Interaction (ACII)                                                                      ,conf/acii,22,24,B1
+GI-Jahrestagung                                                                                                             ,conf/gi,22,51,A2
+IEEE International Conference on Formal Engineering Methods (ICFEM)                                                         ,conf/icfem,22,27,B1
+IEEE International Conference on Bioinformatics and Biomedicine (BIBM)                                                      ,conf/bibm,22,9,B4
+Conference on Compiler Construction (CC)                                                                                    ,conf/cc,22,38,A2
+Conference of the Association for Machine Translation in the Americas (AMTA)                                                ,conf/amta,22,4,B4
+Pacific Rim International Symposium on Dependable Computing (PRDC)                                                          ,conf/prdc,22,23,B1
+Conference on Reconfigurable Computing and FPGAs (ReConFig)                                                                 ,conf/reconfig,22,9,B4
+Conference for Computer Science Logic (CSL)                                                                                 ,conf/csl,21,33,B1
+Conference on Email and Anti-Spam (CEAS)                                                                                    ,conf/ceas,21,36,B1
+IEEE International Conference on Computer Languages (ICCL)                                                                  ,conf/iccl,21,2,B5
+ACM International Conference on Wireless Communications and Mobile Computing (IWCMC)                                        ,conf/iwcmc,21,25,B1
+IEEE International Symposium on Computational Intelligence in Robotics and Automation (CIRA)                                ,conf/cira,21,22,B1
+Conference on Machine Learning and Applications (ICMLA)                                                                     ,conf/icmla,21,17,B2
+Security and Privacy in Communication Networks (SecureComm)                                                                 ,conf/securecomm,20,25,B1
+Conference on Engineering of Reconfigurable Systems and Algorithms (ERSA)                                                   ,conf/ersa,20,15,B3
+Conference on Foundations of Digital Games (FDG)                                                                            ,conf/fdg,20,11,B3
+Mobile Computing\ Applications\ and Services (MobiCASE)                                                                     ,conf/mobicase,20,5,B4
+Interational Conference on Web-Age Information Management (WAIM)                                                            ,conf/waim,20,21,B2
+ACM Symposium on Access Control Models and Technologies (SACMAT)                                                            ,conf/sacmat,20,55,A1
+Symposium on Computer Architecture and High Performance Computing (SBAC-PAD)                                                ,conf/sbac-pad,20,18,B2
+Symposium/Workshop on Partial Evaluation and Semantic-Based Program Manipulation (PEPM)                                     ,conf/pepm,20,25,B1
+Conference on Enterprise Information Systems (ICEIS)                                                                        ,conf/iceis,20,24,B1
+Eurographics Symposium on Geometry Processing (SGP)                                                                         ,conf/sgp,20,7,B4
+Conference on Broadband Communications\ Networks and Systems (BROADNETS)                                                    ,conf/broadnets,20,30,B1
+Symposium on Logical Foundations of Computer Science (LFCS)                                                                 ,conf/lfcs,20,12,B3
+Intelligence and Security Informatics                                                                                       ,conf/isi,20,27,B1
+Conference on Microelectronics Systems Education (MSE)                                                                      ,conf/mse,20,10,B4
+IEEE International Conference on Bioinformatics and Bioengineering (BIBE)                                                   ,conf/bibe,20,27,B1
+IEEE International Symposium/Workshop on Policies for Distributed Systems and Networks (POLICY)                             ,conf/policy,20,39,A2
+Conference on Database and Expert Systems Applications (DEXA)                                                               ,conf/dexa,19,34,B1
+IEEE/IFIP Network Operations and Management Symposium (NOMS)                                                                ,conf/noms,19,37,A2
+European Conference on Information Retrieval (ECIR)                                                                         ,conf/ecir,19,39,A2
+Joint Conference on Natural Language Processing (IJCNLP)                                                                    ,conf/ijcnlp,19,20,B2
+Conference on Image Analysis and Processing (ICIAP)                                                                         ,conf/iciap,19,25,B1
+IEEE International Symposium on a World of Wireless\ Mobile and Multimedia Networks (WoWMoM)                                ,conf/wowmom,19,6,B3
+Algorithmic Number Theory Symposium (ANTS)                                                                                  ,conf/ants,18,27,B1
+Conference on Cooperative Information Systems (CoopIS)                                                                      ,conf/coopis,18,22,B1
+Distributed Event-Based Systems (DEBS)                                                                                      ,conf/debs,18,21,B2
+Symposium on Fundamentals of Computation Theory (FCT)                                                                       ,conf/fct,18,18,B2
+Pacific Conference on Computer Graphics and Applications (PG)                                                               ,conf/pg,18,40,A2
+Conference on Innovative Applications of Artificial Intelligence (IAAI)                                                     ,conf/iaai,18,14,B2
+European Conference/Workshop on Wireless Sensor Networks (EWSN)                                                             ,conf/ewsn,18,37,A2
+IEEE International Conference on Computational Science and Engineering (CSE)                                                ,conf/cse,18,8,B4
+Simulation Symposium (ANSS)                                                                                                 ,conf/anss,18,28,B1
+Conference on Intelligent Text Processing and Computational Linguistics (CICLing)                                           ,conf/cicling,18,29,B1
+Cross-Disciplinary Conference on Web Accessibility (W4A)                                                                    ,conf/w4a,18,26,B1
+Workshop/Conference on Underwater Networks & Systems (WUWNet)                                                               ,conf/wuwnet,18,16,B2
+IEEE International Symposium on High-Assurance Systems Engineering (HASE)                                                   ,conf/hase,17,22,B1
+IAPR International Workshop on Machine Vision Applications (MVA)                                                            ,conf/mva,17,15,B3
+Conference on Fuzzy Systems and Knowledge Discovery (FSKD)                                                                  ,conf/fskd,17,18,B2
+IEEE Working Conference on Mining Software Repositories (MSR)                                                               ,conf/msr,17,32,B1
+IEEE International Conference on Peer-to-Peer Computing (P2P)                                                               ,conf/p2p,17,46,A2
+Information Hiding                                                                                                          ,conf/ih,17,26,B1
+Provenance and Annotation Workshop (IPAW)                                                                                   ,conf/ipaw,17,20,B2
+Scandinavian Workshop on Algorithm Theory (SWAT)                                                                            ,conf/swat,17,26,B1
+IEEE International Symposium on Defect and Fault Tolerance in VLSI and Nanotechnology Systems (DFT)                         ,conf/dft,17,30,B1
+Discovery Science                                                                                                           ,conf/dis,17,49,A2
+IFIP Working Conference on Database Semantics (DS)                                                                          ,conf/ds,16,25,B1
+IEEE International Performance\ Computing\ and Communications Conference (IPCCC)                                            ,conf/ipccc,16,24,B1
+IEEE/ACM International Conference on Grid Computing (GRID)                                                                  ,conf/grid,16,46,A2
+Conference of Distributed Computing and Networking (ICDCN)                                                                  ,conf/icdcn,16,10,B4
+Joint International Conference on Interactive Digital Storytelling (ICIDS)                                                  ,conf/icids,16,13,B3
+ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MoDELS)                                ,conf/models,16,54,A2
+Conference on Mobile Data Management (MDM)                                                                                  ,conf/mdm,16,38,A2
+IEEE Symposium on Computer-Based Medical Systems (CBMS)                                                                     ,conf/cbms,16,26,B1
+Conference on Parallel Computing (PARCO)                                                                                    ,conf/parco,15,14,B3
+Conference on Service Oriented Computing (ICSOC)                                                                            ,conf/icsoc,15,47,A2
+ACM/IEEE International Symposium on Networks-on-Chips (NOCS)                                                                ,conf/nocs,15,28,B1
+Conference on Computational Intelligence and Security (CIS)                                                                 ,conf/cis,15,12,B3
+ACM International Conference on Computing Frontiers (CF)                                                                    ,conf/cf,15,27,B1
+Conference on Natural Computation (ICNC)                                                                                    ,conf/icnc,15,5,B4
+Conference on Computational Advances in Bio and Medical Sciences (ICCABS)                                                   ,conf/iccabs,15,3,B5
+Symposium on Distributed Autonomous Robotic Systems (DARS)                                                                  ,conf/dars,15,25,B1
+Asian Symposium on Programming Languages and Systems (APLAS)                                                                ,conf/aplas,15,28,B1
+Conference on Multimedia Modeling (MMM)                                                                                     ,conf/mmm,15,22,B1
+Conference on Advanced Information Networking and Applications (AINA)                                                       ,conf/aina,15,39,A2
+Conference on Advanced Research in VLSI (ARVLSI)                                                                            ,conf/arvlsi,15,9,B4
+Virtual Reality Software and Technology (VRST)                                                                              ,conf/vrst,14,32,B1
+Euromicro Symposium on Digital Systems Design (DSD)                                                                         ,conf/dsd,14,27,B1
+Conference on Artificial Intelligence and Soft Computing (ICAISC)                                                           ,conf/icaisc,14,17,B2
+European Conference on Information Systems (ECIS)                                                                           ,conf/ecis,14,33,B1
+Working Conference on Reverse Engineering (WCRE)                                                                            ,conf/wcre,14,43,A2
+IEEE Computer Society Annual Symposium on VLSI (ISVLSI)                                                                     ,conf/isvlsi,14,29,B1
+Conference on Algebraic Methodology and Software Technology (AMAST)                                                         ,conf/amast,14,27,B1
+IEEE International Joint Conference on Neural Network (IJCNN)                                                               ,conf/ijcnn,14,46,A2
+Detection of Intrusions and Malware & Vulnerability Assessment                                                              ,conf/dimva,14,24,B1
+Symposium on Asynchronous Circuits and Systems (ASYNC)                                                                      ,conf/async,14,37,A2
+Applied Perception                                                                                                          ,conf/apgv,14,19,B2
+Logic Programming and Automated Reasoning (LPAR)                                                                            ,conf/lpar,14,32,B1
+IFIP International Conference on Embedded and Ubiquitous Computing (EUC)                                                    ,conf/euc,14,20,B2
+Conference on High Performance Embedded Architectures and Compilers (HiPEAC)                                                ,conf/hipeac,14,17,B2
+Symposium on Graph Drawing (GD)                                                                                             ,conf/gd,13,18,B2
+Non-Monotonic Reasoning (NMR)                                                                                               ,conf/nmr,13,20,B2
+Conference on Computer Vision Theory and Applications (VISAPP)                                                              ,conf/visapp,13,14,B3
+Wireless Internet Conference (WICON)                                                                                        ,conf/wicon,13,13,B3
+Conference on Advanced Learning Technologies (ICALT)                                                                        ,conf/icalt,13,35,B1
+Conference on BioMedical Engineering and Informatics (BMEI)                                                                 ,conf/bmei,13,7,B4
+ACM SIGMM Conference on Multimedia Systems (MMSys)                                                                          ,conf/mmsys,13,11,B3
+Foundations of Software Science and Computation Structure (FoSSaCS)                                                         ,conf/fossacs,13,37,A2
+Conference on Artificial Intelligence and Law (ICAIL)                                                                       ,conf/icail,13,26,B1
+MODULARITY / Aspect-Oriented Software Development                                                                           ,conf/aosd,13,55,A1
+Health Informatics Symposium (IHI)                                                                                          ,conf/ihi,13,6,B4
+Technology of Object-Oriented Languages and Systems                                                                         ,conf/tools,13,27,B1
+High Level Design Validation and Test Workshop (HLDVT)                                                                      ,conf/hldvt,13,6,B3
+IEEE International Conference on Engineering of Complex Computer Systems (ICECCS)                                           ,conf/iceccs,12,24,B1
+Conference on Computer Vision Systems (ICVS)                                                                                ,conf/icvs,12,26,B1
+European Solid-State Circuits Conference (ESSCIRC)                                                                          ,conf/esscirc,12,33,B1
+Workshop on the Theory and Practice of Provenance (TaPP)                                                                    ,conf/tapp,12,4,B4
+Workshop/Symposium on Database Programming Languages (DBPL)                                                                 ,conf/dbpl,12,17,B2
+IEEE International Workshop on Object-Oriented Real-Time Dependable Systems (WORDS)                                         ,conf/words,12,24,B1
+Mathematical Foundations of Programming Semantics (MFPS)                                                                    ,conf/mfps,12,2,B4
+Integrated Network Management                                                                                               ,conf/im,12,32,B1
+Visual Communications and Image Processing (VCIP)                                                                           ,conf/vcip,12,31,B1
+ACM International Workshop on Web Information and Data Management (WIDM)                                                    ,conf/widm,12,32,B1
+Architektur von Rechensystemen (ARCS)                                                                                       ,conf/arcs,12,17,B2
+Conference on Correct Hardware Design and Verification Methods (CHARME)                                                     ,conf/charme,11,25,B1
+Wireless Network Security (WISEC)                                                                                           ,conf/wisec,11,22,B1
+Haifa Verification Conference (HVC)                                                                                         ,conf/hvc,11,5,B4
+Conference on Formal Modeling and Analysis of Timed Systems (FORMATS)                                                       ,conf/formats,11,22,B1
+Conference on Audio- and Video-Based Biometric Person Authentication (AVBPA)                                                ,conf/avbpa,11,45,A2
+Euromicro Conference on Parallel\ Distributed and Network-Based Processing (PDP)                                            ,conf/pdp,11,27,B1
+Symposium on String Processing and Information Retrieval (SPIRE)                                                            ,conf/spire,11,33,B1
+ACM-SIGPLAN International Conference on Principles and Practice of Declarative Programming (PPDP)                           ,conf/ppdp,11,32,B1
+Conference on Web Information Systems Engineering (WISE)                                                                    ,conf/wise,11,35,B1
+Testbeds and Research Infrastructures for the DEvelopment of NeTworks and COMmunities (TRIDENTCOM)                          ,conf/tridentcom,11,22,B1
+Conference on Cryptology in India (INDOCRYPT)                                                                               ,conf/indocrypt,11,30,B1
+Medicine Meets Virtual Reality (MMVR)                                                                                       ,conf/mmvr,11,4,B4
+Software Product Lines Conference (SPLC)                                                                                    ,conf/splc,11,43,A2
+Conference on Security and Cryptography for Networks (SCN)                                                                  ,conf/scn,11,16,B2
+Conference on Application of Concurrency to System Design (ACSD)                                                            ,conf/acsd,11,23,B1
+IEEE International Workshops on Enabling Technologies: Infrastracture for Collaborative Enterprises (WETICE)                ,conf/wetice,11,33,B1
+Non-Photorealistic Animation and Rendering (NPAR)                                                                           ,conf/npar,11,39,A2
+IEEE Vehicular Networking Conference (VNC)                                                                                  ,conf/vnc,10,6,B4
+XP Workshops on Database Theory (XP)                                                                                        ,conf/xp,10,20,B2
+Conference on Computer Supported Cooperative Work in Design (CSCWD)                                                         ,conf/cscwd,10,18,B2
+Workshop on Power and Timing Modeling\ Optimization and Simulation (PATMOS)                                                 ,conf/patmos,10,17,B2
+Integration of AI and OR Techniques in Constraint Programming (CPAIOR)                                                      ,conf/cpaior,10,21,B2
+IEEE International Conference on Document Analysis and Recognition (ICDAR)                                                  ,conf/icdar,10,48,A2
+IEEE International On-Line Testing Symposium (IOLTS)                                                                        ,conf/iolts,10,25,B1
+Applied Reconfigurable Computing                                                                                            ,conf/arc,10,14,B3
+Workshop/Symposium on Rapid System Prototyping (RSP)                                                                        ,conf/rsp,10,20,B2
+Software Engineering Workshop (SEW)                                                                                         ,conf/sew,10,20,B2
+Conference on Applied Cryptography and Network Security (ACNS)                                                              ,conf/acns,10,34,B1
+Conference on Advanced Information Systems Engineering (CAiSE)                                                              ,conf/caise,10,51,A2
+ACM Workshop on Rapid Malcode (WORM)                                                                                        ,conf/worm,10,36,B1
+IEEE International Conference on Self-Adaptive and Self-Organizing Systems (SASO)                                           ,conf/saso,10,15,B3
+Conference on Logic Programming and Non-Monotonic Reasoning (LPNMR)                                                         ,conf/lpnmr,10,30,B1
+Conference on Web Engineering (ICWE)                                                                                        ,conf/icwe,9,28,B1
+IEEE International Conference on Robot Communication and Coordination (ROBOCOMM)                                            ,conf/robocomm,9,10,B4
+Conference on Computer Analysis of Images and Patterns (CAIP)                                                               ,conf/caip,9,20,B2
+IEEE Congress on Services                                                                                                   ,conf/services,9,16,B2
+Artificial General Intelligence (AGI)                                                                                       ,conf/agi,9,9,B4
+IEEE International Symposium on Object/Component/Service-Oriented Real-Time Distributed Computing (ISORC)                   ,conf/isorc,9,33,B1
+ACM Conference on Recommender Systems (RecSys)                                                                              ,conf/recsys,9,29,B1
+Computer Graphics International Conference (CGI)                                                                            ,conf/cgi,9,31,B1
+Conference / Workshop on Embedded Computer Systems: Architectures\ Modeling and Simulation (SAMOS)                          ,conf/samos,9,16,B2
+Conference on Cloud Computing (CloudCom)                                                                                    ,conf/cloudcom,9,19,B2
+Symposium on Applied Algebra\ Algebraic Algorithms and Error-Correcting Codes (AAECC)                                       ,conf/aaecc,9,17,B2
+Conference on Business Process Management (BPM)                                                                             ,conf/bpm,9,49,A2
+Conference on Pervasive Technologies Related to Assistive Environments (PETRA)                                              ,conf/petra,9,12,B3
+Workshop on the Economics of Information Security (WEIS)                                                                    ,conf/weis,9,26,B1
+ACM International Workshop on Data Engineering for Wireless and Mobile Access (MobiDE)                                      ,conf/mobide,9,20,B2
+Job Scheduling Strategies for Parallel Processing (JSSPP)                                                                   ,conf/jsspp,9,32,B1
+ACM International Conference on International Agent Technology (IAT)                                                        ,conf/iat,9,25,B1
+Intelligent Autonomous Systems (IAS)                                                                                        ,conf/ias,9,16,B1
+IEEE Symposium on Application Specific Processors (SASP)                                                                    ,conf/sasp,9,8,B4
+Workshop on Approximation and Online Algorithms (WAOA)                                                                      ,conf/waoa,9,4,B4
+Quality of Service in Heterogeneous Wired/Wireless Networks (QSHINE)                                                        ,conf/qshine,9,17,B2
+Symposium/Workshop on Temporal Representation and Reasoning (TIME)                                                          ,conf/time,9,23,B1
+Symposium on Applications and the Internet (SAINT)                                                                          ,conf/saint,9,32,B1
+Meeting on High Performance Computing for Computational Science (Vector and Parallel Processing) (VECPAR)                   ,conf/vecpar,9,10,B4
+IFIP/IEEE International Workshop on Distributed Systems: Operations and Management (DSOM)                                   ,conf/dsom,9,24,B1
+Conference on Artificial Neural Networks (ICANN)                                                                            ,conf/icann,9,30,B1
+Conference on Computer Graphics Theory and Applications (GRAPP)                                                             ,conf/grapp,9,9,B4
+Meeting on DNA Computing (DNA)                                                                                              ,conf/dna,9,10,B4
+European Conference on Computer Supported Cooperative Work (ECSCW)                                                          ,conf/ecscw,9,27,B1
+Workshop on Graph-Theoretic Concepts in Computer Science (WG)                                                               ,conf/wg,9,25,B1
+Conference of the Centre for Advanced Studies on Collaborative Research (CASCON)                                            ,conf/cascon,8,30,B1
+Conference on Visual Information and Information Systems (VISUAL)                                                           ,conf/visual,8,16,B2
+Conference on Information Technology: New Generations (ITNG)                                                                ,conf/itng,8,22,B1
+IEEE International Conference on COTS-Based Software Systems (ICCBSS)                                                       ,conf/iccbss,8,20,B2
+European Dependable Computing Conference (EDCC)                                                                             ,conf/edcc,8,17,B2
+Conference on Data Warehousing and Knowledge Discovery (DaWaK)                                                              ,conf/dawak,8,29,B1
+High-Performance Computing and Networking (HPCN Europe)                                                                     ,conf/hpcn,8,14,B3
+Conference on Grid and Cooperative Computing (GCC)                                                                          ,conf/gcc,8,18,B2
+Conference on E-Business and E-Government (ICEE)                                                                            ,conf/icee,8,16,B2
+Symposium on Bioinformatics Research and Applications (ISBRA)                                                               ,conf/isbra,8,11,B3
+International Conference on Artificial Intelligence (IC-AI)                                                                 ,conf/icai,8,16,B2
+Symposium on Autonomous Decentralized Systems (ISADS)                                                                       ,conf/isads,8,25,B1
+European Signal Processing Conference (EUSIPCO)                                                                             ,conf/eusipco,8,23,B1
+Security Protocols Workshop                                                                                                 ,conf/spw,8,5,B4
+ACM SIGSOFT Conference on Quality of Software Architectures (QoSA)                                                          ,conf/qosa,8,2,B5
+Information Security                                                                                                        ,conf/sec,8,28,B1
+Next Generation Information Technologies and Systems (NGITS)                                                                ,conf/ngits,8,7,B4
+Conference on Text\ Speech and Dialogue (TSD)                                                                               ,conf/tsd,8,23,B1
+Conference on Knowledge-Based Intelligent Information & Engineering Systems (KES)                                           ,conf/kes,8,27,B1
+European Conference on Symbolic and Quantitative Approaches to Reasoning and Uncertainty (ECSQARU)                          ,conf/ecsqaru,8,25,B1
+Workshop on Cryptographic Hardware and Embedded Systems (CHES)                                                              ,conf/ches,8,65,A1
+IEEE International Conference and Workshop on the Engineering of Computer-Based Systems (ECBS)                              ,conf/ecbs,8,29,B1
+Conference on Computability in Europe (CiE)                                                                                 ,conf/cie,8,16,B2
+Workshop on Machine Learning for Signal Processing (MLSP)                                                                   ,conf/mlsp,8,16,B2
+European Conference on Computational Biology (ECCB)                                                                         ,conf/eccb,8,34,B1
+Conference on Intelligent Systems Design and Applications (ISDA)                                                            ,conf/isda,8,16,B2
+Wireless on Demand Network Systems and Service (WONS)                                                                       ,conf/wons,8,9,B4
+IEEE International Symposium/Workshop on Hardware-Oriented Security and Trust (HOST)                                        ,conf/host,8,14,B3
+Conference on Information Systems Security (ICISS)                                                                          ,conf/iciss,8,13,B3
+IEEE International Symposium on Multiple-Valued Logic (ISMVL)                                                               ,conf/ismvl,8,21,B2
+Conference on Neural Information Processing (ICONIP)                                                                        ,conf/iconip,8,23,B1
+Algorithmic Aspects of Wireless Sensor Networks (ALGOSENSORS)                                                               ,conf/algosensors,8,15,B3
+Symposium on Component-Based Software Engineering (CBSE)                                                                    ,conf/cbse,8,25,B1
+Portuguese Conference on Artificial Intelligence (EPIA)                                                                     ,conf/epia,7,19,B2
+Visualization for Computer Security (VizSEC)                                                                                ,conf/vizsec,7,23,B1
+Conference/Workshop on Inductive Logic Programming (ILP)                                                                    ,conf/ilp,7,27,B1
+Discrete Geometry for Computer Imagery (DGCI)                                                                               ,conf/dgci,7,20,B2
+ACM SIGSOFT Symposium on Software Reusability (SSR)                                                                         ,conf/ssr,7,3,B4
+Symposium on Industrial Embedded Systems (SIES)                                                                             ,conf/sies,7,13,B3
+Conference on Computer Communication (ICCC)                                                                                 ,conf/iccc,7,7,B4
+Conference on Formal Methods for Open Object-Based Distributed Systems (FMOODS)                                             ,conf/fmoods,7,28,B1
+Conference on Mathematics of Program Construction (MPC)                                                                     ,conf/mpc,7,22,B1
+Intelligent Memory Systems (IMS)                                                                                            ,conf/ims,7,4,B4
+Conference on Creating\ Connecting and Collaborating through Computing (C5)                                                 ,conf/c5,7,13,B3
+IEEE Workshop on Embedded Systems for Real-Time Multimedia (ESTIMedia)                                                      ,conf/estimedia,7,13,B3
+Symposium on Computer and Information Sciences (ISCIS)                                                                      ,conf/iscis,7,18,B2
+Conference on Global Software Engineering (ICGSE)                                                                           ,conf/icgse,7,20,B2
+Conference on Information and Communication Security (ICICS)                                                                ,conf/icics,7,33,B1
+Asia-Pacific Web Conference (APWeb)                                                                                         ,conf/apweb,7,20,B2
+IEEE International Conference on Wireless and Mobile Computing\ Networking and Communications (WiMob)                       ,conf/wimob,7,23,B1
+Canadian Conference on Artificial Intelligence (AI)                                                                         ,conf/ai,7,24,B1
+IEEE Workshop on Signal Processing Systems (SiPS)                                                                           ,conf/sips,7,15,B3
+Conference on Mobile Ad-hoc and Sensor Networks (MSN)                                                                       ,conf/msn,7,14,B3
+Conference on Machine Learning and Cybernetics (ICMLC)                                                                      ,conf/icmlc,7,6,B4
+Software Security and Reliability /Secure Software Integration and Reliability Improvement                                  ,conf/ssiri,7,7,B4
+Databases in Networked Information Systems (DNIS)                                                                           ,conf/dnis,7,11,B3
+British (Inter-)National Conference on Databases - B(I|N)COD                                                                ,conf/bncod,7,18,B2
+IEEE Congress on Evolutionary Computation (CEC)                                                                             ,conf/cec,7,27,B1
+Consumer Communications and Networking Conference (CCNC)                                                                    ,conf/ccnc,7,31,B1
+Conference on Computational Science and Its Applications (ICCSA)                                                            ,conf/iccsa,7,27,B1
+Workshop on the Synthesis and Simulation of Living Systems (ALIFE)                                                          ,conf/alife,6,6,B4
+IFIP International Conference on Network and Parallel Computing (NPC)                                                       ,conf/npc,6,12,B3
+Workshop on Logic & Synthesis (IWLS)                                                                                        ,conf/iwls,6,19,B2
+Conference on Interactive Theorem Proving (ITP)                                                                             ,conf/itp,6,10,B4
+Conference On Spatial Information Theory (COSIT)                                                                            ,conf/cosit,6,29,B1
+Conference on Intelligent Robotics and Applications (ICIRA)                                                                 ,conf/icira,6,8,B4
+World Conference on the WWW and Internet (WebNet)                                                                           ,conf/webnet,6,16,B2
+Simulation of Adaptive Behavior (SAB)                                                                                       ,conf/sab,6,16,B2
+Joint Conference on Information Sciences (JCIS)                                                                             ,conf/jcis,6,18,B2
+Eye Tracking Research & Application (ETRA)                                                                                  ,conf/etra,6,3,B5
+Formal Techniques in Real-Time and Fault-Tolerant Systems (FTRTFT)                                                          ,conf/ftrtft,6,20,B2
+Domain-Specific Languages (DSL)                                                                                             ,conf/dsl,6,5,B4
+European Conference on Artificial Life (ECAL)                                                                               ,conf/ecal,6,27,B1
+IEEE International System-on-Chip Conference (SoCC)                                                                         ,conf/socc,6,20,B2
+Wireless Days (WD)                                                                                                          ,conf/wd,6,8,B4
+Conference on Data and Application Security and Privacy (CODASPY)                                                           ,conf/codaspy,6,6,B4
+Symposium on Integrated Circuits and Systems Design (SBCCI)                                                                 ,conf/sbcci,6,24,B1
+Workshop on Multimedia Information Systems (MIS)                                                                            ,conf/mis,6,10,B4
+Biologically Inspired Cognitive Architectures (BICA)                                                                        ,conf/bica,6,4,B4
+Conference on Typed Lambda Calculus and Applications (TLCA)                                                                 ,conf/tlca,6,23,B1
+Workshop on Variability Modelling of Software-Intensive Systems (VaMoS)                                                     ,conf/vamos,6,14,B3
+ACM SIGPLAN Symposium/Workshop on Haskell (Haskell)                                                                         ,conf/haskell,6,22,B1
+Work-Conference on Artificial and Natural Neural Networks (IWANN)                                                           ,conf/iwann,6,20,B2
+Trust and Trustworthy Computing (TRUST)                                                                                     ,conf/trust,6,8,B4
+IFIP/IEEE Conference on Management of Multimedia Networks and Services (MMNS)                                               ,conf/mmns,6,15,B3
+European Workshop on Multi-Agent Systems (EUMAS)                                                                            ,conf/eumas,6,14,B3
+Mexican International Conference on Artificial Intelligence (MICAI)                                                         ,conf/micai,6,19,B2
+Conference on Information Visualisation (IV)                                                                                ,conf/iv,6,32,B1
+GI Symposium on Theoretical Computer Science                                                                                ,conf/tcs,6,25,B1
+Recent Advances in Natural Language Processing (RANLP)                                                                      ,conf/ranlp,6,17,B2
+Workshop/Conference on Parsing Technologies (IWPT)                                                                          ,conf/iwpt,6,13,B3
+Latin-American Symposium on Dependable Computing (LADC)                                                                     ,conf/ladc,6,12,B3
+Conference on Cognitive Radio Oriented Wireless Networks and Communications (CROWNCOM)                                      ,conf/crowncom,6,24,B1
+Conference on Current Trends in Theory and Practice of Informatics (SOFSEM)                                                 ,conf/sofsem,5,22,B1
+Conference on Combinatorial Optimization and Applications (COCOA)                                                           ,conf/cocoa,5,10,B4
+ICST International Conference on Communication System Software and Middleware (COMSWARE)                                    ,conf/comsware,5,18,B2
+Alberto Mendelzon Workshop on Foundations of Data Management (AMW)                                                          ,conf/amw,5,5,B4
+Conference on Information Computing and Applications (ICICA)                                                                ,conf/icica,5,2,B5
+European Conference on Software Maintenance and Reengineering (CSMR)                                                        ,conf/csmr,5,40,A2
+Conference on Advanced Data Mining and Applications (ADMA)                                                                  ,conf/adma,5,18,B2
+Artificial Intelligence and Symbolic Computation (AISC)                                                                     ,conf/aisc,5,13,B3
+Conference on Biometrics (ICB)                                                                                              ,conf/icb,5,21,B2
+European Conference on Software Architecture (ECSA)                                                                         ,conf/ecsa,5,15,B3
+Workshop on Information Quality in Information Systems                                                                      ,conf/iqis,5,15,B3
+Software Visualization (SOFTVIS)                                                                                            ,conf/softvis,5,28,B1
+Workshop on Steps to Reducing Unwanted Traffic on the Internet (SRUTI)                                                      ,conf/sruti,5,8,B4
+Sketch Based Interfaces and Modeling (SBM)                                                                                  ,conf/sbm,5,14,B3
+Conference on Virtual Reality Continuum and its Applications in Industry (VRCAI)                                            ,conf/vrcai,5,17,B2
+Conference on Information Processing and Management of Uncertainty (IPMU)                                                   ,conf/ipmu,5,16,B2
+Conference on Product Focused Software Process Improvement (PROFES)                                                         ,conf/profes,5,22,B1
+Wireless Algorithms\ Systems\ and Applications (WASA)                                                                       ,conf/wasa,5,9,B4
+European Conference on Logics in Artificial Intelligence (JELIA)                                                            ,conf/jelia,5,30,B1
+Conference on Auditory Display (ICAD)                                                                                       ,conf/icad,5,28,B1
+Conference on Artificial Intelligence Applications (CAIA)                                                                   ,conf/caia,5,1,B5
+Workshop on Genomic Signal Processing and Statistics (GENSiPS)                                                              ,conf/gensips,5,8,B4
+Conference on Information Sciences\ Signal Processing and their Applications (ISSPA)                                        ,conf/isspa,5,8,B3
+IEEE International Symposium on Safety\ Security\ and Rescue Robotics (SSRR)                                                ,conf/ssrr,5,6,B4
+IEEE Symposium on Adaptive Dynamic Programming and Reinforcement Learning (ADPRL)                                           ,conf/adprl,5,13,B3
+Conference on Image Processing\ Computer Vision\ & Pattern Recognition (IPCV)                                               ,conf/ipcv,5,10,B4
+Conference on Informatics in Control\ Automation and Robotics (ICINCO)                                                      ,conf/icinco,5,10,B4
+Geometric Modeling and Processing Conference (GMP)                                                                          ,conf/gmp,5,18,B2
+Conference on Privacy\ Security and Trust (PST)                                                                             ,conf/pst,5,18,B2
+ACM Digital Rights Management Workshop (DRM)                                                                                ,conf/drm,5,22,B1
+Workshop on Databases\ Information Systems\ and Peer-to-Peer Computing (DBISP2P)                                            ,conf/dbisp2p,5,6,B4
+Symposium on Parallel and Distributed Processing with Applications (ISPA)                                                   ,conf/ispa,5,13,B3
+Colloquium on Structural Information & Communication Complexity (SIROCCO)                                                   ,conf/sirocco,5,21,B2
+Conference on Algorithms and Architectures for Parallel Processing (ICA3PP)                                                 ,conf/ica3pp,5,10,B3
+Digital Game and Intelligent Toy Enhanced Learning (DIGITEL)                                                                ,conf/digitel,5,11,B3
+Formal Ontology in Information Systems (FOIS)                                                                               ,conf/fois,5,25,B1
+Conference on Wireless Networks (ICWN)                                                                                      ,conf/icwn,5,17,B2
+Conference on Networking\ Sensing and Control (ICNSC)                                                                       ,conf/icnsc,5,12,B3
+Colloquium on Theoretical Aspects of Computing (ICTAC)                                                                      ,conf/ictac,5,15,B3
+Algorithmic Applications in Management (AAIM)                                                                               ,conf/aaim,5,14,B3
+Workshop on Multiple Classifier Systems (MCS)                                                                               ,conf/mcs,4,34,B1
+Workshop/Symposium on Logic-based Program Synthesis and Transformation (LOPSTR)                                             ,conf/lopstr,4,2,B3
+IEEE/ACM International Conference on Green Computing and Communications (GreenCom)                                          ,conf/greencom,4,6,B4
+Wissensbasierte Systeme - GI-Kongress                                                                                       ,conf/wi,4,39,A2
+Conference Geographic Information Science (GIScience)                                                                       ,conf/giscience,4,23,B1
+Symposium on Practical Aspects of Declarative Languages (PADL)                                                              ,conf/padl,4,30,B1
+Picture Coding Symposium (PCS)                                                                                              ,conf/pcs,4,25,B1
+Conference on Information Networking (ICOIN)                                                                                ,conf/icoin,4,22,B1
+Conference on Technologies for Interactive Digital Storytelling and Entertainment (TIDSE)                                   ,conf/tidse,4,18,B2
+IEEE Workshop on Formal Approaches to Agent-Based Systems (FAABS)                                                           ,conf/faabs,4,18,B2
+Conference on Information and Knowledge Engineering (IKE)                                                                   ,conf/ike,4,10,B4
+Conference on Knowledge Acquisition\ Modeling and Management (EKAW)                                                         ,conf/ekaw,4,33,B1
+Joint Conference on Knowledge Discovery\ Knowledge Engineering and Knowledge Management (IC3K)                              ,conf/ic3k,4,8,B4
+Network and System Support for Games (NETGAMES)                                                                             ,conf/netgames,4,34,B1
+Automated Technology for Verification and Analysis (ATVA)                                                                   ,conf/atva,4,22,B1
+Conference on Communication Networks and Services Research (CNSR)                                                           ,conf/cnsr,4,17,B2
+Programming Multi-Agent Systems (PROMAS)                                                                                    ,conf/promas,4,11,B3
+Software and Compilers for Embedded Systems (SCOPES)                                                                        ,conf/scopes,4,16,B2
+Conference on Software Engineering Research and Applications (SERA)                                                         ,conf/sera,4,14,B3
+The European Symposium on Artificial Neural Networks (ESANN)                                                                ,conf/esann,4,27,B1
+ACM Symposium on Document Engineering (DocEng)                                                                              ,conf/doceng,4,32,B1
+Workshop on Database Technology and Applications (DBTA)                                                                     ,conf/dbta,4,5,B4
+Conference on Software and Data Technologies (ICSOFT)                                                                       ,conf/icsoft,4,10,B4
+Conference on Network and Service Management (CNSM)                                                                         ,conf/cnsm,4,6,B4
+Conference on Natural Language Generation (INLG)                                                                            ,conf/inlg,4,21,B2
+Conference on Theorem Proving with Analytic Tableaux and Related Methods (TABLEAUX)                                         ,conf/tableaux,4,24,B1
+Conference on Distributed Computing and Internet Technology (ICDCIT)                                                        ,conf/icdcit,4,10,B4
+Symposium on Service Oriented Software Engineering (SOSE)                                                                   ,conf/sose,4,16,B2
+Conference on Information Theoretic Security (ICITS)                                                                        ,conf/icits,4,44,A2
+Workshop on Web and Wireless Geographical Information Systems (W2GIS)                                                       ,conf/w2gis,4,11,B3
+Workshop on Analytic Algorithmics and Combinatorics (ANALCO)                                                                ,conf/analco,4,8,B4
+Advanced Concepts for Intelligent Vision Systems Conference (ACIVS)                                                         ,conf/acivs,4,18,B2
+Symposium on Parallel Architectures\ Algorithms and Programming (PAAP)                                                      ,conf/paap,4,3,B5
+Location- and Context-Awareness (LoCA)                                                                                      ,conf/loca,4,21,B2
+IEEE International Conference on e-Business Engineering (ICEBE)                                                             ,conf/icebe,4,20,B2
+Workshop on Knowledge Discovery and Data Mining (WKDD)                                                                      ,conf/wkdd,4,10,B4
+Conference on Flexible Query Answering Systems (FQAS)                                                                       ,conf/fqas,4,17,B2
+Computer Music Modeling and Retrieval (CMMR)                                                                                ,conf/cmmr,4,2,B5
+Conference on Bioinformatics & Computational Biology (BIOCOMP)                                                              ,conf/biocomp,4,8,B4
+Conference on Future Generation Communication and Networking (FGCN)                                                         ,conf/fgcn,4,13,B3
+IEEE Symposium on Computational Intelligence and Games (CIG)                                                                ,conf/cig,4,24,B1
+Nordic Conference on Human-Computer Interaction (NordiCHI)                                                                  ,conf/nordichi,3,35,B1
+Workshop on Cooperative Information Agents (CIA)                                                                            ,conf/cia,3,24,B1
+Fuji International Symposium on Functional and Logic Programming (FLOPS)                                                    ,conf/flops,3,22,B1
+Work Activities Coordination and Collaboration (WACC)                                                                       ,conf/wacc,3,3,B5
+Conference on Mathematics and Engineering Techniques in Medicine and Biological Scienes (METMBS)                            ,conf/metmbs,3,8,B4
+Conference on Designing for User eXperiences (DUX)                                                                          ,conf/dux,3,15,B3
+IEEE Asia-Pacific Services Computing Conference (APSCC)                                                                     ,conf/apscc,3,15,B3
+IEEE International Conference on Software Engineering and Formal Methods (SEFM)                                             ,conf/sefm,3,26,B1
+Rules and Rule Markup Languages for the Semantic Web (RuleML)                                                               ,conf/ruleml,3,22,B1
+Symposium on Intelligent Data Analysis (IDA)                                                                                ,conf/ida,3,21,B2
+NASA Formal Methods (NFM)                                                                                                   ,conf/nfm,3,7,B4
+Conference on Ad-Hoc\ Mobile and Wireless Networks (ADHOC-NOW)                                                              ,conf/adhoc-now,3,22,B1
+Australasian Computer-Human Interaction Conference (OZCHI)                                                                  ,conf/ozchi,3,22,B1
+Conference on E-learning and Games (Edutainment)                                                                            ,conf/edutainment,3,14,B3
+INitiative for the Evaluation of XML Retrieval (INEX)                                                                       ,conf/inex,3,8,B4
+Timing Issues In The Specification And Synthesis Of Digital Systems                                                         ,conf/tau,3,4,B4
+IEEE International Conference on Networking\ Architecture and Storages (NAS)                                                ,conf/nas,3,10,B4
+Conference on Computational Logic (CL)                                                                                      ,conf/cl,3,17,B2
+Symposium on Frontiers of Combining Systems (FroCoS)                                                                        ,conf/frocos,3,1,B3
+Workshop on Geographic Information Retrieval (GIR)                                                                          ,conf/gir,3,19,B2
+ACM International Conference on Wireless Sensor Networks and Applications (WSNA)                                            ,conf/wsna,3,29,B1
+Conference on Hybrid Intelligent Systems (HIS)                                                                              ,conf/his,3,18,B2
+Conference on Security of Information and Networks (SIN)                                                                    ,conf/sin,3,7,B4
+IEEE Symposium on 3D User Interfaces (3DUI)                                                                                 ,conf/3dui,3,18,B2
+Social Informatics (SocInfo)                                                                                                ,conf/socinfo,3,4,B4
+Conference on Semantics and Digital Media Technologies (SAMT)                                                               ,conf/samt,3,11,B3
+IEEE Symposium on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)                            ,conf/cibcb,3,15,B3
+Artificial Intelligence and Mathematics                                                                                     ,conf/amai,3,15,B3
+Parallel Computing Technologies (PaCT)                                                                                      ,conf/pact,3,53,A2
+Computer Science Conference (ICSC)                                                                                          ,conf/icsc,3,21,B2
+Conference on Ubiquitous Intelligence and Computing (UIC)                                                                   ,conf/uic,3,17,B2
+Conference on Applications of Natural Language to Data Bases (NLDB)                                                         ,conf/nldb,3,22,B1
+Australasian Database Conference (ADC)                                                                                      ,conf/adc,3,32,B1
+ACM International Workshop on Performance Evaluation of Wireless Ad Hoc\ Sensor\ and Ubiquitous Networks (PE-WASUN)         ,conf/pe-wasun,3,21,B2
+Conference on Computers and Their Applications (CATA)                                                                       ,conf/cata,3,11,B3
+European Solid-State Device Research Conference (ESSDERC)                                                                   ,conf/essderc,3,12,B3
+Autonome Mobile Systeme (AMS)                                                                                               ,conf/ams,3,9,B4
+Software Engineering and Data Engineering (SEDE)                                                                            ,conf/sede,3,5,B4
+Wired/Wireless Internet Communications (WWIC)                                                                               ,conf/wwic,3,15,B3
+Conference on Computer Safety\ Reliability\ and Security (SAFECOMP)                                                         ,conf/safecomp,3,22,B1
+Conference on Image and Graphics (ICIG)                                                                                     ,conf/icig,3,13,B3
+Conference on Evaluation & Assessment in Software Engineering (EASE)                                                        ,conf/ease,3,9,B4
+Workshop on Combinatorial Image Analysis (IWCIA)                                                                            ,conf/iwcia,3,10,B4
+Web Content Caching and Distribution Workshop (WCW)                                                                         ,conf/wcw,3,9,B3
+Conference on Intelligent Data Engineering and Automated Learning (IDEAL)                                                   ,conf/ideal,3,20,B2
+Web Information Systems and Mining (WISM)                                                                                   ,conf/wism,3,6,B4
+Graphics and Cultural Heritage / Virtual Reality\ Archeology\ and Cultural Heritage                                         ,conf/vast,3,24,B1
+Grid and Pervasive Computing (GPC)                                                                                          ,conf/gpc,3,12,B3
+Workshop on Communication\ Architecture\ and Applications for Network-Based Parallel Computing (CANPC)                      ,conf/canpc,3,6,B4
+IEEE Symposium on Computational Intelligence and Data Mining (CIDM)                                                         ,conf/cidm,3,12,B3
+IEEE International Conference on Virtual Environments\ Human-Computer Interfaces and Measurement Systems (VECIMS)           ,conf/vecims,3,4,B4
+Leveraging Applications of Formal Methods (ISoLA)                                                                           ,conf/isola,3,7,B4
+Parallel Symbolic Computing (PSC)                                                                                           ,conf/psc,3,8,B4
+Forum on specification and Design Languages (FDL)                                                                           ,conf/fdl,2,15,B3
+Affective Dialogue Systems (ADS)                                                                                            ,conf/ads,2,3,B5
+ACM International Conference on Design of Communication (SIGDOC)                                                            ,conf/sigdoc,2,24,B1
+Joint Conference on Computational Sciences and Optimization (CSO)                                                           ,conf/cso,2,3,B5
+Symposium on Dependable Autonomic and Secure Computing (DASC)                                                               ,conf/dasc,2,13,B3
+Artificial Intelligence: Methodology\ Systems\ Applications (AIMSA)                                                         ,conf/aimsa,2,16,B2
+IAPR International Workshop on Graphics Recognition (GREC)                                                                  ,conf/grec,2,1,B3
+Conference in Central Europe on Computer Graphics and Visualization (WSCG)                                                  ,conf/wscg,2,30,B1
+Conference on Computational Intelligence for Modelling\ Control and Automation (CIMCA)                                      ,conf/cimca,2,16,B2
+IEEE Information Assurance Workshop (IAW)                                                                                   ,conf/iaw,2,34,B1
+International Conference on Information Technology                                                                          ,conf/cit,2,22,B1
+Conference on Grid Computing and Applications (GCA)                                                                         ,conf/gca,2,8,B4
+IEEE Working Conference on Source Code Analysis and Manipulation (SCAM)                                                     ,conf/scam,2,15,B3
+Conference on Artificial Intelligence in Medicine in Europe (AIME)                                                          ,conf/aime,2,19,B2
+Conference on Legal Knowledge and Information Systems (JURIX)                                                               ,conf/jurix,2,12,B3
+Asia Information Retrieval Symposium (AIRS)                                                                                 ,conf/airs,2,14,B3
+Practical Applications of Agents and Multi-Agent Systems (PAAMS)                                                            ,conf/paams,2,9,B4
+Software Engineering Research and Practice (SERP)                                                                           ,conf/serp,2,17,B2
+Enterprise Information Systems and Web Technologies (EISWT)                                                                 ,conf/eiswt,2,4,B4
+Conference on Information Integration and Web-based Applications & Services (iiWAS)                                         ,conf/iiwas,2,12,B3
+Symposium on Cooperative Database Systems for Advanced Applications (CODAS)                                                 ,conf/codas,2,12,B3
+Ubiquitous Information Management and Communication                                                                         ,conf/icuimc,2,10,B4
+Conference on Model Transformation (ICMT)                                                                                   ,conf/icmt,2,17,B2
+Brazilian Symposium on Software Components\ Architectures and Reuse (SBCARS)                                                ,conf/sbcars,2,6,B4
+History of Programming Languages (HOPL)                                                                                     ,conf/hopl,2,2,B5
+Summer Computer Simulation Conference                                                                                       ,conf/scsc,2,15,B3
+IEEE European Conference on Web Services (ECOWS)                                                                            ,conf/ecows,2,27,B1
+Conference on Integrated Formal Methods (IFM)                                                                               ,conf/ifm,2,24,B1
+IEEE European Test Symposium (ETS)                                                                                          ,conf/ets,2,18,B2
+Symposium on High Performance Computing Systems and Applications (HPCS)                                                     ,conf/hpcs,2,15,B3
+Image and Vision Computing New Zealand (IVCNZ)                                                                              ,conf/ivcnz,2,10,B4
+Research Conference of the South African Institute of Computer Scientists and Information Technologists (SAICSIT)           ,conf/saicsit,2,12,B3
+Symposium on Advances in Databases and Information Systems (ADBIS)                                                          ,conf/adbis,2,24,B1
+Symposium on Parallel and Distributed Computing (ISPDC)                                                                     ,conf/ispdc,2,17,B2
+Human Language Technology (HLT)                                                                                             ,conf/hlt,2,78,A1
+Conference on Web Information Systems and Technologies (WEBIST)                                                             ,conf/webist,2,11,B3
+Conference on Advances in Brain Inspired Cognitive Systems (BICS)                                                           ,conf/bics,2,6,B4
+Workshop On Computer Architecture Education (WCAE)                                                                          ,conf/wcae,2,6,B4
+Conference on Computing and Information (ICCI)                                                                              ,conf/icci,2,1,B4
+ACM SIGCHI Symposium on Engineering Interactive Computing System (EICS)                                                     ,conf/eics,2,30,B1
+ESPRIT ARES Workshops                                                                                                       ,conf/ares,2,27,B1
+ISCA International Conference on Computer Applications in Industry and Engineering (CAINE)                                  ,conf/caine,2,9,B4
+Workshop on Graph-based Methods for Natural Language Processing (TextGraphs)                                                ,conf/textgraphs,2,10,B4
+ACS/IEEE International Conference on Computer Systems and Applications (AICCSA)                                             ,conf/aiccsa,2,23,B1
+Information Resources Management Association International Conference (IRMA)                                                ,conf/irma,2,6,B4
+Design and Management of Data Warehouses (DMDW)                                                                             ,conf/dmdw,2,16,B2
+ACM International Workshop on Mobility Management and Wireless Access (MOBIWAC)                                             ,conf/mobiwac,2,15,B3
+Conference on New Technologies\ Mobility and Security (NTMS)                                                                ,conf/ntms,2,10,B4
+Pacific-Rim Symposium on Image and Video Technology (PSIVT)                                                                 ,conf/psivt,2,13,B3
+Brazilian Symposium on Computer Graphics and Image Processing (SIBGRAPI)                                                    ,conf/sibgrapi,2,28,B1
+Parallel Problem Solving from Nature (PPSN)                                                                                 ,conf/ppsn,2,46,A2
+Theoretical Aspects of Software Engineering (TASE)                                                                          ,conf/tase,2,11,B3
+Software Language Engineering (SLE)                                                                                         ,conf/sle,2,3,B5
+IEEE Workshop on Local & Metropolitan Area Networks (LANMAN)                                                                ,conf/lanman,2,17,B2
+Knowledge Science\ Engineering and Management (KSEM)                                                                        ,conf/ksem,2,11,B3
+Conference on Industrial Informatics (INDIN)                                                                                ,conf/indin,2,12,B3
+IEEE International Enterprise Distributed Object Computing Conference (EDOC)                                                ,conf/edoc,2,42,A2
+Conference on Information Technology Education (SIGITE)                                                                     ,conf/sigite,2,15,B3
+Symposium on Intelligence Computation and Applications (ISICA)                                                              ,conf/isica,2,9,B4
+Conference on Web-Based Learning (ICWL)                                                                                     ,conf/icwl,2,14,B3
+Conference on e-Health Networking\ Applications and Services (Healthcom)                                                    ,conf/healthcom,2,10,B4
+Workshop on Embedded Networked Sensors (EmNets)                                                                             ,conf/emnets,2,16,B2
+Conference on E-Business and Telecommunication Networks (ICETE)                                                             ,conf/icete,2,5,B4
+IEEE/ACM International Symposium on Nanoscale Architectures (NANOARCH)                                                      ,conf/nanoarch,2,8,B4
+Conference on Discrete Mathematics and Theoretical Computer Science (DMTCS)                                                 ,conf/dmtcs,2,21,B2
+Latin American Networking Conference (LANC)                                                                                 ,conf/lanc,2,6,B4
+Software Composition                                                                                                        ,conf/soco,2,4,B4
+IFIP International Conference on Distributed Applications and Interoperable Systems (DAIS)                                  ,conf/dais,2,18,B2
+IAPR International Conference on Machine Learning and Data Mining in Pattern Recognition (MLDM)                             ,conf/mldm,2,19,B2
+Conference on Biometrics: Theory\ Applications and Systems (BTAS)                                                           ,conf/btas,2,20,B2
+Agents and Data Mining Interaction (ADMI)                                                                                   ,conf/admi,2,3,B5
+IEEE International Conference on Emerging Technologies and Factory Automation (ETFA)                                        ,conf/etfa,2,26,B1
+Conference on Networking (ICN)                                                                                              ,conf/icn,2,24,B1
+Eurographics Conferences\ Symposia\ & Workshops (Eurographics)                                                              ,conf/eurographics,2,5,A2
+Participatory Design Conference (PDC)                                                                                       ,conf/pdc,2,22,B1
+Conference on Evolutionary Computation (ICEC)                                                                               ,conf/icec,2,34,B1
+Workshop on Logic\ Language\ Information and Computation (WoLLIC)                                                           ,conf/wollic,1,11,B3
+Conference on Research and Education in Robotics (EUROBOT)                                                                  ,conf/eurobot,1,3,B3
+Wireless Telecommunications Symposium (WTS)                                                                                 ,conf/wts,1,14,B3
+Workshops on First Order Theorem Proving (FTP)                                                                              ,conf/ftp,1,5,B4
+Conference on IT-Incidents Management & IT-Forensics (IMF)                                                                  ,conf/imf,1,5,B4
+Joint International Conference on Development and Learning and on Epigenetic Robotics (ICDL-EPIROB)                         ,conf/icdl-epirob,1,19,B2
+Automata Theory and Formal Languages / Automatentheorie und Formale Sprachen (AUTOMATA)                                     ,conf/automata,1,6,B4
+Logic at Work                                                                                                               ,conf/law,1,13,B3
+Cooperative Multimodal Communication (CMC)                                                                                  ,conf/cmc,1,9,B4
+European Simulation Multiconference (ESM)                                                                                   ,conf/esm,1,16,B2
+Symposium on Mathematical Morphology and Its Application to Signal and Image Processing (ISMM)                              ,conf/ismm,1,25,B1
+Intelligent Computer Mathematics / Mathematical Knowledge Management                                                        ,conf/mkm,1,20,B2
+Conference of the Digital Games Research Association (DIGRA)                                                                ,conf/digra,1,17,B2
+Discourse Anaphora and Anaphor Resolution Colloquium (DAARC)                                                                ,conf/daarc,1,10,B4
+ERCIM Annual Workshop on Constraint Solving and Constraint Logic Programming (CSCLP)                                        ,conf/csclp,1,5,B4
+IEEE Workshop onMathematical Methods in Biomedical Image Analysis (MMBIA)                                                   ,conf/mmbia,1,21,B2
+Information Technology in Bio- and Medical Informatics (ITBAM)                                                              ,conf/itbam,1,3,B5
+Workshop on Deontic Logic in Computer Science (DEON)                                                                        ,conf/deon,1,14,B3
+Engineering Societies in the Agent World (ESAW)                                                                             ,conf/esaw,1,13,B3
+Algorithmic Approaches for Transportation Modeling\ Optimization\ and Systems (ATMOS)                                       ,conf/atmos,1,8,B4
+Agents for Games and Simulations (AGS)                                                                                      ,conf/ags,1,6,B4
+Brazilian Symposium on Neural Networks (SBRN)                                                                               ,conf/sbrn,1,14,B3
+Brazilian Symposium on Formal Methods (SBMF)                                                                                ,conf/sbmf,1,7,B4
+Semantics of Concurrent Computation                                                                                         ,conf/scc,1,33,B1
+Integrated Spatial Databases (ISD)                                                                                          ,conf/isd,1,3,B4
+Conference on Developments in Language Theory (DLT)                                                                         ,conf/dlt,1,19,B2
+European Grid Conference (EGC)                                                                                              ,conf/egc,1,21,B2
+Conference on Security and Cryptography (SECRYPT)                                                                           ,conf/secrypt,1,9,B4
+Conference on Mobile Multimedia Communications (MobiMedia)                                                                  ,conf/mobimedia,1,9,B4
+Workshop on Information Security Applications (WISA)                                                                        ,conf/wisa,1,9,B4
+Volume Graphics                                                                                                             ,conf/vg,1,10,B4
+Atlantic Web Intelligence Conference (AWIC)                                                                                 ,conf/awic,1,16,B2
+IEEE Global Engineering Education Conference (EDUCON)                                                                       ,conf/educon,1,7,B4
+ICST Conference on Ad Hoc Networks (ADHOCNETS)                                                                              ,conf/adhocnets,1,2,B5
+Workshop on Mobility Aware Technologies and Applications (MATA)                                                             ,conf/mata,1,17,B2
+Self-Organization and Autonomous Systems in Computing and Communications (SOAS)                                             ,conf/soas,1,8,B4
+Asia-Pacific Conference on Simulated Evolution and Learning (SEAL)                                                          ,conf/seal,1,11,B3
+European Conference on Circuit Theory and Design (ECCTD)                                                                    ,conf/ecctd,1,12,B3
+Conference on Quality Software (QSIC)                                                                                       ,conf/qsic,1,24,B1
+Operations Research                                                                                                         ,conf/or,1,5,B4
+Conference on Hybrid Learning and Education (ICHL)                                                                          ,conf/ichl,1,6,B4
+Workshop on Declarative Agent Languages and Technologies (DALT)                                                             ,conf/dalt,1,10,B4
+Modelling and Simulation                                                                                                    ,conf/ms,1,8,B4
+Symposium on Communication Systems\ Networks and Digital Signal Processing (CSNDSP)                                         ,conf/csndsp,1,11,B3
+IEEE/IFIP Workshop on End-to-End Monitoring Techniques and Services (E2EMON)                                                ,conf/e2emon,1,12,B3
+Internet\ Multimedia Systems and Applications (IMSA)                                                                        ,conf/imsa,1,10,B4
+Conference on Agents and Artificial Intelligence (ICAART)                                                                   ,conf/icaart,1,8,B4
+Conference on Computability and Complexity in Analysis (CCA)                                                                ,conf/cca,1,6,B3
+Frontiers in Education: Computer Science & Computer Engineering (FECS)                                                      ,conf/fecs,1,5,B4
+IEEE International Workshop on Cluster Computing (IWCC)                                                                     ,conf/iwcc,1,8,B4
+Conference on Cloud Computing and Services Science (CLOSER)                                                                 ,conf/closer,1,4,B4
+Conference on Digital Information Management (ICDIM)                                                                        ,conf/icdim,1,11,B3
+Electronic Commerce and Web Technologies (EC-Web)                                                                           ,conf/ecweb,1,27,B1
+Brazilian Symposium on Artificial Intelligence (SBIA)                                                                       ,conf/sbia,1,19,B2
+Conference on Advances in Computer-Human Interaction (ACHI)                                                                 ,conf/achi,1,11,B3
+New Trends in Software Methodologies\ Tools and Techniques (SoMeT)                                                          ,conf/somet,1,10,B4
+IEEE International Conference on Intelligent Systems (IS)                                                                   ,conf/is,1,4,B4
+Iberoamerican Congress on Pattern Recognition (CIARP)                                                                       ,conf/ciarp,1,16,B2
+Conference on Software Reuse (ICSR)                                                                                         ,conf/icsr,1,23,B1
+Conference on Cellular Automata for Research and Industry (ACRI)                                                            ,conf/acri,1,20,B2
+Conference on Autonomic and Autonomous Systems (ICAS)                                                                       ,conf/icas,1,17,B2
+IFAC Symposium on Robot Control (SyRoCo)                                                                                    ,conf/syroco,1,11,B3
+Conference of the Chilean Computer Science Society (SCCC)                                                                   ,conf/sccc,1,13,B3
+Technologies for E-Services (TES)                                                                                           ,conf/tes,1,21,B2
+Conference on Mobile and Ubiquitous Multimedia (MUM)                                                                        ,conf/mum,1,21,B2
+Conference on Mobile Technology\ Applications\ and Systems (Mobility)                                                       ,conf/mobility,1,13,B3
+Business Intelligence for the Real-Time Enterprises (BIRTE)                                                                 ,conf/birte,1,1,B5
+Workshop on Structural and Syntactic Pattern Recognition (SSPR)                                                             ,conf/sspr,1,25,B1
+Latin American Web Congress (LA-WEB)                                                                                        ,conf/la-web,1,19,B2
+Conference on Telecommunications (ICT)                                                                                      ,conf/ict,1,17,B2
+Workshop on Software Engineering for Large-Scale Multi-Agent Systems (SELMAS)                                               ,conf/selmas,1,11,B3
+Symposium on Intelligent Distributed Computing (IDC)                                                                        ,conf/idc,1,16,B2
+Fachtagung "e-Learning" der Gesellschaft für Informatik (DeLFI)                                                            ,conf/delfi,1,10,B4
+Conference on Computer Supported Education (CSEDU)                                                                          ,conf/csedu,1,6,B4
+IEEE International Workshop on IP Operations and Management (IPOM)                                                          ,conf/ipom,1,9,B3
+Conference on Parallel and Distributed Computing: Applications and Technologies (PDCAT)                                     ,conf/pdcat,1,18,B2
+Conference on Cryptology in Africa (AFRICACRYPT)                                                                            ,conf/africacrypt,1,15,B3
+Embedded Systems Symposium (IESS)                                                                                           ,conf/iess,1,5,B4
+Tests and Proofs (TAP)                                                                                                      ,conf/tap,1,12,B3
+Practical Aspects of Knowledge Management (PAKM)                                                                            ,conf/pakm,1,19,B2
+Conference on Frontiers of Information Technology (FIT)                                                                     ,conf/fit,1,5,B4
+Conference on Pattern Languages of Programs (PLoP)                                                                          ,conf/plop,1,10,B3
+Conference on Pervasive Services (ICPS)                                                                                     ,conf/icps,1,20,B2
+Workshop on Principles of Software Evolution (IWPSE)                                                                        ,conf/iwpse,1,23,B1
+Symposium on Search Based Software Engineering (SSBSE)                                                                      ,conf/ssbse,1,7,B4
+Conference on Networking and Services (ICNS)                                                                                ,conf/icns,1,14,B3
+Ibero-American Conference on AI (IBERAMIA)                                                                                  ,conf/iberamia,1,16,B2
+Agent-Oriented Information Systems Workshop (AOIS)                                                                          ,conf/aois,1,8,B3
+Conference on Scientific Computing (CSC)                                                                                    ,conf/csc,1,5,B4
+Conference on Conceptual Structures (ICCS)                                                                                  ,conf/iccs,1,37,A2
+Conference on Virtual Systems and MultiMedia (VSMM)                                                                         ,conf/vsmm,1,9,B3
+World Congress on Medical and Health (Medical) Informatics (MedInfo)                                                        ,conf/medinfo,1,27,B1
+European Symposium on Computer Modeling and Simulation (EMS)                                                                ,conf/ems,1,1,B5
+Workshop on Content-Based Multimedia Indexing (CBMI)                                                                        ,conf/cbmi,1,12,B3
+Conference on Complex\ Intelligent and Software Intensive Systems (CISIS)                                                   ,conf/cisis,1,15,B3
+ENTER                                                                                                                       ,conf/enter,1,17,B2
+Artificial Intelligence and Applications (AIA)                                                                              ,conf/aia,1,6,B4
+W3C Web Ontology Language (OWL) Experiences and Directions Workshop (OWLED)                                                 ,conf/owled,1,26,B1
+Conference in IT & Application (ICITA)                                                                                      ,conf/icita,1,18,B2
+Computational Aspects of Social Networks (CASoN)                                                                            ,conf/cason,1,5,B4
+Starting AI Researchers' Symposium (STAIRS)                                                                                 ,conf/stairs,1,8,B4
+Conference on Foundations of Computer Science (FCS)                                                                         ,conf/fcs,1,5,B4
+European Conference on Genetic Programming (EuroGP)                                                                         ,conf/eurogp,1,35,B1
+Symposium on Foundations of Information and Knowledge Systems (FoIKS)                                                       ,conf/foiks,1,18,B2
+Requirements Engineering: Foundation for Software Quality (REFSQ)                                                           ,conf/refsq,1,15,B3
+Federated Conference on Computer Science and Information Systems (FedCSIS)                                                  ,conf/fedcsis,1,3,B5
+High-Level Parallel Programming Models and Supportive Environments (HIPS)                                                   ,conf/hips,1,10,B4
+ML Workshop (ML)                                                                                                            ,conf/ml,1,12,B3
