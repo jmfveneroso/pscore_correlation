@@ -1,0 +1,218 @@
+\begin{thebibliography}{10}
+
+\bibitem{balaban2012positive}
+A.~T. Balaban.
+\newblock Positive and negative aspects of citation indices and journal impact
+  factors.
+\newblock {\em Scientometrics}, 92(2):241--247, 2012.
+
+\bibitem{balog2012ftir}
+K.~Balog.
+\newblock Expertise retrieval.
+\newblock {\em Found. Trends Inf. Retr.}, 6(2-3):127--256, 2012.
+
+\bibitem{bar-ilan2007}
+J.~Bar-Ilan.
+\newblock Which h-index? - a comparison of wos, scopus and google scholar.
+\newblock {\em Scientometrics}, 74(2):257--271, 2008.
+
+\bibitem{benevenuto2016h}
+F.~Benevenuto, A.~H. Laender, and B.~L. Alves.
+\newblock The h-index paradox: your coauthors have a higher h-index than you
+  do.
+\newblock {\em Scientometrics}, 106(1):469--474, 2016.
+
+\bibitem{bornmann2005does}
+L.~Bornmann and H.-D. Daniel.
+\newblock Does the h-index for ranking of scientists really work?
+\newblock {\em Scientometrics}, 65(3):391--392, 2005.
+
+\bibitem{bornmann2011h}
+L.~Bornmann and W.~Marx.
+\newblock The h-index as a research performance indicator.
+\newblock {\em Eur Sci Ed}, 37(3):77--80, 2011.
+
+\bibitem{DBLP:journals/cn/BrinP98}
+S.~Brin and L.~Page.
+\newblock The anatomy of a large-scale hypertextual web search engine.
+\newblock {\em Comput. Netw.}, 30(1-7):107--117, 1998.
+
+\bibitem{castillo2007}
+C.~Castillo, D.~Donato, and A.~Gionis.
+\newblock Estimating number of citations using author reputation.
+\newblock In {\em Proc. of String processing and information retrieval}, pages
+  107--117, 2007.
+
+\bibitem{cormode2014people}
+G.~Cormode, S.~Muthukrishnan, and J.~Yan.
+\newblock People like us: mining scholarly data for comparable researchers.
+\newblock In {\em Proc. of WWW}, pages 1227--1232, 2014.
+
+\bibitem{deng2012modeling}
+H.~Deng, J.~Han, M.~R. Lyu, and I.~King.
+\newblock Modeling and exploiting heterogeneous bibliographic networks for
+  expertise ranking.
+\newblock In {\em Proc. of JCDL}, pages 71--80, 2012.
+
+\bibitem{ding-2011}
+Y.~Ding and B.~Cronin.
+\newblock Popular and/or prestigious? measures of scholarly esteem.
+\newblock {\em Information Processing \& Management}, 47(1):80--96, 2011.
+
+\bibitem{egghe2006theory}
+L.~Egghe.
+\newblock Theory and practise of the g-index.
+\newblock {\em Scientometrics}, 69(1):131--152, 2006.
+
+\bibitem{egghe2008}
+L.~Egghe.
+\newblock The influence of transformations on the h-index and the g-index.
+\newblock {\em J. Am. Soc. Inf. Sci. Technol.}, 59(8):1304--1312, 2008.
+
+\bibitem{garfield1955}
+E.~Garfield.
+\newblock Citation indexes for science.
+\newblock {\em Science}, 122(3159):108--111, 1955.
+
+\bibitem{garfield1996}
+E.~Garfield.
+\newblock How can impact factors be improved?
+\newblock {\em British Medical Journal}, (313):411--413, 1996.
+
+\bibitem{gollapalli2011ranking}
+S.~D. Gollapalli, P.~Mitra, and C.~L. Giles.
+\newblock Ranking authors in digital libraries.
+\newblock In {\em Proc. of JCDL}, pages 251--254, 2011.
+
+\bibitem{goncalves2014}
+G.~D. Gon{\c{c}}alves, F.~Figueiredo, J.~M. Almeida, and M.~A. Gon{\c{c}}alves.
+\newblock Characterizing scholar popularity: {A} case study in the computer
+  science research community.
+\newblock In {\em Proc. of JCDL}, pages 57--66, 2014.
+
+\bibitem{hirsch2005}
+J.~Hirsch.
+\newblock An index to quantify an individual's scientific research output.
+\newblock {\em Proc. Nat. Acad. Sciences}, pages 16569--16572, 2005.
+
+\bibitem{Katerattanakul2003}
+P.~Katerattanakul, B.~Han, and S.~Hong.
+\newblock Objective quality rankings of computing journals.
+\newblock {\em Commun. ACM}, 45, 2003.
+
+\bibitem{laender2008}
+A.~H.~F. Laender, C.~J.~P. de~Lucena, J.~C. Maldonado, E.~de~Souza~e Silva, and
+  N.~Ziviani.
+\newblock Assessing the research and education quality of the top brazilian
+  computer science graduate programs.
+\newblock {\em ACM SIGCSE Bulletin}, 40(2):135--145, 2008.
+
+\bibitem{Meyer-pagerank06}
+A.~LangVille and C.~Meyer.
+\newblock {\em Google's PageRank and Beyond: The Science of Search Engine
+  Rankings}.
+\newblock Princeton University Press, 2006.
+
+\bibitem{larsen2006using}
+B.~Larsen and P.~Ingwersen.
+\newblock Using citations for ranking in digital libraries.
+\newblock In {\em Proc. of JCDL}, pages 370--370, 2006.
+
+\bibitem{leydesdorff2009new}
+L.~Leydesdorff.
+\newblock How are new citation-based journal indicators adding to the
+  bibliometric toolbox?
+\newblock {\em J. Am. Soc. Inf. Sci. Technol.}, 60(7):1327--1336, 2009.
+
+\bibitem{lima2013jcdl}
+H.~Lima, T.~H.~P. Silva, M.~M. Moro, R.~L.~T. Santos, W.~M. Jr., and A.~H.~F.
+  Laender.
+\newblock Aggregating productivity indices for ranking researchers across
+  multiple areas.
+\newblock In {\em Proc. of JCDL}, pages 97--106, 2013.
+
+\bibitem{le16}
+T.~Loach and T.~Evans.
+\newblock Ranking journals using altmetrics.
+\newblock In {\em Proc. of ISSIzzz}, page zzz, 2016.
+
+\bibitem{martins2009}
+W.~S. Martins, M.~A. Gon\c{c}alves, A.~H.~F. Laender, and G.~L. Pappa.
+\newblock Learning to assess the quality of scientific conferences: a case
+  study in computer science.
+\newblock In {\em Proc. of JCDL}, pages 193--202, 2009.
+
+\bibitem{n16}
+T.~Nane.
+\newblock Time to first citation estimation in the presence of additional
+  information.
+\newblock In {\em Proc. of ISSIzzz}, page zzz, 2016.
+
+\bibitem{nelakuditi2011snap}
+S.~Nelakuditi, C.~Gray, and R.~R. Choudhury.
+\newblock Snap judgement of publication quality: how to convince a dean that
+  you are a good researcher.
+\newblock {\em Mobile Computing and Commun. Review}, 15(2):20--23, 2011.
+
+\bibitem{nerur2005assessing}
+S.~Nerur, R.~Sikora, G.~Mangalaraj, and V.~Balijepally.
+\newblock Assessing the relative influence of journals in a citation network.
+\newblock {\em Commun. ACM}, 48(11):71--74, 2005.
+
+\bibitem{Newman-book}
+M.~Newman.
+\newblock {\em Networks: An Introduction}.
+\newblock Oxford University Press, 2010.
+
+\bibitem{nrc}
+NRC.
+\newblock {United States National Research Council, National Academy of
+  Sciences}, 2010.
+
+\bibitem{piwowar2013altmetrics}
+H.~Piwowar.
+\newblock Altmetrics: Value all research products.
+\newblock {\em Nature}, 493(7431):159--159, 2013.
+
+\bibitem{rahm2005citation}
+E.~Rahm and A.~Thor.
+\newblock Citation analysis of database publications.
+\newblock {\em ACM Sigmod Record}, 34(4):48--53, 2005.
+
+\bibitem{thomson2011}
+T.~Reuters.
+\newblock The thomson reuters impact factor, 2011.
+
+\bibitem{ribas2015bigscholar}
+S.~Ribas, B.~Ribeiro-Neto, E.~de~Souza~e Silva, A.~H. Ueda, and N.~Ziviani.
+\newblock Using reference groups to assess academic productivity in computer
+  science.
+\newblock In {\em Proc. of WWW}, pages 603--608, 2015.
+
+\bibitem{rrsz2015}
+S.~Ribas, B.~Ribeiro-Neto, E.~de~Souza~e Silva, and N.~Ziviani.
+\newblock On the reputation of venues in computer science.
+\newblock Submitted, 2015.
+
+\bibitem{saha2003}
+S.~Saha, S.~Saint, and D.~Christakis.
+\newblock Impact factor: a valid measure of journal quality?
+\newblock {\em J. Med. Lib. Assoc.}, 91(1):42--46, 2003.
+
+\bibitem{sun2007popularity}
+Y.~Sun and C.~L. Giles.
+\newblock {\em Popularity weighted ranking for academic digital libraries}.
+\newblock Springer, 2007.
+
+\bibitem{wu2009detecting}
+H.~Wu, Y.~Pei, and J.~Yu.
+\newblock Detecting academic experts by topic-sensitive link analysis.
+\newblock {\em Front. Comp. Science in China}, 3(4):445--456, 2009.
+
+\bibitem{yan2011p}
+E.~Yan, Y.~Ding, and C.~R. Sugimoto.
+\newblock P-rank: An indicator measuring prestige in heterogeneous scholarly
+  networks.
+\newblock {\em J. Am. Soc. Inf. Sci. Technol.}, 62(3):467--477, 2011.
+
+\end{thebibliography}

@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: new-paper-correlation.aux
+The style file: abbrv.bst
+Database file #1: pscore.bib
+Warning--I didn't find a database entry for "masoumeh16"
+Warning--I didn't find a database entry for "vandijk14"
+Warning--I didn't find a database entry for "dong15"
+Warning--I didn't find a database entry for "penner13"
+Warning--I didn't find a database entry for "mazloumian12"
+Warning--I didn't find a database entry for "ribas2015random"
+Warning--I didn't find a database entry for "kapeller10"
+Warning--I didn't find a database entry for "lee10"
+Warning--I didn't find a database entry for "hoonlor13"
+Warning--I didn't find a database entry for "laendersigs15"
+Warning--I didn't find a database entry for "wainer13"
+Warning--there's a number but no volume in garfield1996
+Warning--empty booktitle in rrsz2015
+You've used 40 entries,
+            2118 wiz_defined-function locations,
+            736 strings with 9557 characters,
+and the built_in function-call counts, 14201 in all, are:
+= -- 1410
+> -- 581
+< -- 12
++ -- 236
+- -- 190
+* -- 964
+:= -- 2252
+add.period$ -- 118
+call.type$ -- 40
+change.case$ -- 212
+chr.to.int$ -- 0
+cite$ -- 42
+duplicate$ -- 573
+empty$ -- 1179
+format.name$ -- 190
+if$ -- 3045
+int.to.chr$ -- 0
+int.to.str$ -- 40
+missing$ -- 41
+newline$ -- 201
+num.names$ -- 80
+pop$ -- 234
+preamble$ -- 1
+purify$ -- 175
+quote$ -- 0
+skip$ -- 432
+stack$ -- 0
+substring$ -- 1010
+swap$ -- 155
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 154
+warning$ -- 2
+while$ -- 146
+width$ -- 42
+write$ -- 432
+(There were 13 warnings)
