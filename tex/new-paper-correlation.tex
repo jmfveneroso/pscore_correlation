@@ -131,114 +131,54 @@ academic impact metrics. A popular and moderately effective approach is to compu
 metrics based on the number of citations received by a given piece of research and 
 assume that the number of citations is a good proxy for research quality. However,
 this approach has multiple shortcomings. 
+
 First, in the evaluation and bibliometrics research communities, citations are understood 
 as a measure of attention rather than a proxy for impact or quality. Citations measure 
 the attention to a paper of peers in related fields \cite{le16}, not the quality of the 
 work produced.
+
 Second, citations can take a long time to happen. To illustrate this, in a recent study that 
 looked at first time to citation in a universe of more than a million papers, half the 
 papers only received their first citation 20 months or more after they were published \cite{n16}. 
+
 Third, citations are not simple to compute and are not always broadly available, particularly 
-at the level of individual researchers. Collecting citation counts require access to the 
+at the level of individual researchers. Collecting citation counts requires access to the 
 contents of a large number of publications, of which many are not easily available, and 
-most authors do not have up to date citation information in their public profiles.
+most authors do not have up to date citation information in their public internet profiles.
+
 Despite these limitations, citation based metrics continue to be a popular approach to
 academic research evaluation. Nonetheless, it is desirable to employ alternative and
 complementary metrics that tackle the exposed problems without loss of effectiveness.
 
 Academic reputation is an individual or group property strongly associated with 
-academic impact. Reputable venues tend to concentrate the best research papers 
+academic impact. Reputable venues tend to concentrate the most relevant research papers 
 because that is how they acquire and keep their good reputations. At the same time, 
-reputable authors seek to publish in reputable venues because it gives their 
-research more visibility and accreditation. 
+reputable authors seek to publish on reputable venues because it gives their 
+research more visibility and accreditation. Therefore, a researcher conveys reputation
+to a venue proportionally to its own reputation and the reputation of a researcher
+is proportional to the reputation of the venues where she or he publishes.
+This relationship between authors and venues constitutes a reputation network in which 
+authors influence venue reputations and vice versa. 
 
+Pscore is a graph modeling metric that attributes quantitative reputations to venues 
+based on the publication patterns of a reference group of researchers without having to
+rely on citation information. It deals with the three problems discussed previously. 
 
+First, instead of measuring the amount of researcher attention, Pscore measures reputations,
+which is presumably a better proxy for academic impact as was shown by Ribas.
 
-This relationship between authors and
-venues constitutes a reputation network in which authors influence venue reputations
-and vice versa. Pscore is a graph modeling metric that attributes quantitative reputations 
-to venues based on the publication patterns of a reference group of researchers.
+Second, while citations can take years to happen, reputations tend to be steady over 
+the time, so the quality of new research can be promptly estimated with pscore by 
+simply complementing the reputation flows graph with the newest publication data.
 
+Third, pscore does not require citation data to perform effectively, thus we can avoid
+the laborious effort of compiling individual researcher citation information.
 
-
-
-
-concentrate better research 
-
-papers because that is why they 
-first acquire their good reputations and 
-
-
-The notion of academic productivity is intrinsically associated
-with the notion of reputation.
-
-
-Pscore is network-based metric that does not rely on citation counts 
-
-
-For instance, while citations are not always available at the level of individual researchers, 
-they are widely available at the level of journals and research conferences, that is, at the 
-level of publication venues. This is of interest if one takes Despite that, weighting publications 
-by venue-level metrics is a far simpler and more direct 
-approach than computing citations for individual researchers. Because of that, venue-level 
-metrics are widely used and are of relevance~\cite{laender2008,le16}. 
-
-
-These shortcomings point to the need of a different academic impact metric. 
-
-
-{\bf REWRITE (explain the need for additional metrics, such as P-scores)\\}
-
-Evaluating impact of research is of interest to universities, research groups, 
-research funding institutions, governments, and the public at large. 
-And while there are many facets to consider while evaluating the impact of research, 
-a simple approach is to compute metrics based on the number of citations a given piece of research receives. 
-The popularity of citation based metrics derives from their 
-simple definition and consequent 
-intuitive appeal. Despite that, they have shortcomings. First, in the evaluation and bibliometrics 
-research communities, citations are understood as a metric of attention not of impact or quality. 
-That is citations measure the attention to a paper of peers in related fields~\cite{le16} not 
-the quality of the work. 
-Second, citations might take long to happen. To illustrate, in a recent study that looked at 
-first time to citation in a universe of more than a million papers, half of the papers received 
-their first citation 20 months or more after their publication˜\cite{n16}. 
-Third, citations are not simple to compute and are not always broadly 
-available, particularly at the level of individual researchers. 
-To illustrate there are now universities requesting their faculty to create a Google Scholar profile with 
-the objective of making citations of papers written by an individual researcher readily available. 
-However, frequently only a fraction of faculty 
-comply\footnote{In a particular instance, a university official complained to one of the authors here 
-that just one third of faculty had created Google Scholar profiles.}. 
-
-Despite these well known limitations, citations continue to be broadly used whenever available. 
-For instance, while citations are not always available at the level of individual researchers, they are 
-widely available at the level of journals and research conferences, that is, at the level of publication 
-venues. This is of interest if one takes 
-a venue-level metric as a good proxy for the quality of individual 
-papers published by that venue, which might be obviously not the case for many papers. 
-Despite that, weighting publications by venue-level metrics is a far simpler and more direct 
-approach than computing citations for individual researchers. Because of that, venue-level 
-metrics are widely used and are of relevance~\cite{laender2008,le16}. 
-
-While venue-level citation metrics are widely available, they do not work well when one is interested 
-on a particular subarea of a major area such as Computer Science. For instance, a research funding agency 
-might create a program aimed at strengthening research focused in particular subareas such as 
-knowledge discovery, data mining, and machine learning. In this case, the question that is difficult to 
-answer is which venues better represent research in each of these subareas. In this particular 
-case, just considering venue-level citation based metrics does no work well because 
-popular journals and conferences in Computer Science frequently span more than one subarea. 
-To illustrate consider the subarea of Information Retrieval in Computer Science and the 
-venues in which their researchers publish frequently. If just a venue-level citation metric 
-is considered, venues such as Jasist (Journal of the American Society in Science and Technology), 
-IPM (Information and Processing Management), and WWW (World Wide Web) will show up among the top 10 
-venues in Information Retrieval. While these are fine venues, they are not venues on Information Retrieval. 
-This is the first problem we address in this work, how to determine automatically a ranking of venues 
-in a particular subarea of Computer Science. 
-
-The second problem of our interest here is the fact that citations might take long to appear, as discussed in~\cite{n16}. 
-We wonder whether it is possible to notify researchers working on a given subarea of a new venue of interest 
-whose reputation is on the rise. We propose a solution and, without loss of generality, explore its application 
-to a subset of pre-selected venues. 
+The Pscore of computer science venues has shown significant correlation with H-index. Yet, 
+there are important cases where the two metrics diverge considerably. Namely, in venues 
+that belong to an intersection between different domains and in venues of less popular 
+subareas of computer science. These differences appeal to the importance of pscore as a 
+complementary metric.
 
 \section{P-score: a network-based metric} 
 
@@ -385,12 +325,24 @@ vertex at the origin, introduce the (-100,-100) pivot, discuss items above and b
 %%% Ranking academic entities in the broad areas %%%
 %%%%%
 
-Citation-based metrics have been widely applied to rank computer and information science journals~\cite{Katerattanakul2003,nerur2005assessing}. Also, different approaches using citation data have been proposed to measure the quality of publication venues in the Databases subarea~\cite{rahm2005citation} and to rank documents retrieved from a digital library~\cite{larsen2006using}. 
+Garfield's Impact Factor \cite{garfield1955} is a journal-level metric that accounts for the average number 
+of citations received by articles published in a given journal in the last two years. Despite being one of 
+the earliest approaches at measuring academic impact, it has showed remarkable survivability. However, it 
+suffered strong criticism for being misleading \cite{nature2016, saha2003} and for lacking reliable
+validation from an independent audit \cite{rossner2007}.
 
-Garfield's Impact Factor~\cite{garfield1955} is one of the first metrics proposed to quantify research impact. 
-In a nutshell, it indicates the average number of citations per publication of a journal, in the last two years. 
-One of the most widespread citation-based metric, the H-index, was proposed by Hirsch~\cite{hirsch2005}. It has been mainly used to rank researchers both in terms of productivity and scientific impact. The key idea behind the H-Index is to detect the quantity of publications of high impact an author has in her research career -- for instance, penalizing authors with a large volume of articles but with a low number of citations for the majority of them. 
-Additionally, several works proposed different uses of citation data ~\cite{egghe2006theory, ding-2011, yan2011p, sun2007popularity} and studied their impact, advantages, and disadvantages~\cite{martins2009, leydesdorff2009new}.
+The H-index is an author-level metric proposed by Hirsch \cite{hirsch2005} in 2005. Since then, it has been 
+widely adopted as a measure of invidual scientific research output. An h-index of 
+$ h $ means that a researcher has published $ h $ papers that were cited at least $ h $ times.
+The H-index takes into account both the number of publications and the number of citations per publication, 
+achieving higher values when a researcher has a consistently high number of citations and a large number of
+publications. The H-index has been criticized for not taking into account field specific citation
+statistics \cite{wendl2007}. A researcher may have a misleading high or low h-index because her or his
+field has an unusually high or low average number of citations due to differences in popularity.
+
+Additionally, several works proposed different uses of citation data 
+\cite{egghe2006theory, ding-2011, yan2011p, sun2007popularity} and studied their impact, advantages, 
+and disadvantages~\cite{martins2009, leydesdorff2009new}.
 
 The idea of reputation, without the direct use of citation data, was discussed by Nelakuditi et al.~\cite{nelakuditi2011snap}. They proposed a metric called \textit{peers' reputation} for research conferences and journals, which ties the selectivity of the publication venue based upon the reputation of its authors' institutions. The proposed metric was shown to be a better indicator of selectivity of a research venue than acceptance ratio. In addition, the authors observed that, in the subarea of Computer Networks, many conferences have similar or better peers' reputation than journals. This result is similar to the conclusions obtained by Laender et al.~\cite{laender2008}, who show that conference publications are important vehicles for disseminating CS research, while in other areas such as Physical Sciences and Biology the most relevant venues are arguably the scientific journals.
 
@@ -413,9 +365,6 @@ none of the referred metrics take into account the different publication pattern
 
 Wainer et al.~\cite{wainer13} presented the first attempt to quantify the differences in publication and citation practices between the subareas of Computer Science. 
 Their key findings were: i) there are significant differences in productivity across some CS subareas, both in journals (e.g. Bioinformatics has a significantly higher productivity than Artificial Intelligence) and in conferences (e.g. Image Processing and Computer Vision has a significantly higher productivity than Operational Research and Optimization); ii) the mean number of citations per paper varies depending on subarea (e.g. Management Information Systems has significantly higher citation rates per paper than Computer Architecture); and iii) there are significant differences in emphasis on publishing in journals or in conferences (e.g. Bioinformatics are clearly journal oriented while Artificial Intelligence are conference oriented). However, they do not focus on modeling a new productivity metric for academic domain taking into account those differences between the subareas.
-
-%In summary, 
-To the best of our knowledge, this is the first work that tackles the problem of both identifying the most important venues of a subarea in Computer Science and rank research groups based on this information, in a semi-automatic fashion.
 
 \section{Conclusions}\label{sec:conclusions}
 
