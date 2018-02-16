@@ -325,34 +325,70 @@ vertex at the origin, introduce the (-100,-100) pivot, discuss items above and b
 %%% Ranking academic entities in the broad areas %%%
 %%%%%
 
-Garfield's Impact Factor \cite{garfield1955} is a journal-level metric that accounts for the average number 
-of citations received by articles published in a given journal in the last two years. Despite being one of 
-the earliest approaches at measuring academic impact, it has showed remarkable survivability. However, it 
-suffered strong criticism for being misleading \cite{nature2016, saha2003} and for lacking reliable
-validation from an independent audit \cite{rossner2007}.
+Garfield's Impact Factor \cite{garfield1955} is a journal-level metric that accounts for the mean number 
+of citations received by articles published in a given journal over a 2-year period. Despite being one of 
+the earliest approaches at measuring academic impact, it has showed remarkable survivability. Pinski et. al. 
+\cite{Pinski1976} describe several limitations with the metric. It also suffered criticism for 
+being misleading \cite{nature2016, Saha2003} and for lacking reliable validation from an independent 
+audit \cite{rossner2007}. Riikonen and Vihinen (2008) \cite{Riikonen2008} showed that actual citation 
+and publication counts were better predictors of a scientist's contribution than impact factors.
+
+The acceptance ratio \cite{Chen2010} is the proportion of accepted papers relative to the number of submitted
+papers.
+
+Citation half-life
+
 
 The H-index is an author-level metric proposed by Hirsch \cite{hirsch2005} in 2005. Since then, it has been 
 widely adopted as a measure of invidual scientific research output. An h-index of 
 $ h $ means that a researcher has published $ h $ papers that were cited at least $ h $ times.
 The H-index takes into account both the number of publications and the number of citations per publication, 
-achieving higher values when a researcher has a consistently high number of citations and a large number of
-publications. The H-index has been criticized for not taking into account field specific citation
+achieving higher values when a researcher obtains a consistently high number of citations over multiple publications. 
+The H-index has been criticized for not taking into account field specific citation
 statistics \cite{wendl2007}. A researcher may have a misleading high or low h-index because her or his
 field has an unusually high or low average number of citations due to differences in popularity.
+In 2006, Egghe propsed the g-index \cite{Egghe2006}, a less strict variation of the h-index where the score
+$ g $ is the largest number such that the top $ g $ articles received at least $ g^2 $ citations.
 
-Additionally, several works proposed different uses of citation data 
-\cite{egghe2006theory, ding-2011, yan2011p, sun2007popularity} and studied their impact, advantages, 
-and disadvantages~\cite{martins2009, leydesdorff2009new}.
+Citation counts and derived metrics are straightforward to calculate, but they represent only a coarse
+estimate of academic impact because they are essentialy popularity measures. Citations from 
+prestigious journals are more relevant than citations from peripheral journals, as noted by
+Pinski et. al \cite{Pinski1976}. To address this issue, some studies distinguish popularity from 
+reputation or prestige with the usage of citation weighting strategies \cite{Ding2011, Yan2011} or 
+PageRank based metrics \cite{Bollen2006, Sun2007}.
 
-The idea of reputation, without the direct use of citation data, was discussed by Nelakuditi et al.~\cite{nelakuditi2011snap}. They proposed a metric called \textit{peers' reputation} for research conferences and journals, which ties the selectivity of the publication venue based upon the reputation of its authors' institutions. The proposed metric was shown to be a better indicator of selectivity of a research venue than acceptance ratio. In addition, the authors observed that, in the subarea of Computer Networks, many conferences have similar or better peers' reputation than journals. This result is similar to the conclusions obtained by Laender et al.~\cite{laender2008}, who show that conference publications are important vehicles for disseminating CS research, while in other areas such as Physical Sciences and Biology the most relevant venues are arguably the scientific journals.
+Furthermore, Piwowar (2013) \cite{Piwowar2013} noted that citation based metrics are slow, since
+the first citation to a scientific article can take years to happen. 
 
-Regarding the assessment of individual researchers' influence and expertise, many approaches have been introduced~\cite{balog2012ftir, cormode2014people, deng2012modeling, gollapalli2011ranking, wu2009detecting}. Particularly, Gonçalves et al.~\cite{goncalves2014} quantified the impact of various features on a scholar popularity throughout her career. 
+
+Leydesdorff (2009) \cite{Leydesdorff2009} compared traditional indicators such as impact factor
+imediacy index and cited half-life to new indicators such as H-index, ***SJR*** and PageRank.
+
+Martins et. al. (2009) proposed a method of assessing the quality of scientific conferences 
+through a machine learning classifier that makes use of multiple features in addition to citations.
+
+The idea of reputation, without the direct use of citation data, was discussed by Nelakuditi et 
+al. \cite{Nelakuditi2011}. They proposed a metric called \textit{peers' reputation} for 
+research conferences and journals, which ties the selectivity of the publication venue based upon 
+the reputation of its authors' institutions. The proposed metric was shown to be a better indicator 
+of the selectivity of a research venue than acceptance ratio.
+
+
+
+
+
+Regarding the assessment of individual researchers' influence and expertise, many approaches have 
+been introduced~\cite{balog2012ftir, cormode2014people, deng2012modeling, gollapalli2011ranking, wu2009detecting}. 
+Particularly, 
+
+
+Gonçalves et al.~\cite{goncalves2014} quantified the impact of various features on a scholar popularity throughout her career. 
 They concluded that, even though most of the considered features are strongly correlated with popularity, only two features are needed to explain almost all the variation in popularity across different researchers: the number of publications and the average quality of the scholar’s publication venues. 
 In addition, the prediction of scientific success of a researcher is also valuable for several goals
 ~\cite{masoumeh16}. As a result, previous works attempted to predict if a researcher will become a principal investigator~\cite{vandijk14}, her future H-index~\cite{dong15, penner13} and the potential number of citations to her publications~\cite{mazloumian12, castillo2007}.
 
-Although citation-based metrics are useful, they are not enough to do a complete evaluation of research. 
-In particular, Piwowar~\cite{piwowar2013altmetrics} showed that metrics as the H-Index are slow, as the first citation of a scientific article can take years. He concludes that the development of alternative metrics to complement citation analysis is not only desirable, but a necessity. 
+
+
 
 The reputation model we use in this work was proposed 
 in 
