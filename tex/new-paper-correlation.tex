@@ -122,7 +122,7 @@ used by research funding councils and committees to better support their funding
 \maketitle
 
 \section{Introduction}
-\label{sec:the-problem}
+\label{sec:introduction}
 
 Academic research evaluation is a topic of interest to universities, research groups,
 research funding institutions and the public at large. The evaluation of research
@@ -310,11 +310,54 @@ We further observe that this was done while setting the parameter $d\bkt{T} = 0$
 not use information on citation counts in the model. 
 
 \section{Correlation with H-indices} 
+\label{sec:correlation}
+
+The H-index \cite{Hirsch2005} is a widely used metric of scientific contribution. An entity has
+an H-index value of $ h $ if it has $ h $ publications that have been cited at least $ h $ times.
+A journal's H-index can be computed by considering all publications and their collective citation
+information.
+
+What are the problems with H-index?
+
+
+How was p-score calculated? What were the seeds?
+
+
+Why are we interested in measuring the correlation between the metrics?
+
+What data will we be using to measure the correlation between the metrics?
+
+How will we measure the correlations?
+
+   Pearson is a good choice, but not normal
+   Kendall-Tau then
+
+What was the Kendall-Tau? What it means?
+
 
 {\bf TO WRITE: explain that distributions are not Normal, show graphs, propose Kendall-Tau, show macro values}
 
 \section{Assessing conferences in CS}
 \label{sec:notifications}
+
+Despite the great correlation. What were the outliers?
+
+What are the top case and bottom case?
+
+How to separate the outliers?
+  Cone strategy
+  Pivot
+
+What are the internal cases, the highly correlated conferences?
+What makes them highly correlated?
+
+
+What are the top outliers? What makes them top?
+What are the bottom outliers? What makes them bottom?
+
+What is the conclusion? What is the benefit of using p-score as a complementary metric?
+
+
 
 {\bf Discuss the cone strategy, justify the 10 degrees angle, discuss the problem of positioning the cone 
 vertex at the origin, introduce the (-100,-100) pivot, discuss items above and below the cone}
