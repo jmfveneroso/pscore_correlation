@@ -180,7 +180,75 @@ that belong to an intersection between different domains and in venues of less p
 subareas of computer science. These differences appeal to the importance of pscore as a 
 complementary metric.
 
+\section{Related Work}\label{sec:related-work}
+
+Quantitative metrics of scientific impact have a long history. An influential approach is
+Garfield's Impact Factor (1955) \cite{Garfield1955a}, a journal-level metric that is defined
+by the mean number of citations received by articles published in a given journal over a 2-year period. 
+Despite being one of the earliest approaches at measuring scientific impact, it has showed remarkable 
+survivability. 
+Pinski et. al. \cite{Pinski1976} describe several limitations with the metric. Impact factors also suffered 
+criticism for being misleading \cite{Nature2016, Saha2003} and for lacking reliable validation from an independent 
+audit \cite{Rossner2007}. Riikonen and Vihinen (2008) \cite{Riikonen2008} showed that actual citation 
+and publication counts were better predictors of a scientist's contribution than impact factors in a 
+study that assessed the scientific contribution of Finnish researchers in biomedicine.
+
+The acceptance rate is another important journal-level metric that attempts to quantify the scientific impact. It
+is defined by the proportion of accepted papers relative to the number of submitted papers. Chen et. al. \cite{Chen2010} 
+have showed that highly selective conferences (therefore having low acceptance rates) have higher 
+scientific impact, measured in terms of the number of citations received by the published papers.
+
+The H-index is an author-level metric proposed by Hirsch (2005) \cite{Hirsch2005}. Since its formulation, it has been 
+widely adopted as a measure of invidual scientific research output. An H-index of 
+$ h $ means that a researcher has published $ h $ papers that were cited at least $ h $ times.
+The H-index takes into account both the number of publications and the number of citations per publication, 
+achieving higher values when a researcher obtains a consistently high number of citations over multiple publications. 
+The H-index has been criticized for not taking into account field specific citation
+statistics \cite{Wendl2007}. The G-index, proposed by Egghe (2006) \cite{Egghe2006}, is a less strict variation 
+of the H-index where the score $ g $ is the largest number such that the top $ g $ articles have received at 
+least $ g^2 $ citations.
+
+Citation counts and derived metrics are straightforward to calculate, but they represent only a coarse
+estimate of academic impact, because they are essentialy popularity measures. Some people are popular but not 
+prestigious and vice versa. For example, an author of pulp detectives may sell many books, but may not have earned 
+the respect of literary critics \cite{Bollen2006}. Citations from 
+prestigious journals are more relevant than citations from peripheral journals, as noted by
+Pinski et. al. (1976)  \cite{Pinski1976}. To address this issue, some studies distinguish popularity from 
+reputation or prestige with the usage of citation weighting strategies \cite{Ding2011, Yan2011a} or 
+PageRank based methods \cite{Bollen2006, Sun2007}. 
+Furthermore, Piwowar (2013) \cite{Piwowar2013} noted that citation based metrics are slow, since the 
+first citation to a scientific article can take years to happen, concluding that the development of 
+alternative metrics to complement citation analysis is not only desirable, but a necessity.
+As discussed in \cite{Leydesdorff2009}, each metric has advantages and disadvantages deriving from their 
+inherent biases.
+
+Martins et. al. (2009) \cite{Martins2009} proposed a method of assessing the quality of scientific conferences 
+through a machine learning classifier that makes use of multiple features in addition to citations.
+Gonçalves et al. (2014) \cite{Goncalves2014} quantified the impact of various features on a 
+scholar's popularity. They concluded that, even though most of the considered features are strongly correlated 
+with popularity, only two features are needed to explain almost all the variation in popularity between different 
+researchers: the number of publications and the average quality of the scholar’s publication venues. 
+
+The idea of reputation, without the direct use of citation data, was discussed by Nelakuditi et 
+al. \cite{Nelakuditi2011}. They proposed a metric called \textit{peers' reputation} for 
+research conferences and journals, which ties the selectivity of the publication venue based upon 
+the reputation of its authors' institutions. The proposed metric was shown to be a better indicator 
+of the selectivity of a research venue than the acceptance ratio.
+
+In this work, we study the correlation between H-index \cite{Hirsch2005} and \textit{P-score} \cite{Ribas2015a}, a novel
+metric for academic reputation. The \textit{P-score} is calculated
+with a \textit{reputation flows} model \cite{Ribas2015} instantiantiated in an academic setting.
+The \textit{reputation flows} model exploits the transference of reputation among 
+entities in order to identify the most reputable ones. Particularly, the reputation flows consist 
+of a random walk model where the reputation of a target set of entities is inferred using suitable 
+sources of reputation. 
+
+% Regarding ranking researchers according to their expertise or similarity to other
+% researchers there are multiple approaches in the literature 
+% \cite{Balog2012, Cormode2014, Deng2012, Gollapalli2011, Wu2009}.
+
 \section{P-score: a network-based metric} 
+\label{pscore} 
 
 Contrary to citation counting metrics such as the Impact 
 Factor~\cite{Garfield1955a, Saha2003, Thomson2017, Balaban2012} and 
@@ -312,20 +380,77 @@ not use information on citation counts in the model.
 \section{Correlation with H-indices} 
 \label{sec:correlation}
 
-The H-index \cite{Hirsch2005} is a widely used metric of scientific contribution. An entity has
-an H-index value of $ h $ if it has $ h $ publications that have been cited at least $ h $ times.
-A journal's H-index can be computed by considering all publications and their collective citation
-information.
+The H-index \cite{Hirsch2005} is a composite metric of lifelong scientific contribution that takes 
+into account a researcher's productivity and the citation impact of her publications.
+A researcher has an H-index value of $ h $ if she has $ h $ publications that have been cited at 
+least $ h $ times. For example, if a researcher has published 20 papers that received at least 20 
+citations each, then her H-index is 20, assuming that 20 is the highest number for which the 
+definition of the H-index holds. A journal's H-index can be computed 
+in the same way by considering all publications and their collective citation data over a definite 
+period as suggested by Braun et. al. (2006) \cite{Braun2006}.
+Since the H-index was proposed in 2005, the original paper by Hirsch \cite{Hirsch2005} was 
+cited 7949 times \footnote{According to Google Scholar, up to the end of 2017.} showing the 
+metric's popularity.
 
-What are the problems with H-index?
+As any scientific impact metric, the H-index has advantages and disadvantages. 
+Some of its advantages are:
 
+\begin{itemize}
+\item The simplicity and intuitiveness of its formulation.
+\item The longer citation time window when compared to impact factors.
+\item The H-index has good predictive power regarding scientific achievement \cite{Bornmann2005, Hirsch2007}.
+\end{itemize}
 
-How was p-score calculated? What were the seeds?
+The H-index depends on citations to be calculated, thus it suffers from the 
+same problems as other citation-based metrics. Some of the major disadvantages are:
+
+\begin{itemize}
+\item The H-index does not distinguish citations from prestigious and peripheral journals, thus 
+it measures popularity rather than quality.
+\item The time to first citation can be very long.
+\item It is not easy to collect all relevant information.
+\item The H-index is field-dependent \cite{Wendl2007}.
+\item Major sources do not agree about its value. 
+\item It allows scientists to rest on their laurels since the number of citations received may increase even if no new paper is published.
+\item It is useful for comparing best scientists only. Its power for distinguishing amongst average scientists is not acceptable.
+\item It lacks sensitivity to performance changes: it can never decrease and is only weakly sensitive to the number of citations received.
+\item The higher the h index the more citations are needed to increase it.11 
+\item It means that the difference between higher h index values (25 and 26, for example) is much greater than between lower values (4 and 5, for example).13
+\end{itemize}
+
+We propose P-score as a complementary metric to deal with the major problems presented by
+citation-based metrics such as the H-index and offer further insight on venue quality.
+P-score is a metric of reputation among peers based on the publication pattern of a set of reference 
+groups of researchers, the seeds. It differs from other network-based metrics because the venues' reputations 
+derive exclusively from the reference set of research groups, better reflecting the actual reputation 
+flows. Additionaly, to calculate venue P-scores we do not need citation data, what makes it easier
+to obtain than the H-index and avoids the problem of lack of data that arises from the long time to 
+first citation.
+
+We conducted experiments over a set of 814 venues in computer science for which the H-index 
+was available at XXX and assessed the correlation between the H-index and P-score. 
+First, we conducted a normality measure of the P-scores and H-indexes for our text collection
+obtaining the results described in figure YYY.
+
+bivariate normal distribution
+It is evident that the distributions are skewed refuting the normality assumption. This 
+prevents the application of Pearson's correlation index as a correlation metric. 
 
 
 Why are we interested in measuring the correlation between the metrics?
 
 What data will we be using to measure the correlation between the metrics?
+
+
+
+In this paper, the P-scores 
+
+How was p-score calculated? What were the seeds?
+
+
+
+
+
 
 How will we measure the correlations?
 
@@ -361,73 +486,6 @@ What is the conclusion? What is the benefit of using p-score as a complementary 
 
 {\bf Discuss the cone strategy, justify the 10 degrees angle, discuss the problem of positioning the cone 
 vertex at the origin, introduce the (-100,-100) pivot, discuss items above and below the cone}
-
-\section{Related Work}\label{sec:related-work}
-
-Quantitative metrics of scientific impact have a long history. An influential approach is
-Garfield's Impact Factor (1955) \cite{Garfield1955a}, a journal-level metric that is defined
-by the mean number of citations received by articles published in a given journal over a 2-year period. 
-Despite being one of the earliest approaches at measuring scientific impact, it has showed remarkable 
-survivability. 
-Pinski et. al. \cite{Pinski1976} describe several limitations with the metric. Impact factors also suffered 
-criticism for being misleading \cite{Nature2016, Saha2003} and for lacking reliable validation from an independent 
-audit \cite{Rossner2007}. Riikonen and Vihinen (2008) \cite{Riikonen2008} showed that actual citation 
-and publication counts were better predictors of a scientist's contribution than impact factors in a 
-study that assessed the scientific contribution of Finnish researchers in biomedicine.
-
-The acceptance rate is another important journal-level metric that attempts to quantify the scientific impact. It
-is defined by the proportion of accepted papers relative to the number of submitted papers. Chen et. al. \cite{Chen2010} 
-have showed that highly selective conferences (therefore having low acceptance rates) have higher 
-scientific impact, measured in terms of the number of citations received by the published papers.
-
-The H-index is an author-level metric proposed by Hirsch (2005) \cite{Hirsch2005}. Since its formulation, it has been 
-widely adopted as a measure of invidual scientific research output. An H-index of 
-$ h $ means that a researcher has published $ h $ papers that were cited at least $ h $ times.
-The H-index takes into account both the number of publications and the number of citations per publication, 
-achieving higher values when a researcher obtains a consistently high number of citations over multiple publications. 
-The H-index has been criticized for not taking into account field specific citation
-statistics \cite{Wendl2007}. The G-index, proposed by Egghe (2006) \cite{Egghe2006}, is a less strict variation 
-of the H-index where the score $ g $ is the largest number such that the top $ g $ articles have received at 
-least $ g^2 $ citations.
-
-Citation counts and derived metrics are straightforward to calculate, but they represent only a coarse
-estimate of academic impact, because they are essentialy popularity measures. Some people are popular but not 
-prestigious and vice versa. For example, an author of pulp detectives may sell many books, but may not have earned 
-the respect of literary critics \cite{Bollen2006}. Citations from 
-prestigious journals are more relevant than citations from peripheral journals, as noted by
-Pinski et. al. (1976)  \cite{Pinski1976}. To address this issue, some studies distinguish popularity from 
-reputation or prestige with the usage of citation weighting strategies \cite{Ding2011, Yan2011a} or 
-PageRank based methods \cite{Bollen2006, Sun2007}. 
-Furthermore, Piwowar (2013) \cite{Piwowar2013} noted that citation based metrics are slow, since the 
-first citation to a scientific article can take years to happen, concluding that the development of 
-alternative metrics to complement citation analysis is not only desirable, but a necessity.
-As discussed in \cite{Leydesdorff2009}, each metric has advantages and disadvantages deriving from their 
-inherent biases.
-
-Martins et. al. (2009) \cite{Martins2009} proposed a method of assessing the quality of scientific conferences 
-through a machine learning classifier that makes use of multiple features in addition to citations.
-Gonçalves et al. (2014) \cite{Goncalves2014} quantified the impact of various features on a 
-scholar's popularity. They concluded that, even though most of the considered features are strongly correlated 
-with popularity, only two features are needed to explain almost all the variation in popularity between different 
-researchers: the number of publications and the average quality of the scholar’s publication venues. 
-
-The idea of reputation, without the direct use of citation data, was discussed by Nelakuditi et 
-al. \cite{Nelakuditi2011}. They proposed a metric called \textit{peers' reputation} for 
-research conferences and journals, which ties the selectivity of the publication venue based upon 
-the reputation of its authors' institutions. The proposed metric was shown to be a better indicator 
-of the selectivity of a research venue than the acceptance ratio.
-
-In this work, we study the correlation between H-index \cite{Hirsch2005} and \textit{P-score} \cite{Ribas2015a}, a novel
-metric for academic reputation. The \textit{P-score} is calculated
-with a \textit{reputation flows} model \cite{Ribas2015} instantiantiated in an academic setting.
-The \textit{reputation flows} model exploits the transference of reputation among 
-entities in order to identify the most reputable ones. Particularly, the reputation flows consist 
-of a random walk model where the reputation of a target set of entities is inferred using suitable 
-sources of reputation. 
-
-% Regarding ranking researchers according to their expertise or similarity to other
-% researchers there are multiple approaches in the literature 
-% \cite{Balog2012, Cormode2014, Deng2012, Gollapalli2011, Wu2009}.
 
 \section{Conclusions}\label{sec:conclusions}
 

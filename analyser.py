@@ -27,8 +27,10 @@ def get_line_coefficients(angle):
 def trim_dataset(df, angle):
   min_a, max_a = get_line_coefficients(angle)
   
-  df1 = df [df ['h-index-rank'] > df ['pscore-rank'] * min_a]
-  df1 = df1[df1['h-index-rank'] < df1['pscore-rank'] * max_a]
+  # df1 = df [df ['h-index-rank'] > ((df ['pscore-rank'] + 100) * min_a - 100)]
+  # df1 = df1[df1['h-index-rank'] < ((df1['pscore-rank'] + 100) * max_a - 100)]
+  df1 = df [df ['h-index-rank'] > ((df ['pscore-rank'] + 100) * min_a - 100)]
+  df1 = df1[df1['h-index-rank'] < ((df1['pscore-rank'] + 100) * max_a - 100)]
   return df1
 
 def calculate_kendall_tau(df1, angle):
@@ -50,18 +52,23 @@ def calculate_all(df):
     calculate_kendall_tau(df1, angle)
     angle -= step
 
+def calculate_one(df, angle):
+  angle = math.radians(angle)
+  df1 = trim_dataset(df, angle)
+  calculate_kendall_tau(df1, angle)
+
 def list_conferences(df, angle):
   min_a, max_a = get_line_coefficients(math.radians(angle))
 
-  df1 = df[df['h-index-rank'] >= df['pscore-rank'] * max_a]
+  df1 = df[df['h-index-rank'] >= ((df['pscore-rank'] + 100) * max_a - 100)]
   print 'Above:', len(df1.index)
   for i in range(0, len(df1.index)):
     print df1['conference'].iloc[i], '-', df1['name'].iloc[i]
 
-  df1 = df[df['h-index-rank'] <= df['pscore-rank'] * min_a]
+  df1 = df[df['h-index-rank'] <= ((df['pscore-rank'] + 100) * min_a - 100)]
   print 'Below:', len(df1.index)
   for i in range(0, len(df1.index)):
-    print df1['conference'].iloc[i], '-', df1['name'].iloc[i], df1['pscore-rank'].iloc[i], df1['h-index-rank'].iloc[i]
+    print df1['conference'].iloc[i], '-', df1['name'].iloc[i]
 
 if __name__ == "__main__":
   warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -76,5 +83,6 @@ if __name__ == "__main__":
   df['h-index-rank'] = pd.Series(rank, index=df.index)
   df = df.sort_values(by=['pscore-rank'])
 
+  # calculate_one(df, 10)
   # calculate_all(df)
-  list_conferences(df, 15.0)
+  list_conferences(df, 10.0)
