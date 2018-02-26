@@ -527,15 +527,20 @@ hypothesis (that is, the rankings are uncorrelated) by a good margin.
 \label{sec:notifications}
 
 Since P-score and H-index are strongly correlated, most datapoints are clustered close to the identity 
-line, showing an agreement between the metrics on these datapoints. However, there are noticeable differences 
+line, showing an apparent agreement between the metrics. However, there are noticeable differences 
 particularly in the cases where the P-score rank is high and the H-index rank is low 
 (top left corner of figure \ref{fig:pscore_hindex_ranks}) or where the H-index rank is high and the 
 P-score rank is low (bottom right corner of figure \ref{fig:pscore_hindex_ranks}). 
 
 We propose a simple strategy to delimit the 3 groups of datapoints: 
-the center group, consisting of the highly correlated datapoints
-the top group, consisting the ones with a high P-score and low H-index 
-the bottom group, consisting the ones with a high H-index and low P-score
+\begin{itemize}
+\item the center group, consisting of the highly correlated datapoints. Venues that are popular and
+prestigious, or venues that are unpopular and unprestigious.
+\item the top group, consisting of the ones with a high P-score and low H-index. Venues that are 
+prestigous, but not very popular.
+\item the bottom group, consisting of the ones with a high H-index and low P-score. Venues that are
+popular but not so prestigious.
+\end{itemize}
 
 \begin{figure}[h!]
   \begin{center}
@@ -588,41 +593,190 @@ the bottom group, consisting the ones with a high H-index and low P-score
 
 The cone strategy consists of two lines crossing at the origin that delimit the boundaries between
 the 3 groups. The datapoints become more scattered in lower positions because venues with low reputation
-or few citations become increasingly harder to rank because of a lack of signals. The cone strategy tries
-to deal with this problem by imposing a softer criterion for cut off (from the center group) of venues with 
+or few citations become increasingly harder to rank because of a lack of signals. The cone strategy
+deals with this problem by imposing a softer criterion for the cut off of venues (from the center group) in
 lower ranks. Figure \ref{fig:cone_strategy} shows the cone strategy with an angle of 20 degrees
 between the boundary lines. Table \ref{tab:cone_strategy} describes the Kendall-Tau values for varying angles
-between boundary lines and the number of datapoints in the center group.
+between boundary lines and the number of datapoints in the center group. Eventhough P-score and H-index are
+very correlated, there are still differences in rank even for the datapoints that show an agreement between 
+metrics. We want to separate the differences that are mostly noise (in the center venues) from the differences
+that show a disagreement between metrics (the botttom and top groups). For our further analysis, we employed 
+the cone strategy with a 20 degrees angle, because it presents a good trade off between both objectives.
 
-For our further analysis, we employed the cone strategy with a 20 degrees angle, because, in our judgement,
-it results in a good trade-off between selectivity and expresiveness. 
+\begin{figure}[h!]
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=P-score ranks,
+          ylabel=H-index ranks
+          xmin=-100,
+          ymin=-100,
+          xmax=1000,
+          ymax=1000,
+        ]
+        \draw[red]
+            (axis cs:-100,-100) -- 
+            (axis cs:700.207670245,1000);
+        \draw[red]
+            (axis cs:-100,-100) -- 
+            (axis cs:1000,700.207670245);
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=column 1,y=column 2,col sep=comma] {data/pscore_hindex_ranks.csv}; 
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{P-score Q–Q plot.}
+  \end{center}
+  \label{fig:cone_strategy_adapted}
+\end{figure}
+
+The cone strategy shown in figure \ref{fig:cone_strategy} imposes a very strict criterion of cut off
+for venues close to the origin, such that only venues that are almost over the identity line end up belonging
+to the center group. This is not desirable, because even though the ranks for these venues are not 
+exactly the same in P-score or H-index, they are roughly in agreement. To sort out this problem
+we moved the pivot point where the boundary lines cross to coordinates (-100, -100), achieving a better 
+demarcation of the data groups. Figure \ref{fig:cone_strategy_adapted} shows the result.
+
+\begin{table}[h!]
+\centering
+ \begin{tabular}{|c c c|} 
+ \hline
+ Conference \\ 
+ \hline
+ IEEE/RJS International Conference on Intelligent RObots and Systems (IROS) \\
+ International Conference on Multimedia Computing and Systems (ICMCS) \\
+ Symposium on Information Theory (ISIT) \\
+ Conference on Computer Design (ICCD) \\
+ IEEE Conference on Decision and Control (CDC) \\
+ Conference on Parallel Processing (ICPP) \\
+ ACM Symposium on Parallel Algorithms and Architectures (SPAA) \\
+ Conference Computational Learning Theory (COLT) \\
+ IEEE Wireless Communications and Networking Conference (WCNC) \\
+ Workshop on Languages and Compilers for Parallel Computing (LCPC) \\
+ IEEE International Symposium on Quality Electronic Design (ISQED) \\
+ Workshop on Approximation Algorithms for Combinatorial Optimization (APPROX) \\
+ Symposium on Experimental Robotics (ISER) \\
+ IEEE Workshop/Winter Conference on Applications of Computer Vision (WACV) \\
+ Conference on Intelligent Tutoring Systems (ITS) \\
+ Conference on Weblogs and Social Media (ICWSM) \\
+ Conference on Artificial Intelligence in Education (AIED) \\
+ ACM SIGSPATIAL International Workshop on Advances in Geographic Information Systems (GIS) \\
+ IEEE/ACM International Conference on Human-Robot Interaction (HRI) \\
+ Canadian Conference on Computational Geometry (CCCG) \\
+ ACM Workshop on Hot Topics in Networks (HotNets) \\
+ IEEE Communications Society Conference on Sensor, Mesh and Ad Hoc Communications and Networks (SECON) \\
+ IEEE-RAS International Conference on Humanoid Robots (Humanoids) \\
+ Conference on Computer Communications and Networks (ICCCN) \\
+ SIAM Conference on Parallel Processing for Scientific Computing \\
+ DG.O (Inter)National Conference on Digital Government Research \\
+ Conference on High Performance Computing (HiPC) \\
+ Workshop on the Algorithmic Foundations of Robotics (WAFR) \\
+ IEEE International Symposium on Biomedical Imaging: From Nano to Macro (ISBI) \\
+ IEEE International Conference on Systems, Man and Cybernetics (SMC) \\
+ \hline
+ \end{tabular}
+ \label{tab:top_group}
+\end{table}
+
+\begin{table}[h!]
+\centering
+ \begin{tabular}{|c c c|} 
+ \hline
+ Conference \\ 
+ \hline
+ IEEE International Conference on Robotics and Automation (ICRA)
+ Conference on Human Factors in Computing Systems (CHI)
+ Computer Vision and Pattern Recognition (CVPR)
+ AAAI Conference on Artificial Intelligence (AAAI)
+ Neural Information Processing Systems (NIPS)
+ Design Automation Conference (DAC)
+ IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)
+ Symposium on the Theory of Computing (STOC)
+ IEEE Symposium on Foundations of Computer Science (FOCS)
+ Conference of the International Speech Communication Association (INTERSPEECH)
+ Conference on Computer Aided Design (ICCAD)
+ Joint Conference on Artificial Intelligence (IJCAI)
+ ACM-SIAM Symposium on Discrete Algorithms (SODA)
+ INFOCOM (IEEE) (INFOCOM)
+ Conference on Machine Learning (ICML)
+ IEEE International Conference on Image Processing (ICIP)
+ Conference on Management of Data (SIGMOD)
+ Conference on Software Engineering (ICSE)
+ International Parallel (and Distributed) Processing Symposium (IP(D)PS)
+ IEEE International Conference on Computer Vision (ICCV)
+ IEEE International Conference on Data Engineering (ICDE)
+ Meeting of the Association for Computational Linguistics (ACL)
+ European Conference on Computer Vision (ECCV)
+ Symposium on Computer Architecture (ISCA)
+ Knowledge Discovery and Data Mining (KDD)
+ Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication (SIGCOMM)
+ Supercomputing (SC)
+ World Wide Web Conferences (WWW)
+ IEEE International Conference on Distributed Computing Systems (ICDCS)
+ Design, Automation, and Test in Europe (DATE)
+ \hline
+ \end{tabular}
+ \label{tab:bottom_group}
+\end{table}
+
+\begin{table}[h!]
+\centering
+ \begin{tabular}{|c c c|} 
+ \hline
+ Conference \\ 
+ \hline
+ IEEE International Symposium on Circuits and Systems (ISCAS) \\
+ Hawaii International Conference on System Sciences (HICSS) \\
+ Conference on the Theory and Application of Cryptographic Techniques (EUROCRYPT) \\
+ ACM/SIGCOMM Internet Measurement Conference (IMC) \\
+ IEEE International Symposium on Wearable Computers (ISWC) \\
+ ASIACRYPT \\
+ Intelligent Systems in Molecular Biology (ISMB) \\
+ Conference on Tools and Algorithms for Construction and Analysis of Systems (TACAS) \\
+ ACM Interational Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc) \\
+ IEEE Vehicular Technology Conference (VTC) \\
+ Computer Security Applications Conference (ACSAC) \\
+ Pacific Symposium on Biocomputing (PSB) \\
+ Genetic and Evolutionary Computation Conference (GECCO) \\
+ IEEE International Conference on Web Services (ICWS) \\
+ European Symposium on Programming (ESOP) \\
+ European Conference on Artificial Intelligence (ECAI) \\
+ Adaptive Agents and Multi-Agent Systems (AAMAS) \\
+ Conference on Theory and Practice of Public Key Cryptography (PKC) \\
+ Conference on Principles and Practice of Constraint Programming (CP) \\
+ Society for Music Information Retrieval Conference (ISMIR) \\
+ Conference on Information Systems (ICIS) \\
+ Euromicro Conference on Real-Time Systems (ECRTS) \\
+ Fast Software Encryption Workshop (FSE) \\
+ IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC) \\
+ GI-Jahrestagung \\
+ ACM Symposium on Access Control Models and Technologies (SACMAT) \\
+ Pacific Conference on Computer Graphics and Applications (PG) \\
+ Discovery Science \\
+ IEEE International Conference on Peer-to-Peer Computing (P2P) \\
+ ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MoDELS) \\
+ \hline
+ \end{tabular}
+ \label{tab:bottom_group}
+\end{table}
+
+With this final demarcation strategy, the top group ended up with 127 venues, the 
+center group with 616 venues, and the bottom group with 139 venues. Following, we present 
+interpretations for these findings.
+The top group consists of venues with a high P-score and low H-index, or high prestige 
+and low popularity, the top 30 conferences in this group (by P-score) are presented in
+table \ref{tab:top_group}. These venues belong to less popular sub areas in computer science.
+The bottom group consists of venues with a low P-score and high H-index, or low prestige 
+and high popularity, the top 30 conferences in this group (by P-score) are presented in
+table \ref{tab:bottom_group}. These venues belong to less popular sub areas in computer science.
 
 
 
-We propose a strategy
-
-
-Despite the strong correlation between H-index and P-score. 
-
-What are the top case and bottom case?
-
-How to separate the outliers?
-  Cone strategy
-  Pivot
-
-What are the internal cases, the highly correlated conferences?
-What makes them highly correlated?
-
-
-What are the top outliers? What makes them top?
-What are the bottom outliers? What makes them bottom?
-
-What is the conclusion? What is the benefit of using p-score as a complementary metric?
 
 
 
-{\bf Discuss the cone strategy, justify the 10 degrees angle, discuss the problem of positioning the cone 
-vertex at the origin, introduce the (-100,-100) pivot, discuss items above and below the cone}
 
 \section{Conclusions}\label{sec:conclusions}
 
