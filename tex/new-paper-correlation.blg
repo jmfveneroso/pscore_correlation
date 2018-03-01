@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: new-paper-correlation.aux
 The style file: abbrv.bst
 Database file #1: pscore_correlation.bib
-You've used 34 entries,
+You've used 36 entries,
             2118 wiz_defined-function locations,
-            732 strings with 9113 characters,
-and the built_in function-call counts, 11220 in all, are:
-= -- 1146
-> -- 459
+            743 strings with 9318 characters,
+and the built_in function-call counts, 11919 in all, are:
+= -- 1219
+> -- 484
 < -- 5
-+ -- 182
-- -- 148
-* -- 807
-:= -- 1868
-add.period$ -- 103
-call.type$ -- 34
-change.case$ -- 174
++ -- 192
+- -- 156
+* -- 866
+:= -- 1982
+add.period$ -- 109
+call.type$ -- 36
+change.case$ -- 184
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 421
-empty$ -- 888
-format.name$ -- 148
-if$ -- 2323
+cite$ -- 36
+duplicate$ -- 443
+empty$ -- 946
+format.name$ -- 156
+if$ -- 2465
 int.to.chr$ -- 0
-int.to.str$ -- 34
-missing$ -- 36
-newline$ -- 173
-num.names$ -- 68
-pop$ -- 140
+int.to.str$ -- 36
+missing$ -- 38
+newline$ -- 183
+num.names$ -- 72
+pop$ -- 146
 preamble$ -- 1
-purify$ -- 142
+purify$ -- 150
 quote$ -- 0
-skip$ -- 303
+skip$ -- 317
 stack$ -- 0
-substring$ -- 833
-swap$ -- 78
+substring$ -- 905
+swap$ -- 80
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 132
+type$ -- 140
 warning$ -- 0
-while$ -- 125
-width$ -- 36
-write$ -- 374
+while$ -- 133
+width$ -- 38
+write$ -- 396

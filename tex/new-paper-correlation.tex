@@ -161,12 +161,12 @@ is proportional to the reputation of the venues where she or he publishes.
 This relationship between authors and venues constitutes a reputation network in which 
 authors influence venue reputations and vice versa. 
 
-Pscore is a graph modeling metric that attributes quantitative reputations to venues 
+Pscore \cite{Ribas2015a} is a graph modeling metric that attributes quantitative reputations to venues 
 based on the publication patterns of a reference group of researchers without having to
 rely on citation information. It deals with the three problems discussed previously. 
 
 First, instead of measuring the amount of researcher attention, Pscore measures reputations,
-which is presumably a better proxy for academic impact as was shown by Ribas.
+which is presumably a better proxy for academic impact as was shown by Ribas et al. \cite{Ribas2015a}.
 
 Second, while citations can take years to happen, reputations tend to be steady over 
 the time, so the quality of new research can be promptly estimated with pscore by 
@@ -391,8 +391,8 @@ definition of the H-index holds. A journal's H-index can be computed
 in the same way by considering all publications and their collective citation data over a definite 
 period as suggested by Braun et. al. (2006) \cite{Braun2006}.
 Since the H-index was proposed in 2005, the original paper by Hirsch \cite{Hirsch2005} was 
-cited 7949 times \footnote{According to Google Scholar, up to the end of 2017.} showing the 
-metric's popularity.
+cited 7949 times showing the metric's popularity 
+\footnote{According to Google Scholar, up to the end of 2017.}.
 
 As any scientific impact metric, the H-index has advantages and disadvantages. 
 Some of its advantages are:
@@ -412,12 +412,7 @@ it measures popularity rather than quality.
 \item The time to first citation can be very long.
 \item It is not easy to collect all relevant information.
 \item The H-index is field-dependent \cite{Wendl2007}.
-\item Major sources do not agree about its value. 
-\item It allows scientists to rest on their laurels since the number of citations received may increase even if no new paper is published.
-\item It is useful for comparing best scientists only. Its power for distinguishing amongst average scientists is not acceptable.
-\item It lacks sensitivity to performance changes: it can never decrease and is only weakly sensitive to the number of citations received.
-\item The higher the h index the more citations are needed to increase it.11 
-\item It means that the difference between higher h index values (25 and 26, for example) is much greater than between lower values (4 and 5, for example).13
+\item Major sources do not always agree on its value \cite{Bar-Ilan2008}. 
 \end{itemize}
 
 We propose P-score as a complementary metric to deal with the major problems presented by
@@ -429,7 +424,7 @@ flows. Additionaly, to calculate venue P-scores we do not need citation data, wh
 to obtain than the H-index and avoids the problem of lack of data that arises from the long time to 
 first citation.
 
-Our dataset consists of 882 conferences in the area of computer science for which 
+Our dataset consists of 882 conferences in the field of computer science for which 
 the H-index was available on Google Scholar \footnote{https://scholar.google.com.br/}. The
 P-score was calculated with data obtained from DBLP \footnote{http://dblp.uni-trier.de/}. 
 The reference set of research groups was selected through the randomization process described in 
@@ -456,8 +451,8 @@ section \ref{sec:rep-sources}, yielding the 12 departments listed in table \ref{
       \end{axis}
     \end{tikzpicture}
     \caption{H-index Q–Q plot.}
+    \label{fig:hindex_normality}
   \end{center}
-  \label{fig:hindex_normality}
 \end{figure}
 
 \begin{figure}[h!]
@@ -481,23 +476,23 @@ section \ref{sec:rep-sources}, yielding the 12 departments listed in table \ref{
       \end{axis}
     \end{tikzpicture}
     \caption{P-score Q–Q plot.}
+    \label{fig:pscore_normality}
   \end{center}
-  \label{fig:pscore_normality}
 \end{figure}
 
 First, we conducted a normality test to verify if P-scores and H-indexes follow normal 
 distributions. We plotted Q-Q (quantile-quantile) plots for both metrics comparing the sample
 Z-scores for all 882 quantiles to theoretical Z-scores in figures \ref{fig:hindex_normality} 
 and \ref{fig:pscore_normality}. The red line is the identity line for which sample Z-scores
-and theoretical Z-scores converge. As it is clear from the plots, both distributions are 
-significantly skewed, indicating that both P-scores and H-indexes do not follow normal
-distributions. This prevents the application of correlation measures such as Pearson's Product 
+and theoretical Z-scores converge. As becomes clear from the plots, both distributions are 
+significantly skewed, indicating that P-scores and H-indexes do not follow normal
+distributions. This restricts the application of correlation measures such as Pearson's Product 
 Moment Correlation in our analysis, since it requires that variables be approximately normally 
 distributed. For that reason, we chose the Kendall-Tau coefficient to study the correlation 
 between H-index and P-score. It is a measure of rank correlation that assumes a value between
 -1 and 1. It is higher when when observations have similar ranks, assuming a value of 1
 when all ranks are identical and -1 when they are opposite. A Kendall-Tau close to 0 indicates
-that both ranks are completely uncorrelated.
+that both ranks are uncorrelated.
 
 \begin{figure}[h!]
   \begin{center}
@@ -512,16 +507,16 @@ that both ranks are completely uncorrelated.
         table[x=column 1,y=column 2,col sep=comma] {data/pscore_hindex_ranks.csv}; 
       \end{axis}
     \end{tikzpicture}
-    \caption{P-score Q–Q plot.}
+    \caption{P-score and H-index rankings.}
+    \label{fig:pscore_hindex_ranks}
   \end{center}
-  \label{fig:pscore_hindex_ranks}
 \end{figure}
 
 Figure \ref{fig:pscore_hindex_ranks} shows the ranks of all data points according to P-score
-on the X-axis and H-index on the Y-axis. Points closer to the origin have better scores, therefore
-better ranks. The plot shows an evident linear correlation between the ranks that is confirmed
+on the X-axis and H-index on the Y-axis. Points closer to the origin have better ranks.
+The plot shows an evident linear correlation between the ranks that is confirmed
 by a very high Kendall-Tau of 0.5200259445, with a p-value smaller than 0.000001, rejecting the null 
-hypothesis (that is, the rankings are uncorrelated) by a good margin. 
+hypothesis (that is, the rankings are uncorrelated).
 
 \section{Assessing conferences in CS}
 \label{sec:notifications}
@@ -530,16 +525,16 @@ Since P-score and H-index are strongly correlated, most datapoints are clustered
 line, showing an apparent agreement between the metrics. However, there are noticeable differences 
 particularly in the cases where the P-score rank is high and the H-index rank is low 
 (top left corner of figure \ref{fig:pscore_hindex_ranks}) or where the H-index rank is high and the 
-P-score rank is low (bottom right corner of figure \ref{fig:pscore_hindex_ranks}). 
+P-score rank is low (bottom right corner of figure \ref{fig:pscore_hindex_ranks}). Therefore, we 
+can distinguish 3 groups of interest in the dataset:
 
-We propose a simple strategy to delimit the 3 groups of datapoints: 
 \begin{itemize}
 \item the center group, consisting of the highly correlated datapoints. Venues that are popular and
 prestigious, or venues that are unpopular and unprestigious.
-\item the top group, consisting of the ones with a high P-score and low H-index. Venues that are 
+\item the top group, consisting of the venues with a high P-score and low H-index. Venues that are 
 prestigous, but not very popular.
-\item the bottom group, consisting of the ones with a high H-index and low P-score. Venues that are
-popular but not so prestigious.
+\item the bottom group, consisting of the venues with a high H-index and low P-score. Venues that are
+popular but not very prestigious.
 \end{itemize}
 
 \begin{figure}[h!]
@@ -566,9 +561,9 @@ popular but not so prestigious.
 
       \end{axis}
     \end{tikzpicture}
-    \caption{P-score Q–Q plot.}
+    \caption{Cone strategy.}
+    \label{fig:cone_strategy}
   \end{center}
-  \label{fig:cone_strategy}
 \end{figure}
 
 \begin{table}[h!]
@@ -588,20 +583,22 @@ popular but not so prestigious.
  10 & 0.8295 & 281 \\ 
  \hline
  \end{tabular}
+ \caption{Cone strategy Kendall-Tau in center group by varying the angle.}
  \label{tab:cone_strategy}
 \end{table}
 
-The cone strategy consists of two lines crossing at the origin that delimit the boundaries between
-the 3 groups. The datapoints become more scattered in lower positions because venues with low reputation
+We propose the cone strategy to delimit the 3 groups of venues.
+It consists of two lines crossing at the origin that delimit the boundaries between
+the groups. The datapoints become more scattered in lower positions because venues with low reputation
 or few citations become increasingly harder to rank because of a lack of signals. The cone strategy
-deals with this problem by imposing a softer criterion for the cut off of venues (from the center group) in
+deals with this problem by imposing a softer criterion for the cut off of venues from the center group in
 lower ranks. Figure \ref{fig:cone_strategy} shows the cone strategy with an angle of 20 degrees
 between the boundary lines. Table \ref{tab:cone_strategy} describes the Kendall-Tau values for varying angles
 between boundary lines and the number of datapoints in the center group. Eventhough P-score and H-index are
 very correlated, there are still differences in rank even for the datapoints that show an agreement between 
-metrics. We want to separate the differences that are mostly noise (in the center venues) from the differences
-that show a disagreement between metrics (the botttom and top groups). For our further analysis, we employed 
-the cone strategy with a 20 degrees angle, because it presents a good trade off between both objectives.
+metrics. We want to separate the differences produced by noise in the dataset from the differences
+that show an actual disagreement between metrics (the botttom and top groups). For our further analysis, we employed 
+the cone strategy with a 20 degrees angle, since it presents a good trade off between both objectives.
 
 \begin{figure}[h!]
   \begin{center}
@@ -627,160 +624,121 @@ the cone strategy with a 20 degrees angle, because it presents a good trade off 
 
       \end{axis}
     \end{tikzpicture}
-    \caption{P-score Q–Q plot.}
+    \caption{Cone strategy with alternative pivot.}
+    \label{fig:cone_strategy_adapted}
   \end{center}
-  \label{fig:cone_strategy_adapted}
 \end{figure}
 
 The cone strategy shown in figure \ref{fig:cone_strategy} imposes a very strict criterion of cut off
-for venues close to the origin, such that only venues that are almost over the identity line end up belonging
-to the center group. This is not desirable, because even though the ranks for these venues are not 
+for conferences close to the origin, such that only conferences that are almost over the identity line end up belonging
+to the center group. This is not desirable, because even though the ranks for these conferences are not 
 exactly the same in P-score or H-index, they are roughly in agreement. To sort out this problem
 we moved the pivot point where the boundary lines cross to coordinates (-100, -100), achieving a better 
 demarcation of the data groups. Figure \ref{fig:cone_strategy_adapted} shows the result.
 
 \begin{table}[h!]
-\centering
- \begin{tabular}{|c c c|} 
- \hline
- Conference \\ 
- \hline
- IEEE/RJS International Conference on Intelligent RObots and Systems (IROS) \\
- International Conference on Multimedia Computing and Systems (ICMCS) \\
- Symposium on Information Theory (ISIT) \\
- Conference on Computer Design (ICCD) \\
- IEEE Conference on Decision and Control (CDC) \\
- Conference on Parallel Processing (ICPP) \\
- ACM Symposium on Parallel Algorithms and Architectures (SPAA) \\
- Conference Computational Learning Theory (COLT) \\
- IEEE Wireless Communications and Networking Conference (WCNC) \\
- Workshop on Languages and Compilers for Parallel Computing (LCPC) \\
- IEEE International Symposium on Quality Electronic Design (ISQED) \\
- Workshop on Approximation Algorithms for Combinatorial Optimization (APPROX) \\
- Symposium on Experimental Robotics (ISER) \\
- IEEE Workshop/Winter Conference on Applications of Computer Vision (WACV) \\
- Conference on Intelligent Tutoring Systems (ITS) \\
- Conference on Weblogs and Social Media (ICWSM) \\
- Conference on Artificial Intelligence in Education (AIED) \\
- ACM SIGSPATIAL International Workshop on Advances in Geographic Information Systems (GIS) \\
- IEEE/ACM International Conference on Human-Robot Interaction (HRI) \\
- Canadian Conference on Computational Geometry (CCCG) \\
- ACM Workshop on Hot Topics in Networks (HotNets) \\
- IEEE Communications Society Conference on Sensor, Mesh and Ad Hoc Communications and Networks (SECON) \\
- IEEE-RAS International Conference on Humanoid Robots (Humanoids) \\
- Conference on Computer Communications and Networks (ICCCN) \\
- SIAM Conference on Parallel Processing for Scientific Computing \\
- DG.O (Inter)National Conference on Digital Government Research \\
- Conference on High Performance Computing (HiPC) \\
- Workshop on the Algorithmic Foundations of Robotics (WAFR) \\
- IEEE International Symposium on Biomedical Imaging: From Nano to Macro (ISBI) \\
- IEEE International Conference on Systems, Man and Cybernetics (SMC) \\
- \hline
- \end{tabular}
- \label{tab:top_group}
+  \centering
+  \begin{tabular}{|l|l|l|l|} 
+  \hline
+  Rank & Top & Center & Bottom \\ 
+  \hline
+  1  & iros      & icra        & iscas     \\
+  2  & icmcs     & chi         & hicss     \\
+  3  & isit      & cvpr        & eurocrypt \\
+  4  & iccd      & aaai        & imc       \\
+  5  & cdc       & nips        & iswc      \\
+  6  & icpp      & dac         & asiacrypt \\
+  7  & spaa      & icassp      & ismb      \\
+  8  & colt      & stoc        & tacas     \\
+  9  & wcnc      & focs        & mobihoc   \\
+  10 & lcpc      & interspeech & vtc       \\
+  11 & isqed     & iccad       & acsac     \\
+  12 & approx    & ijcai       & psb       \\
+  13 & iser      & soda        & gecco     \\
+  14 & wacv      & infocom     & icws      \\
+  15 & its       & icml        & esop      \\
+  16 & icwsm     & icip        & ecai      \\
+  17 & aied      & sigmod      & aamas     \\
+  18 & gis       & icse        & pkc       \\
+  19 & hri       & ipps        & cp        \\
+  20 & cccg      & iccv        & ismir     \\
+  21 & hotnets   & icde        & icis      \\
+  22 & secon     & acl         & ecrts     \\
+  23 & humanoids & eccv        & fse       \\
+  24 & icccn     & isca        & pimrc     \\
+  25 & ppsc      & kdd         & gi        \\
+  26 & dgo       & sigcomm     & sacmat    \\
+  27 & hipc      & sc          & pg        \\
+  28 & wafr      & www         & dis       \\
+  29 & isbi      & icdcs       & p2p       \\
+  30 & smc       & date        & models    \\
+  \hline
+  \end{tabular}
+  \caption{Conferences (short names) ranked by P-score in the bottom, center and top groups.}
+  \label{tab:conferences}
 \end{table}
 
-\begin{table}[h!]
-\centering
- \begin{tabular}{|c c c|} 
- \hline
- Conference \\ 
- \hline
- IEEE International Conference on Robotics and Automation (ICRA)
- Conference on Human Factors in Computing Systems (CHI)
- Computer Vision and Pattern Recognition (CVPR)
- AAAI Conference on Artificial Intelligence (AAAI)
- Neural Information Processing Systems (NIPS)
- Design Automation Conference (DAC)
- IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)
- Symposium on the Theory of Computing (STOC)
- IEEE Symposium on Foundations of Computer Science (FOCS)
- Conference of the International Speech Communication Association (INTERSPEECH)
- Conference on Computer Aided Design (ICCAD)
- Joint Conference on Artificial Intelligence (IJCAI)
- ACM-SIAM Symposium on Discrete Algorithms (SODA)
- INFOCOM (IEEE) (INFOCOM)
- Conference on Machine Learning (ICML)
- IEEE International Conference on Image Processing (ICIP)
- Conference on Management of Data (SIGMOD)
- Conference on Software Engineering (ICSE)
- International Parallel (and Distributed) Processing Symposium (IP(D)PS)
- IEEE International Conference on Computer Vision (ICCV)
- IEEE International Conference on Data Engineering (ICDE)
- Meeting of the Association for Computational Linguistics (ACL)
- European Conference on Computer Vision (ECCV)
- Symposium on Computer Architecture (ISCA)
- Knowledge Discovery and Data Mining (KDD)
- Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication (SIGCOMM)
- Supercomputing (SC)
- World Wide Web Conferences (WWW)
- IEEE International Conference on Distributed Computing Systems (ICDCS)
- Design, Automation, and Test in Europe (DATE)
- \hline
- \end{tabular}
- \label{tab:bottom_group}
-\end{table}
+With this final demarcation strategy, the top group ended up with 127 conferences, the 
+center group with 616 conferences, and the bottom group with 139 conferences. Table 
+\ref{tab:conferences} presents the first 30 conferences ranked by P-score for each group
+of datapoints.
 
-\begin{table}[h!]
-\centering
- \begin{tabular}{|c c c|} 
- \hline
- Conference \\ 
- \hline
- IEEE International Symposium on Circuits and Systems (ISCAS) \\
- Hawaii International Conference on System Sciences (HICSS) \\
- Conference on the Theory and Application of Cryptographic Techniques (EUROCRYPT) \\
- ACM/SIGCOMM Internet Measurement Conference (IMC) \\
- IEEE International Symposium on Wearable Computers (ISWC) \\
- ASIACRYPT \\
- Intelligent Systems in Molecular Biology (ISMB) \\
- Conference on Tools and Algorithms for Construction and Analysis of Systems (TACAS) \\
- ACM Interational Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc) \\
- IEEE Vehicular Technology Conference (VTC) \\
- Computer Security Applications Conference (ACSAC) \\
- Pacific Symposium on Biocomputing (PSB) \\
- Genetic and Evolutionary Computation Conference (GECCO) \\
- IEEE International Conference on Web Services (ICWS) \\
- European Symposium on Programming (ESOP) \\
- European Conference on Artificial Intelligence (ECAI) \\
- Adaptive Agents and Multi-Agent Systems (AAMAS) \\
- Conference on Theory and Practice of Public Key Cryptography (PKC) \\
- Conference on Principles and Practice of Constraint Programming (CP) \\
- Society for Music Information Retrieval Conference (ISMIR) \\
- Conference on Information Systems (ICIS) \\
- Euromicro Conference on Real-Time Systems (ECRTS) \\
- Fast Software Encryption Workshop (FSE) \\
- IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC) \\
- GI-Jahrestagung \\
- ACM Symposium on Access Control Models and Technologies (SACMAT) \\
- Pacific Conference on Computer Graphics and Applications (PG) \\
- Discovery Science \\
- IEEE International Conference on Peer-to-Peer Computing (P2P) \\
- ACM/IEEE International Conference on Model Driven Engineering Languages and Systems (MoDELS) \\
- \hline
- \end{tabular}
- \label{tab:bottom_group}
-\end{table}
+The center group consists of conferences that have a high correlation between prestige and
+popularity. The prestige of these conferences is well represented by the number of citations
+they receive. This group represents conferences that are relatively easy to classify regarding
+their scientific impact. Among them we find www, cvpr and kdd to name a few.
 
-With this final demarcation strategy, the top group ended up with 127 venues, the 
-center group with 616 venues, and the bottom group with 139 venues. Following, we present 
-interpretations for these findings.
-The top group consists of venues with a high P-score and low H-index, or high prestige 
-and low popularity, the top 30 conferences in this group (by P-score) are presented in
-table \ref{tab:top_group}. These venues belong to less popular sub areas in computer science.
-The bottom group consists of venues with a low P-score and high H-index, or low prestige 
-and high popularity, the top 30 conferences in this group (by P-score) are presented in
-table \ref{tab:bottom_group}. These venues belong to less popular sub areas in computer science.
+The top group consists of conferences with a high P-score and low H-index. These conferences
+receive a relatively low number of citations, however reputable researchers still publish 
+in them consistently as we can observe from their high P-scores. The reason for that is that
+conferences in the top group regard mostly less prolific subareas of computer science, therefore a small
+number of citations may represent a large portion of all citations in that particular subarea. 
+For example, icpp (QUALIS A2), spaa (QUALIS A2), lcpc (QUALIS B4), ppsc (QUALIS B4) are 
+important (?) conferences in parallel processing with high P-scores and relatively low 
+H-indexes, however the total number of publications in parallel processing is 
+comparatively low compared to other subareas of computer science such as computer vision. So,
+even important conferences are expected to receive fewer citations.
+
+(!) Not sure if one can say that these conferences are specially important in the subarea of 
+parallel processing. Specially, lcpc and ppsc.
+
+(!) ipps is an important conference in Parallel Processing that is inside the center group and
+has a high H-index (71). So how can the hypothesis be true?
+
+The bottom group consists of conferences with a high P-score and low H-index. These conferences
+receive a high number of citations but their prestige is comparatively low. Conferences in this
+group are usually situated in the intersection between computer science and other fields of 
+study. P-score is highly dependent on the reference set of research groups used as 
+reputation sources. Since our reference set is composed of the 12 best Computer Science 
+programs in USA according to NRC, the resulting P-scores are naturally biased toward 
+conferences that appeal predominantly to computer scientists. Some examples in the bottom group are
+ismb, gecco and psb, that regard biocomputing, ismir, that regards music information retrieval.
+
+(!) eurocrypt, ches, asiacrypt, acsac and pkc, that regard cryptography and computer security. 
+Not sure if it makes sense, cryptography is most related to Computer Science.
+
+(!) iscas, vtc, imc, iswc, models and pimrc, that regard engineering and electronics. 
+
+(!) icws (IEEE International Conference on Web Services) should not be here.
 
 
+By assessing conferences through their H-indexes and P-scores we are able to pinpoint conferences
+that are apparently unremarkable but that are very important in their associated subareas and 
+also conferences that intersect multiple fields of study. This information is useful to enrich
+the evaluation of scientific impact by research funding councils and committees and assist them in 
+their decision making process.
 
+\section{Conclusions}
+\label{sec:conclusions}
 
-
-
-
-\section{Conclusions}\label{sec:conclusions}
-
-ZZZ Rewrite entirely.
+We have compared the P-scores and H-indexes of conferences in Computer Science. 
+We found that P-score and H-index have a very high correlation (with a Kendall-Tau of 
+approximately 0.52), with the benefit that P-score does not rely on citation data. However,
+we also found important differences between the metrics when comparing conferences in 
+less prolific subareas and conferences situated in an intersection between fields of study.
+These differences indicate a complementary aspect to the metrics. P-scores can be employed
+by research funding councils and committees in conjunction with H-indexes to better undestand 
+the scientific relevance of venues and researchers and assist them in their decision making.
 
 \begin{comment}
 \begin{acks}
@@ -798,4 +756,34 @@ Omitted for blind review.
 \bibliography{pscore_correlation}
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

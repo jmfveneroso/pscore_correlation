@@ -37,6 +37,11 @@ L.~Bornmann and W.~Marx.
 \newblock {The h-index as a research performance indicator}.
 \newblock {\em Eur Sci Ed}, 37(August):77--80, 2011.
 
+\bibitem{Braun2006}
+T.~Braun, W.~Gl{\"{a}}nzel, and A.~Schubert.
+\newblock {A Hirsch-type index for journals}.
+\newblock {\em Scientometrics}, 69(1):169--173, oct 2006.
+
 \bibitem{Brin1998}
 S.~Brin and L.~Page.
 \newblock {The anatomy of a large scale hypertextual Web search engine}.
@@ -80,6 +85,12 @@ J.~E. Hirsch.
 \newblock {An index to quantify an individual's scientific research output}.
 \newblock {\em Proceedings of the National Academy of Sciences},
   102(46):16569--16572, nov 2005.
+
+\bibitem{Hirsch2007}
+J.~E. Hirsch.
+\newblock {Does the h index have predictive power?}
+\newblock {\em Proceedings of the National Academy of Sciences},
+  104(49):19193--19198, 2007.
 
 \bibitem{Langville2008}
 A.~N. Langville and C.~D. Meyer.
