@@ -145,7 +145,7 @@ papers only received their first citation 20 months or more after they were publ
 Third, citations are not simple to compute and are not always broadly available, particularly 
 at the level of individual researchers. Collecting citation counts requires access to the 
 contents of a large number of publications, of which many are not easily available, and 
-most authors do not have up to date citation information in their public internet profiles.
+public researcher profiles often lack up to date citation data.
 
 Despite these limitations, citation based metrics continue to be a popular approach to
 academic research evaluation. Nonetheless, it is desirable to employ alternative and
@@ -155,9 +155,9 @@ Academic reputation is an individual or group property strongly associated with
 academic impact. Reputable venues tend to concentrate the most relevant research papers 
 because that is how they acquire and keep their good reputations. At the same time, 
 reputable authors seek to publish on reputable venues because it gives their 
-research more visibility and accreditation. Therefore, a researcher conveys reputation
-to a venue proportionally to its own reputation and the reputation of a researcher
-is proportional to the reputation of the venues where she or he publishes.
+research more visibility and accreditation. Therefore, researchers convey reputation
+to a venue proportionally to their own reputation and the reputation of a researcher
+is proportional to the reputation of the venues where she publishes.
 This relationship between authors and venues constitutes a reputation network in which 
 authors influence venue reputations and vice versa. 
 
@@ -177,7 +177,7 @@ the laborious effort of compiling individual researcher citation information.
 
 The Pscore of computer science venues has shown significant correlation with H-index. Yet, 
 there are important cases where the two metrics diverge considerably. Namely, in venues 
-that belong to an intersection between different domains and in venues of less popular 
+that belong to an intersection between different domains and in venues that belong to less popular 
 subareas of computer science. These differences appeal to the importance of pscore as a 
 complementary metric.
 
@@ -278,12 +278,15 @@ potential collaterals of interest (such as individual researchers).
    \label{fig:overview}
 \end{figure}
 
-Our reputation graph for academia can be naturally associated with paper authors, modelled as reputation 
-sources, and papers, modelled as reputation targets. 
+Our reputation graph for academia can be naturally associated with paper authors, 
+modelled as reputation sources, and papers, modelled as reputation targets. 
 The interaction between reputation sources and reputation targets is inspired by the 
 notion of {\em eigenvalue centrality} in complex 
 networks~\cite{Brin1998, Langville2008, Langville2008, Newman2010}. 
-In the reputation graph, if we consider only sources and targets, it is easy to identify reputation flows from sources to sources, from sources to targets, from targets to sources, and from targets to targets. These reputation flows can be modeled as a stochastic process. 
+In the reputation graph, if we consider only sources and targets, it is easy to 
+identify reputation flows from sources to sources, from sources to targets, from 
+targets to sources, and from targets to targets. These reputation flows can be 
+modeled as a stochastic process. 
 In particular, let $P$ be a \emph{right stochastic} %\footnote{A right stochastic matrix is ...} 
 matrix of size $(|S|+|T|) \times (|S|+|T|)$ with the following structure: 
 
@@ -355,23 +358,30 @@ exactly the same 126 graduate programs considered by NRC in its 2011 evaluation 
 in the USA \footnote{http://www.nap.edu/rdp/}, we ended up with a subset of 12 CS programs to be considered as reputation sources. 
 These are the CS programs that appeared as least once in the set $S_{auto}$ of automatically selected reputation 
 sources and they are as follows: 
-%%%
-\begin{enumerate}
-\item Carnegie Mellon University
-\item Georgia Institute of Technology
-\item Massachusetts Institute of Technology
-\item Stanford University
-\item University of California-Berkeley
-\item University of California-Los Angeles
-\item University of California-San Diego
-\item University of Illinois at Urbana-Champaign
-\item University of Maryland College Park
-\item University of Southern California
-\item University of Michigan-Ann Arbor
-\item Cornell University
-\label{list:departments}
-\end{enumerate}
-%%%
+
+\begin{table}[h!]
+ \centering
+ \begin{tabular}{|l l|} 
+ \hline
+ \# & Department \\ 
+ \hline
+ 1  & Carnegie Mellon University \\
+ 2  & Georgia Institute of Technology \\
+ 3  & Massachusetts Institute of Technology \\
+ 4  & Stanford University \\
+ 5  & University of California-Berkeley \\
+ 6  & University of California-Los Angeles \\
+ 7  & University of California-San Diego \\
+ 8  & University of Illinois at Urbana-Champaign \\
+ 9  & University of Maryland College Park \\
+ 10 & University of Southern California \\
+ 11 & University of Michigan-Ann Arbor \\
+ 12 & Cornell University \\
+ \hline
+ \end{tabular}
+ \caption{Reputation sources obtained with the randomization procedure.}
+ \label{tab:departments}
+\end{table}
 
 All the 12 departments above are among the top 5th percentile in the ranking produced by NRC. 
 This suggests that our recursive procedure is able to take advantage of patterns in the publication 
@@ -390,33 +400,33 @@ citations each, then her H-index is 20, assuming that 20 is the highest number f
 definition of the H-index holds. A journal's H-index can be computed 
 in the same way by considering all publications and their collective citation data over a definite 
 period as suggested by Braun et. al. (2006) \cite{Braun2006}.
-Since the H-index was proposed in 2005, the original paper by Hirsch \cite{Hirsch2005} was 
-cited 7949 times showing the metric's popularity 
+Since H-index was proposed in 2005, the original paper by Hirsch \cite{Hirsch2005} was 
+cited 7949 times, what indicates its popularity 
 \footnote{According to Google Scholar, up to the end of 2017.}.
 
-As any scientific impact metric, the H-index has advantages and disadvantages. 
+As any scientific impact metric, H-index has advantages and disadvantages. 
 Some of its advantages are:
 
 \begin{itemize}
 \item The simplicity and intuitiveness of its formulation.
 \item The longer citation time window when compared to impact factors.
-\item The H-index has good predictive power regarding scientific achievement \cite{Bornmann2005, Hirsch2007}.
+\item H-index has a good predictive power regarding scientific achievement \cite{Bornmann2005, Hirsch2007}.
 \end{itemize}
 
-The H-index depends on citations to be calculated, thus it suffers from the 
+H-index depends on citations to be calculated, thus it suffers from the 
 same problems as other citation-based metrics. Some of the major disadvantages are:
 
 \begin{itemize}
-\item The H-index does not distinguish citations from prestigious and peripheral journals, thus 
+\item H-index does not distinguish citations from prestigious and peripheral journals, thus 
 it measures popularity rather than quality.
 \item The time to first citation can be very long.
 \item It is not easy to collect all relevant information.
-\item The H-index is field-dependent \cite{Wendl2007}.
+\item H-index is field-dependent \cite{Wendl2007}.
 \item Major sources do not always agree on its value \cite{Bar-Ilan2008}. 
 \end{itemize}
 
 We propose P-score as a complementary metric to deal with the major problems presented by
-citation-based metrics such as the H-index and offer further insight on venue quality.
+citation-based metrics such as H-index and offer further insight on venue quality.
 P-score is a metric of reputation among peers based on the publication pattern of a set of reference 
 groups of researchers, the seeds. It differs from other network-based metrics because the venues' reputations 
 derive exclusively from the reference set of research groups, better reflecting the actual reputation 
@@ -428,7 +438,7 @@ Our dataset consists of 882 conferences in the field of computer science for whi
 the H-index was available on Google Scholar \footnote{https://scholar.google.com.br/}. The
 P-score was calculated with data obtained from DBLP \footnote{http://dblp.uni-trier.de/}. 
 The reference set of research groups was selected through the randomization process described in 
-section \ref{sec:rep-sources}, yielding the 12 departments listed in table \ref{list:departments}.
+section \ref{sec:rep-sources}, yielding the 12 departments listed in table \ref{tab:departments}.
 
 \begin{figure}[h!]
   \begin{center}
