@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  10 APR 2018 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  10 APR 2018 23:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1419,10 +1419,6 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 775.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 775.
 Package rerunfilecheck Info: File `new-paper-correlation.out' has not changed.
 (rerunfilecheck)             Checksum: EC1F803278DD53E26BC6239C3A4951B4;396.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 775.
  )
 (\end occurred inside a group at level 1)
@@ -1432,7 +1428,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 775.
 Here is how much of TeX's memory you used:
  30004 strings out of 493014
  693964 string characters out of 6133351
- 1755997 words of memory out of 5000000
+ 1756024 words of memory out of 5000000
  32905 multiletter control sequences out of 15000+600000
  21460 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
