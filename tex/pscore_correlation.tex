@@ -4,29 +4,71 @@
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[american]{babel}
 \usepackage{pgfplots}
 \usepackage{amsmath}
 \usepackage{tikz}
 \usepackage{subcaption}
-\usepackage{authblk}
 \usepackage{indentfirst}
+\usepackage{csquotes}
+\usepackage[
+    style=apa,
+    backend=biber,
+    sortcites=true,
+    sorting=nyt,
+%    isbn=false,
+%    url=false,
+%    doi=false,
+%    eprint=false,
+    hyperref=false,
+    backref=false,
+%    firstinits=false,
+]{biblatex}
+
+% Removes month from bibliography entries, which shouldn't be there for academic journals - optionally, remove the month entries from your .bib file on the offending files. Comment it out if using popular media, newspaper articles, etc. that need the month field. 
+\AtEveryBibitem{
+  \clearfield{month}
+}
+\DeclareLanguageMapping{american}{american-apa}
+
+% Removes "retrieved from on date" from bibliography entry unless it is a wiki URL, which is closer to the spirit of APA's rule. See biblatex-apa documentation for more info.
+\DeclareSourcemap{
+\maps[datatype=bibtex]{
+\map{
+\step[fieldsource=url,
+notmatch=\regexp{wiki},
+final=1]
+\step[fieldset=urldate, null]
+}
+}
+}
+
+\pgfplotsset{compat=1.15}
+\raggedbottom
 
 \title{P-score: a Complementary Metric to H-index} 
 \shorttitle{P-score: a Complementary Metric to H-index}
 
-\author{João Mateus de Freitas Veneroso}
-\author{Berthier Ribeiro-Neto}
-\author{Marlon Dias}
-\affil{Department of Computer Science, Universidade Federal de Minas Gerais, Av. Pres. Antônio Carlos, 6627 - Pampulha, Belo Horizonte - MG, 31270-901, Brazil. Emails: joao.veneroso@dcc.ufmg.br, berthier@dcc.ufmg.br, msdias@dcc.ufmg.br}
+\author{João Mateus de Freitas Veneroso, Berthier Ribeiro-Neto and Marlon Dias}
+\affiliation{Universidade Federal de Minas Gerais}
 
-\renewcommand\Authands{ and }
+% Emails: joao.veneroso@dcc.ufmg.br, berthier@dcc.ufmg.br, msdias@dcc.ufmg.br
+
+% Add your BibTeX files here. Use source location if you aren't keeping them as the same folder as your document.
+\bibliography{pscore_correlation}
+
+% maps apacite commands to biblatex commands
+\let \citeNP \cite
+\let \citeA \textcite
+\let \cite \parencite
+
 \renewcommand{\arraystretch}{0.75}
 
 % Required by JASIST.
 \renewcommand{\baselinestretch}{1.5}
 
 % Workaround the affiliation bug in the APA package that will make the word "Affiliation" appear after the actual affiliation.
-\makeatletter \@ifundefined{@affil}{\def\@affil{\relax}{}} \makeatother
+% \makeatletter \@ifundefined{@affil}{\def\@affil{\relax}{}} \makeatother
 
 % To make anonymous:
 % \begin{anonsuppress} \end{anonsuppress}
@@ -94,7 +136,12 @@ Nonetheless, it is desirable to employ
 complementary metrics that tackle the exposed problems without loss of effectiveness.
 
 Academic reputation is an individual or group property strongly associated with 
-academic impact. Reputable venues tend to concentrate the most relevant research papers 
+academic impact, and while being similar it is not identical to academic popularity. An 
+actor's popularity depends solely on the the total number of endorsements
+the actor receives from other actors, while its reputation or prestige depends on the 
+reputations of the endorsing actors~\cite{Bollen2006}.
+
+Reputable venues tend to concentrate the most relevant research papers 
 because that is how they acquire and keep their good reputations. At the same time, 
 reputable authors seek to publish on reputable venues because it gives their 
 research more visibility and accreditation. Therefore, researchers convey reputation
@@ -108,8 +155,7 @@ reputations to venues based on the publication patterns of a reference group of 
 without relying on citation information. It deals with the three problems discussed previously. 
 
 First, instead of measuring the amount of researcher attention, P-score measures reputations,
-which, under certain assumptions, provide a better proxy for academic impact as was shown by 
-Ribas et al.~\cite{Ribas2015a}. Second, while citations can take years to happen, reputations 
+which, under certain assumptions, provide a better proxy for academic impact as was shown by~\citeA{Ribas2015a}. Second, while citations can take years to happen, reputations 
 tend to be established earlier on. As a consequence, the quality of new research can be 
 promptly estimated using P-scores computed on the newest publication data. Third, P-scores do
 not require citation data to be computed, which means that they can be recomputed whenever
@@ -130,52 +176,50 @@ there).
 \section{Related Work}\label{sec:related-work}
 
 Quantitative metrics of scientific impact have a long history. An influential approach is
-Garfield's Impact Factor (1955)~\cite{Garfield1955a}, a journal-level metric that is defined
+Garfield's Impact Factor~\cite{Garfield1955a}, a journal-level metric that is defined
 by the mean number of citations received by articles published in a given journal over a 2-year period. 
 Despite being one of the earliest approaches at measuring scientific impact, it has showed remarkable 
 survivability. 
-Pinski et. al. (1976)~\cite{Pinski1976} describe several limitations with the metric. Impact factors also suffered 
+\citeA{Pinski1976} describe several limitations with the metric. Impact factors also suffered 
 criticism for being misleading~\cite{Nature2016, Saha2003} and for lacking reliable validation from an independent 
-audit~\cite{Rossner2007}. Riikonen and Vihinen (2008)~\cite{Riikonen2008} showed that actual citation 
+audit~\cite{Rossner2007}. \citeA{Riikonen2008} showed that actual citation 
 and publication counts were better predictors of a scientist's contribution than impact factors in a 
 study that assessed the scientific contribution of Finnish researchers in biomedicine.
 
 The acceptance rate is another important journal-level metric that attempts to quantify the scientific impact. It
-is defined by the proportion of accepted papers relative to the number of submitted papers. Chen et. al. (2010)~\cite{Chen2010} 
+is defined by the proportion of accepted papers relative to the number of submitted papers. \citeA{Chen2010} 
 have shown that highly selective conferences, the ones having low acceptance rates, have higher 
 scientific impact, measured in terms of the number of citations received by the published papers.
 
-The H-index is an author-level metric proposed by Hirsch (2005)~\cite{Hirsch2005}. Since its formulation, it has been 
+The H-index is an author-level metric proposed by~\citeA{Hirsch2005}. Since its formulation, it has been 
 widely adopted as a measure of individual scientific research output.
 The H-index takes into account both the number of publications and the number of citations per publication, 
 achieving higher values when a researcher obtains a consistently high number of citations over multiple publications. 
 The H-index has been criticized for not taking into account field specific citation
-statistics~\cite{Wendl2007}. The G-index, proposed by Egghe (2006)~\cite{Egghe2006}, is a less strict variation 
+statistics~\cite{Wendl2007}. The G-index, proposed by~\citeA{Egghe2006}, is a less strict variation 
 of the H-index.
 
 Citation counts and derived metrics are straightforward to calculate, but they represent only a coarse
 estimate of academic impact, because they are essentially popularity measures. Some people are popular but not 
 prestigious and vice versa. For example, an author of pulp detectives may sell many books, but may not have earned 
 the respect of literary critics~\cite{Bollen2006}. Citations from 
-prestigious journals are more relevant than citations from peripheral journals, as noted by
-Pinski et. al. (1976)~\cite{Pinski1976}. To address this issue, some studies distinguish popularity from 
+prestigious journals are more relevant than citations from peripheral journals, as noted by~\citeA{Pinski1976}. To address this issue, some studies distinguish popularity from 
 reputation or prestige with the usage of citation weighting strategies~\cite{Ding2011, Yan2011a} or 
 Page Rank based methods~\cite{Bollen2006, Sun2007}. 
-Furthermore, Piwowar (2013)~\cite{Piwowar2013} noted that citation based metrics are slow, since the 
+Furthermore,~\citeA{Piwowar2013} noted that citation based metrics are slow, since the 
 first citation to a scientific article can take years to happen, concluding that the development of 
 alternative metrics to complement citation analysis is not only desirable, but a necessity.
-As discussed in~\cite{Leydesdorff2009}, each metric has advantages and disadvantages deriving from their 
+As discussed by~\citeA{Leydesdorff2009}, each metric has advantages and disadvantages deriving from their 
 inherent biases.
 
-Martins et. al. (2009)~\cite{Martins2009} proposed a method of assessing the quality of scientific conferences 
+\citeA{Martins2009} proposed a method of assessing the quality of scientific conferences 
 through a machine learning classifier that makes use of multiple features in addition to citations.
-Gonçalves et al. (2014)~\cite{Goncalves2014} quantified the impact of various features on a 
+\citeA{Goncalves2014} quantified the impact of various features on a 
 scholar's popularity. They concluded that, even though most of the considered features are strongly correlated 
 with popularity, only two features are needed to explain almost all the variation in popularity between different 
 researchers: the number of publications and the average quality of the scholar’s publication venues. 
 
-The idea of reputation, without the direct use of citation data, was discussed by Nelakuditi et 
-al. (2011)~\cite{Nelakuditi2011}. They proposed a metric called \textit{peers' reputation} for 
+The idea of reputation, without the direct use of citation data, was discussed by~\citeA{Nelakuditi2011}. They proposed a metric called \textit{peers' reputation} for 
 research conferences and journals, which ties the selectivity of the publication venue based upon 
 the reputation of its authors' institutions. The proposed metric was shown to be a better indicator 
 of the selectivity of a research venue than the acceptance ratio.
@@ -331,8 +375,8 @@ least $ h $ times. For example, if a researcher has published 20 papers that rec
 citations each, then her H-index is 20, assuming that 20 is the highest number for which the 
 definition of the H-index holds. A journal's H-index can be computed 
 in the same way by considering all publications and their collective citation data over a 
-definite period as suggested by Braun et. al. (2006)~\cite{Braun2006}.
-Since H-index was proposed in 2005, the original paper by Hirsch~\cite{Hirsch2005} was 
+definite period as suggested by~\citeA{Braun2006}.
+Since H-index was proposed in 2005, the original paper by~\citeA{Hirsch2005} was 
 cited 7,949 times, which attests to its popularity 
 \footnote{According to Google Scholar, up to the end of 2017.}.
 
@@ -691,7 +735,6 @@ can be employed
 by research funding councils and committees to better understand 
 the scientific relevance of venues and researchers and thus, take more informed funding decisions.
 
-\bibliographystyle{abbrv}
-\bibliography{pscore_correlation}
+\printbibliography
 
 \end{document}
