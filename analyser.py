@@ -43,7 +43,8 @@ def calculate_kendall_tau(df1, angle):
   print ', '.join([str(math.degrees(angle)), str(kendall_tau), str(z_score), str(len(df1.index))])
 
 def calculate_all(df):
-  step = math.pi / 180 # 1 degree steps.
+  # step = math.pi / 180 # 1 degree steps.
+  step = math.pi / 36 # 10 degree steps.
   angle = math.pi / 4
 
   print 'Angle, Kendall-Tau, Z-Score'

@@ -1,0 +1,6 @@
+tex/*.aux
+tex/*.fff
+tex/*.log
+tex/*.pdf
+tex/*.ttt
+figs/*
