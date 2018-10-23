@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: pscore_correlation.aux
+The style file: unsrt.bst
+Database file #1: pscore_correlation.bib
+Warning--empty journal in Thomson2017
+You've used 39 entries,
+            1791 wiz_defined-function locations,
+            716 strings with 9609 characters,
+and the built_in function-call counts, 9410 in all, are:
+= -- 919
+> -- 309
+< -- 6
++ -- 121
+- -- 82
+* -- 660
+:= -- 1437
+add.period$ -- 120
+call.type$ -- 39
+change.case$ -- 35
+chr.to.int$ -- 0
+cite$ -- 40
+duplicate$ -- 417
+empty$ -- 944
+format.name$ -- 82
+if$ -- 2104
+int.to.chr$ -- 0
+int.to.str$ -- 39
+missing$ -- 43
+newline$ -- 198
+num.names$ -- 39
+pop$ -- 82
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 195
+stack$ -- 0
+substring$ -- 817
+swap$ -- 91
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 108
+width$ -- 41
+write$ -- 434
+(There was 1 warning)

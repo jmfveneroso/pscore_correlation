@@ -1,4 +1,9 @@
-\documentclass[man]{apa6}
+\documentclass[notitlepage]{article}
+% \documentclass[sigconf]{acmart}
+% \settopmatter{printacmref=false} % Removes citation information below abstract
+% \renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+% \pagestyle{plain} % removes running headers
+% \setcopyright{none}
 
 \usepackage{graphics}
 \usepackage{graphicx}
@@ -9,102 +14,63 @@
 \usepackage{amsmath}
 \usepackage{tikz}
 \usepackage{subcaption}
-\usepackage{indentfirst}
 \usepackage{csquotes}
-\usepackage[
-    style=apa,
-    backend=biber,
-    sortcites=true,
-    sorting=nyt,
-%    isbn=false,
-%    url=false,
-%    doi=false,
-%    eprint=false,
-    hyperref=false,
-    backref=false,
-%    firstinits=false,
-]{biblatex}
+\usepackage{booktabs} % For formal tables
+\usepackage{authblk}
 
-% Removes month from bibliography entries, which shouldn't be there for academic journals - optionally, remove the month entries from your .bib file on the offending files. Comment it out if using popular media, newspaper articles, etc. that need the month field. 
-\AtEveryBibitem{
-  \clearfield{month}
-}
-\DeclareLanguageMapping{american}{american-apa}
+\providecommand{\keywords}[1]{\textbf{\textit{Keywords:}} #1}
 
-% Removes "retrieved from on date" from bibliography entry unless it is a wiki URL, which is closer to the spirit of APA's rule. See biblatex-apa documentation for more info.
-\DeclareSourcemap{
-\maps[datatype=bibtex]{
-\map{
-\step[fieldsource=url,
-notmatch=\regexp{wiki},
-final=1]
-\step[fieldset=urldate, null]
-}
-}
-}
+\begin{document}
 
-\pgfplotsset{compat=1.15}
-\raggedbottom
+\title{P-score: a Reputation Bibliographic Index that Complements Citation Counts} 
 
-\title{P-score: a Complementary Metric to H-index} 
-\shorttitle{P-score: a Complementary Metric to H-index}
+% \author{
+% }
 
-\author{
-João Mateus de Freitas Veneroso${^*}$, 
-Marlon Dias${^*}$, 
-Berthier Ribeiro-Neto${^*}$,
-Nivio Ziviani${^*}$ and 
-Edmundo de Souza e Silva${^{**}}$ 
-}
-\affiliation{${^*}$Universidade Federal de Minas Gerais and ${^{**}}$Universidade Federal do Rio de Janeiro}
+\author[a]{João Mateus de Freitas Veneroso}
+\author[a]{Marlon Dias}
+\author[a]{Berthier Ribeiro-Neto}
+\author[a]{Nivio Ziviani}
+\author[b]{Edmundo de Souza e Silva}
+\affil[a]{Universidade Federal de Minas Gerais}
+\affil[b]{Universidade Federal do Rio de Janeiro}
 
-% Emails: joao.veneroso@dcc.ufmg.br, berthier@dcc.ufmg.br, msdias@dcc.ufmg.br
+\providecommand{\keywords}[1]{\textbf{\textit{Index terms---}} #1}
 
-% Add your BibTeX files here. Use source location if you aren't keeping them as the same folder as your document.
-\bibliography{pscore_correlation}
+\maketitle
 
-% maps apacite commands to biblatex commands
-\let \citeNP \cite
-\let \citeA \textcite
-\let \cite \parencite
+\textbf{Declarations of interest: none} \\
+\\
+\\
+\textbf{Corresponding author:} \\
+João Mateus de Freitas Veneroso \\
+Mailing address: Universidade Federal de Minas Gerais, Av. Pres. Antônio Carlos, 6627 - Pampulha, Belo Horizonte - MG, 31270-901 \\
+Tel: +55 (31) 99436-0909 \\
+Email: jmfveneroso@gmail.com \\
 
-\renewcommand{\arraystretch}{0.75}
-
-% Required by JASIST.
-\renewcommand{\baselinestretch}{1.5}
-
-% Workaround the affiliation bug in the APA package that will make the word "Affiliation" appear after the actual affiliation.
-% \makeatletter \@ifundefined{@affil}{\def\@affil{\relax}{}} \makeatother
-
-% To make anonymous:
-% \begin{anonsuppress} \end{anonsuppress}
-
-\abstract{The notions of reputation and popularity in academia are critical for taking 
+\begin{abstract}
+The notions of reputation and popularity in academia are critical for taking 
 decisions on research grants, faculty position tenure, and research excellence awards. 
 These notions are almost always associated with the publication track 
 records of the researchers. Thus, it is important to assess 
 publication track records quantitatively. To quantify a publication record, 
-bibliographic metrics are usually adopted. Among these, citation based metrics
+bibliographic indices are usually adopted. Among these, citation-based indices
 such as the H-index are frequently considered. 
-In this paper we study the correlation between P-score, a publication record metric 
-we introduced previously, and H-index. While H-indices reflect the popularity of a given
+In this paper we study the correlation between P-score, a publication record index
+and H-index, the most popular citation-based index. 
+While H-indices reflect the popularity of a given
 publication or researcher in academia, P-scores reflect the reputation of a publication or
-researcher among its peers. And while popularity and reputation are frequently considered 
-to be equivalent properties, they are not identical. Indeed, 
+researcher among its peers. Popularity and reputation are frequently considered 
+to be equivalent properties, however they are not identical. Indeed, 
 we first show that H-indices and P-scores are correlated with a Kendall-Tau coefficient 
 that exceeds 0.5. However, we also notice that they have important differences. 
 Particularly, we identify publication venues with high H-indices and low 
 P-scores, as well as venues with low H-indices and high P-scores. We provide interpretations 
 for these findings and discuss how they can be used by research funding councils and committees
-to better support their funding decisions.}
+to better support their funding decisions.
+\end{abstract}
 
 \keywords{P-score, H-index}
-
-\begin{document}
-
-\setlength{\parindent}{40pt}
-
-\maketitle
 
 \section{Introduction}
 \label{sec:introduction}
@@ -112,31 +78,31 @@ to better support their funding decisions.}
 Academic research evaluation is a topic of interest to universities, research groups,
 research funding institutions, and the public at large. It is used to decide laboratory space
 allocation, research grants, tenure track, university choice by students, and more. It also 
-has a direct impact on the reputation of the university or institution before society, which
+has a direct impact on the reputation of the university or institution, which
 affects the ability of the institution to attract the best possible talent. While evaluation of
 academic research is complex, usually a function of multiple variables, a dominant variable in
 most evaluation procedures is the research output of the institution. In particular, considerable
 emphasis is given to the papers published by the professors and students of the institution, as
 well as the quality of these papers in terms of their impact on scientific knowledge. A rather
 popular approach to evaluate publication impact is to compare journals, conferences or papers
-through the usage of academic impact metrics. A popular and moderately effective approach is to
-compute metrics based on the number of citations received by a given piece of research and
+through the usage of academic impact indicators. A popular and moderately effective approach is to
+compute an index based on the number of citations received by a given piece of research and
 assume that the number of citations is a good proxy for research quality. However,
 this approach has multiple shortcomings. 
 
 First, in the evaluation and bibliometrics research communities, citations are understood
 as a measure of attention rather than a proxy for impact or quality. Citations measure 
-the attention to a paper of peers in related fields~\cite{Loach2015}, not the quality of the 
+the attention to a paper of peers in related fields \cite{Loach2015}, not the quality of the 
 work produced. Second, citations can take a long time to happen. To illustrate this, in a recent
 study that looked at first time to citation in a universe of more than a million papers, half the 
 papers only received their first citation 20 months or more after they were
 published~\cite{Nane2012}. Third, citations are not simple to compute and are not always broadly
 available, particularly at the level of individual researchers.
 
-Despite these limitations, citation based metrics continue to be a popular approach to
+Despite these limitations, citation-based indices continue to be a popular approach to
 academic research evaluation~\cite{Kellner2008}.
 Nonetheless, it is desirable to employ
-complementary metrics that tackle the exposed problems without loss of effectiveness.
+complementary indicators that tackle the exposed problems without loss of effectiveness.
 
 Academic reputation is an individual or group property strongly associated with 
 academic impact, and while being similar it is not identical to academic popularity. An 
@@ -152,12 +118,13 @@ is proportional to the reputation of the venues where they publish.
 This relationship between authors and venues constitutes a reputation network in which 
 authors influence venue reputations and vice versa. 
 
-{\em P-score}~\cite{Ribas2015a} is a graph-based modeling metric that attributes quantitative
+{\em P-score}~\cite{Ribas2015a} is a graph-based modeling index that attributes quantitative
 reputations to venues based on the publication patterns of a reference group of researchers,
 without relying on citation information. It deals with the three problems discussed previously. 
 
 First, instead of measuring the amount of researcher attention, P-score measures reputations
-which, under certain assumptions, provide a better proxy for academic impact as was shown by~\citeA{Ribas2015a}. Second, while citations can take years to happen, reputations 
+which, under certain assumptions, provide a better proxy for academic impact as was shown by 
+Ribas et al.~\cite{Ribas2015a}. Second, while citations can take years to happen, reputations 
 tend to be established earlier on. As a consequence, the quality of new research can be 
 promptly estimated using P-scores computed on the newest publication data. Third, P-scores do
 not require citation data to be computed, which means that they can be recomputed quickly whenever one finds fit or convenient.
@@ -166,72 +133,72 @@ Our interpretation of these results are based on the intuition that while H-indi
 quantification of the popularity of a publication or researcher among their peers, P-scores 
 provide a quantification of the reputation of a publication or researcher among peers. When
 P-scores and H-indices are strongly correlated, we have venues that are popular and of high
-reputation among computer scientists. Second, when P-scores are large (better rank position) 
-and H-indices are small (worse rank position) we have venues of good reputation among computer
-scientists that are associated with small research communities or subareas and are thus less popular. Third, when P-scores
-are small (worse rank position) and H-indices are large (better rank position) we have venues of good popularity 
-(usually associated with large research communities inside Computer Science) that do not count
-with high reputation among computer scientists (in the sense that they do not publish frequently 
-there).
+reputation or unpopular with a low reputation. Second, when P-scores are high (better rank position) 
+and H-indices are low (worse rank position) we have venues of good reputation
+that are associated with small research communities or subareas and are accordingly less popular. Third, when P-scores
+are low (worse rank position) and H-indices are high (better rank position) we have venues of good popularity 
+(usually associated with large research communities) that do not have
+a high reputation (in the sense that the reference group of researchers does not publish frequently there).
 
 \section{Related Work}\label{sec:related-work}
 
-Quantitative metrics of scientific impact have a long history. An influential approach is
-Garfield's Impact Factor~\cite{Garfield1955a}, a journal-level metric that is defined
+Quantitative measures of scientific impact have a long history. An influential approach is
+Garfield's Impact Factor~\cite{Garfield1955a}, a journal-level measure that is defined
 by the mean number of citations received by articles published in a given journal over a 2-year period. 
 Despite being one of the earliest approaches at measuring scientific impact, it has showed remarkable 
 survivability. 
-\citeA{Pinski1976} describe several limitations with the metric. Impact factors also suffered 
+Pinski et al. \cite{Pinski1976} describe several limitations with the Impact Factor. Impact factors also suffered 
 criticism for being misleading~\cite{Nature2016, Saha2003} and for lacking reliable validation from an independent 
-audit~\cite{Rossner2007}. \citeA{Riikonen2008} showed that actual citation 
+audit~\cite{Rossner2007}. Riikonen et al. \cite{Riikonen2008} showed that actual citation 
 and publication counts were better predictors of a scientist's contribution than impact factors in a 
 study that assessed the scientific contribution of Finnish researchers in biomedicine.
 
-The acceptance rate is another important journal-level metric that attempts to quantify the scientific impact. It
-is defined by the proportion of accepted papers relative to the number of submitted papers. \citeA{Chen2010} 
+The acceptance rate is another important journal-level indicator that attempts to quantify scientific impact. It
+is defined by the proportion of accepted papers relative to the number of submitted papers. Chen et al. \cite{Chen2010} 
 have shown that highly selective conferences, the ones having low acceptance rates, have higher 
-scientific impact, measured in terms of the number of citations received by the published papers.
+scientific impact measured in terms of the number of citations received by the published papers.
 
-The H-index is an author-level metric proposed by~\citeA{Hirsch2005}. Since its formulation, it has been 
+The H-index is an author-level index proposed by Hirsch~\cite{Hirsch2005}. Since its formulation, it has been 
 widely adopted as a measure of individual scientific research output.
 The H-index takes into account both the number of publications and the number of citations per publication, 
 achieving higher values when a researcher obtains a consistently high number of citations over multiple publications. 
 The H-index has been criticized for not taking into account field specific citation
-statistics~\cite{Wendl2007}. The G-index, proposed by~\citeA{Egghe2006}, is a less strict variation 
+statistics~\cite{Wendl2007}. The G-index, proposed by Egghe~\cite{Egghe2006}, is a less strict variation 
 of the H-index.
 
-Citation counts and derived metrics are straightforward to calculate, but they represent only a coarse
+Citation counts and derived measures are straightforward to calculate, but they represent only a coarse
 estimate of academic impact, because they are essentially popularity measures. Some people are popular but not 
 prestigious and vice versa. For example, an author of pulp detectives may sell many books, but may not have earned 
-the respect of literary critics~\cite{Bollen2006}. Citations from 
-prestigious journals are more relevant than citations from peripheral journals, as noted by~\citeA{Pinski1976}. To address this issue, some studies distinguish popularity from 
+the respect of literary critics as pointed by Bollen et al.~\cite{Bollen2006}. Citations from 
+prestigious journals are more relevant than citations from peripheral journals, as noted by Pinski et al.~\cite{Pinski1976}. To address this issue, some studies distinguish popularity from 
 reputation or prestige with the usage of citation weighting strategies~\cite{Ding2011, Yan2011a} or 
 Page Rank based methods~\cite{Bollen2006, Sun2007}. 
-Furthermore,~\citeA{Piwowar2013} noted that citation based metrics are slow, since the 
+Furthermore, Piwowar~\cite{Piwowar2013} noted that citation-based indices are slow, since the 
 first citation to a scientific article can take years to happen, concluding that the development of 
-alternative metrics to complement citation analysis is not only desirable, but a necessity.
-As discussed by~\citeA{Leydesdorff2009}, each metric has advantages and disadvantages deriving from their 
-inherent biases.
+alternative indices to complement citation analysis is not only desirable, but a necessity.
+As discussed by Leydesdorff~\cite{Leydesdorff2009}, each indicator has advantages and disadvantages 
+deriving from their inherent biases.
 
-\citeA{Martins2009} proposed a method of assessing the quality of scientific conferences 
+Martins et al. \cite{Martins2009} proposed a method of assessing the quality of scientific conferences 
 through a machine learning classifier that makes use of multiple features in addition to citations.
-\citeA{Goncalves2014} quantified the impact of various features on a 
+Gonçalves et al.~\cite{Goncalves2014} quantified the impact of various features on a 
 scholar's popularity. They concluded that, even though most of the considered features are strongly correlated 
 with popularity, only two features are needed to explain almost all the variation in popularity between different 
 researchers: the number of publications and the average quality of the scholar’s publication venues. 
 
-The idea of reputation, without the direct use of citation data, was discussed by~\citeA{Nelakuditi2011}. They proposed a metric called \textit{peers' reputation} for 
+The idea of reputation, without the direct use of citation data, was discussed by Nelakuditi et al.~\cite{Nelakuditi2011}. 
+They proposed a metric called \textit{peers' reputation} for 
 research conferences and journals, which ties the selectivity of the publication venue based upon 
 the reputation of its authors' institutions. The proposed metric was shown to be a better indicator 
 of the selectivity of a research venue than the acceptance ratio.
 
-\section{P-score: a network-based metric} 
+\section{P-score: a network-based index} 
 \label{pscore} 
 
-Contrary to citation counting metrics such as the Impact 
+Contrary to citation counts such as the Impact 
 Factor~\cite{Garfield1955a, Saha2003, Thomson2017, Balaban2012} and 
 H-index~\cite{Benevenuto2016, Bar-Ilan2008, Egghe2008, Bornmann2005, Bornmann2011}, 
-P-scores are a graph-based modeling metric that takes into account 
+P-scores are a graph-based modeling index that takes into account 
 the relations among researchers, papers they published and their publication venues. They are 
 based on a framework of reputation flows we introduced previously~\cite{Ribas2015}. Let us review 
 them briefly. 
@@ -249,7 +216,7 @@ Further we focus on the weights assigned to the publication venues and do not co
 potential collaterals of interest (such as individual researchers). 
 
 \begin{figure}[h]
-   \centerline{\includegraphics[scale=0.75]{overview-line}}
+   \centerline{\includegraphics[scale=0.6]{overview-line}}
    %\centerline{\includegraphics[scale=0.6]{figures/models/overview}}
    \caption{Structure of the reputation graph.}
    \label{fig:overview}
@@ -369,19 +336,19 @@ not use information on citation counts in the model.
 \section{Correlation with H-indices} 
 \label{sec:correlation}
 
-The H-index~\cite{Hirsch2005} is a composite metric of lifelong scientific contribution that takes 
+The H-index~\cite{Hirsch2005} is a composite index of lifelong scientific contribution that takes 
 into account the productivity of researchers and the citation impact of their publications.
 A researcher has an H-index value of $ h $ if she has $ h $ publications that have been cited at 
 least $ h $ times. For example, if a researcher has published 20 papers that received at least 20 
 citations each, then her H-index is 20, assuming that 20 is the highest number for which the 
 definition of the H-index holds. A journal's H-index can be computed 
 in the same way by considering all publications and their collective citation data over a 
-definite period as suggested by~\citeA{Braun2006}.
-Since H-index was proposed in 2005, the original paper by~\citeA{Hirsch2005} was 
+definite period as suggested by Braun et al.~\cite{Braun2006}.
+Since the H-index was proposed in 2005, the original paper by~\cite{Hirsch2005} was 
 cited 7,949 times, which attests to its popularity 
 \footnote{According to Google Scholar, up to the end of 2017.}.
 
-As any scientific impact metric, the H-index has advantages and disadvantages. 
+As any scientific impact index, the H-index has advantages and disadvantages. 
 Some of its advantages are:
 
 \begin{itemize}
@@ -391,7 +358,7 @@ Some of its advantages are:
 \end{itemize}
 
 H-index depends on citations to be calculated, thus it suffers from the 
-same problems as any other citation-based metrics. Some of its major disadvantages are:
+same problems as any other citation-based indices. Some of its major disadvantages are:
 
 \begin{itemize}
 \item H-index does not distinguish citations from prestigious and peripheral journals, thus 
@@ -402,68 +369,74 @@ it measures popularity rather than quality.
 \item Major sources do not always agree on its value~\cite{Bar-Ilan2008}. 
 \end{itemize}
 
-We propose to use P-score as a complementary metric to deal with some of the problems
-presented by citation-based metrics such as the H-index.
-P-score is a metric of reputation among peers based on the publication pattern of a set of
+We propose to use P-score as a complementary index to deal with some of the problems
+presented by citation-based indices such as the H-index.
+P-score is a index of reputation among peers based on the publication pattern of a set of
 reference groups of researchers, the reference seeds. It differs from other network-based 
-metrics because the venues' reputations derive exclusively from the reference seeds, which 
+indices because the venues' reputations derive exclusively from the reference seeds, which 
 allows better control of the actual reputation flows. Additionally, to calculate P-scores we 
 do not need citation data, which make P-scores easier to obtain than H-indices and avoids 
 the problem of lack of data that arises from the long time to first citation.
 
 We conducted experiments to investigate the relationship between P-scores and H-indices
-in conference rankings. In particular, we wanted to estimate the degree of correlation between both metrics. The data set consists of 882 Computer Science conferences
-for which the H5 metric was available on Google Scholar~\footnote{https://scholar.google.com.br/}
+in conference rankings. In particular, we wanted to estimate the degree of correlation between both 
+indices. The data set consists of 882 
+Computer Science~\footnote{
+While our data set is entirely composed of Computer Science conferences, nothing in our method is
+particular to this field. That is, our index is applicable to any field of knowledge.
+} 
+conferences
+for which the H5 index was available on Google Scholar~\footnote{https://scholar.google.com.br/}
 in 2012. P-scores were calculated with
 data obtained from DBLP \footnote{http://dblp.uni-trier.de/}. The reference set of research groups
 was selected through the randomization process described in the previous section, 
-yielding the 12 departments listed in table \ref{tab:departments}.
+yielding the 12 departments listed in Table \ref{tab:departments}.
 
 \begin{figure}[h]
 \centering
-\begin{subfigure}[b]{0.4\textwidth}
-    \centerline{\includegraphics[scale=0.45]{normal_plot_hindex}}
-    % \begin{tikzpicture}[scale=0.75]
-    %   \begin{axis}[
-    %       grid=major, % Display a grid
-    %       grid style={dashed,gray!30}, % Set the style
-    %       xlabel=Theoretical Z-Scores,
-    %       ylabel=Sample Z-Scores,
-    %       ymin=-3,
-    %       ymax=10
-    %     ]
-    %     \addplot[blue, only marks, mark size=0.75pt] 
-    %     table[x=column 1,y=column 2,col sep=comma] {data/hindex_normality.csv}; 
+\begin{subfigure}[b]{0.5\textwidth}
+    % \centerline{\includegraphics[scale=0.45]{normal_plot_hindex}}
+    \begin{tikzpicture}[scale=0.75]
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=Theoretical Z-Scores,
+          ylabel=Sample Z-Scores,
+          ymin=-3,
+          ymax=10
+        ]
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=column 1,y=column 2,col sep=comma] {data/hindex_normality.csv}; 
 
-    %     \draw[dotted]
-    %         (axis cs:\pgfkeysvalueof{/pgfplots/xmin},\pgfkeysvalueof{/pgfplots/xmin}) -- 
-    %         (axis cs:\pgfkeysvalueof{/pgfplots/xmax},\pgfkeysvalueof{/pgfplots/xmax});
-    %   \end{axis}
-    % \end{tikzpicture}
+        \draw[dotted]
+            (axis cs:\pgfkeysvalueof{/pgfplots/xmin},\pgfkeysvalueof{/pgfplots/xmin}) -- 
+            (axis cs:\pgfkeysvalueof{/pgfplots/xmax},\pgfkeysvalueof{/pgfplots/xmax});
+      \end{axis}
+    \end{tikzpicture}
     \caption{H-index}
     \label{fig:hindex_normality}
   
 \end{subfigure}  
-\begin{subfigure}[b]{0.4\textwidth}
-    \centerline{\includegraphics[scale=0.45]{normal_plot_pscore}}
-    % \begin{tikzpicture}[scale=0.75]
-    %   \begin{axis}[
-    %       grid=major, % Display a grid
-    %       grid style={dashed,gray!30}, % Set the style
-    %       xlabel=Theoretical Z-Scores,
-    %       ylabel=Sample Z-Scores,
-    %       ymin=-3,
-    %       ymax=10
-    %     ]
-    %     \addplot[blue, only marks, mark size=0.75pt] 
-    %     table[x=column 1,y=column 2,col sep=comma] {data/pscore_normality.csv}; 
-    %     % \legend{Plot}
+\begin{subfigure}[b]{0.5\textwidth}
+    % \centerline{\includegraphics[scale=0.45]{normal_plot_pscore}}
+    \begin{tikzpicture}[scale=0.75]
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=Theoretical Z-Scores,
+          ylabel=Sample Z-Scores,
+          ymin=-3,
+          ymax=10
+        ]
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=column 1,y=column 2,col sep=comma] {data/pscore_normality.csv}; 
+        % \legend{Plot}
 
-    %     \draw[dotted]
-    %         (axis cs:\pgfkeysvalueof{/pgfplots/xmin},\pgfkeysvalueof{/pgfplots/xmin}) -- 
-    %         (axis cs:\pgfkeysvalueof{/pgfplots/xmax},\pgfkeysvalueof{/pgfplots/xmax});
-    %   \end{axis}
-    % \end{tikzpicture}
+        \draw[dotted]
+            (axis cs:\pgfkeysvalueof{/pgfplots/xmin},\pgfkeysvalueof{/pgfplots/xmin}) -- 
+            (axis cs:\pgfkeysvalueof{/pgfplots/xmax},\pgfkeysvalueof{/pgfplots/xmax});
+      \end{axis}
+    \end{tikzpicture}
     \caption{P-score}
     \label{fig:pscore_normality}
 
@@ -499,18 +472,18 @@ that both rankings are uncorrelated~\cite{Kendall1955, Baeza-Yates2011}.
 
 \begin{figure}[h!]
   \begin{center}
-    \centerline{\includegraphics[scale=0.4]{rankings}}
-    % \begin{tikzpicture}
-    %   \begin{axis}[
-    %       grid=major, % Display a grid
-    %       grid style={dashed,gray!30}, % Set the style
-    %       xlabel=P-score ranks,
-    %       ylabel=H-index ranks
-    %     ]
-    %     \addplot[blue, only marks, mark size=0.75pt] 
-    %     table[x=column 1,y=column 2,col sep=comma] {data/pscore_hindex_ranks.csv}; 
-    %   \end{axis}
-    % \end{tikzpicture}
+    % \centerline{\includegraphics[scale=0.4]{rankings}}
+    \begin{tikzpicture}
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=P-score ranks,
+          ylabel=H-index ranks
+        ]
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=column 1,y=column 2,col sep=comma] {data/pscore_hindex_ranks.csv}; 
+      \end{axis}
+    \end{tikzpicture}
     \caption{P-score and H-index rankings.}
     \label{fig:pscore_hindex_ranks}
   \end{center}
@@ -519,7 +492,7 @@ that both rankings are uncorrelated~\cite{Kendall1955, Baeza-Yates2011}.
 Consider two conference rankings. Figure \ref{fig:pscore_hindex_ranks} shows the ranks of our 882 conferences according to
 their P-scores
 on the X-axis and their H-indices on the Y-axis. Points that are closer to the origin have better ranks (i.e. a data point at position 1 is better ranked than a data point at position 200).
-The plot shows an evident linear correlation between the ranks that is confirmed
+The plot shows an evident correlation between the ranks that is confirmed
 by a high Kendall-Tau of 0.5200259445. With a p-value smaller than 0.000001, we can safely reject the null 
 hypothesis (that the rankings are uncorrelated) with a reasonable margin.
 
@@ -527,7 +500,7 @@ hypothesis (that the rankings are uncorrelated) with a reasonable margin.
 \label{sec:notifications}
 
 Since P-scores and H-indices are strongly correlated, most data points in our example are clustered close to the identity 
-line, showing an apparent agreement between the metrics. However, there are noticeable differences, 
+line, showing an apparent agreement between the indices. However, there are noticeable differences, 
 particularly in those cases for which the P-score rank position is high and the H-index rank is low 
 (top left corner of Figure \ref{fig:pscore_hindex_ranks}), or for which the H-index rank is high and the 
 P-score rank is low (bottom right corner of Figure \ref{fig:pscore_hindex_ranks}). Therefore, we 
@@ -542,74 +515,80 @@ can distinguish between three groups of interest in the data set:
 
 \begin{figure}[h!]
   \begin{center}
-    \centerline{\includegraphics[scale=0.4]{cone_strategy}}
-    % \begin{tikzpicture}
-    %   \begin{axis}[
-    %       grid=major, % Display a grid
-    %       grid style={dashed,gray!30}, % Set the style
-    %       xlabel=P-score ranks,
-    %       ylabel=H-index ranks
-    %       xmin=-100,
-    %       ymin=-100,
-    %       xmax=1000,
-    %       ymax=1000,
-    %     ]
-    %     \draw[red]
-    %         (axis cs:0,0) -- 
-    %         (axis cs:700.207670245,1000);
-    %     \draw[red]
-    %         (axis cs:0,0) -- 
-    %         (axis cs:1000,700.207670245);
-    %     \addplot[blue, only marks, mark size=0.75pt] 
-    %     table[x=column 1,y=column 2,col sep=comma] {data/pscore_hindex_ranks.csv}; 
+    % \centerline{\includegraphics[scale=0.4]{cone_strategy}}
+    \begin{tikzpicture}
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=P-score ranks,
+          ylabel=H-index ranks
+          xmin=-100,
+          ymin=-100,
+          xmax=1000,
+          ymax=1000,
+        ]
+        \draw[red]
+            (axis cs:0,0) -- 
+            (axis cs:700.207670245,1000);
+        \draw[red]
+            (axis cs:0,0) -- 
+            (axis cs:1000,700.207670245);
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=column 1,y=column 2,col sep=comma] {data/pscore_hindex_ranks.csv}; 
 
-    %   \end{axis}
-    % \end{tikzpicture}
-    \caption{Cone strategy for delimiting our three groups of interest: Top, Center and Bottom - with pivot at the origin.}
-    \label{fig:cone_strategy}
+      \end{axis}
+    \end{tikzpicture}
+    \caption{Angle strategy for delimiting our three groups of interest: Top, Center and Bottom - with pivot at the origin.}
+    \label{fig:angle_strategy}
   \end{center}
 \end{figure}
 
 \begin{figure}[h!]
   \begin{center}
-    \centerline{\includegraphics[scale=0.4]{pivot_strategy}}
-    % \begin{tikzpicture}
-    %   \begin{axis}[
-    %       grid=major, % Display a grid
-    %       grid style={dashed,gray!30}, % Set the style
-    %       xlabel=P-score ranks,
-    %       ylabel=H-index ranks
-    %       xmin=-100,
-    %       ymin=-100,
-    %       xmax=1000,
-    %       ymax=1000,
-    %     ]
-    %     \draw[red]
-    %         (axis cs:-100,-100) -- 
-    %         (axis cs:700.207670245,1000);
-    %     \draw[red]
-    %         (axis cs:-100,-100) -- 
-    %         (axis cs:1000,700.207670245);
-    %     \addplot[blue, only marks, mark size=0.75pt] 
-    %     table[x=column 1,y=column 2,col sep=comma] {data/pscore_hindex_ranks.csv}; 
+    % \centerline{\includegraphics[scale=0.4]{pivot_strategy}}
+    \begin{tikzpicture}
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=P-score ranks,
+          ylabel=H-index ranks
+          xmin=-100,
+          ymin=-100,
+          xmax=1000,
+          ymax=1000,
+        ]
+        \draw[red]
+            (axis cs:-100,-100) -- 
+            (axis cs:700.207670245,1000);
+        \draw[red]
+            (axis cs:-100,-100) -- 
+            (axis cs:1000,700.207670245);
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=column 1,y=column 2,col sep=comma] {data/pscore_hindex_ranks.csv}; 
 
-    %   \end{axis}
-    % \end{tikzpicture}
-    \caption{Cone strategy for delimiting our three groups of interest with pivot positioned behind the origin, at point (-100, -100).}
-    \label{fig:cone_strategy_adapted}
+      \end{axis}
+    \end{tikzpicture}
+    \caption{Angle strategy for delimiting our three groups of interest with pivot positioned behind the origin, at point (-100, -100).}
+    \label{fig:angle_strategy_adapted}
   \end{center}
 \end{figure}
 
 
-We next devise a strategy for delimiting the three sets
-above. For this, we draw two line segments, starting from
+Next, we devise a strategy for delimiting the three sets
+presented above. We draw two line segments, starting from
 the origin, separated by an angle $ \theta $, and examine
-how the Kendall-Tau coefficient for the data points in the Center Group varies with respect to variations in the angle $ \theta $. It is what we call our "cone strategy", as illustrated in Figure \ref{fig:cone_strategy}. We immediately notice several data points close to the origin
-which are not included in the Center Group. This is a problem, given that these points correspond to CS conferences that have a high H-index rank and a high
+how the Kendall-Tau coefficient for the data points in the 
+Center Group varies with respect to variations in the angle 
+$ \theta $. It is what we call the "angle strategy", as 
+illustrated in Figure \ref{fig:angle_strategy}. We immediately 
+notice several data points close to the origin
+which are not included in the Center Group. This is a problem, 
+given that these points correspond to CS conferences that have a high H-index rank and a high
 P-score rank and thus, are strongly correlated. To
-correct this, we move the vertex of the cone, which we also
+correct this, we move the point where the lines meet, which we also
 refer to as the pivot, to a point behind the origin, one
-such as (-100, -100), as illustrated in Figure \ref{fig:cone_strategy_adapted}. By doing so, we ensure that all data points near the origin are included in the
+such as (-100, -100), as illustrated in Figure \ref{fig:angle_strategy_adapted}. 
+By doing so, we ensure that all data points near the origin are included in the
 Center Group.
 
 \begin{table}[h!]
@@ -640,14 +619,18 @@ Center Group.
  10 & 0.8361 & 370 \\
  \bottomrule
  \end{tabular}
- \caption{Cone strategy Kendall-Tau in center group by varying the angle.}
- \label{tab:cone_strategy}
+ \caption{Angle strategy Kendall-Tau in center group by varying the angle.}
+ \label{tab:angle_strategy}
 \end{table}
 
-Table \ref{tab:cone_strategy} describes how the Kendall-Tau coefficients vary for items in the Center Group, as we vary the angle $ \theta $, with the pivot positioned behind the origin, as in Figure \ref{fig:cone_strategy_adapted}. We notice that for $ \theta = 20^{\circ} $, 616 conferences are included in the Center
+Table \ref{tab:angle_strategy} describes how the Kendall-Tau coefficients vary for items 
+in the Center Group, as we vary the angle $ \theta $, with the pivot positioned behind 
+the origin as in Figure \ref{fig:angle_strategy_adapted}. We notice that for $ \theta = 20^{\circ} $, 
+616 conferences are included in the Center
 Group (close to 70\% of all conferences in the data set) and, that is accomplished with a very high Kendall-Tau 
 coefficient (i.e. above 0.7). Thus, in our subsequent 
-analysis, we employed the cone strategy with $ \theta = 20^{\circ} $, since it provides a good trade off between correlation and coverage in our data set.
+analysis, we employed the angle strategy with $ \theta = 20^{\circ} $, since it provides 
+a good trade off between correlation and coverage in our data set.
 
 \begin{table}[h!]
   \small
@@ -692,7 +675,7 @@ analysis, we employed the cone strategy with $ \theta = 20^{\circ} $, since it p
   \label{tab:conferences}
 \end{table}
 
-With the cone pivot positioned at (-100, -100) and $ \theta=20^{\circ} $, the Top Group ended with 127 conferences, the 
+With the pivot positioned at (-100, -100) and $ \theta=20^{\circ} $, the Top Group ended with 127 conferences, the 
 Center Group with 616 conferences, and the Bottom Group with 139 conferences. Table 
 \ref{tab:conferences} presents the top 30 conferences, ranked by P-score, for each of our three groups.
 
@@ -704,7 +687,7 @@ their scientific impact. Among them we find WWW, CVPR and KDD, to name a few.
 The Top Group consists of conferences with a high P-score rank and low H-index rank. While these conferences
 receive a relatively low number of citations, reputable researchers (i.e. our reference set of top researchers in Computer Science) still publish 
 in them consistently, as we can observe from their high P-score ranks. The primary reason is that
-conferences in the Top Group are usually venues associated with smaller subareas of Computer Science, and therefore venues that receive a smaller
+conferences in the Top Group are usually venues associated with smaller subareas of Computer Science, and are therefore venues that receive a smaller
 number of citations. Because of that, their H-indices tend to be smaller and their H-index rank positions tend to be worse. Despite that, many of these venues might have a high reputation in their subareas and thus, high P-scores. 
 For example, ICPP, SPAA, LCPC and PPSC are conferences related to parallel processing that capture
 considerable attention from the top CS departments, as we can observe from their high P-scores. However,
@@ -721,7 +704,7 @@ ISMB, GECCO and PSB, which are related to Biocomputing, ISMIR, which is related 
 ISCAS, and VTC which are related to Engineering and Electronics. Because these are large research communities, venue H-indices tend to be 
 relatively high (particularly with regard to Computer Science). In the case of these events, funding councils in Computer Science should consider not only the high H-indexes, but also the venue reputation among computer
 scientists. Indeed, an exceptionally popular and reputable conference in electronics may not be as 
-popular or prestigious when considering it through the angle of computer scientists. That is, P-scores may aid 
+popular or prestigious when considering it from the point of view of computer scientists. That is, P-scores may aid 
 human evaluators with funding decisions by pinpointing conferences that intersect multiple areas of knowledge and by providing
 an estimate of the conference's reputation among peers in the field of interest.
 
@@ -732,13 +715,14 @@ an estimate of the conference's reputation among peers in the field of interest.
 We have compared the P-scores and H-indices of 882 conferences in Computer Science. 
 We have found that P-scores and H-indices have a very high correlation reflected by a Kendall-Tau of 
 approximately 0.52. However,
-we have also found important differences between the two metrics.
+we have also found important differences between the two indices.
 Our interpretation of these results are based on the intuition that while H-indices provide a quantification of the popularity of a publication or researcher among their peers, P-scores provide a quantification of the reputation of a publication or researcher among peers. We can then distinguish three separate cases. First, when P-scores and H-indices are strongly correlated, we have venues that are popular and of high reputation among computer scientists. Second, when P-scores are large (better rank position) and H-indices are small (worse rank position) we have venues of good reputation among computer scientists that are associated with small research communities or subareas. Third, when P-scores are small (worse rank position) and H-indices are large, we have venues of good popularity (usually associated with large research communities outside Computer Science) that do not count with high reputation among computer scientists (in the sense that they do not publish frequently there).
-These differences indicate a complementary aspect to the metrics. P-scores, used in conjunction with H-indices, allow distinguishing the three distinct types of venues mentioned above. This provides useful information which
+These differences indicate a complementary aspect to the indices. P-scores, used in conjunction with H-indices, allow distinguishing the three distinct types of venues mentioned above. This provides useful information which
 can be employed
 by research funding councils and committees to better understand 
 the scientific relevance of venues and researchers and thus, take more informed funding decisions.
 
-\printbibliography
+\bibliographystyle{unsrt}
+\bibliography{pscore_correlation}
 
 \end{document}
