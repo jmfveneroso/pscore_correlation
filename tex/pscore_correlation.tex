@@ -1,4 +1,5 @@
-\documentclass[notitlepage]{article}
+% \documentclass[notitlepage]{article}
+\documentclass[notitlepage]{svjour3}
 % \documentclass[sigconf]{acmart}
 % \settopmatter{printacmref=false} % Removes citation information below abstract
 % \renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
@@ -13,10 +14,11 @@
 \usepackage{pgfplots}
 \usepackage{amsmath}
 \usepackage{tikz}
-\usepackage{subcaption}
+% \usepackage{subcaption}
 \usepackage{csquotes}
 \usepackage{booktabs} % For formal tables
 \usepackage{authblk}
+\usepackage{blkarray}
 
 \providecommand{\keywords}[1]{\textbf{\textit{Keywords:}} #1}
 
@@ -24,29 +26,49 @@
 
 \title{P-score: a Reputation Bibliographic Index that Complements Citation Counts} 
 
-% \author{
-% }
+\author{
+ João Mateus de Freitas Veneroso \and
+ Marlon Dias \and
+ Berthier Ribeiro-Neto \and
+ Nivio Ziviani \and
+ Edmundo de Souza e Silva
+}
 
-\author[a]{João Mateus de Freitas Veneroso}
-\author[a]{Marlon Dias}
-\author[a]{Berthier Ribeiro-Neto}
-\author[a]{Nivio Ziviani}
-\author[b]{Edmundo de Souza e Silva}
-\affil[a]{Universidade Federal de Minas Gerais}
-\affil[b]{Universidade Federal do Rio de Janeiro}
+% \author[a]{João Mateus de Freitas Veneroso}
+% \author[a]{Marlon Dias}
+% \author[a]{Berthier Ribeiro-Neto}
+% \author[a]{Nivio Ziviani}
+% \author[b]{Edmundo de Souza e Silva}
+% \affil[a]{Universidade Federal de Minas Gerais}
+% \affil[b]{Universidade Federal do Rio de Janeiro}
 
-\providecommand{\keywords}[1]{\textbf{\textit{Index terms---}} #1}
+\institute{
+ João Mateus de Freitas Veneroso \at
+ Universidade Federal de Minas Gerais, Av. Pres. Antônio Carlos, 6627 - Pampulha, Belo Horizonte - MG, 31270-901,
+ Departamento de Ciência da Computação, Sala 4304 \\
+ Tel.: +55 (31) 99436-0909 \\
+ \email{jmfveneroso@gmail.com} \and
+ Marlon Dias              \at Universidade Federal de Minas Gerais \and
+ Berthier Ribeiro-Neto    \at Universidade Federal de Minas Gerais \and
+ Nivio Ziviani            \at Universidade Federal de Minas Gerais \and
+ Edmundo de Souza e Silva \at Universidade Federal do Rio de Janeiro
+}
+
+\authorrunning{J. M. F. Veneroso, M. Dias, B. Ribeiro-Neto, N. Ziviani, and E. S. Silva} % if too long for running head
+
+% \providecommand{\keywords}[1]{\textbf{\textit{Index terms---}} #1}
 
 \maketitle
 
-\textbf{Declarations of interest: none} \\
-\\
-\\
-\textbf{Corresponding author:} \\
-João Mateus de Freitas Veneroso \\
-Mailing address: Universidade Federal de Minas Gerais, Av. Pres. Antônio Carlos, 6627 - Pampulha, Belo Horizonte - MG, 31270-901 \\
-Tel: +55 (31) 99436-0909 \\
-Email: jmfveneroso@gmail.com \\
+% \textbf{Declarations of interest: none} \\
+\textbf{Conflict of Interest: The authors declare that they have no conflict of interest.} \\
+% \\
+% \\
+% \textbf{Corresponding author:} \\
+% João Mateus de Freitas Veneroso \\
+% Mailing address: Universidade Federal de Minas Gerais, Av. Pres. Antônio Carlos, 6627 - Pampulha, Belo Horizonte - MG, 31270-901 \\
+% Tel: +55 (31) 99436-0909 \\
+% Email: jmfveneroso@gmail.com \\
 
 \begin{abstract}
 The notions of reputation and popularity in academia are critical for taking 
@@ -70,7 +92,7 @@ for these findings and discuss how they can be used by research funding councils
 to better support their funding decisions.
 \end{abstract}
 
-\keywords{P-score, H-index}
+\keywords{P-score \and H-index \and Bibliographic Index \and Reputation Flows}
 
 \section{Introduction}
 \label{sec:introduction}
@@ -148,7 +170,7 @@ by the mean number of citations received by articles published in a given journa
 Despite being one of the earliest approaches at measuring scientific impact, it has showed remarkable 
 survivability. 
 Pinski et al. \cite{Pinski1976} describe several limitations with the Impact Factor. Impact factors also suffered 
-criticism for being misleading~\cite{Nature2016, Saha2003} and for lacking reliable validation from an independent 
+criticism for being misleading~\cite{Nature2016,Saha2003} and for lacking reliable validation from an independent 
 audit~\cite{Rossner2007}. Riikonen et al. \cite{Riikonen2008} showed that actual citation 
 and publication counts were better predictors of a scientist's contribution than impact factors in a 
 study that assessed the scientific contribution of Finnish researchers in biomedicine.
@@ -171,8 +193,8 @@ estimate of academic impact, because they are essentially popularity measures. S
 prestigious and vice versa. For example, an author of pulp detectives may sell many books, but may not have earned 
 the respect of literary critics as pointed by Bollen et al.~\cite{Bollen2006}. Citations from 
 prestigious journals are more relevant than citations from peripheral journals, as noted by Pinski et al.~\cite{Pinski1976}. To address this issue, some studies distinguish popularity from 
-reputation or prestige with the usage of citation weighting strategies~\cite{Ding2011, Yan2011a} or 
-Page Rank based methods~\cite{Bollen2006, Sun2007}. 
+reputation or prestige with the usage of citation weighting strategies~\cite{Ding2011,Yan2011a} or 
+Page Rank based methods~\cite{Bollen2006,Sun2007}. 
 Furthermore, Piwowar~\cite{Piwowar2013} noted that citation-based indices are slow, since the 
 first citation to a scientific article can take years to happen, concluding that the development of 
 alternative indices to complement citation analysis is not only desirable, but a necessity.
@@ -187,21 +209,21 @@ with popularity, only two features are needed to explain almost all the variatio
 researchers: the number of publications and the average quality of the scholar’s publication venues. 
 
 The idea of reputation, without the direct use of citation data, was discussed by Nelakuditi et al.~\cite{Nelakuditi2011}. 
-They proposed a metric called \textit{peers' reputation} for 
+They proposed a measure called \textit{peers' reputation} for 
 research conferences and journals, which ties the selectivity of the publication venue based upon 
-the reputation of its authors' institutions. The proposed metric was shown to be a better indicator 
+the reputation of its authors' institutions. The proposed measure was shown to be a better indicator 
 of the selectivity of a research venue than the acceptance ratio.
 
 \section{P-score: a network-based index} 
 \label{pscore} 
 
 Contrary to citation counts such as the Impact 
-Factor~\cite{Garfield1955a, Saha2003, Thomson2017, Balaban2012} and 
-H-index~\cite{Benevenuto2016, Bar-Ilan2008, Egghe2008, Bornmann2005, Bornmann2011}, 
+Factor~\cite{Garfield1955a,Saha2003,Thomson2017,Balaban2012} and 
+H-index~\cite{Benevenuto2016,Bar-Ilan2008,Egghe2008,Bornmann2005,Bornmann2011}, 
 P-scores are a graph-based modeling index that takes into account 
 the relations among researchers, papers they published and their publication venues. They are 
 based on a framework of reputation flows we introduced previously~\cite{Ribas2015}. Let us review 
-them briefly. 
+it briefly. 
 
 A \emph{reputation graph} in academia is a graph with three node types: (a) {\em reputation sources} representing groups of selected researchers, 
 (b) {\em reputation targets} representing venues of interest, and
@@ -209,11 +231,29 @@ A \emph{reputation graph} in academia is a graph with three node types: (a) {\em
 departments. 
 Figure~\ref{fig:overview} provides a generic illustration of our reputation graph and introduces the following 
 notation: $S$ is the set of reputation sources, $T$ is the set of reputation targets, and $C$ is the set of reputation collaterals.
-We first propagate the reputation of source nodes to target nodes, which allows assigning 
-weights to the target nodes. Following, we propagate these weights to the collaterals. 
-In here we adopt research groups as source nodes and publication venues as target nodes. 
-Further we focus on the weights assigned to the publication venues and do not consider 
-potential collaterals of interest (such as individual researchers). 
+
+The reputation of source nodes influences the reputation
+of target nodes as much as the reputation of target nodes
+influences the reputation of source nodes. Note that the
+reputation of target nodes also influences the reputation of
+collaterals, but the reputation of collaterals has no impact
+in the reputation of sources and targets. The use of collaterals
+allows us to isolate the impact of a set of arbitrary
+nodes on the reputation graph if there is the need to do it, 
+fixing reputation sources as the only set of nodes providing reputation. 
+
+Given that the reputation of collaterals has no effect on
+the reputation of nodes of other types, we can split the model
+in two phases. In the first phase, we propagate the reputation
+of the sources to the targets. In the second phase, we
+propagate the reputation of the targets to the collaterals.
+
+The reputation flows framework allows for different configurations.
+In this work, we adopt research groups as reputation sources and publication 
+venues as reputation targets, however collaterals (such as individual researchers) 
+are absent from the ranking model, because we are only interested in calculating the 
+P-scores of publication venues (weights of target nodes). Therefore, we do not need to
+perform the second phase when calculating venue P-scores.
 
 \begin{figure}[h]
    \centerline{\includegraphics[scale=0.6]{overview-line}}
@@ -222,11 +262,9 @@ potential collaterals of interest (such as individual researchers).
    \label{fig:overview}
 \end{figure}
 
-Our reputation graph for academia can be naturally associated with paper authors, 
-modelled as reputation sources, and papers, modelled as reputation targets. 
 The interaction between reputation sources and reputation targets is inspired by the 
 notion of {\em eigenvalue centrality} in complex 
-networks~\cite{Brin1998, Langville2008, Langville2008, Newman2010}. 
+networks~\cite{Brin1998,Langville2008,Langville2008,Newman2010}. 
 In the reputation graph, if we consider only sources and targets, it is easy to 
 identify reputation flows from sources to sources, from sources to targets, from 
 targets to sources, and from targets to targets. These reputation flows can be 
@@ -251,7 +289,8 @@ P =
 \noindent where each quadrant represents a distinct type of reputation flow, as follows: 
 
 \begin{description}
-\item $P\bkt{SS}$: right stochastic matrix of size $|S|\times |S|$ representing the transition probabilities between reputation sources;
+\item $P\bkt{SS}$: right stochastic matrix of size $|S|\times |S|$ representing the 
+transition probabilities between reputation sources;
 \item $P\bkt{ST}$: matrix of size $|S|\times |T|$ representing the transition probabilities from reputation sources to targets;
 \item $P\bkt{TS}$: matrix of size $|T|\times |S|$ representing the transition probabilities from reputation targets to sources;
 \item $P\bkt{TT}$: right stochastic matrix of size $|T|\times |T|$ representing the transition probabilities between reputation targets.
@@ -260,7 +299,8 @@ P =
 The parameters $d\bkt{S}$, the fraction of reputation one wants to transfer among the source nodes themselves, 
 and $d\bkt{T}$, the fraction of reputation one wants to transfer among the target nodes themselves,
 control the relative importance of the reputation sources and targets. 
-Assuming that the transition matrix $P$ is ergodic, we can compute the steady state probability of each node and use it as a reputation score. 
+Assuming that the transition matrix $P$ is ergodic, we can compute the steady state probability of each node 
+and use it as a reputation score, the P-score. 
 More formally, we can write: 
 \begin{align}
 \label{eq:ggP}
@@ -269,39 +309,92 @@ More formally, we can write:
 \noindent where $\gamma$ is a row matrix with $|S|+|T|$ elements, 
 where each row represents the transition probabilities of a node in the set $S\cup T$. 
 
+When there are collaterals, we can perform the second phase (propagation to collateral nodes) 
+by further propagating the steady state probabilities of target nodes to the collateral set. 
+In this case, we need a transition matrix $P\bkt{TC}$ of size $|T|\times |C|$ representing
+the transitions from reputation targets to collaterals.
+
+The conceptual framework of reputation flows can be used in the academic context
+to model the transference of reputation between research groups and 
+publication venues by associating each type of reputation flow with a specific quadrant
+of matrix $P$. That is:
+
+\begin{align}\label{eq:newp}
+%\[
+P =
+\left[
+\begin{array}{r | r}
+Group \rightarrow Group & Group \rightarrow Venue \\
+\hline
+Venue \rightarrow Group & Venue \rightarrow Venue \\
+\end{array}
+\right]
+%\]
+\end{align}
+
+In this conceptual framework, research groups are 
+aggregations of authors and publication venues are aggregations of papers.
+In the first quadrant, the framework represents the reputation
+flow from research groups to research groups, which can be expressed in
+terms of co-authorship relations. In the second and 
+third quadrants, the framework
+represents group-venue and venue-group relations,
+respectively. An author who publishes a paper somehow
+transfers its own reputation to that paper or the converse,
+a paper may transfer its reputation or acceptance by the
+community to the authors who published it. In the fourth
+quadrant, the framework represents the reputation flow between
+venues, or between the papers in these venues. When a paper cites 
+another, it is somehow
+transferring part of its reputation to the cited paper. This
+last quadrant is the focus of much more attention than the
+other ones by the academic community. 
+
 We should note that, while our network model allows modeling citations in the fourth quadrant, it is possible to compute 
 steady state probabilities for the network without consideration to citations. This is accomplished by setting the parameter 
 $d\bkt{T} = 0$. 
 Thus, it should be clear that in all experiments described in this work, P-scores 
 are computed without taking citations into account. 
 
-%%%%%%%%%%%%% 
+
 \subsection{Reputation Sources}
 \label{sec:rep-sources}
 
-The choice of the reputation sources is an important part of the method since its composition has a direct impact on the final rankings. There is no definitive way to make it. This choice depends on what we want to measure. In this work, we 
-use the top CS departments in the US as reputation sources. It is a simple procedure that allows assigning P-scores 
-to publication venues, P-scores that 
-reflect the publication patterns of top CS departments in the US. 
-We then compare how these scores compare with H-indices assigned to the same publication venues. 
+The choice of the reputation sources is an important part of the method since 
+its composition has a direct impact on the final rankings. 
+There is no definitive way to make it. This choice depends on what we want to measure. 
 
-One way to determine the top CS departments is to 
-adopt a randomization procedure. A run of that 
-procedure works as follows: 
+One way to determine the top CS departments is through a simple randomization procedure.
+It starts with all 126 research groups evaluated by the NRC \footnote{http://www.nap.edu/rdp/}
+in its 2011 evaluation of CS graduate programs in the USA. 
+First, we need to instantiate the model described previously with a single difference, 
+a subset of 10 groups from the NRC evaluation is chosen randomly and used as reputation sources, while the remaining 116 groups
+are used as reputation collaterals. This time we also need to execute the propagation of reputations 
+from targets to collaterals with a transition matrix $P\bkt{TC}$ of size $|T|\times |C|$ that represents
+relations from venues to the collateral research groups. This matrix can be built the same way
+the $P\bkt{ST}$ (sources to targets) matrix is built, that is, by associating authors to research 
+groups and their papers to publication venues and taking the relative number of papers published
+in each venue as a transition probability.
+
+Observe that the randomization procedure is only needed to
+select the source nodes for the calculation of venue P-scores, it has no direct relation with the venue ranking
+model described in the last section. A run of that procedure works as follows: 
 \begin{enumerate}
-\item randomly select 10 entities from the set of reputation targets and use them as the set $S$ of reputation sources
-\item compute steady state probabilities for all nodes
-\item using the steady state probabilities of reputation targets as a score, select the 10 entities with highest scores and use them as a new set $S_{new}$ of reputation sources
-\item if $S_{new} \not \equiv S$ then $S \leftarrow S_{new}$ and go back to step 1
-\item $S_{auto} \leftarrow S_{new}$ 
-\item take $S_{auto}$ as the set of automatically selected reputation sources
-\item exit
+\item Randomly select 10 departments from the set of top CS departments and use them as the set $s$ of reputation sources
+\item Compute steady state probabilities for all nodes using the method described in the last section
+\item Using the steady state probabilities of reputation collaterals as a score, select the 10 entities with 
+highest scores and use them as a new set $s_{new}$ of reputation sources
+\item If $s_{new} \not \equiv s$ then $s \leftarrow s_{new}$ and go back to step 1
+\item $s_{auto} \leftarrow s_{new}$ 
+\item Take $s_{auto}$ as the set of automatically selected reputation sources
+\item Exit
 \end{enumerate}
-By applying this randomization procedure 100 times to a set of 126 US graduate programs in Computer Science (CS), 
-exactly the same 126 graduate programs considered by NRC in its 2011 evaluation of CS graduate programs 
-in the USA \footnote{http://www.nap.edu/rdp/}, we ended up with a subset of 12 CS programs to be considered as reputation sources. 
-These are the CS programs that appeared as least once in the set $S_{auto}$ of automatically selected reputation 
-sources and they are as follows: 
+
+We repeated this procedure until the set of top 10 groups no longer changed.
+By applying this randomization procedure 100 times to a set of 126 USA graduate programs, 
+we ended up with a subset of 12 CS programs that appeared 
+among the top 10 at least once, after the process stabilized. These 12 CS programs are
+described in Table \ref{tab:departments}.
 
 \begin{table}[h!]
  \centering
@@ -328,6 +421,7 @@ sources and they are as follows:
 \end{table}
 
 All the 12 departments above are among the top 5th percentile in the ranking produced by NRC. 
+Moreover, the first 8 listed groups appeared among the top 10 at every single run.
 This suggests that our recursive procedure is able to take advantage of patterns in the publication 
 streams of the various CS departments to determine the most reputable ones in fully automatic fashion.
 We further observe that this was done while setting the parameter $d\bkt{T} = 0$. That is, we did 
@@ -335,6 +429,22 @@ not use information on citation counts in the model.
 
 \section{Correlation with H-indices} 
 \label{sec:correlation}
+
+Bibliometric indicators can be roughly divided into two types. The attention indicators usually 
+estimate researcher attention or the diffusion of a journal's articles through different 
+forms of citation counts. 
+The reputation indicators try to estimate a researcher's reputation based on the researcher's 
+overall scientific production.
+What we argue in this paper is that both perspectives have a complementary nature,
+since indicators of different types are measuring similar but distinct aspects of
+a journal's scientific relevance. 
+
+We performed a combined analysis of conference rankings in Computer Science based on the H-index, an
+attention indicator, and P-score, a reputation indicator. We chose the H-index as an attention 
+indicator because of its popularity and availability in bibliometric search engines such as 
+Google Scholar, Web of Science and Scopus. We chose P-score as a reputation indicator because 
+of its ease of calculation and for being a good proxy for academic impact as shown by Ribas et 
+al.~\cite{Ribas2015a}. 
 
 The H-index~\cite{Hirsch2005} is a composite index of lifelong scientific contribution that takes 
 into account the productivity of researchers and the citation impact of their publications.
@@ -354,7 +464,7 @@ Some of its advantages are:
 \begin{itemize}
 \item The simplicity and intuitiveness of its formulation.
 \item The longer citation time window when compared to impact factors.
-\item H-index has a good predictive power regarding scientific achievement~\cite{Bornmann2005, Hirsch2007}.
+\item H-index has a good predictive power regarding scientific achievement~\cite{Bornmann2005,Hirsch2007}.
 \end{itemize}
 
 H-index depends on citations to be calculated, thus it suffers from the 
@@ -394,9 +504,7 @@ yielding the 12 departments listed in Table \ref{tab:departments}.
 
 \begin{figure}[h]
 \centering
-\begin{subfigure}[b]{0.5\textwidth}
-    % \centerline{\includegraphics[scale=0.45]{normal_plot_hindex}}
-    \begin{tikzpicture}[scale=0.75]
+    \begin{tikzpicture} %[scale=0.75]
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
@@ -413,13 +521,14 @@ yielding the 12 departments listed in Table \ref{tab:departments}.
             (axis cs:\pgfkeysvalueof{/pgfplots/xmax},\pgfkeysvalueof{/pgfplots/xmax});
       \end{axis}
     \end{tikzpicture}
-    \caption{H-index}
+    \caption{Normal probability plot: H-index}
     \label{fig:hindex_normality}
-  
-\end{subfigure}  
-\begin{subfigure}[b]{0.5\textwidth}
+\end{figure}
+
+\begin{figure}[h]
+\centering
     % \centerline{\includegraphics[scale=0.45]{normal_plot_pscore}}
-    \begin{tikzpicture}[scale=0.75]
+    \begin{tikzpicture} %[scale=0.75]
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
@@ -437,11 +546,9 @@ yielding the 12 departments listed in Table \ref{tab:departments}.
             (axis cs:\pgfkeysvalueof{/pgfplots/xmax},\pgfkeysvalueof{/pgfplots/xmax});
       \end{axis}
     \end{tikzpicture}
-    \caption{P-score}
+    % \caption{P-score}
+    \caption{Normal probability plot: P-score}
     \label{fig:pscore_normality}
-
-\end{subfigure}  
-\caption{Normal probability plots.}
 \end{figure}
 
 We first plotted normal probability plots for P-scores and H-indices in our conference data set 
@@ -468,7 +575,7 @@ correlation that assumes a value between
 ranks, assuming a value of 1
 when two rankings are identical and -1 when they are the inverse of each other. 
 A Kendall-Tau coefficient close to zero indicates
-that both rankings are uncorrelated~\cite{Kendall1955, Baeza-Yates2011}.
+that both rankings are uncorrelated~\cite{Kendall1955,Baeza-Yates2011}.
 
 \begin{figure}[h!]
   \begin{center}
@@ -695,7 +802,7 @@ due to their modest H-indices, they may end up being neglected by funding counci
 their assessment. The total number of publications in Parallel Processing is comparatively low 
 compared to other subareas of Computer Science such as Algorithms or Database Management Systems~\cite{Hoonlor2013}. So, it is reasonable to assume that conferences 
 in this subarea are expected to receive fewer citations than their counterparts in more popular subareas.
-P-scores can assist human evaluators with funding decisions by shedding light to these conferences.
+P-scores can assist human evaluators with funding decisions by shedding light on these conferences.
 
 The Bottom Group consists of conferences with a low P-score rank and high H-index rank. These conferences
 receive a high number of citations, but their reputation among top computer scientists is comparatively low, as reflected by their P-scores. Conferences in this
@@ -722,7 +829,9 @@ can be employed
 by research funding councils and committees to better understand 
 the scientific relevance of venues and researchers and thus, take more informed funding decisions.
 
-\bibliographystyle{unsrt}
+% \bibliographystyle{unsrt}
+\bibliographystyle{spmpsci}
+% \bibliographystyle{apa}
 \bibliography{pscore_correlation}
 
 \end{document}
