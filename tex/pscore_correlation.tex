@@ -829,6 +829,118 @@ can be employed
 by research funding councils and committees to better understand 
 the scientific relevance of venues and researchers and thus, take more informed funding decisions.
 
+\section{New Plots}
+
+\begin{figure}[h!]
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=P-score ranks,
+          ylabel=H-index ranks,
+          xmin=-100,
+          ymin=-100,
+          xmax=900,
+          ymax=900,
+        ]
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=column 1,y=column 2,col sep=comma] {data/new_pscore_hindex_ranks.csv}; 
+        \addplot[mark=*] coordinates {(32,726)} node[pin=50:{$ICMCS$}]{} ;
+        \addplot[mark=*] coordinates {(759,212)} node[pin=270:{$ICCS$}]{} ;
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{P-score VS H-index}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=Norm. P-score ranks,
+          ylabel=Norm. H-index ranks,
+          xmin=-100,
+          ymin=-100,
+          xmax=900,
+          ymax=900,
+        ]
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=column 1,y=column 2,col sep=comma] {data/npscore_nhindex_ranks.csv}; 
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{Normalized P-score VS H-index}
+    \label{fig:angle_strategy}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=P-score ranks,
+          ylabel=Total Citations ranks,
+          xmin=-100,
+          ymin=-100,
+          xmax=900,
+          ymax=900,
+        ]
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=column 1,y=column 2,col sep=comma] {data/pscore_total_citation_ranks.csv}; 
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{P-score VS Total Citations}
+    \label{fig:angle_strategy}
+  \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=P-score ranks,
+          ylabel=Citations Per Paper ranks,
+          xmin=-100,
+          ymin=-100,
+          xmax=900,
+          ymax=900,
+        ]
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=column 1,y=column 2,col sep=comma] {data/pscore_cp_ranks.csv}; 
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{P-score VS Citations Per Paper}
+    \label{fig:angle_strategy}
+  \end{center}
+\end{figure}
+
+\begin{table}[h!]
+  \small
+  \centering
+  \begin{tabular}{llll} 
+  \toprule
+  First & Second & Kendall-Tau & Spearman \\ 
+  \midrule
+  P-score     & H-index           & 0.5577 & 0.7261 \\
+  P-score     & Total Citations   & 0.5142 & 0.6874 \\
+  P-score     & Citations/Paper   & 0.4212 & 0.5818 \\
+  N. P-score  & N. H-index        & 0.4742 & 0.6508 \\
+  \bottomrule
+  \end{tabular}
+  \caption{Correlations between rankings}
+  \label{tab:conferences}
+\end{table}
+
 % \bibliographystyle{unsrt}
 \bibliographystyle{spmpsci}
 % \bibliographystyle{apa}
