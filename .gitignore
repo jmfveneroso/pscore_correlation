@@ -3,6 +3,7 @@ tex/*.fff
 tex/*.log
 tex/*.pdf
 tex/*.ttt
+tex/*.blg
 figs/*
 *.pdf
 *.dia

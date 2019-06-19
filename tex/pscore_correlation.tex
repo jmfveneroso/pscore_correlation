@@ -1,10 +1,4 @@
-% \documentclass[notitlepage]{article}
 \documentclass[notitlepage]{svjour3}
-% \documentclass[sigconf]{acmart}
-% \settopmatter{printacmref=false} % Removes citation information below abstract
-% \renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
-% \pagestyle{plain} % removes running headers
-% \setcopyright{none}
 
 \usepackage{graphics}
 \usepackage{graphicx}
@@ -14,11 +8,12 @@
 \usepackage{pgfplots}
 \usepackage{amsmath}
 \usepackage{tikz}
-% \usepackage{subcaption}
 \usepackage{csquotes}
-\usepackage{booktabs} % For formal tables
+\usepackage{booktabs} % For formal tables.
 \usepackage{authblk}
 \usepackage{blkarray}
+\usepackage{subcaption} % For subfigures.
+\captionsetup{compatibility=false} % For subcaption.
 \usepackage{tabularx}
 
 \include{macros}
@@ -35,14 +30,6 @@
  Nivio Ziviani \and
  Edmundo de Souza e Silva
 }
-
-% \author[a]{João Mateus de Freitas Veneroso}
-% \author[a]{Marlon Dias}
-% \author[a]{Berthier Ribeiro-Neto}
-% \author[a]{Nivio Ziviani}
-% \author[b]{Edmundo de Souza e Silva}
-% \affil[a]{Universidade Federal de Minas Gerais}
-% \affil[b]{Universidade Federal do Rio de Janeiro}
 
 \institute{
  João Mateus de Freitas Veneroso \at
@@ -233,7 +220,7 @@ Figure~\ref{fig:overview} provides a generic illustration of our reputation grap
 notation: $S$ is the set of reputation sources, $T$ is the set of reputation targets, and $C$ is the set of reputation collaterals.
 
 \begin{figure}[ht]
-   \centerline{\includegraphics[scale=0.6]{overview-line}}
+   \centerline{\includegraphics[scale=0.6]{figures/overview-line}}
    %\centerline{\includegraphics[scale=0.6]{figures/models/overview}}
    \caption{Structure of the reputation graph.}
    \label{fig:overview}
@@ -363,7 +350,7 @@ When there are collaterals, we can perform the second phase (propagation to coll
 by further propagating the steady state probabilities of target nodes to the collateral set. 
 In this case, we need a transition matrix $P\bkt{TC}$ of size $|T|\times |C|$ representing
 the transitions from reputation targets to collaterals.
-%
+
 % \subsection{Reputation-based Ranking}\label{sec:ranking}
 %
 %The steady state probability of a node can be interpreted as its relative reputation, as transferred from other nodes in the reputation graph. Thus, we can directly use the value of this probability to rank reputation sources or reputation targets. Additionally, this probability can be further propagated to nodes we want to compare, which are in the collateral set. This propagation depends on a matrix $P\bkt{TC}$ of size $|T|\times |C|$ representing the transitions from reputation targets to collateral nodes. 
@@ -615,7 +602,7 @@ the problem of lack of data that arises from the long time to first citation.
 
 We conducted experiments to investigate the relationship between P-scores and H-indices
 in conference rankings. In particular, we wanted to estimate the degree of correlation between both 
-indices. The data set consists of 882 
+indices. The data set consists of 794
 Computer Science~\footnote{
 While our data set is entirely composed of Computer Science conferences, nothing in our method is
 particular to this field. That is, our index is applicable to any field of knowledge.
@@ -629,42 +616,44 @@ yielding the 12 departments listed in Table \ref{tab:departments}.
 
 \begin{figure}[ht]
 \centering
-    \begin{tikzpicture} %[scale=0.75]
+  \begin{subfigure}{.475\linewidth}
+  \centering
+ 
+    \begin{tikzpicture} [scale=0.6]
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
           xlabel=Theoretical Z-Scores,
           ylabel=Sample Z-Scores,
+          label style={font=\large},
           ymin=-3,
           ymax=10
         ]
         \addplot[blue, only marks, mark size=0.75pt] 
-        table[x=column 1,y=column 2,col sep=comma] {data/hindex_normality.csv}; 
+        table[x=zscore,y=hindex,col sep=comma] {data/normality.csv}; 
 
         \draw[dotted]
             (axis cs:\pgfkeysvalueof{/pgfplots/xmin},\pgfkeysvalueof{/pgfplots/xmin}) -- 
             (axis cs:\pgfkeysvalueof{/pgfplots/xmax},\pgfkeysvalueof{/pgfplots/xmax});
       \end{axis}
     \end{tikzpicture}
-    \caption{Normal probability plot: H-index}
+    \caption{H-index Normal Probability Plot}
     \label{fig:hindex_normality}
-\end{figure}
-
-\begin{figure}[ht]
-\centering
-    % \centerline{\includegraphics[scale=0.45]{normal_plot_pscore}}
-    \begin{tikzpicture} %[scale=0.75]
+  \end{subfigure}
+  ~
+  \begin{subfigure}{.475\linewidth}
+    \begin{tikzpicture} [scale=0.6]
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
           xlabel=Theoretical Z-Scores,
           ylabel=Sample Z-Scores,
+          label style={font=\large},
           ymin=-3,
           ymax=10
         ]
         \addplot[blue, only marks, mark size=0.75pt] 
-        table[x=column 1,y=column 2,col sep=comma] {data/pscore_normality.csv}; 
-        % \legend{Plot}
+        table[x=zscore,y=pscore,col sep=comma] {data/normality.csv}; 
 
         \draw[dotted]
             (axis cs:\pgfkeysvalueof{/pgfplots/xmin},\pgfkeysvalueof{/pgfplots/xmin}) -- 
@@ -672,8 +661,9 @@ yielding the 12 departments listed in Table \ref{tab:departments}.
       \end{axis}
     \end{tikzpicture}
     % \caption{P-score}
-    \caption{Normal probability plot: P-score}
+    \caption{P-score Normal Probability Plot}
     \label{fig:pscore_normality}
+  \end{subfigure}
 \end{figure}
 
 We first plotted normal probability plots for P-scores and H-indices in our conference data set 
@@ -684,7 +674,7 @@ Z-score of 1.28, meaning that the distribution value at this point is 1.28 stand
 we plot the Z-scores according to the quantile function described by our sample, we can verify
 whether it is consistent with a sample from a normal distribution.
 
-We compared theoretical and sample Z-scores for 882 quantiles (one for each data point) in Figures
+We compared theoretical and sample Z-scores for 794 quantiles (one for each data point) in Figures
 \ref{fig:hindex_normality} and \ref{fig:pscore_normality}. The dotted line is the identity line for
 which sample and theoretical Z-scores converge. As becomes clear from the plots, both distributions
 are significantly skewed, indicating that P-scores and H-indices do not follow normal
@@ -702,26 +692,207 @@ when two rankings are identical and -1 when they are the inverse of each other.
 A Kendall-Tau coefficient close to zero indicates
 that both rankings are uncorrelated~\cite{Kendall1955,Baeza-Yates2011}.
 
-\begin{figure}[ht!]
-  \begin{center}
-    % \centerline{\includegraphics[scale=0.4]{rankings}}
-    \begin{tikzpicture}
+\begin{figure}[ht]
+\centering
+  \begin{subfigure}{.475\linewidth}
+  \centering
+    \begin{tikzpicture} [scale=0.6]
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
           xlabel=P-score ranks,
           ylabel=H-index ranks
+          xmin=-100,
+          ymin=-100,
+          xmax=900,
+          ymax=900,
         ]
+        \draw[red]
+            (axis cs:0,0) -- 
+            (axis cs:700.207670245,1000);
+        \draw[red]
+            (axis cs:0,0) -- 
+            (axis cs:1000,700.207670245);
         \addplot[blue, only marks, mark size=0.75pt] 
-        table[x=column 1,y=column 2,col sep=comma] {data/pscore_hindex_ranks.csv}; 
+        table[x=pscore,y=hindex,col sep=comma] {data/ranks.csv}; 
+
       \end{axis}
     \end{tikzpicture}
-    \caption{P-score and H-index rankings.}
-    \label{fig:pscore_hindex_ranks}
+    \caption{Angle strategy for delimiting our three groups of interest: Top, Center and Bottom - with pivot at the origin.}
+    \label{fig:angle_strategy}
+  \end{subfigure}
+  ~
+  \begin{subfigure}{.475\linewidth}  
+  \centering
+    \begin{tikzpicture} [scale=0.6]
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=P-score ranks,
+          ylabel=H-index ranks
+          xmin=-100,
+          ymin=-100,
+          xmax=900,
+          ymax=900,
+        ]
+        \draw[red]
+            (axis cs:-100,-100) -- 
+            (axis cs:700.207670245,1000);
+        \draw[red]
+            (axis cs:-100,-100) -- 
+            (axis cs:1000,700.207670245);
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=pscore,y=hindex,col sep=comma] {data/ranks.csv}; 
+  
+      \end{axis}
+    \end{tikzpicture}
+    \caption{Angle strategy for delimiting our three groups of interest with pivot positioned behind the origin, at point (-100, -100).}
+    \label{fig:angle_strategy_adapted}
+  \end{subfigure}
+\end{figure}
+
+\begin{figure}[ht!]
+  \begin{center}
+    \begin{tikzpicture} 
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=P-score ranks,
+          ylabel=H-index ranks,
+          xmin=-100,
+          ymin=-100,
+          xmax=900,
+          ymax=900,
+          width=12cm,height=12cm
+        ]
+        \addplot[
+          blue, only marks, mark size=0.75pt
+        ] 
+        table[x=pscore,y=hindex,col sep=comma] {data/ranks.csv}; 
+        \addplot[
+          red, only marks, mark size=0.75pt,
+          nodes near coords*={\Label},
+          visualization depends on={value \thisrow{label} \as \Label},
+          style={font=\tiny}
+        ] 
+        table[x=pscore,y=hindex,col sep=comma] {data/ranks.csv}; 
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{P-score VS H-index}
   \end{center}
 \end{figure}
 
-Consider two conference rankings. Figure \ref{fig:pscore_hindex_ranks} shows the ranks of our 882 conferences according to
+\begin{figure}[ht]
+\centering
+  \begin{subfigure}{.475\linewidth}
+  \centering
+    \begin{tikzpicture} [scale=0.6]
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=Norm. P-score ranks,
+          ylabel=Norm. H-index ranks,
+          xmin=-100,
+          ymin=-100,
+          xmax=900,
+          ymax=900,
+        ]
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=npscore,y=nhindex,col sep=comma] {data/ranks.csv}; 
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{Normalized P-score VS H-index}
+    \label{fig:angle_strategy}
+  \end{subfigure}
+  ~
+  \begin{subfigure}{.475\linewidth}  
+  \centering
+    \begin{tikzpicture} [scale=0.6]
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=P-score ranks,
+          ylabel=Total Citations ranks,
+          xmin=-100,
+          ymin=-100,
+          xmax=900,
+          ymax=900,
+        ]
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=pscore,y=citations,col sep=comma] {data/ranks.csv}; 
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{P-score VS Total Citations}
+    \label{fig:angle_strategy}
+  \end{subfigure}
+
+  \begin{subfigure}{.475\linewidth}  
+  \centering
+    \begin{tikzpicture} [scale=0.6]
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=P-score ranks,
+          ylabel=Citations Per Paper ranks,
+          xmin=-100,
+          ymin=-100,
+          xmax=900,
+          ymax=900,
+        ]
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=pscore,y=perpaper,col sep=comma] {data/ranks.csv}; 
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{P-score VS Citations Per Paper}
+    \label{fig:angle_strategy}
+  \end{subfigure}
+  ~
+  \begin{subfigure}{.475\linewidth}  
+  \centering
+    \begin{tikzpicture} [scale=0.6]
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=H-index ranks,
+          ylabel=Citations ranks,
+          xmin=-100,
+          ymin=-100,
+          xmax=900,
+          ymax=900,
+        ]
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=hindex,y=citations,col sep=comma] {data/ranks.csv}; 
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{H-index VS Citations}
+    \label{fig:angle_strategy}
+  \end{subfigure}
+\end{figure}
+
+\begin{table}[ht!]
+  \small
+  \centering
+  \begin{tabular}{llll} 
+  \toprule
+  First & Second & Kendall-Tau & Spearman \\ 
+  \midrule
+  P-score     & H-index           & 0.5153 & 0.6939 \\
+  P-score     & Total Citations   & 0.5028 & 0.6751 \\
+  P-score     & Citations/Paper   & 0.3894 & 0.5555 \\
+  N. P-score  & N. H-index        & 0.4741 & 0.6507 \\
+  H-index     & Total Citations   & 0.6141 & 0.7623 \\
+  \bottomrule
+  \end{tabular}
+  \caption{Correlations between rankings}
+  \label{tab:conferences}
+\end{table}
+
+Consider two conference rankings. Figure \ref{fig:pscore_hindex_ranks} shows the ranks of our 794 conferences according to
 their P-scores
 on the X-axis and their H-indices on the Y-axis. Points that are closer to the origin have better ranks (i.e. a data point at position 1 is better ranked than a data point at position 200).
 The plot shows an evident correlation between the ranks that is confirmed
@@ -745,68 +916,6 @@ can distinguish between three groups of interest in the data set:
 
 \end{itemize}
 
-\begin{figure}[ht!]
-  \begin{center}
-    % \centerline{\includegraphics[scale=0.4]{cone_strategy}}
-    \begin{tikzpicture}
-      \begin{axis}[
-          grid=major, % Display a grid
-          grid style={dashed,gray!30}, % Set the style
-          xlabel=P-score ranks,
-          ylabel=H-index ranks
-          xmin=-100,
-          ymin=-100,
-          xmax=900,
-          ymax=900,
-        ]
-        \draw[red]
-            (axis cs:0,0) -- 
-            (axis cs:700.207670245,1000);
-        \draw[red]
-            (axis cs:0,0) -- 
-            (axis cs:1000,700.207670245);
-        \addplot[blue, only marks, mark size=0.75pt] 
-        % table[x=column 1,y=column 2,col sep=comma] {data/pscore_hindex_ranks.csv}; 
-        table[x=column 1,y=column 2,col sep=comma] {data/new_pscore_hindex_ranks.csv}; 
-
-      \end{axis}
-    \end{tikzpicture}
-    \caption{Angle strategy for delimiting our three groups of interest: Top, Center and Bottom - with pivot at the origin.}
-    \label{fig:angle_strategy}
-  \end{center}
-\end{figure}
-
-\begin{figure}[ht!]
-  \begin{center}
-    % \centerline{\includegraphics[scale=0.4]{pivot_strategy}}
-    \begin{tikzpicture}
-      \begin{axis}[
-          grid=major, % Display a grid
-          grid style={dashed,gray!30}, % Set the style
-          xlabel=P-score ranks,
-          ylabel=H-index ranks
-          xmin=-100,
-          ymin=-100,
-          xmax=900,
-          ymax=900,
-        ]
-        \draw[red]
-            (axis cs:-100,-100) -- 
-            (axis cs:700.207670245,1000);
-        \draw[red]
-            (axis cs:-100,-100) -- 
-            (axis cs:1000,700.207670245);
-        \addplot[blue, only marks, mark size=0.75pt] 
-        % table[x=column 1,y=column 2,col sep=comma] {data/pscore_hindex_ranks.csv}; 
-        table[x=column 1,y=column 2,col sep=comma] {data/new_pscore_hindex_ranks.csv}; 
-
-      \end{axis}
-    \end{tikzpicture}
-    \caption{Angle strategy for delimiting our three groups of interest with pivot positioned behind the origin, at point (-100, -100).}
-    \label{fig:angle_strategy_adapted}
-  \end{center}
-\end{figure}
-
 
 Next, we devise a strategy for delimiting the three sets
 presented above. We draw two line segments, starting from
@@ -827,28 +936,19 @@ Center Group.
 
 \begin{table}[ht!]
 \centering
- \begin{tabular}{c c c} 
+ \begin{tabular}{c c c c} 
  \toprule
- Angle & Kendall-Tau & Items in center group \\ 
+ Angle & Kendall-Tau & Spearman & Items in center group \\ 
  \midrule
- % 90 & 0.5003 & 882 \\
- % 80 & 0.5003 & 882 \\
- % 70 & 0.5032 & 881 \\
- % 60 & 0.5154 & 876 \\
- % 50 & 0.5477 & 858 \\
- % 40 & 0.5780 & 829 \\
- % 30 & 0.6465 & 750 \\
- % 20 & 0.7321 & 616 \\
- % 10 & 0.8361 & 370 \\
- 90 & 0.5312 & 794 \\
- 80 & 0.5312 & 794 \\
- 70 & 0.5344 & 793 \\
- 60 & 0.5428 & 790 \\
- 50 & 0.5661 & 778 \\
- 40 & 0.6020 & 751 \\
- 30 & 0.6660 & 693 \\
- 20 & 0.7350 & 587 \\
- 10 & 0.8445 & 352 \\
+ 90 & 0.5153 & 0.6939 & 794 \\ 
+ 80 & 0.5153 & 0.6939 & 794 \\
+ 70 & 0.5186 & 0.6989 & 793 \\
+ 60 & 0.5269 & 0.7094 & 790 \\
+ 50 & 0.5523 & 0.7341 & 777 \\
+ 40 & 0.5884 & 0.7611 & 749 \\
+ 30 & 0.6510 & 0.7998 & 689 \\
+ 20 & 0.7290 & 0.8295 & 576 \\
+ 10 & 0.8434 & 0.8481 & 345 \\
  \bottomrule
  \end{tabular}
  \caption{Angle strategy Kendall-Tau in center group by varying the angle.}
@@ -871,73 +971,43 @@ a good trade off between correlation and coverage in our data set.
   \toprule
   \# & Top & Center & Bottom \\ 
   \midrule
-  % 1  & IROS      & ICRA        & ISCAS     \\
-  % 2  & ICMCS     & CHI         & HICSS     \\
-  % 3  & ISIT      & CVPR        & EUROCRYPT \\
-  % 4  & ICCD      & AAAI        & IMC       \\
-  % 5  & CDC       & NIPS        & ISWC      \\
-  % 6  & ICPP      & DAC         & ASIACRYPT \\
-  % 7  & SPAA      & ICASSP      & ISMB      \\
-  % 8  & COLT      & STOC        & TACAS     \\
-  % 9  & WCNC      & FOCS        & MOBIHOC   \\
-  % 10 & LCPC      & INTERSPEECH & VTC       \\
-  % 11 & ISQED     & ICCAD       & ACSAC     \\
-  % 12 & APPROX    & IJCAI       & PSB       \\
-  % 13 & ISER      & SODA        & GECCO     \\
-  % 14 & WACV      & INFOCOM     & ICWS      \\
-  % 15 & ITS       & ICML        & ESOP      \\
-  % 16 & ICWSM     & ICIP        & ECAI      \\
-  % 17 & AIED      & SIGMOD      & AAMAS     \\
-  % 18 & GIS       & ICSE        & PKC       \\
-  % 19 & HRI       & IPPS        & CP        \\
-  % 20 & CCCG      & ICCV        & ISMIR     \\
-  % 21 & HOTNETS   & ICDE        & ICIS      \\
-  % 22 & SECON     & ACL         & ECRTS     \\
-  % 23 & HUMANOIDS & ECCV        & FSE       \\
-  % 24 & ICCCN     & ISCA        & PIMRC     \\
-  % 25 & PPSC      & KDD         & GI        \\
-  % 26 & DGO       & SIGCOMM     & SACMAT    \\
-  % 27 & HIPC      & SC          & PG        \\
-  % 28 & WAFR      & WWW         & DIS       \\
-  % 29 & ISBI      & ICDCS       & P2P       \\
-  % 30 & SMC       & DATE        & MODELS    \\
-  1  & IROS         &  ICRA          &  ISCAS       \\   
-  2  & ICMCS        &  CHI           &  HICSS       \\
-  3  & ISIT         &  CVPR          &  EUROCRYPT   \\
-  4  & ICCD         &  AAAI          &  IMC         \\
-  5  & CDC          &  NIPS          &  ISWC        \\
-  6  & ICPP         &  DAC           &  ISMB        \\
-  7  & SPAA         &  ICASSP        &  TACAS       \\
-  8  & COLT         &  STOC          &  MOBIHOC     \\
-  9  & WCNC         &  FOCS          &  ACSAC       \\
-  10 & LCPC         &  INTERSPEECH   &  VTC         \\
-  11 & ISQED        &  ICCAD         &  GECCO       \\
-  12 & ISER         &  IJCAI         &  ICWS        \\
-  13 & WACV         &  SODA          &  ESOP        \\
-  14 & ITS          &  INFOCOM       &  AAMAS       \\
-  15 & ICWSM        &  ICML          &  PKC         \\
-  16 & AIED         &  ICIP          &  ISMIR       \\
-  17 & GIS          &  SIGMOD        &  ICIS        \\
-  18 & HRI          &  ICSE          &  ECRTS       \\
-  19 & CCCG         &  IPPS          &  FSE         \\
-  20 & HOTNETS      &  ICCV          &  GI          \\
-  21 & SECON        &  ICDE          &  PIMRC       \\
-  22 & HUMANOIDS    &  ACL           &  SACMAT      \\
-  23 & ICCCN        &  ECCV          &  PG          \\
-  24 & DGO          &  ISCA          &  DIS         \\
-  25 & WAFR         &  KDD           &  P2P         \\
-  26 & ISBI         &  SIGCOMM       &  GRID        \\
-  27 & SMC          &  SC            &  MDM         \\
-  28 & IVA          &  WWW           &  AINA        \\
-  29 & CICC         &  ICDCS         &  ICSOC       \\
-  30 & FSTTCS       &  DATE          &  ASYNC       \\
+  1  & IROS      & ICRA        & IPTPS   \\
+  2  & ICMCS     & CHI         & MOBIHOC \\
+  3  & ISIT      & CVPR        & ACSAC   \\
+  4  & ICCD      & AAAI        & ICWS    \\
+  5  & CDC       & NIPS        & ISM     \\
+  6  & ICPP      & DAC         & ISMIR   \\
+  7  & WCNC      & ICASSP      & PIMRC   \\
+  8  & LCPC      & STOC        & BIBE    \\
+  9  & ISQED     & FOCS        & DFT     \\
+  10 & ISER      & INTERSPEECH & FSKD    \\
+  11 & WACV      & ICCAD       & ICIDS   \\
+  12 & ITS       & IJCAI       & MMM     \\
+  13 & ICWSM     & SODA        & ECIS    \\
+  14 & AIED      & INFOCOM     & ISVLSI  \\
+  15 & GIS       & ICML        & IHI     \\
+  16 & CCCG      & ICIP        & MMVR    \\
+  17 & DCC       & SIGMOD      & ARC     \\
+  18 & HUMANOIDS & ICSE        & VNC     \\
+  19 & LREC      & IPPS        & IAT     \\
+  20 & WAFR      & ICCV        & ICAI    \\
+  21 & WSDM      & ICDE        & ICA3PP  \\
+  22 & CICC      & ACL         & ANALCO  \\
+  23 & MMSP      & ECCV        & CNSR    \\
+  24 & CLUSTER   & ISCA        & ICEBE   \\
+  25 & CONLL     & KDD         & PAAP    \\
+  26 & CLOUD     & SIGCOMM     & PROMAS  \\
+  27 & MFCS      & SC          & WI      \\
+  28 & FSR       & WWW         & WKDD    \\
+  29 & ICAC      & ICDCS       & APSCC   \\
+  30 & WABI      & DATE        & CATA    \\
   \bottomrule
   \end{tabular}
   \caption{Conferences (short names) ranked by P-score in the bottom, center and top groups.}
   \label{tab:conferences}
 \end{table}
 
-With the pivot positioned at (-100, -100) and $ \theta=20^{\circ} $, the Top Group ended with 127 conferences, the 
+With the pivot positioned at (-100, -100) and $ \theta=30^{\circ} $, the Top Group ended with 127 conferences, the 
 Center Group with 616 conferences, and the Bottom Group with 139 conferences. Table 
 \ref{tab:conferences} presents the top 30 conferences, ranked by P-score, for each of our three groups.
 
@@ -974,7 +1044,7 @@ an estimate of the conference's reputation among peers in the field of interest.
 \section{Conclusions}
 \label{sec:conclusions}
 
-We have compared the P-scores and H-indices of 882 conferences in Computer Science. 
+We have compared the P-scores and H-indices of 794 conferences in Computer Science. 
 We have found that P-scores and H-indices have a very high correlation reflected by a Kendall-Tau of 
 approximately 0.52. However,
 we have also found important differences between the two indices.
@@ -984,155 +1054,7 @@ can be employed
 by research funding councils and committees to better understand 
 the scientific relevance of venues and researchers and thus, take more informed funding decisions.
 
-\section{New Plots}
-
-\begin{figure}[ht!]
-  \begin{center}
-    \begin{tikzpicture}
-      \begin{axis}[
-          grid=major, % Display a grid
-          grid style={dashed,gray!30}, % Set the style
-          xlabel=P-score ranks,
-          ylabel=H-index ranks,
-          xmin=-100,
-          ymin=-100,
-          xmax=900,
-          ymax=900,
-          width=14cm,height=12cm
-        ]
-        \addplot[
-          blue, only marks, mark size=0.75pt
-        ] 
-        table[x=column 1,y=column 2,col sep=comma] {data/new_pscore_hindex_ranks.csv}; 
-        \addplot[
-          red, only marks, mark size=0.75pt,
-          nodes near coords*={\Label},
-          visualization depends on={value \thisrow{label} \as \Label},
-          style={font=\tiny}
-        ] 
-        table[x=column 1,y=column 2,col sep=comma] {data/new_pscore_hindex_ranks.csv}; 
-        % \addplot[mark=*] coordinates {(32,726)} node[pin=50:{$ICMCS$}]{} ;
-        % \addplot[mark=*] coordinates {(759,212)} node[pin=270:{$ICCS$}]{} ;
-
-      \end{axis}
-    \end{tikzpicture}
-    \caption{P-score VS H-index}
-  \end{center}
-\end{figure}
-
-\begin{figure}[ht!]
-  \begin{center}
-    \begin{tikzpicture}
-      \begin{axis}[
-          grid=major, % Display a grid
-          grid style={dashed,gray!30}, % Set the style
-          xlabel=Norm. P-score ranks,
-          ylabel=Norm. H-index ranks,
-          xmin=-100,
-          ymin=-100,
-          xmax=900,
-          ymax=900,
-        ]
-        \addplot[blue, only marks, mark size=0.75pt] 
-        table[x=column 1,y=column 2,col sep=comma] {data/npscore_nhindex_ranks.csv}; 
-
-      \end{axis}
-    \end{tikzpicture}
-    \caption{Normalized P-score VS H-index}
-    \label{fig:angle_strategy}
-  \end{center}
-\end{figure}
-
-\begin{figure}[ht!]
-  \begin{center}
-    \begin{tikzpicture}
-      \begin{axis}[
-          grid=major, % Display a grid
-          grid style={dashed,gray!30}, % Set the style
-          xlabel=P-score ranks,
-          ylabel=Total Citations ranks,
-          xmin=-100,
-          ymin=-100,
-          xmax=900,
-          ymax=900,
-        ]
-        \addplot[blue, only marks, mark size=0.75pt] 
-        table[x=column 1,y=column 2,col sep=comma] {data/pscore_total_citation_ranks.csv}; 
-
-      \end{axis}
-    \end{tikzpicture}
-    \caption{P-score VS Total Citations}
-    \label{fig:angle_strategy}
-  \end{center}
-\end{figure}
-
-\begin{figure}[ht!]
-  \begin{center}
-    \begin{tikzpicture}
-      \begin{axis}[
-          grid=major, % Display a grid
-          grid style={dashed,gray!30}, % Set the style
-          xlabel=P-score ranks,
-          ylabel=Citations Per Paper ranks,
-          xmin=-100,
-          ymin=-100,
-          xmax=900,
-          ymax=900,
-        ]
-        \addplot[blue, only marks, mark size=0.75pt] 
-        table[x=column 1,y=column 2,col sep=comma] {data/pscore_cp_ranks.csv}; 
-
-      \end{axis}
-    \end{tikzpicture}
-    \caption{P-score VS Citations Per Paper}
-    \label{fig:angle_strategy}
-  \end{center}
-\end{figure}
-
-\begin{figure}[ht!]
-  \begin{center}
-    \begin{tikzpicture}
-      \begin{axis}[
-          grid=major, % Display a grid
-          grid style={dashed,gray!30}, % Set the style
-          xlabel=H-index ranks,
-          ylabel=Citations ranks,
-          xmin=-100,
-          ymin=-100,
-          xmax=900,
-          ymax=900,
-        ]
-        \addplot[blue, only marks, mark size=0.75pt] 
-        table[x=column 1,y=column 2,col sep=comma] {data/hindex_citations.csv}; 
-
-      \end{axis}
-    \end{tikzpicture}
-    \caption{H-index VS Citations}
-    \label{fig:angle_strategy}
-  \end{center}
-\end{figure}
-
-\begin{table}[ht!]
-  \small
-  \centering
-  \begin{tabular}{llll} 
-  \toprule
-  First & Second & Kendall-Tau & Spearman \\ 
-  \midrule
-  P-score     & H-index           & 0.5312 & 0.7062 \\
-  P-score     & Total Citations   & 0.5016 & 0.6737 \\
-  P-score     & Citations/Paper   & 0.3882 & 0.5541 \\
-  N. P-score  & N. H-index        & 0.4742 & 0.6508 \\
-  H-index     & Total Citations   & 0.6176 & 0.7657 \\
-  \bottomrule
-  \end{tabular}
-  \caption{Correlations between rankings}
-  \label{tab:conferences}
-\end{table}
-
-% \bibliographystyle{unsrt}
 \bibliographystyle{spmpsci}
-% \bibliographystyle{apa}
 \bibliography{pscore_correlation}
 
 \end{document}
