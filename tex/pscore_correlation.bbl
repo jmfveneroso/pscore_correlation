@@ -128,6 +128,11 @@ Martins, W.S., Gon{\c{c}}alves, M.A., Laender, A.H., Pappa, G.L.: {Learning to
 \newblock Proceedings of the 9th ACM/IEEE-CS Joint Conference on Digital
   Libraries pp. 193--202 (2009)
 
+\bibitem{meyer89}
+Meyer, C.: Stochastic complementation, uncoupling {Markov} chains, and the
+  theory of nearly reducible systems.
+\newblock SIAM Review \textbf{31}(2), 240--272 (1989)
+
 \bibitem{Nane2012}
 Nane, T.: Time to first citation estimation in the presence of additional
   information.

@@ -4,3 +4,6 @@ tex/*.log
 tex/*.pdf
 tex/*.ttt
 figs/*
+*.pdf
+*.dia
+.DS_Store

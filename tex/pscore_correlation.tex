@@ -19,7 +19,9 @@
 \usepackage{booktabs} % For formal tables
 \usepackage{authblk}
 \usepackage{blkarray}
+\usepackage{tabularx}
 
+\include{macros}
 \providecommand{\keywords}[1]{\textbf{\textit{Keywords:}} #1}
 
 \begin{document}
@@ -221,16 +223,21 @@ Contrary to citation counts such as the Impact
 Factor~\cite{Garfield1955a,Saha2003,Thomson2017,Balaban2012} and 
 H-index~\cite{Benevenuto2016,Bar-Ilan2008,Egghe2008,Bornmann2005,Bornmann2011}, 
 P-scores are a graph-based modeling index that takes into account 
-the relations among researchers, papers they published and their publication venues. They are 
-based on a framework of reputation flows we introduced previously~\cite{Ribas2015}. Let us review 
-it briefly. 
+the relations among researchers, papers they published and their publication venues. They are based on a framework of \textit{reputation flows}~\cite{Ribas2015} which we describe in this section.
 
-A \emph{reputation graph} in academia is a graph with three node types: (a) {\em reputation sources} representing groups of selected researchers, 
+Let a \emph{reputation graph} be a graph with three node types of academic entities: (a) {\em reputation sources} representing groups of selected researchers, 
 (b) {\em reputation targets} representing venues of interest, and
 (c) {\em reputation collaterals} representing entities we want to compare such as research groups and academic 
 departments. 
 Figure~\ref{fig:overview} provides a generic illustration of our reputation graph and introduces the following 
 notation: $S$ is the set of reputation sources, $T$ is the set of reputation targets, and $C$ is the set of reputation collaterals.
+
+\begin{figure}[ht]
+   \centerline{\includegraphics[scale=0.6]{overview-line}}
+   %\centerline{\includegraphics[scale=0.6]{figures/models/overview}}
+   \caption{Structure of the reputation graph.}
+   \label{fig:overview}
+\end{figure}
 
 The reputation of source nodes influences the reputation
 of target nodes as much as the reputation of target nodes
@@ -255,12 +262,6 @@ are absent from the ranking model, because we are only interested in calculating
 P-scores of publication venues (weights of target nodes). Therefore, we do not need to
 perform the second phase when calculating venue P-scores.
 
-\begin{figure}[h]
-   \centerline{\includegraphics[scale=0.6]{overview-line}}
-   %\centerline{\includegraphics[scale=0.6]{figures/models/overview}}
-   \caption{Structure of the reputation graph.}
-   \label{fig:overview}
-\end{figure}
 
 The interaction between reputation sources and reputation targets is inspired by the 
 notion of {\em eigenvalue centrality} in complex 
@@ -299,20 +300,85 @@ transition probabilities between reputation sources;
 The parameters $d\bkt{S}$, the fraction of reputation one wants to transfer among the source nodes themselves, 
 and $d\bkt{T}$, the fraction of reputation one wants to transfer among the target nodes themselves,
 control the relative importance of the reputation sources and targets. 
-Assuming that the transition matrix $P$ is ergodic, we can compute the steady state probability of each node 
+%These are useful parameters and the ability to set them is important to calibrate the impact of different reputation flows in the final score. 
+If we do not want to consider reputation flows between nodes of the same type, it is sufficient to set both parameters to zero. If, instead, we want to consider reputation flows between nodes of the same type, we may increase these parameters according to the desired relative importance. Note that, as ($i$) the sub-matrices $P\bkt{SS}$ and $P\bkt{TT}$ are \emph{right stochastic}, ($ii$) each of the rows of matrices $P\bkt{ST}$ and $P\bkt{TS}$ sums to 1, and ($iii$) the parameters $d\bkt{S}$ and $d\bkt{T}$ are both in the range [0,1), then $P$ defines a Markov chain. Assuming that the transition matrix $P$ is ergodic, we can compute the steady state probability of each node 
 and use it as a reputation score, the P-score. 
 More formally, we can write: 
 \begin{align}
 \label{eq:ggP}
 \gamma = \gamma P
 \end{align}
-\noindent where $\gamma$ is a row matrix with $|S|+|T|$ elements, 
+where $\gamma$ is a row matrix with $|S|+|T|$ elements, 
 where each row represents the transition probabilities of a node in the set $S\cup T$. 
+%
+This system of linear equations can be easily solved by standard Markov chain techniques. %TODO do we need to cite one?
+Then, from Equation~\eqref{eq:ggP}, we obtain the steady state probabilities of all nodes in $S\cup T$, a.k.a. reputation sources and reputation targets.
+
+\subsection{Flow Equations}\label{sec:flow-equations}
+
+We recursively define the reputation of sources in terms of the reputation of targets, and the reputation of targets in terms of the reputation of sources. Specifically, the reputation $\gamma_s$ of a source $s$ is defined as:
+\begin{align}
+  \gamma_s = \sum_{t \in T} (1-d\bkt{T}).P_{ts}\bkt{TS} \gamma_t + \sum_{s' \in S} (d\bkt{S}).P_{s's}\bkt{SS} \gamma_{s'}\label{eqn:gs}
+\end{align}
+where $P_{ts}\bkt{TS}$ is the transition probability from $t$ to $s$, given by $P_{ts}\bkt{TS} = n_{ts} / n_t$, where $n_{ts}$ is the number of edges running from $t$ to $s$ and $n_t$ is the total number of edges running from $t$. Finally, $\gamma_t$ is the reputation of target $t$, defined recursively as:
+\begin{align}
+  \gamma_t = \sum_{s \in S} (1-d\bkt{S}).P_{st}\bkt{ST} \gamma_s + \sum_{t' \in T} (d\bkt{T}).P_{t't}\bkt{TT} \gamma_{t'}\label{eqn:gt}
+\end{align}
+where, similarly, $P_{st}\bkt{ST}$ is the transition probability from $s$ to $t$, given by $P_{st}\bkt{ST} = n_{st} / n_s$, where $n_{st}$ is the number of edges running from $s$ to $t$ and $n_s$ is the total number of edges running from $s$. 
+
+% \subsection{Bipartite Reputation Graph}\label{sec:bipartite}
+
+In our scenario, the reputation graph is as a bipartite graph. Therefore, the transition matrix $P$ is reduced to a periodic Markov chain with the following structure:
+\begin{align}\label{eq:p}
+%\[
+P 
+=
+\left[
+\begin{array}{c | c}
+\bzr      &P\bkt{ST} \\
+\hline
+P\bkt{TS}  &\bzr    \\
+\end{array}
+\right]
+\end{align}
+
+From decomposition theory~\cite{meyer89}, we can obtain values for ranking the set of reputation {\em sources} by solving:
+\begin{align}
+\label{eq:top-rank}
+\bgamma\bkt{S} = \bgamma\bkt{S} P'
+\end{align}
+\noindent where $P^\prime = P\bkt{ST} \times P\bkt{TS}$ is a stochastic matrix and $\bgamma\bkt{S}$ is a row matrix with $|S|$ elements, where each one represents the probability of a node in the set $S$ of reputation sources.
+%
+Note that matrix $P'$ has dimension $|S| \times |S|$ only and can be easily solved by standard Markov chain techniques.
+Then, from Equation~\eqref{eq:venue-rank}, we obtain the reputation of all reputation \emph{targets} linked by the reputation sources:
+\begin{align}
+\label{eq:venue-rank}
+\bgamma\bkt{T} = \bgamma\bkt{S} \times P\bkt{ST}
+\end{align}
+
+By modeling a scenario as a bipartite reputation graph instead of a general reputation graph, we reduce the network from a graph of size $(|S|+|T|)\times (|S|+|T|)$ to a graph of size $|S|\times |S|$, which allows us to compute the steady state probabilities more efficiently. %However, by using a bipartite graph, we are certainly losing some information, which may be critical for some applications. It is important to consider this trade-off when instantiating our framework. %conceptual framework of reputation flows. %When the information lost by not taking into account reputation flows directly from nodes of the same type, we should consider to adopt a bipartite reputation graph since it offers gains in efficiency. 
+
 
 When there are collaterals, we can perform the second phase (propagation to collateral nodes) 
 by further propagating the steady state probabilities of target nodes to the collateral set. 
 In this case, we need a transition matrix $P\bkt{TC}$ of size $|T|\times |C|$ representing
 the transitions from reputation targets to collaterals.
+%
+% \subsection{Reputation-based Ranking}\label{sec:ranking}
+%
+%The steady state probability of a node can be interpreted as its relative reputation, as transferred from other nodes in the reputation graph. Thus, we can directly use the value of this probability to rank reputation sources or reputation targets. Additionally, this probability can be further propagated to nodes we want to compare, which are in the collateral set. This propagation depends on a matrix $P\bkt{TC}$ of size $|T|\times |C|$ representing the transitions from reputation targets to collateral nodes. 
+More generally, we can define the reputation score of an entity $e$ according to:
+\begin{align}\label{eq:pscore}
+  \text{P-score}(e) = \begin{cases}
+	\sum_{t \in T} P_{te}\bkt{TC} \gamma_t & \text{if $e \in C$,}\\
+    \gamma_e &\text{otherwise,}
+  \end{cases}
+\end{align}
+\noindent where $P_{te}\bkt{TC}$ is the transition weight from a target node $t$ to a collateral node $e \in C$. The P-score of all candidate entities (targets or collaterals) can then be used to produce an overall reputation-oriented ranking of these entities.
+
+
+\subsection{Instantiation Example}\label{sec:example}
+% \subsection{Ranking Publication Venues} ?
 
 The conceptual framework of reputation flows can be used in the academic context
 to model the transference of reputation between research groups and 
@@ -356,6 +422,51 @@ $d\bkt{T} = 0$.
 Thus, it should be clear that in all experiments described in this work, P-scores 
 are computed without taking citations into account. 
 
+Figure \ref{fig:ex1-MC} shows an example with two research groups used as reputation sources, Group 1 and Group 2, and three venues used as reputation targets, venues $\mbox{v}_1$, $\mbox{v}_2$ and $\mbox{v}_3$.
+%
+\begin{figure}[ht]
+   %\centerline{\includegraphics[width=8cm]{figures/aggregation-b}}
+   %\centerline{\includegraphics[width=5.5cm]{figures/models/bhrscore-w3}}
+   \centerline{\includegraphics[width=5.2cm]{figures/models/bhrscore-w3}}
+   \caption{Markov chain for an example with 2 research groups and 3 publication venues.}
+   \label{fig:ex1-MC}
+\end{figure}
+
+From Figure \ref{fig:ex1-MC}, Group 1 published $3$ papers in venue $\mbox{v}_1$, $2$ papers in venue $\mbox{v}_2$, and $1$ paper in venue $\mbox{v}_3$. The number of publications of Group 1 is $6$. Venue $\mbox{v}_1$ receives $3$ papers of Group 1, and 2 papers of Group 2. The fractions of publications from groups to venues and from venues to groups are the edge weights. We have:
+\[
+P =
+\left[
+\begin{array}{c c | c c c }
+0            &0             &3/6       &2/6         &1/6    \\
+0            &0             &2/8       &4/8         &2/8    \\
+\hline
+3/5          &2/5           &0         &0           &0       \\
+2/6          &4/6           &0         &0           &0       \\
+1/3          &2/3           &0         &0           &0       \\
+\end{array}
+\right]
+\]
+
+This stochastic matrix corresponds to the Markov chain displayed in Figure~\ref{fig:ex1-MC}, which can be immediately aggregated to a two-state Markov chain, yielding:
+%
+\[
+P^\prime = 
+\left[
+\begin{array}{c c }
+0.467   &0.533 \\
+0.400   &0.600
+\end{array}
+\right]
+\]
+\noindent which is the stochastic matrix we use in the solution of Equation (\ref{eq:top-rank}). (Recall that the dimension of $P^\prime$ is $T \times T$ and, as such, much smaller than that of $P$ for real size problems.) Solving Equation (\ref{eq:top-rank}) and applying Equation~\eqref{eq:venue-rank}, we obtain the ranking for the three venues: 
+\begin{equation}
+\bgamma\bkt{T} = \langle 0.36, 0.43, 0.21 \rangle
+\end{equation}
+
+Venue $\mbox{v}_2$ has the highest rank, followed by $\mbox{v}_1$, and then by $\mbox{v}_3$. We remark that the individual values give the {\em relative reputation} of each publication venue. 
+%
+Then, we can apply Equation (\ref{eq:pscore}) to compute the P-score of each entity in the reputation graph.
+
 
 \subsection{Reputation Sources}
 \label{sec:rep-sources}
@@ -396,7 +507,7 @@ we ended up with a subset of 12 CS programs that appeared
 among the top 10 at least once, after the process stabilized. These 12 CS programs are
 described in Table \ref{tab:departments}.
 
-\begin{table}[h!]
+\begin{table}[ht!]
  \centering
  \begin{tabular}{l l} 
  \toprule
@@ -426,6 +537,20 @@ This suggests that our recursive procedure is able to take advantage of patterns
 streams of the various CS departments to determine the most reputable ones in fully automatic fashion.
 We further observe that this was done while setting the parameter $d\bkt{T} = 0$. That is, we did 
 not use information on citation counts in the model. 
+
+\subsection{Summary} 
+
+The basic idea of the P-score metric is to associate a reputation with publication venues based on the publication patterns of 
+a {\em reference set} of research groups in a given area or sub-area of knowledge. Given a pre-selected set of reference research groups, P-score associates weights with the publication venues the researchers in the reference groups publish in. Further, these weights can be used to rank other research groups or authors.
+
+The reputation of a research group is strongly influenced by the reputation of its members, which is largely dependent on their publication records. We assume that:
+\begin{enumerate}
+\item A research group conveys reputation to a publication venue proportionally to its own reputation.
+\item A publication venue conveys reputation to a research group proportionally to its own reputation.
+\end{enumerate}
+
+Once a reference group is selected, the reputation of its members is transferred to the venues. Recursively, since the reputation of research groups is correlated with the reputation of the venues in which they published, the venues transfer reputation to the groups. A score for venues can then be computed by solving a system of linear equations relating publication venues and research groups in the reputation graph, as exemplified in the section~\ref{sec:example}.
+
 
 \section{Correlation with H-indices} 
 \label{sec:correlation}
@@ -502,7 +627,7 @@ data obtained from DBLP \footnote{http://dblp.uni-trier.de/}. The reference set 
 was selected through the randomization process described in the previous section, 
 yielding the 12 departments listed in Table \ref{tab:departments}.
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
     \begin{tikzpicture} %[scale=0.75]
       \begin{axis}[
@@ -525,7 +650,7 @@ yielding the 12 departments listed in Table \ref{tab:departments}.
     \label{fig:hindex_normality}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \centering
     % \centerline{\includegraphics[scale=0.45]{normal_plot_pscore}}
     \begin{tikzpicture} %[scale=0.75]
@@ -577,7 +702,7 @@ when two rankings are identical and -1 when they are the inverse of each other.
 A Kendall-Tau coefficient close to zero indicates
 that both rankings are uncorrelated~\cite{Kendall1955,Baeza-Yates2011}.
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
   \begin{center}
     % \centerline{\includegraphics[scale=0.4]{rankings}}
     \begin{tikzpicture}
@@ -620,7 +745,7 @@ can distinguish between three groups of interest in the data set:
 
 \end{itemize}
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
   \begin{center}
     % \centerline{\includegraphics[scale=0.4]{cone_strategy}}
     \begin{tikzpicture}
@@ -651,7 +776,7 @@ can distinguish between three groups of interest in the data set:
   \end{center}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
   \begin{center}
     % \centerline{\includegraphics[scale=0.4]{pivot_strategy}}
     \begin{tikzpicture}
@@ -700,7 +825,7 @@ such as (-100, -100), as illustrated in Figure \ref{fig:angle_strategy_adapted}.
 By doing so, we ensure that all data points near the origin are included in the
 Center Group.
 
-\begin{table}[h!]
+\begin{table}[ht!]
 \centering
  \begin{tabular}{c c c} 
  \toprule
@@ -739,7 +864,7 @@ coefficient (i.e. above 0.7). Thus, in our subsequent
 analysis, we employed the angle strategy with $ \theta = 20^{\circ} $, since it provides 
 a good trade off between correlation and coverage in our data set.
 
-\begin{table}[h!]
+\begin{table}[ht!]
   \small
   \centering
   \begin{tabular}{c c c c} 
@@ -861,7 +986,7 @@ the scientific relevance of venues and researchers and thus, take more informed 
 
 \section{New Plots}
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
   \begin{center}
     \begin{tikzpicture}
       \begin{axis}[
@@ -895,7 +1020,7 @@ the scientific relevance of venues and researchers and thus, take more informed 
   \end{center}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
   \begin{center}
     \begin{tikzpicture}
       \begin{axis}[
@@ -918,7 +1043,7 @@ the scientific relevance of venues and researchers and thus, take more informed 
   \end{center}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
   \begin{center}
     \begin{tikzpicture}
       \begin{axis}[
@@ -941,7 +1066,7 @@ the scientific relevance of venues and researchers and thus, take more informed 
   \end{center}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
   \begin{center}
     \begin{tikzpicture}
       \begin{axis}[
@@ -964,7 +1089,7 @@ the scientific relevance of venues and researchers and thus, take more informed 
   \end{center}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
   \begin{center}
     \begin{tikzpicture}
       \begin{axis}[
@@ -987,7 +1112,7 @@ the scientific relevance of venues and researchers and thus, take more informed 
   \end{center}
 \end{figure}
 
-\begin{table}[h!]
+\begin{table}[ht!]
   \small
   \centering
   \begin{tabular}{llll} 
