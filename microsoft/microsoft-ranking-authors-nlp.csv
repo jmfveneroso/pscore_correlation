@@ -1,0 +1,2001 @@
+Name,Entity Id,Rank type,Rank value,Time span
+Luke S. Zettlemoyer,334758317,Saliency,1,One Year
+Kenton Lee,2552119883,Saliency,2,One Year
+Richard Socher,1964982643,Saliency,3,One Year
+Edouard Grave,2114720862,Saliency,4,One Year
+Armand Joulin,2512114774,Saliency,5,One Year
+Piotr Bojanowski,1882694979,Saliency,6,One Year
+Caiming Xiong,2095665791,Saliency,7,One Year
+Tomas Mikolov,292626543,Saliency,8,One Year
+Quoc V. Le,2148448995,Saliency,9,One Year
+Jianfeng Gao,2104437897,Saliency,10,One Year
+Antoine Bordes,2160652726,Saliency,11,One Year
+Christopher D. Manning,2149153931,Saliency,12,One Year
+Matthew E. Peters,2502758396,Saliency,13,One Year
+Graham Neubig,277131583,Saliency,14,One Year
+Kyunghyun Cho,2462121670,Saliency,15,One Year
+Yoshua Bengio,161269817,Saliency,16,One Year
+Mohit Iyyer,2068391019,Saliency,17,One Year
+Ruslan Salakhutdinov,2031945151,Saliency,18,One Year
+Samuel R. Bowman,1967404238,Saliency,19,One Year
+Erik Cambria,2806062742,Saliency,20,One Year
+Ming Zhou,2143584880,Saliency,21,One Year
+James R. Glass,2154846939,Saliency,22,One Year
+Mark Neumann,2723434371,Saliency,23,One Year
+Percy Liang,2171686691,Saliency,24,One Year
+Kristina Toutanova,1997665198,Saliency,25,One Year
+Ming-Wei Chang,2142444093,Saliency,26,One Year
+Noah A. Smith,2250998000,Saliency,27,One Year
+Alexander M. Rush,2701382563,Saliency,28,One Year
+Daniel Jurafsky,2089131864,Saliency,29,One Year
+Yejin Choi,2133417374,Saliency,30,One Year
+Alexis Conneau,2555471392,Saliency,31,One Year
+Dan Roth,2122007671,Saliency,32,One Year
+Douwe Kiela,302325417,Saliency,33,One Year
+Jacob Devlin,2153797812,Saliency,34,One Year
+Yonghui Wu,2941718543,Saliency,35,One Year
+William W. Cohen,2115385359,Saliency,36,One Year
+Matt Gardner,2785669479,Saliency,37,One Year
+Christopher G. Clark,2568940999,Saliency,38,One Year
+Steve J. Young,2125228453,Saliency,39,One Year
+Iryna Gurevych,40109512,Saliency,40,One Year
+Zhifeng Chen,2922418434,Saliency,41,One Year
+Phil Blunsom,297118547,Saliency,42,One Year
+Hannaneh Hajishirzi,91410043,Saliency,43,One Year
+Andrew McCallum,2131293038,Saliency,44,One Year
+Stefan Ultes,328023843,Saliency,45,One Year
+Soujanya Poria,1992239148,Saliency,46,One Year
+Yonatan Belinkov,2279044859,Saliency,47,One Year
+Tsung-Hsien Wen,2292847895,Saliency,48,One Year
+Jason Weston,2945754415,Saliency,49,One Year
+Rico Sennrich,93200637,Saliency,50,One Year
+Li Deng,2101552792,Saliency,51,One Year
+Milica Gasic,2086998216,Saliency,52,One Year
+Yoon Kim,2516971438,Saliency,53,One Year
+Zhilin Yang,2489788272,Saliency,54,One Year
+Philipp Koehn,2647056301,Saliency,55,One Year
+Nikola Mrksic,786933160,Saliency,56,One Year
+Benjamin Van Durme,2113965177,Saliency,57,One Year
+Bhuwan Dhingra,2359800348,Saliency,58,One Year
+Chris Dyer,2119216958,Saliency,59,One Year
+Shervin Malmasi,2070717499,Saliency,60,One Year
+Hinrich Schütze,2035156685,Saliency,61,One Year
+Preslav Nakov,1989325080,Saliency,62,One Year
+Mirella Lapata,2019867208,Saliency,63,One Year
+Omer Levy,2250897584,Saliency,64,One Year
+Min Joon Seo,2252216270,Saliency,65,One Year
+Ivan Vulić,2028299656,Saliency,66,One Year
+Yoav Goldberg,2144962531,Saliency,67,One Year
+Samy Bengio,2016539005,Saliency,68,One Year
+Ali Farhadi,1988090614,Saliency,69,One Year
+Loïc Barrault,2153569893,Saliency,70,One Year
+Peter J. Liu,2551433269,Saliency,71,One Year
+Ryan Cotterell,2148165152,Saliency,72,One Year
+Stephen Merity,634414727,Saliency,73,One Year
+Lyle H. Ungar,2147282416,Saliency,74,One Year
+Gerhard Weikum,514836396,Saliency,75,One Year
+Eunsol Choi,2251481576,Saliency,76,One Year
+James Bradbury,2340655586,Saliency,77,One Year
+Anders Søgaard,2100615786,Saliency,78,One Year
+Brenden M. Lake,1987690699,Saliency,79,One Year
+Holger Schwenk,2160549261,Saliency,80,One Year
+David Grangier,1261192326,Saliency,81,One Year
+Jing Jiang,2286546702,Saliency,82,One Year
+Eric P. Xing,351197510,Saliency,83,One Year
+Wen-tau Yih,2116578203,Saliency,84,One Year
+Dhruv Batra,2098683697,Saliency,85,One Year
+Yann N. Dauphin,1973263502,Saliency,86,One Year
+Shuohang Wang,2200892348,Saliency,87,One Year
+Andreas Stolcke,684032073,Saliency,88,One Year
+Barry Haddow,2179150568,Saliency,89,One Year
+Kevin Duh,2046721439,Saliency,90,One Year
+Lucia Specia,321534654,Saliency,91,One Year
+Pei-Hao Su,2132749639,Saliency,92,One Year
+Michael Auli,2139710560,Saliency,93,One Year
+Devi Parikh,2223275083,Saliency,94,One Year
+Jiwei Li,2294693014,Saliency,95,One Year
+Yun-Nung Chen,2169233553,Saliency,96,One Year
+Jean Senellart,280727668,Saliency,97,One Year
+Timothy Baldwin,2436269535,Saliency,98,One Year
+Angela Fan,2722765719,Saliency,99,One Year
+Maosong Sun,2157167650,Saliency,100,One Year
+Christopher G. Clark,2568940999,Prestige,1,One Year
+Matt Gardner,2785669479,Prestige,2,One Year
+Tomas Mikolov,292626543,Prestige,3,One Year
+Ming-Wei Chang,2142444093,Prestige,4,One Year
+Piotr Bojanowski,1882694979,Prestige,5,One Year
+Samy Bengio,2016539005,Prestige,6,One Year
+Kenton Lee,2552119883,Prestige,7,One Year
+Stephen Merity,634414727,Prestige,8,One Year
+Jacob Devlin,2153797812,Prestige,9,One Year
+Armand Joulin,2512114774,Prestige,10,One Year
+Yoon Kim,2516971438,Prestige,11,One Year
+Yann N. Dauphin,1973263502,Prestige,12,One Year
+Zhifeng Chen,2922418434,Prestige,13,One Year
+Edouard Grave,2114720862,Prestige,14,One Year
+Mark Neumann,2723434371,Prestige,15,One Year
+Kristina Toutanova,1997665198,Prestige,16,One Year
+Matthew E. Peters,2502758396,Prestige,17,One Year
+Yonghui Wu,2941718543,Prestige,18,One Year
+Mohit Iyyer,2068391019,Prestige,19,One Year
+Antoine Bordes,2160652726,Prestige,20,One Year
+Quoc V. Le,2148448995,Prestige,21,One Year
+Peter J. Liu,2551433269,Prestige,22,One Year
+James Bradbury,2340655586,Prestige,23,One Year
+Alexis Conneau,2555471392,Prestige,24,One Year
+Caiming Xiong,2095665791,Prestige,25,One Year
+Ali Farhadi,1988090614,Prestige,26,One Year
+Jean Senellart,280727668,Prestige,27,One Year
+Alexander M. Rush,2701382563,Prestige,28,One Year
+Richard Socher,1964982643,Prestige,29,One Year
+Brenden M. Lake,1987690699,Prestige,30,One Year
+Min Joon Seo,2252216270,Prestige,31,One Year
+Shuohang Wang,2200892348,Prestige,32,One Year
+Angela Fan,2722765719,Prestige,33,One Year
+Christopher D. Manning,2149153931,Prestige,34,One Year
+Luke S. Zettlemoyer,334758317,Prestige,35,One Year
+Zhilin Yang,2489788272,Prestige,36,One Year
+David Grangier,1261192326,Prestige,37,One Year
+Tsung-Hsien Wen,2292847895,Prestige,38,One Year
+William W. Cohen,2115385359,Prestige,39,One Year
+Eunsol Choi,2251481576,Prestige,40,One Year
+Steve J. Young,2125228453,Prestige,41,One Year
+Yoshua Bengio,161269817,Prestige,42,One Year
+Nikola Mrksic,786933160,Prestige,43,One Year
+Ruslan Salakhutdinov,2031945151,Prestige,44,One Year
+Jing Jiang,2286546702,Prestige,45,One Year
+Pei-Hao Su,2132749639,Prestige,46,One Year
+Hannaneh Hajishirzi,91410043,Prestige,47,One Year
+Holger Schwenk,2160549261,Prestige,48,One Year
+Jason Weston,2945754415,Prestige,49,One Year
+Andreas Stolcke,684032073,Prestige,50,One Year
+Michael Auli,2139710560,Prestige,51,One Year
+Jiwei Li,2294693014,Prestige,52,One Year
+Bhuwan Dhingra,2359800348,Prestige,53,One Year
+Percy Liang,2171686691,Prestige,54,One Year
+Daniel Jurafsky,2089131864,Prestige,55,One Year
+Omer Levy,2250897584,Prestige,56,One Year
+Milica Gasic,2086998216,Prestige,57,One Year
+Kyunghyun Cho,2462121670,Prestige,58,One Year
+Li Deng,2101552792,Prestige,59,One Year
+Loïc Barrault,2153569893,Prestige,60,One Year
+Wen-tau Yih,2116578203,Prestige,61,One Year
+Dhruv Batra,2098683697,Prestige,62,One Year
+Chris Dyer,2119216958,Prestige,63,One Year
+Douwe Kiela,302325417,Prestige,64,One Year
+Stefan Ultes,328023843,Prestige,65,One Year
+Samuel R. Bowman,1967404238,Prestige,66,One Year
+Jianfeng Gao,2104437897,Prestige,67,One Year
+Phil Blunsom,297118547,Prestige,68,One Year
+Yejin Choi,2133417374,Prestige,69,One Year
+Barry Haddow,2179150568,Prestige,70,One Year
+Andrew McCallum,2131293038,Prestige,71,One Year
+Ming Zhou,2143584880,Prestige,72,One Year
+James R. Glass,2154846939,Prestige,73,One Year
+Devi Parikh,2223275083,Prestige,74,One Year
+Gerhard Weikum,514836396,Prestige,75,One Year
+Noah A. Smith,2250998000,Prestige,76,One Year
+Yonatan Belinkov,2279044859,Prestige,77,One Year
+Shervin Malmasi,2070717499,Prestige,78,One Year
+Philipp Koehn,2647056301,Prestige,79,One Year
+Eric P. Xing,351197510,Prestige,80,One Year
+Yoav Goldberg,2144962531,Prestige,81,One Year
+Soujanya Poria,1992239148,Prestige,82,One Year
+Dan Roth,2122007671,Prestige,83,One Year
+Lyle H. Ungar,2147282416,Prestige,84,One Year
+Rico Sennrich,93200637,Prestige,85,One Year
+Preslav Nakov,1989325080,Prestige,86,One Year
+Yun-Nung Chen,2169233553,Prestige,87,One Year
+Ivan Vulić,2028299656,Prestige,88,One Year
+Kevin Duh,2046721439,Prestige,89,One Year
+Mirella Lapata,2019867208,Prestige,90,One Year
+Ryan Cotterell,2148165152,Prestige,91,One Year
+Graham Neubig,277131583,Prestige,92,One Year
+Erik Cambria,2806062742,Prestige,93,One Year
+Benjamin Van Durme,2113965177,Prestige,94,One Year
+Hinrich Schütze,2035156685,Prestige,95,One Year
+Anders Søgaard,2100615786,Prestige,96,One Year
+Maosong Sun,2157167650,Prestige,97,One Year
+Timothy Baldwin,2436269535,Prestige,98,One Year
+Lucia Specia,321534654,Prestige,99,One Year
+Iryna Gurevych,40109512,Prestige,100,One Year
+Edouard Grave,2114720862,Citations*,1,One Year
+Armand Joulin,2512114774,Citations*,2,One Year
+Piotr Bojanowski,1882694979,Citations*,3,One Year
+Tomas Mikolov,292626543,Citations*,4,One Year
+Richard Socher,1964982643,Citations*,5,One Year
+Luke S. Zettlemoyer,334758317,Citations*,6,One Year
+Kenton Lee,2552119883,Citations*,7,One Year
+Caiming Xiong,2095665791,Citations*,8,One Year
+Quoc V. Le,2148448995,Citations*,9,One Year
+Antoine Bordes,2160652726,Citations*,10,One Year
+Matthew E. Peters,2502758396,Citations*,11,One Year
+Sun-Ah Jun,2166039979,Citations*,12,One Year
+Preslav Nakov,1989325080,Citations*,13,One Year
+Mark Neumann,2723434371,Citations*,14,One Year
+Mohit Iyyer,2068391019,Citations*,15,One Year
+William W. Cohen,2115385359,Citations*,16,One Year
+Jianfeng Gao,2104437897,Citations*,17,One Year
+Christopher G. Clark,2568940999,Citations*,18,One Year
+Matt Gardner,2785669479,Citations*,19,One Year
+Alexis Conneau,2555471392,Citations*,20,One Year
+Alan Ritter,2154095546,Citations*,21,One Year
+Christopher D. Manning,2149153931,Citations*,22,One Year
+Erik Cambria,2806062742,Citations*,23,One Year
+Noura Farra,1997728319,Citations*,24,One Year
+Ming Zhou,2143584880,Citations*,25,One Year
+Sara Rosenthal,2124036869,Citations*,26,One Year
+Ruslan Salakhutdinov,2031945151,Citations*,27,One Year
+Yonghui Wu,2941718543,Citations*,28,One Year
+Brenden M. Lake,1987690699,Citations*,29,One Year
+Zhifeng Chen,2922418434,Citations*,30,One Year
+Min Joon Seo,2252216270,Citations*,31,One Year
+Kyunghyun Cho,2462121670,Citations*,32,One Year
+Ali Farhadi,1988090614,Citations*,33,One Year
+Hannaneh Hajishirzi,91410043,Citations*,34,One Year
+Soujanya Poria,1992239148,Citations*,35,One Year
+Samuel R. Bowman,1967404238,Citations*,36,One Year
+Samuel J. Gershman,2134078776,Citations*,37,One Year
+Matt Gardner,2133268498,Citations*,38,One Year
+Joshua B. Tenenbaum,2149572011,Citations*,39,One Year
+Tomer Ullman,2134775596,Citations*,40,One Year
+Kristina Toutanova,1997665198,Citations*,41,One Year
+Barry Haddow,2179150568,Citations*,42,One Year
+Ming-Wei Chang,2142444093,Citations*,43,One Year
+Jayant Krishnamurthy,2137416177,Citations*,44,One Year
+Samy Bengio,2016539005,Citations*,45,One Year
+Andreas Stolcke,684032073,Citations*,46,One Year
+Xuedong Huang,2153189671,Citations*,47,One Year
+Douwe Kiela,302325417,Citations*,48,One Year
+Aniruddha Kembhavi,2096537899,Citations*,49,One Year
+Jasha Droppo,2199465035,Citations*,50,One Year
+Ni Lao,2145221253,Citations*,51,One Year
+Peter J. Liu,2551433269,Citations*,52,One Year
+Alexander M. Rush,2701382563,Citations*,53,One Year
+Yoon Kim,2516971438,Citations*,54,One Year
+Philipp Koehn,2647056301,Citations*,55,One Year
+Jacob Devlin,2153797812,Citations*,56,One Year
+Percy Liang,2171686691,Citations*,57,One Year
+Stephen Merity,634414727,Citations*,58,One Year
+Yann N. Dauphin,1973263502,Citations*,59,One Year
+David Grangier,1261192326,Citations*,60,One Year
+Yoav Goldberg,2144962531,Citations*,61,One Year
+Tom M. Mitchell,2151014374,Citations*,62,One Year
+Kathryn Mazaitis,2040177228,Citations*,63,One Year
+James Bradbury,2340655586,Citations*,64,One Year
+Bishan Yang,2505662152,Citations*,65,One Year
+Phil Blunsom,297118547,Citations*,66,One Year
+Abhinav Gupta,2099263982,Citations*,67,One Year
+Steve J. Young,2125228453,Citations*,68,One Year
+Wayne Xiong,2507617282,Citations*,69,One Year
+Jason Weston,2945754415,Citations*,70,One Year
+Bhavana Dalvi,2081006310,Citations*,71,One Year
+Loïc Barrault,2153569893,Citations*,72,One Year
+Graham Neubig,277131583,Citations*,73,One Year
+Melvin Johnson,2709040789,Citations*,74,One Year
+Abigail See,2778789062,Citations*,75,One Year
+Jing Jiang,2286546702,Citations*,76,One Year
+Zhilin Yang,2489788272,Citations*,77,One Year
+Ndapandula Nakashole,2022819398,Citations*,78,One Year
+Victor Zhong,2692068246,Citations*,79,One Year
+Jason Weston,2058584252,Citations*,80,One Year
+Rico Sennrich,93200637,Citations*,81,One Year
+Derry Tanti Wijaya,2238690600,Citations*,82,One Year
+Maxim Krikun,2709838160,Citations*,83,One Year
+Gregory S. Corrado,2107276858,Citations*,84,One Year
+Tsung-Hsien Wen,2292847895,Citations*,85,One Year
+Jeffrey Dean,2429370538,Citations*,86,One Year
+Macduff Hughes,2553794974,Citations*,87,One Year
+Nikhil Thorat,2556246870,Citations*,88,One Year
+Mike Schuster,2568636091,Citations*,89,One Year
+Xinlei Chen,2883814010,Citations*,90,One Year
+Martin Wattenberg,2921680386,Citations*,91,One Year
+Fernanda Viégas,2946821224,Citations*,92,One Year
+Partha Pratim Talukdar,2407474466,Citations*,93,One Year
+Burr Settles,2921279852,Citations*,94,One Year
+Daniel Jurafsky,2089131864,Citations*,95,One Year
+Emmanouil Antonios Platanios,2011834717,Citations*,96,One Year
+Mehdi Samadi,2132903572,Citations*,97,One Year
+Estevam R. Hruschka,2137503162,Citations*,98,One Year
+Justin Betteridge,2143543388,Citations*,99,One Year
+Andrew Carlson,2154786016,Citations*,100,One Year
+Pushpak Bhattacharyya,2156071728,Publications,1,One Year
+Iryna Gurevych,40109512,Publications,2,One Year
+Graham Neubig,277131583,Publications,3,One Year
+Andy Way,2110815193,Publications,4,One Year
+Erik Cambria,2806062742,Publications,5,One Year
+Dan Roth,2122007671,Publications,6,One Year
+Lucia Specia,321534654,Publications,7,One Year
+Jianfeng Gao,2104437897,Publications,8,One Year
+Nizar Habash,2025107431,Publications,9,One Year
+Benjamin Van Durme,2113965177,Publications,10,One Year
+Hinrich Schütze,2035156685,Publications,11,One Year
+Mirella Lapata,2019867208,Publications,12,One Year
+Asif Ekbal,2292569446,Publications,13,One Year
+Rico Sennrich,93200637,Publications,14,One Year
+William Yang Wang,2110566271,Publications,15,One Year
+Anders Søgaard,2100615786,Publications,16,One Year
+Yuji Matsumoto,2131749055,Publications,17,One Year
+Ming Zhou,2143584880,Publications,18,One Year
+James R. Glass,2154846939,Publications,19,One Year
+Paolo Rosso,2157200871,Publications,20,One Year
+Timothy Baldwin,2436269535,Publications,21,One Year
+Preslav Nakov,1989325080,Publications,22,One Year
+Soujanya Poria,1992239148,Publications,23,One Year
+Ivan Vulić,2028299656,Publications,24,One Year
+Ryan Cotterell,2148165152,Publications,25,One Year
+Satoshi Nakamura,2209481840,Publications,26,One Year
+Noah A. Smith,2250998000,Publications,27,One Year
+Niladri Sekhar Dash,2106509311,Publications,28,One Year
+Maosong Sun,2157167650,Publications,29,One Year
+Trevor Cohn,2198766192,Publications,30,One Year
+K. P. Soman,2430005511,Publications,31,One Year
+Heng Ji,2617049578,Publications,32,One Year
+Samuel R. Bowman,1967404238,Publications,33,One Year
+Alan W. Black,2138706875,Publications,34,One Year
+Marilyn A. Walker,2152519802,Publications,35,One Year
+Chengqing Zong,2160997121,Publications,36,One Year
+Xuanjing Huang,2161482855,Publications,37,One Year
+Manish Shrivastava,2251125838,Publications,38,One Year
+Jan Hajic,261932608,Publications,39,One Year
+Luke S. Zettlemoyer,334758317,Publications,40,One Year
+Nikola Ljubešić,1207396082,Publications,41,One Year
+Chris Biemann,1441874829,Publications,42,One Year
+Kevin Duh,2046721439,Publications,43,One Year
+Kentaro Inui,2084773436,Publications,44,One Year
+Xu Sun,2157689933,Publications,45,One Year
+Hai Zhao,2158989052,Publications,46,One Year
+Danielle S. McNamara,2220320017,Publications,47,One Year
+Kyunghyun Cho,2462121670,Publications,48,One Year
+Qun Liu,2573745738,Publications,49,One Year
+Gholamreza Haffari,1432492132,Publications,50,One Year
+Eduard H. Hovy,2046588481,Publications,51,One Year
+Nathan Schneider,2096245607,Publications,52,One Year
+Yejin Choi,2133417374,Publications,53,One Year
+Ting Liu,2142255895,Publications,54,One Year
+Xiaojun Wan,2146508076,Publications,55,One Year
+Simone Paolo Ponzetto,2252270924,Publications,56,One Year
+Benno Stein,2134393620,Publications,57,One Year
+Lyle H. Ungar,2147282416,Publications,58,One Year
+Douwe Kiela,302325417,Publications,59,One Year
+Rada Mihalcea,2068190112,Publications,60,One Year
+Martha Palmer,2135488253,Publications,61,One Year
+Piek Vossen,2153862313,Publications,62,One Year
+M. Anand Kumar,2163189100,Publications,63,One Year
+Yun-Nung Chen,2169233553,Publications,64,One Year
+Jiajun Zhang,2463786200,Publications,65,One Year
+Philipp Koehn,2647056301,Publications,66,One Year
+Alessandro Moschitti,48142092,Publications,67,One Year
+Jörg Tiedemann,1899304389,Publications,68,One Year
+Andrew McCallum,2131293038,Publications,69,One Year
+Dongyan Zhao,2156639542,Publications,70,One Year
+Walter Daelemans,2234963844,Publications,71,One Year
+Yonatan Belinkov,2279044859,Publications,72,One Year
+Kevin Knight,2330030585,Publications,73,One Year
+Christian Chiarcos,71614920,Publications,74,One Year
+Marie-Francine Moens,1931663571,Publications,75,One Year
+Richard Socher,1964982643,Publications,76,One Year
+Shervin Malmasi,2070717499,Publications,77,One Year
+Björn W. Schuller,2079380910,Publications,78,One Year
+Rui Yan,2109109241,Publications,79,One Year
+Xipeng Qiu,2115470192,Publications,80,One Year
+Marcos Zampieri,2130891196,Publications,81,One Year
+Yoav Goldberg,2144962531,Publications,82,One Year
+Scott A. Crossley,2155955995,Publications,83,One Year
+Matteo Negri,2165613779,Publications,84,One Year
+Mamoru Komachi,2231756486,Publications,85,One Year
+Mounir Zrigui,34585664,Publications,86,One Year
+Eiichiro Sumita,100988613,Publications,87,One Year
+Sadao Kurohashi,112209514,Publications,88,One Year
+Phil Blunsom,297118547,Publications,89,One Year
+Mohit Bansal,2070810387,Publications,90,One Year
+Horacio Saggion,157790613,Publications,91,One Year
+Stefan Ultes,328023843,Publications,92,One Year
+Marta Ruiz Costa-Jussà,1335551265,Publications,93,One Year
+Viviana Patti,1979387801,Publications,94,One Year
+Henning Wachsmuth,2009299615,Publications,95,One Year
+Alex Waibel,2061074560,Publications,96,One Year
+Daniel Zeman,2107866107,Publications,97,One Year
+Anna Korhonen,2110381519,Publications,98,One Year
+Francis M. Tyers,2122485303,Publications,99,One Year
+Shay B. Cohen,2133337488,Publications,100,One Year
+Jianfeng Gao,2104437897,H-Index,1,One Year
+Ming Zhou,2143584880,H-Index,2,One Year
+Luke S. Zettlemoyer,334758317,H-Index,3,One Year
+Ruslan Salakhutdinov,2031945151,H-Index,4,One Year
+Graham Neubig,277131583,H-Index,5,One Year
+Phil Blunsom,297118547,H-Index,6,One Year
+Richard Socher,1964982643,H-Index,7,One Year
+Samuel R. Bowman,1967404238,H-Index,8,One Year
+William W. Cohen,2115385359,H-Index,9,One Year
+Kyunghyun Cho,2462121670,H-Index,10,One Year
+Erik Cambria,2806062742,H-Index,11,One Year
+Rico Sennrich,93200637,H-Index,12,One Year
+Mirella Lapata,2019867208,H-Index,13,One Year
+Yejin Choi,2133417374,H-Index,14,One Year
+Maosong Sun,2157167650,H-Index,15,One Year
+Yoshua Bengio,161269817,H-Index,16,One Year
+Preslav Nakov,1989325080,H-Index,17,One Year
+Caiming Xiong,2095665791,H-Index,18,One Year
+Quoc V. Le,2148448995,H-Index,19,One Year
+Christopher D. Manning,2149153931,H-Index,20,One Year
+James R. Glass,2154846939,H-Index,21,One Year
+Omer Levy,2250897584,H-Index,22,One Year
+Noah A. Smith,2250998000,H-Index,23,One Year
+Alexis Conneau,2555471392,H-Index,24,One Year
+Iryna Gurevych,40109512,H-Index,25,One Year
+Jonathan Berant,86633810,H-Index,26,One Year
+Douwe Kiela,302325417,H-Index,27,One Year
+Mohit Bansal,2070810387,H-Index,28,One Year
+Milica Gasic,2086998216,H-Index,29,One Year
+Benjamin Van Durme,2113965177,H-Index,30,One Year
+Edouard Grave,2114720862,H-Index,31,One Year
+Wen-tau Yih,2116578203,H-Index,32,One Year
+Chris Dyer,2119216958,H-Index,33,One Year
+Steve J. Young,2125228453,H-Index,34,One Year
+Antoine Bordes,2160652726,H-Index,35,One Year
+Furu Wei,2171151462,H-Index,36,One Year
+Percy Liang,2171686691,H-Index,37,One Year
+Barry Haddow,2179150568,H-Index,38,One Year
+Trevor Cohn,2198766192,H-Index,39,One Year
+Tsung-Hsien Wen,2292847895,H-Index,40,One Year
+Marco Baroni,2318310288,H-Index,41,One Year
+Bhuwan Dhingra,2359800348,H-Index,42,One Year
+Yang Liu,2419849255,H-Index,43,One Year
+Zhilin Yang,2489788272,H-Index,44,One Year
+Jason Weston,2945754415,H-Index,45,One Year
+Roberto Navigli,3356812,H-Index,46,One Year
+Franck Dernoncourt,15025084,H-Index,47,One Year
+Hannaneh Hajishirzi,91410043,H-Index,48,One Year
+Claire Cardie,229573375,H-Index,49,One Year
+Lucia Specia,321534654,H-Index,50,One Year
+Stefan Ultes,328023843,H-Index,51,One Year
+Nikola Mrksic,786933160,H-Index,52,One Year
+Piotr Bojanowski,1882694979,H-Index,53,One Year
+Jörg Tiedemann,1899304389,H-Index,54,One Year
+Soujanya Poria,1992239148,H-Index,55,One Year
+Kevin Gimpel,2000806699,H-Index,56,One Year
+Shervin Malmasi,2070717499,H-Index,57,One Year
+Dhruv Batra,2098683697,H-Index,58,One Year
+Anders Søgaard,2100615786,H-Index,59,One Year
+Li Deng,2101552792,H-Index,60,One Year
+Xiaodong He,2106698597,H-Index,61,One Year
+Christof Monz,2109806231,H-Index,62,One Year
+Xipeng Qiu,2115470192,H-Index,63,One Year
+Zhaopeng Tu,2126985900,H-Index,64,One Year
+Marcos Zampieri,2130891196,H-Index,65,One Year
+Andrew McCallum,2131293038,H-Index,66,One Year
+Wenjie Li,2139868060,H-Index,67,One Year
+Sebastian Ruder,2140581490,H-Index,68,One Year
+Yoav Goldberg,2144962531,H-Index,69,One Year
+Sujian Li,2161397473,H-Index,70,One Year
+Minlie Huang,2162268045,H-Index,71,One Year
+Siva Reddy,2169793708,H-Index,72,One Year
+Felix Hill,2188096649,H-Index,73,One Year
+Nan Yang,2228815495,H-Index,74,One Year
+Eunsol Choi,2251481576,H-Index,75,One Year
+Yonatan Belinkov,2279044859,H-Index,76,One Year
+Jing Jiang,2286546702,H-Index,77,One Year
+Jose Camacho-Collados,2294922728,H-Index,78,One Year
+Timothy Baldwin,2436269535,H-Index,79,One Year
+Matthew E. Peters,2502758396,H-Index,80,One Year
+Armand Joulin,2512114774,H-Index,81,One Year
+Antonio Barone,2592174883,H-Index,82,One Year
+Philipp Koehn,2647056301,H-Index,83,One Year
+Hongfang Liu,2659824549,H-Index,84,One Year
+Yue Zhang,2681817313,H-Index,85,One Year
+Peter Szolovits,29903417,H-Index,86,One Year
+Alessandro Moschitti,48142092,H-Index,87,One Year
+Tomas Mikolov,292626543,H-Index,88,One Year
+Bhuvana Ramabhadran,297209587,H-Index,89,One Year
+Eric P. Xing,351197510,H-Index,90,One Year
+Guergana Savova,705491505,H-Index,91,One Year
+Victor O. K. Li,721232367,H-Index,92,One Year
+Diana Inkpen,852303700,H-Index,93,One Year
+Vo Thi Ngoc Chau,1211284406,H-Index,94,One Year
+David Grangier,1261192326,H-Index,95,One Year
+Isabelle Augenstein,1818950450,H-Index,96,One Year
+Orhan Firat,1941184757,H-Index,97,One Year
+Sebastian Riedel,1976791985,H-Index,98,One Year
+Brenden M. Lake,1987690699,H-Index,99,One Year
+Takaaki Hori,1988701769,H-Index,100,One Year
+Tomas Mikolov,292626543,Saliency,1,Five Years
+Christopher D. Manning,2149153931,Saliency,2,Five Years
+Jeffrey Dean,2429370538,Saliency,3,Five Years
+Yoshua Bengio,161269817,Saliency,4,Five Years
+Gregory S. Corrado,2107276858,Saliency,5,Five Years
+Kai Chen,2146330397,Saliency,6,Five Years
+Ilya Sutskever,215131072,Saliency,7,Five Years
+Kyunghyun Cho,2462121670,Saliency,8,Five Years
+Richard Socher,1964982643,Saliency,9,Five Years
+Quoc V. Le,2148448995,Saliency,10,Five Years
+Dzmitry Bahdanau,2509101809,Saliency,11,Five Years
+Oriol Vinyals,2634174050,Saliency,12,Five Years
+Chris Dyer,2119216958,Saliency,13,Five Years
+Phil Blunsom,297118547,Saliency,14,Five Years
+Jeffrey Pennington,2517910439,Saliency,15,Five Years
+Li Deng,2101552792,Saliency,16,Five Years
+Bart van Merriënboer,256273151,Saliency,17,Five Years
+Jianfeng Gao,2104437897,Saliency,18,Five Years
+Xiaodong He,2106698597,Saliency,19,Five Years
+Geoffrey Zweig,2090483681,Saliency,20,Five Years
+Aaron C. Courville,2328522601,Saliency,21,Five Years
+Noah A. Smith,2250998000,Saliency,22,Five Years
+Caglar Gulcehre,152899538,Saliency,23,Five Years
+Holger Schwenk,2160549261,Saliency,24,Five Years
+Steven Bethard,2133231644,Saliency,25,Five Years
+Fethi Bougares,184786478,Saliency,26,Five Years
+Andrew Y. Ng,2104401652,Saliency,27,Five Years
+Yoon Kim,2516971438,Saliency,28,Five Years
+Jason Weston,2945754415,Saliency,29,Five Years
+Christopher Potts,2114426036,Saliency,30,Five Years
+John Bauer,2607791192,Saliency,31,Five Years
+Mihai Surdeanu,39770428,Saliency,32,Five Years
+Wen-tau Yih,2116578203,Saliency,33,Five Years
+Luke S. Zettlemoyer,334758317,Saliency,34,Five Years
+Yoav Goldberg,2144962531,Saliency,35,Five Years
+Thang Luong,2251056627,Saliency,36,Five Years
+Pascal Vincent,2397241174,Saliency,37,Five Years
+Percy Liang,2171686691,Saliency,38,Five Years
+Oriol Vinyals,2921330922,Saliency,39,Five Years
+Daniel Jurafsky,2089131864,Saliency,40,Five Years
+Edward Grefenstette,12494109,Saliency,41,Five Years
+Antoine Bordes,2160652726,Saliency,42,Five Years
+Samy Bengio,2016539005,Saliency,43,Five Years
+Andrej Karpathy,46106380,Saliency,44,Five Years
+Eduard H. Hovy,2046588481,Saliency,45,Five Years
+Nal Kalchbrenner,223268448,Saliency,46,Five Years
+Marco Baroni,2318310288,Saliency,47,Five Years
+Saif M. Mohammad,2105560112,Saliency,48,Five Years
+Alexander M. Rush,2701382563,Saliency,49,Five Years
+David McClosky,2113976098,Saliency,50,Five Years
+Sumit Chopra,2620976108,Saliency,51,Five Years
+Jenny Rose Finkel,2111429548,Saliency,52,Five Years
+Barry Haddow,2179150568,Saliency,53,Five Years
+Erik Cambria,2806062742,Saliency,54,Five Years
+Rico Sennrich,93200637,Saliency,55,Five Years
+Li Fei-Fei,1984838606,Saliency,56,Five Years
+Margaret Mitchell,2122281325,Saliency,57,Five Years
+Yonghui Wu,2941718543,Saliency,58,Five Years
+Mike Schuster,2568636091,Saliency,59,Five Years
+Ruslan Salakhutdinov,2031945151,Saliency,60,Five Years
+Jason Chuang,2161651193,Saliency,61,Five Years
+Ming Zhou,2143584880,Saliency,62,Five Years
+Alexander Toshev,1974776862,Saliency,63,Five Years
+Dumitru Erhan,2308824398,Saliency,64,Five Years
+Ting Liu,2142255895,Saliency,65,Five Years
+Alex Perelygin,2397079202,Saliency,66,Five Years
+Jean Y. Wu,2613931434,Saliency,67,Five Years
+Samuel R. Bowman,1967404238,Saliency,68,Five Years
+Alexandra Birch,2099661360,Saliency,69,Five Years
+Philipp Koehn,2647056301,Saliency,70,Five Years
+Miguel Ballesteros,2159534029,Saliency,71,Five Years
+Nizar Habash,2025107431,Saliency,72,Five Years
+Jiwei Li,2294693014,Saliency,73,Five Years
+Preslav Nakov,1989325080,Saliency,74,Five Years
+Joakim Nivre,70153750,Saliency,75,Five Years
+Roberto Navigli,3356812,Saliency,76,Five Years
+Dan Roth,2122007671,Saliency,77,Five Years
+Zhifeng Chen,2922418434,Saliency,78,Five Years
+D. Klein,2618175022,Saliency,79,Five Years
+Armand Joulin,2512114774,Saliency,80,Five Years
+Hang Li,2128739099,Saliency,81,Five Years
+Mohit Iyyer,2068391019,Saliency,82,Five Years
+Zhengdong Lu,2514095899,Saliency,83,Five Years
+James R. Glass,2154846939,Saliency,84,Five Years
+Omer Levy,2250897584,Saliency,85,Five Years
+Iulian Vlad Serban,2221625686,Saliency,86,Five Years
+Steve J. Young,2125228453,Saliency,87,Five Years
+Marcus Rohrbach,2170787067,Saliency,88,Five Years
+Hieu Pham,2631893839,Saliency,89,Five Years
+Devi Parikh,2223275083,Saliency,90,Five Years
+Soujanya Poria,1992239148,Saliency,91,Five Years
+Kenton Lee,2552119883,Saliency,92,Five Years
+C. Lawrence Zitnick,363366491,Saliency,93,Five Years
+Mirella Lapata,2019867208,Saliency,94,Five Years
+Bowen Zhou,2142227750,Saliency,95,Five Years
+Michel Galley,2509907281,Saliency,96,Five Years
+Dong Yu,2103789662,Saliency,97,Five Years
+Kevin Gimpel,2000806699,Saliency,98,Five Years
+Andrew McCallum,2131293038,Saliency,99,Five Years
+Mona T. Diab,2124289572,Saliency,100,Five Years
+Jeffrey Pennington,2517910439,Prestige,1,Five Years
+Gregory S. Corrado,2107276858,Prestige,2,Five Years
+Kai Chen,2146330397,Prestige,3,Five Years
+Jeffrey Dean,2429370538,Prestige,4,Five Years
+Jenny Rose Finkel,2111429548,Prestige,5,Five Years
+Alex Perelygin,2397079202,Prestige,6,Five Years
+Jean Y. Wu,2613931434,Prestige,7,Five Years
+Ilya Sutskever,215131072,Prestige,8,Five Years
+Dzmitry Bahdanau,2509101809,Prestige,9,Five Years
+Pascal Vincent,2397241174,Prestige,10,Five Years
+Tomas Mikolov,292626543,Prestige,11,Five Years
+Bart van Merriënboer,256273151,Prestige,12,Five Years
+Oriol Vinyals,2634174050,Prestige,13,Five Years
+Alexander Toshev,1974776862,Prestige,14,Five Years
+Dumitru Erhan,2308824398,Prestige,15,Five Years
+Andrej Karpathy,46106380,Prestige,16,Five Years
+David McClosky,2113976098,Prestige,17,Five Years
+Caglar Gulcehre,152899538,Prestige,18,Five Years
+Quoc V. Le,2148448995,Prestige,19,Five Years
+Samy Bengio,2016539005,Prestige,20,Five Years
+Yoshua Bengio,161269817,Prestige,21,Five Years
+Nal Kalchbrenner,223268448,Prestige,22,Five Years
+Yoon Kim,2516971438,Prestige,23,Five Years
+Jason Chuang,2161651193,Prestige,24,Five Years
+Hieu Pham,2631893839,Prestige,25,Five Years
+Andrew Y. Ng,2104401652,Prestige,26,Five Years
+Mike Schuster,2568636091,Prestige,27,Five Years
+Richard Socher,1964982643,Prestige,28,Five Years
+Thang Luong,2251056627,Prestige,29,Five Years
+Oriol Vinyals,2921330922,Prestige,30,Five Years
+Zhifeng Chen,2922418434,Prestige,31,Five Years
+Li Fei-Fei,1984838606,Prestige,32,Five Years
+John Bauer,2607791192,Prestige,33,Five Years
+Aaron C. Courville,2328522601,Prestige,34,Five Years
+Dong Yu,2103789662,Prestige,35,Five Years
+Kyunghyun Cho,2462121670,Prestige,36,Five Years
+Yonghui Wu,2941718543,Prestige,37,Five Years
+Geoffrey Zweig,2090483681,Prestige,38,Five Years
+Christopher D. Manning,2149153931,Prestige,39,Five Years
+Sumit Chopra,2620976108,Prestige,40,Five Years
+C. Lawrence Zitnick,363366491,Prestige,41,Five Years
+Fethi Bougares,184786478,Prestige,42,Five Years
+Holger Schwenk,2160549261,Prestige,43,Five Years
+Edward Grefenstette,12494109,Prestige,44,Five Years
+Jason Weston,2945754415,Prestige,45,Five Years
+Antoine Bordes,2160652726,Prestige,46,Five Years
+Marcus Rohrbach,2170787067,Prestige,47,Five Years
+Alexander M. Rush,2701382563,Prestige,48,Five Years
+Armand Joulin,2512114774,Prestige,49,Five Years
+Christopher Potts,2114426036,Prestige,50,Five Years
+Phil Blunsom,297118547,Prestige,51,Five Years
+Wen-tau Yih,2116578203,Prestige,52,Five Years
+Iulian Vlad Serban,2221625686,Prestige,53,Five Years
+Margaret Mitchell,2122281325,Prestige,54,Five Years
+Mohit Iyyer,2068391019,Prestige,55,Five Years
+Mihai Surdeanu,39770428,Prestige,56,Five Years
+Kenton Lee,2552119883,Prestige,57,Five Years
+Ruslan Salakhutdinov,2031945151,Prestige,58,Five Years
+Li Deng,2101552792,Prestige,59,Five Years
+Zhengdong Lu,2514095899,Prestige,60,Five Years
+Steven Bethard,2133231644,Prestige,61,Five Years
+Jiwei Li,2294693014,Prestige,62,Five Years
+Percy Liang,2171686691,Prestige,63,Five Years
+Michel Galley,2509907281,Prestige,64,Five Years
+Alexandra Birch,2099661360,Prestige,65,Five Years
+Xiaodong He,2106698597,Prestige,66,Five Years
+Omer Levy,2250897584,Prestige,67,Five Years
+Barry Haddow,2179150568,Prestige,68,Five Years
+Daniel Jurafsky,2089131864,Prestige,69,Five Years
+Bowen Zhou,2142227750,Prestige,70,Five Years
+Jianfeng Gao,2104437897,Prestige,71,Five Years
+Hang Li,2128739099,Prestige,72,Five Years
+Yoav Goldberg,2144962531,Prestige,73,Five Years
+Saif M. Mohammad,2105560112,Prestige,74,Five Years
+Chris Dyer,2119216958,Prestige,75,Five Years
+Devi Parikh,2223275083,Prestige,76,Five Years
+Samuel R. Bowman,1967404238,Prestige,77,Five Years
+Luke S. Zettlemoyer,334758317,Prestige,78,Five Years
+Kevin Gimpel,2000806699,Prestige,79,Five Years
+D. Klein,2618175022,Prestige,80,Five Years
+Steve J. Young,2125228453,Prestige,81,Five Years
+Andrew McCallum,2131293038,Prestige,82,Five Years
+Noah A. Smith,2250998000,Prestige,83,Five Years
+Rico Sennrich,93200637,Prestige,84,Five Years
+Miguel Ballesteros,2159534029,Prestige,85,Five Years
+Marco Baroni,2318310288,Prestige,86,Five Years
+Soujanya Poria,1992239148,Prestige,87,Five Years
+Eduard H. Hovy,2046588481,Prestige,88,Five Years
+Ming Zhou,2143584880,Prestige,89,Five Years
+James R. Glass,2154846939,Prestige,90,Five Years
+Ting Liu,2142255895,Prestige,91,Five Years
+Roberto Navigli,3356812,Prestige,92,Five Years
+Mirella Lapata,2019867208,Prestige,93,Five Years
+Erik Cambria,2806062742,Prestige,94,Five Years
+Philipp Koehn,2647056301,Prestige,95,Five Years
+Joakim Nivre,70153750,Prestige,96,Five Years
+Preslav Nakov,1989325080,Prestige,97,Five Years
+Mona T. Diab,2124289572,Prestige,98,Five Years
+Dan Roth,2122007671,Prestige,99,Five Years
+Nizar Habash,2025107431,Prestige,100,Five Years
+Tomas Mikolov,292626543,Citations*,1,Five Years
+Jeffrey Dean,2429370538,Citations*,2,Five Years
+Christopher D. Manning,2149153931,Citations*,3,Five Years
+Gregory S. Corrado,2107276858,Citations*,4,Five Years
+Kai Chen,2146330397,Citations*,5,Five Years
+Yoshua Bengio,161269817,Citations*,6,Five Years
+Ilya Sutskever,215131072,Citations*,7,Five Years
+Kyunghyun Cho,2462121670,Citations*,8,Five Years
+Richard Socher,1964982643,Citations*,9,Five Years
+Quoc V. Le,2148448995,Citations*,10,Five Years
+Dzmitry Bahdanau,2509101809,Citations*,11,Five Years
+Oriol Vinyals,2634174050,Citations*,12,Five Years
+Jeffrey Pennington,2517910439,Citations*,13,Five Years
+Chris Dyer,2119216958,Citations*,14,Five Years
+Bart van Merriënboer,256273151,Citations*,15,Five Years
+Caglar Gulcehre,152899538,Citations*,16,Five Years
+Aaron C. Courville,2328522601,Citations*,17,Five Years
+Holger Schwenk,2160549261,Citations*,18,Five Years
+Phil Blunsom,297118547,Citations*,19,Five Years
+Li Deng,2101552792,Citations*,20,Five Years
+Yoon Kim,2516971438,Citations*,21,Five Years
+Fethi Bougares,184786478,Citations*,22,Five Years
+Pascal Vincent,2397241174,Citations*,23,Five Years
+Jianfeng Gao,2104437897,Citations*,24,Five Years
+Xiaodong He,2106698597,Citations*,25,Five Years
+Steven Bethard,2133231644,Citations*,26,Five Years
+John Bauer,2607791192,Citations*,27,Five Years
+Christopher Potts,2114426036,Citations*,28,Five Years
+Geoffrey Zweig,2090483681,Citations*,29,Five Years
+Andrew Y. Ng,2104401652,Citations*,30,Five Years
+Mihai Surdeanu,39770428,Citations*,31,Five Years
+Yoav Goldberg,2144962531,Citations*,32,Five Years
+Noah A. Smith,2250998000,Citations*,33,Five Years
+Samy Bengio,2016539005,Citations*,34,Five Years
+Edward Grefenstette,12494109,Citations*,35,Five Years
+Jenny Rose Finkel,2111429548,Citations*,36,Five Years
+David McClosky,2113976098,Citations*,37,Five Years
+Erik Cambria,2806062742,Citations*,38,Five Years
+Jason Weston,2945754415,Citations*,39,Five Years
+Andrej Karpathy,46106380,Citations*,40,Five Years
+Thang Luong,2251056627,Citations*,41,Five Years
+Marco Baroni,2318310288,Citations*,42,Five Years
+Wen-tau Yih,2116578203,Citations*,43,Five Years
+Oriol Vinyals,2921330922,Citations*,44,Five Years
+Saif M. Mohammad,2105560112,Citations*,45,Five Years
+Luke S. Zettlemoyer,334758317,Citations*,46,Five Years
+Eduard H. Hovy,2046588481,Citations*,47,Five Years
+Felix Distel,1982762866,Citations*,48,Five Years
+Bernhard Ganter,2099045486,Citations*,49,Five Years
+Peggy Cellier,2645791272,Citations*,50,Five Years
+Daniel Jurafsky,2089131864,Citations*,51,Five Years
+Percy Liang,2171686691,Citations*,52,Five Years
+Antoine Bordes,2160652726,Citations*,53,Five Years
+Ting Liu,2142255895,Citations*,54,Five Years
+Jason Chuang,2161651193,Citations*,55,Five Years
+Li Fei-Fei,1984838606,Citations*,56,Five Years
+Alex Perelygin,2397079202,Citations*,57,Five Years
+Jean Y. Wu,2613931434,Citations*,58,Five Years
+Alexander Toshev,1974776862,Citations*,59,Five Years
+Dumitru Erhan,2308824398,Citations*,60,Five Years
+Ruslan Salakhutdinov,2031945151,Citations*,61,Five Years
+Margaret Mitchell,2122281325,Citations*,62,Five Years
+Sumit Chopra,2620976108,Citations*,63,Five Years
+Nal Kalchbrenner,223268448,Citations*,64,Five Years
+Alan Ritter,2154095546,Citations*,65,Five Years
+Preslav Nakov,1989325080,Citations*,66,Five Years
+Alexander M. Rush,2701382563,Citations*,67,Five Years
+Ming Zhou,2143584880,Citations*,68,Five Years
+Mike Schuster,2568636091,Citations*,69,Five Years
+Barry Haddow,2179150568,Citations*,70,Five Years
+Armand Joulin,2512114774,Citations*,71,Five Years
+Dong Yu,2103789662,Citations*,72,Five Years
+Soujanya Poria,1992239148,Citations*,73,Five Years
+Ryan Kiros,1190321462,Citations*,74,Five Years
+Yonghui Wu,2941718543,Citations*,75,Five Years
+Bing Qin,2098930276,Citations*,76,Five Years
+Roberto Navigli,3356812,Citations*,77,Five Years
+Jiwei Li,2294693014,Citations*,78,Five Years
+Duyu Tang,2145601749,Citations*,79,Five Years
+C. Lawrence Zitnick,363366491,Citations*,80,Five Years
+Rico Sennrich,93200637,Citations*,81,Five Years
+Richard S. Zemel,2149392531,Citations*,82,Five Years
+Mohit Iyyer,2068391019,Citations*,83,Five Years
+Joakim Nivre,70153750,Citations*,84,Five Years
+Graeme D. Kennedy,2806978894,Citations*,85,Five Years
+Miguel Ballesteros,2159534029,Citations*,86,Five Years
+Devi Parikh,2223275083,Citations*,87,Five Years
+Hieu Pham,2631893839,Citations*,88,Five Years
+Samuel R. Bowman,1967404238,Citations*,89,Five Years
+Omer Levy,2250897584,Citations*,90,Five Years
+Mona T. Diab,2124289572,Citations*,91,Five Years
+Svetlana Kiritchenko,10967082,Citations*,92,Five Years
+Marcus Rohrbach,2170787067,Citations*,93,Five Years
+Zhengdong Lu,2514095899,Citations*,94,Five Years
+Hang Li,2128739099,Citations*,95,Five Years
+Xiaodan Zhu,2128951412,Citations*,96,Five Years
+Dhruv Batra,2098683697,Citations*,97,Five Years
+Ion Androutsopoulos,1808727851,Citations*,98,Five Years
+Edouard Grave,2114720862,Citations*,99,Five Years
+Zhifeng Chen,2922418434,Citations*,100,Five Years
+Pushpak Bhattacharyya,2156071728,Publications,1,Five Years
+Iryna Gurevych,40109512,Publications,2,Five Years
+Graham Neubig,277131583,Publications,3,Five Years
+Nizar Habash,2025107431,Publications,4,Five Years
+Chris Dyer,2119216958,Publications,5,Five Years
+Danielle S. McNamara,2220320017,Publications,6,Five Years
+Lucia Specia,321534654,Publications,7,Five Years
+Andy Way,2110815193,Publications,8,Five Years
+Erik Cambria,2806062742,Publications,9,Five Years
+Noah A. Smith,2250998000,Publications,10,Five Years
+Dan Roth,2122007671,Publications,11,Five Years
+Preslav Nakov,1989325080,Publications,12,Five Years
+Christopher D. Manning,2149153931,Publications,13,Five Years
+Yuji Matsumoto,2131749055,Publications,14,Five Years
+Paolo Rosso,2157200871,Publications,15,Five Years
+Qun Liu,2573745738,Publications,16,Five Years
+Satoshi Nakamura,2209481840,Publications,17,Five Years
+Philipp Koehn,2647056301,Publications,18,Five Years
+Joakim Nivre,70153750,Publications,19,Five Years
+Timothy Baldwin,2436269535,Publications,20,Five Years
+Sadao Kurohashi,112209514,Publications,21,Five Years
+Nikola Ljubešić,1207396082,Publications,22,Five Years
+Eiichiro Sumita,100988613,Publications,23,Five Years
+Eduard H. Hovy,2046588481,Publications,24,Five Years
+Ting Liu,2142255895,Publications,25,Five Years
+Mona T. Diab,2124289572,Publications,26,Five Years
+Marie-Francine Moens,1931663571,Publications,27,Five Years
+Anders Søgaard,2100615786,Publications,28,Five Years
+Jianfeng Gao,2104437897,Publications,29,Five Years
+Hinrich Schütze,2035156685,Publications,30,Five Years
+Ming Zhou,2143584880,Publications,31,Five Years
+Roberto Navigli,3356812,Publications,32,Five Years
+Alexander F. Gelbukh,331132414,Publications,33,Five Years
+Martha Palmer,2135488253,Publications,34,Five Years
+Piek Vossen,2153862313,Publications,35,Five Years
+Chris Biemann,1441874829,Publications,36,Five Years
+Jörg Tiedemann,1899304389,Publications,37,Five Years
+Benjamin Van Durme,2113965177,Publications,38,Five Years
+Horacio Saggion,157790613,Publications,39,Five Years
+Marco Baroni,2318310288,Publications,40,Five Years
+Chengqing Zong,2160997121,Publications,41,Five Years
+Heng Ji,2617049578,Publications,42,Five Years
+Xiaodong He,2106698597,Publications,43,Five Years
+Scott A. Crossley,2155955995,Publications,44,Five Years
+Alessandro Moschitti,48142092,Publications,45,Five Years
+Rada Mihalcea,2068190112,Publications,46,Five Years
+Dilek Hakkani-Tür,2090472531,Publications,47,Five Years
+Xuanjing Huang,2161482855,Publications,48,Five Years
+Trevor Cohn,2198766192,Publications,49,Five Years
+Jan Hajic,261932608,Publications,50,Five Years
+Luke S. Zettlemoyer,334758317,Publications,51,Five Years
+Ido Dagan,356610775,Publications,52,Five Years
+Mirella Lapata,2019867208,Publications,53,Five Years
+Kevin Duh,2046721439,Publications,54,Five Years
+Marilyn A. Walker,2152519802,Publications,55,Five Years
+Yue Zhang,2681817313,Publications,56,Five Years
+Veronique Hoste,2227650618,Publications,57,Five Years
+Guodong Zhou,2147795187,Publications,58,Five Years
+James R. Glass,2154846939,Publications,59,Five Years
+M. Anand Kumar,2163189100,Publications,60,Five Years
+Hermann Ney,2293758362,Publications,61,Five Years
+Min Zhang,2428533358,Publications,62,Five Years
+Kentaro Inui,2084773436,Publications,63,Five Years
+Philipp Cimiano,2086393978,Publications,64,Five Years
+Maosong Sun,2157167650,Publications,65,Five Years
+Walter Daelemans,2234963844,Publications,66,Five Years
+Lamia Hadrich Belguith,2271506838,Publications,67,Five Years
+K. P. Soman,2430005511,Publications,68,Five Years
+James Pustejovsky,1991518691,Publications,69,Five Years
+Nathan Schneider,2096245607,Publications,70,Five Years
+Anna Korhonen,2110381519,Publications,71,Five Years
+Kevin Knight,2330030585,Publications,72,Five Years
+Arthur C. Graesser,197912803,Publications,73,Five Years
+Ivan Vulić,2028299656,Publications,74,Five Years
+Alex Waibel,2061074560,Publications,75,Five Years
+Li Deng,2101552792,Publications,76,Five Years
+Chu-Ren Huang,2115489339,Publications,77,Five Years
+Alan W. Black,2138706875,Publications,78,Five Years
+Kyunghyun Cho,2462121670,Publications,79,Five Years
+Rico Sennrich,93200637,Publications,80,Five Years
+Chris Callison-Burch,718457853,Publications,81,Five Years
+Leo Wanner,1828080704,Publications,82,Five Years
+Veronika Vincze,2144956867,Publications,83,Five Years
+Yoav Goldberg,2144962531,Publications,84,Five Years
+Dipti Misra Sharma,2146442305,Publications,85,Five Years
+Eric Atwell,2098126988,Publications,86,Five Years
+Hsin-Hsi Chen,2102355148,Publications,87,Five Years
+Hai Zhao,2158989052,Publications,88,Five Years
+Masao Utiyama,1970329226,Publications,89,Five Years
+Asif Ekbal,2292569446,Publications,90,Five Years
+Jiajun Zhang,2463786200,Publications,91,Five Years
+Phil Blunsom,297118547,Publications,92,Five Years
+Eneko Agirre,1956093140,Publications,93,Five Years
+Vasile Rus,2012676518,Publications,94,Five Years
+Owen Rambow,2042484151,Publications,95,Five Years
+Dipankar Das,2101415595,Publications,96,Five Years
+Daniel Zeman,2107866107,Publications,97,Five Years
+Mounir Zrigui,34585664,Publications,98,Five Years
+Xipeng Qiu,2115470192,Publications,99,Five Years
+Hua Xu,2625138606,Publications,100,Five Years
+Christopher D. Manning,2149153931,H-Index,1,Five Years
+Chris Dyer,2119216958,H-Index,2,Five Years
+Noah A. Smith,2250998000,H-Index,3,Five Years
+Erik Cambria,2806062742,H-Index,4,Five Years
+Phil Blunsom,297118547,H-Index,5,Five Years
+Luke S. Zettlemoyer,334758317,H-Index,6,Five Years
+Jianfeng Gao,2104437897,H-Index,7,Five Years
+Roberto Navigli,3356812,H-Index,8,Five Years
+Yoshua Bengio,161269817,H-Index,9,Five Years
+Richard Socher,1964982643,H-Index,10,Five Years
+Marco Baroni,2318310288,H-Index,11,Five Years
+Daniel Jurafsky,2089131864,H-Index,12,Five Years
+Ming Zhou,2143584880,H-Index,13,Five Years
+Preslav Nakov,1989325080,H-Index,14,Five Years
+Xiaodong He,2106698597,H-Index,15,Five Years
+Yoav Goldberg,2144962531,H-Index,16,Five Years
+Kyunghyun Cho,2462121670,H-Index,17,Five Years
+Li Deng,2101552792,H-Index,18,Five Years
+Ting Liu,2142255895,H-Index,19,Five Years
+Percy Liang,2171686691,H-Index,20,Five Years
+Soujanya Poria,1992239148,H-Index,21,Five Years
+Mirella Lapata,2019867208,H-Index,22,Five Years
+Saif M. Mohammad,2105560112,H-Index,23,Five Years
+Joakim Nivre,70153750,H-Index,24,Five Years
+Steve J. Young,2125228453,H-Index,25,Five Years
+Xiaodan Zhu,2128951412,H-Index,26,Five Years
+Quoc V. Le,2148448995,H-Index,27,Five Years
+Alessandro Moschitti,48142092,H-Index,28,Five Years
+Nizar Habash,2025107431,H-Index,29,Five Years
+Eduard H. Hovy,2046588481,H-Index,30,Five Years
+Mohit Bansal,2070810387,H-Index,31,Five Years
+Anders Søgaard,2100615786,H-Index,32,Five Years
+Yejin Choi,2133417374,H-Index,33,Five Years
+Philipp Koehn,2647056301,H-Index,34,Five Years
+Iryna Gurevych,40109512,H-Index,35,Five Years
+Guergana Savova,705491505,H-Index,36,Five Years
+Kevin Gimpel,2000806699,H-Index,37,Five Years
+Anna Korhonen,2110381519,H-Index,38,Five Years
+Dan Roth,2122007671,H-Index,39,Five Years
+Hang Li,2128739099,H-Index,40,Five Years
+Andrew McCallum,2131293038,H-Index,41,Five Years
+James R. Glass,2154846939,H-Index,42,Five Years
+Maosong Sun,2157167650,H-Index,43,Five Years
+Paolo Rosso,2157200871,H-Index,44,Five Years
+Felix Hill,2188096649,H-Index,45,Five Years
+Jiwei Li,2294693014,H-Index,46,Five Years
+Timothy Baldwin,2436269535,H-Index,47,Five Years
+D. Klein,2618175022,H-Index,48,Five Years
+Jason Weston,2945754415,H-Index,49,Five Years
+Svetlana Kiritchenko,10967082,H-Index,50,Five Years
+Edward Grefenstette,12494109,H-Index,51,Five Years
+Graham Neubig,277131583,H-Index,52,Five Years
+Tomas Mikolov,292626543,H-Index,53,Five Years
+Dirk Hovy,310222905,H-Index,54,Five Years
+Eneko Agirre,1956093140,H-Index,55,Five Years
+Samuel R. Bowman,1967404238,H-Index,56,Five Years
+Ruslan Salakhutdinov,2031945151,H-Index,57,Five Years
+Regina Barzilay,2080327427,H-Index,58,Five Years
+Joel R. Tetreault,2084122671,H-Index,59,Five Years
+Milica Gasic,2086998216,H-Index,60,Five Years
+Geoffrey Zweig,2090483681,H-Index,61,Five Years
+Wen-tau Yih,2116578203,H-Index,62,Five Years
+Mona T. Diab,2124289572,H-Index,63,Five Years
+Steven Bethard,2133231644,H-Index,64,Five Years
+Jacob Eisenstein,2142862529,H-Index,65,Five Years
+Hwee Tou Ng,2146810117,H-Index,66,Five Years
+Tom M. Mitchell,2151014374,H-Index,67,Five Years
+Antoine Bordes,2160652726,H-Index,68,Five Years
+Barry Haddow,2179150568,H-Index,69,Five Years
+Trevor Cohn,2198766192,H-Index,70,Five Years
+Danielle S. McNamara,2220320017,H-Index,71,Five Years
+Devi Parikh,2223275083,H-Index,72,Five Years
+Omer Levy,2250897584,H-Index,73,Five Years
+Yang Liu,2419849255,H-Index,74,Five Years
+Zhengdong Lu,2514095899,H-Index,75,Five Years
+Yue Zhang,2681817313,H-Index,76,Five Years
+Rico Sennrich,93200637,H-Index,77,Five Years
+Claire Cardie,229573375,H-Index,78,Five Years
+Lucia Specia,321534654,H-Index,79,Five Years
+Chris Callison-Burch,718457853,H-Index,80,Five Years
+Mohammad Taher Pilehvar,2009341098,H-Index,81,Five Years
+Ivan Vulić,2028299656,H-Index,82,Five Years
+Hinrich Schütze,2035156685,H-Index,83,Five Years
+Rada Mihalcea,2068190112,H-Index,84,Five Years
+Dilek Hakkani-Tür,2090472531,H-Index,85,Five Years
+Dhruv Batra,2098683697,H-Index,86,Five Years
+Karl Moritz Hermann,2099089245,H-Index,87,Five Years
+Christopher Potts,2114426036,H-Index,88,Five Years
+Xipeng Qiu,2115470192,H-Index,89,Five Years
+Margaret Mitchell,2122281325,H-Index,90,Five Years
+Wenjie Li,2139868060,H-Index,91,Five Years
+Bowen Zhou,2142227750,H-Index,92,Five Years
+Xuanjing Huang,2161482855,H-Index,93,Five Years
+Raymond J. Mooney,2167433806,H-Index,94,Five Years
+Manaal Faruqui,2798726907,H-Index,95,Five Years
+Jonathan Berant,86633810,H-Index,96,Five Years
+Douwe Kiela,302325417,H-Index,97,Five Years
+Alexander F. Gelbukh,331132414,H-Index,98,Five Years
+Nikola Mrksic,786933160,H-Index,99,Five Years
+Hal Daumé,1204061966,H-Index,100,Five Years
+Christopher D. Manning,2149153931,Saliency,1,Ten Years
+Tomas Mikolov,292626543,Saliency,2,Ten Years
+Yoshua Bengio,161269817,Saliency,3,Ten Years
+Jeffrey Dean,2429370538,Saliency,4,Ten Years
+Gregory S. Corrado,2107276858,Saliency,5,Ten Years
+Kai Chen,2146330397,Saliency,6,Ten Years
+Ilya Sutskever,215131072,Saliency,7,Ten Years
+Richard Socher,1964982643,Saliency,8,Ten Years
+Kyunghyun Cho,2462121670,Saliency,9,Ten Years
+Quoc V. Le,2148448995,Saliency,10,Ten Years
+Dzmitry Bahdanau,2509101809,Saliency,11,Ten Years
+Jason Weston,2945754415,Saliency,12,Ten Years
+Daniel Jurafsky,2089131864,Saliency,13,Ten Years
+Oriol Vinyals,2634174050,Saliency,14,Ten Years
+Andrew Y. Ng,2104401652,Saliency,15,Ten Years
+Chris Dyer,2119216958,Saliency,16,Ten Years
+Noah A. Smith,2250998000,Saliency,17,Ten Years
+Phil Blunsom,297118547,Saliency,18,Ten Years
+Li Deng,2101552792,Saliency,19,Ten Years
+Jianfeng Gao,2104437897,Saliency,20,Ten Years
+Xiaodong He,2106698597,Saliency,21,Ten Years
+Jeffrey Pennington,2517910439,Saliency,22,Ten Years
+Holger Schwenk,2160549261,Saliency,23,Ten Years
+Christopher Potts,2114426036,Saliency,24,Ten Years
+Bart van Merriënboer,256273151,Saliency,25,Ten Years
+Chris Callison-Burch,718457853,Saliency,26,Ten Years
+Geoffrey Zweig,2090483681,Saliency,27,Ten Years
+Philipp Koehn,2647056301,Saliency,28,Ten Years
+Dan Roth,2122007671,Saliency,29,Ten Years
+Joakim Nivre,70153750,Saliency,30,Ten Years
+Luke S. Zettlemoyer,334758317,Saliency,31,Ten Years
+Aaron C. Courville,2328522601,Saliency,32,Ten Years
+Roberto Navigli,3356812,Saliency,33,Ten Years
+Marco Baroni,2318310288,Saliency,34,Ten Years
+Caglar Gulcehre,152899538,Saliency,35,Ten Years
+Mirella Lapata,2019867208,Saliency,36,Ten Years
+Steven Bethard,2133231644,Saliency,37,Ten Years
+D. Klein,2618175022,Saliency,38,Ten Years
+Percy Liang,2171686691,Saliency,39,Ten Years
+Nizar Habash,2025107431,Saliency,40,Ten Years
+Wen-tau Yih,2116578203,Saliency,41,Ten Years
+Fethi Bougares,184786478,Saliency,42,Ten Years
+Yoav Goldberg,2144962531,Saliency,43,Ten Years
+Eduard H. Hovy,2046588481,Saliency,44,Ten Years
+Yoon Kim,2516971438,Saliency,45,Ten Years
+Saif M. Mohammad,2105560112,Saliency,46,Ten Years
+John Bauer,2607791192,Saliency,47,Ten Years
+Rada Mihalcea,2068190112,Saliency,48,Ten Years
+Mihai Surdeanu,39770428,Saliency,49,Ten Years
+Ronan Collobert,130200899,Saliency,50,Ten Years
+Edward Grefenstette,12494109,Saliency,51,Ten Years
+Antoine Bordes,2160652726,Saliency,52,Ten Years
+Yejin Choi,2133417374,Saliency,53,Ten Years
+Oren Etzioni,57747768,Saliency,54,Ten Years
+Brendan O'Connor,2342552992,Saliency,55,Ten Years
+Timothy Baldwin,2436269535,Saliency,56,Ten Years
+Jun’ichi Tsujii,710867540,Saliency,57,Ten Years
+Thang Luong,2251056627,Saliency,58,Ten Years
+Pascal Vincent,2397241174,Saliency,59,Ten Years
+David McClosky,2113976098,Saliency,60,Ten Years
+Mona T. Diab,2124289572,Saliency,61,Ten Years
+Oriol Vinyals,2921330922,Saliency,62,Ten Years
+Alan Ritter,2154095546,Saliency,63,Ten Years
+Pavel P. Kuksa,371500171,Saliency,64,Ten Years
+Léon Bottou,712415982,Saliency,65,Ten Years
+Koray Kavukcuoglu,1111049960,Saliency,66,Ten Years
+Michael Karlen,2018810797,Saliency,67,Ten Years
+Jenny Rose Finkel,2111429548,Saliency,68,Ten Years
+Samy Bengio,2016539005,Saliency,69,Ten Years
+Barry Haddow,2179150568,Saliency,70,Ten Years
+Gerhard Weikum,514836396,Saliency,71,Ten Years
+Ting Liu,2142255895,Saliency,72,Ten Years
+Andrej Karpathy,46106380,Saliency,73,Ten Years
+Hermann Ney,2293758362,Saliency,74,Ten Years
+Erik Cambria,2806062742,Saliency,75,Ten Years
+Alexander M. Rush,2701382563,Saliency,76,Ten Years
+Peter D. Turney,2084625574,Saliency,77,Ten Years
+Paolo Rosso,2157200871,Saliency,78,Ten Years
+Martha Palmer,2135488253,Saliency,79,Ten Years
+Dipanjan Das,2181087466,Saliency,80,Ten Years
+Nal Kalchbrenner,223268448,Saliency,81,Ten Years
+Preslav Nakov,1989325080,Saliency,82,Ten Years
+Iryna Gurevych,40109512,Saliency,83,Ten Years
+Sumit Chopra,2620976108,Saliency,84,Ten Years
+Steve J. Young,2125228453,Saliency,85,Ten Years
+Ming Zhou,2143584880,Saliency,86,Ten Years
+Bing Liu,2244698799,Saliency,87,Ten Years
+Rico Sennrich,93200637,Saliency,88,Ten Years
+Dong Yu,2103789662,Saliency,89,Ten Years
+Andrew McCallum,2131293038,Saliency,90,Ten Years
+Daniel Povey,2779265140,Saliency,91,Ten Years
+Mike Schuster,2568636091,Saliency,92,Ten Years
+Slav Petrov,2344539050,Saliency,93,Ten Years
+Regina Barzilay,2080327427,Saliency,94,Ten Years
+Ryan T. McDonald,2336868835,Saliency,95,Ten Years
+Nathan Schneider,2096245607,Saliency,96,Ten Years
+Kevin Gimpel,2000806699,Saliency,97,Ten Years
+Björn W. Schuller,2079380910,Saliency,98,Ten Years
+Lukas Burget,2091894999,Saliency,99,Ten Years
+Tom M. Mitchell,2151014374,Saliency,100,Ten Years
+Jeffrey Pennington,2517910439,Prestige,1,Ten Years
+Gregory S. Corrado,2107276858,Prestige,2,Ten Years
+Kai Chen,2146330397,Prestige,3,Ten Years
+Léon Bottou,712415982,Prestige,4,Ten Years
+Koray Kavukcuoglu,1111049960,Prestige,5,Ten Years
+Michael Karlen,2018810797,Prestige,6,Ten Years
+Jeffrey Dean,2429370538,Prestige,7,Ten Years
+Dzmitry Bahdanau,2509101809,Prestige,8,Ten Years
+Ilya Sutskever,215131072,Prestige,9,Ten Years
+Pascal Vincent,2397241174,Prestige,10,Ten Years
+Pavel P. Kuksa,371500171,Prestige,11,Ten Years
+Bart van Merriënboer,256273151,Prestige,12,Ten Years
+Oriol Vinyals,2634174050,Prestige,13,Ten Years
+Tomas Mikolov,292626543,Prestige,14,Ten Years
+Andrej Karpathy,46106380,Prestige,15,Ten Years
+Jenny Rose Finkel,2111429548,Prestige,16,Ten Years
+Andrew Y. Ng,2104401652,Prestige,17,Ten Years
+Caglar Gulcehre,152899538,Prestige,18,Ten Years
+Quoc V. Le,2148448995,Prestige,19,Ten Years
+Nal Kalchbrenner,223268448,Prestige,20,Ten Years
+Yoon Kim,2516971438,Prestige,21,Ten Years
+Yoshua Bengio,161269817,Prestige,22,Ten Years
+Richard Socher,1964982643,Prestige,23,Ten Years
+Samy Bengio,2016539005,Prestige,24,Ten Years
+Thang Luong,2251056627,Prestige,25,Ten Years
+Oriol Vinyals,2921330922,Prestige,26,Ten Years
+Mike Schuster,2568636091,Prestige,27,Ten Years
+Aaron C. Courville,2328522601,Prestige,28,Ten Years
+Jason Weston,2945754415,Prestige,29,Ten Years
+Kyunghyun Cho,2462121670,Prestige,30,Ten Years
+Daniel Povey,2779265140,Prestige,31,Ten Years
+John Bauer,2607791192,Prestige,32,Ten Years
+David McClosky,2113976098,Prestige,33,Ten Years
+Sumit Chopra,2620976108,Prestige,34,Ten Years
+Dong Yu,2103789662,Prestige,35,Ten Years
+Christopher D. Manning,2149153931,Prestige,36,Ten Years
+Peter D. Turney,2084625574,Prestige,37,Ten Years
+Ronan Collobert,130200899,Prestige,38,Ten Years
+Fethi Bougares,184786478,Prestige,39,Ten Years
+Geoffrey Zweig,2090483681,Prestige,40,Ten Years
+Lukas Burget,2091894999,Prestige,41,Ten Years
+Edward Grefenstette,12494109,Prestige,42,Ten Years
+Alan Ritter,2154095546,Prestige,43,Ten Years
+Christopher Potts,2114426036,Prestige,44,Ten Years
+Alexander M. Rush,2701382563,Prestige,45,Ten Years
+Antoine Bordes,2160652726,Prestige,46,Ten Years
+Wen-tau Yih,2116578203,Prestige,47,Ten Years
+Brendan O'Connor,2342552992,Prestige,48,Ten Years
+Slav Petrov,2344539050,Prestige,49,Ten Years
+Holger Schwenk,2160549261,Prestige,50,Ten Years
+Oren Etzioni,57747768,Prestige,51,Ten Years
+Daniel Jurafsky,2089131864,Prestige,52,Ten Years
+Mihai Surdeanu,39770428,Prestige,53,Ten Years
+Phil Blunsom,297118547,Prestige,54,Ten Years
+Percy Liang,2171686691,Prestige,55,Ten Years
+Dipanjan Das,2181087466,Prestige,56,Ten Years
+Ryan T. McDonald,2336868835,Prestige,57,Ten Years
+Steven Bethard,2133231644,Prestige,58,Ten Years
+Li Deng,2101552792,Prestige,59,Ten Years
+Xiaodong He,2106698597,Prestige,60,Ten Years
+Bing Liu,2244698799,Prestige,61,Ten Years
+Jianfeng Gao,2104437897,Prestige,62,Ten Years
+Luke S. Zettlemoyer,334758317,Prestige,63,Ten Years
+Saif M. Mohammad,2105560112,Prestige,64,Ten Years
+Kevin Gimpel,2000806699,Prestige,65,Ten Years
+Chris Dyer,2119216958,Prestige,66,Ten Years
+Yejin Choi,2133417374,Prestige,67,Ten Years
+Andrew McCallum,2131293038,Prestige,68,Ten Years
+Yoav Goldberg,2144962531,Prestige,69,Ten Years
+Barry Haddow,2179150568,Prestige,70,Ten Years
+Tom M. Mitchell,2151014374,Prestige,71,Ten Years
+Noah A. Smith,2250998000,Prestige,72,Ten Years
+D. Klein,2618175022,Prestige,73,Ten Years
+Steve J. Young,2125228453,Prestige,74,Ten Years
+Roberto Navigli,3356812,Prestige,75,Ten Years
+Marco Baroni,2318310288,Prestige,76,Ten Years
+Regina Barzilay,2080327427,Prestige,77,Ten Years
+Chris Callison-Burch,718457853,Prestige,78,Ten Years
+Mirella Lapata,2019867208,Prestige,79,Ten Years
+Nathan Schneider,2096245607,Prestige,80,Ten Years
+Gerhard Weikum,514836396,Prestige,81,Ten Years
+Rico Sennrich,93200637,Prestige,82,Ten Years
+Philipp Koehn,2647056301,Prestige,83,Ten Years
+Björn W. Schuller,2079380910,Prestige,84,Ten Years
+Eduard H. Hovy,2046588481,Prestige,85,Ten Years
+Dan Roth,2122007671,Prestige,86,Ten Years
+Joakim Nivre,70153750,Prestige,87,Ten Years
+Erik Cambria,2806062742,Prestige,88,Ten Years
+Ming Zhou,2143584880,Prestige,89,Ten Years
+Jun’ichi Tsujii,710867540,Prestige,90,Ten Years
+Ting Liu,2142255895,Prestige,91,Ten Years
+Rada Mihalcea,2068190112,Prestige,92,Ten Years
+Mona T. Diab,2124289572,Prestige,93,Ten Years
+Timothy Baldwin,2436269535,Prestige,94,Ten Years
+Preslav Nakov,1989325080,Prestige,95,Ten Years
+Nizar Habash,2025107431,Prestige,96,Ten Years
+Martha Palmer,2135488253,Prestige,97,Ten Years
+Hermann Ney,2293758362,Prestige,98,Ten Years
+Paolo Rosso,2157200871,Prestige,99,Ten Years
+Iryna Gurevych,40109512,Prestige,100,Ten Years
+Christopher D. Manning,2149153931,Citations*,1,Ten Years
+Tomas Mikolov,292626543,Citations*,2,Ten Years
+Jeffrey Dean,2429370538,Citations*,3,Ten Years
+Yoshua Bengio,161269817,Citations*,4,Ten Years
+Gregory S. Corrado,2107276858,Citations*,5,Ten Years
+Kai Chen,2146330397,Citations*,6,Ten Years
+Ilya Sutskever,215131072,Citations*,7,Ten Years
+Richard Socher,1964982643,Citations*,8,Ten Years
+Kyunghyun Cho,2462121670,Citations*,9,Ten Years
+Quoc V. Le,2148448995,Citations*,10,Ten Years
+Dzmitry Bahdanau,2509101809,Citations*,11,Ten Years
+Daniel Jurafsky,2089131864,Citations*,12,Ten Years
+Jason Weston,2945754415,Citations*,13,Ten Years
+Oriol Vinyals,2634174050,Citations*,14,Ten Years
+Andrew Y. Ng,2104401652,Citations*,15,Ten Years
+Noah A. Smith,2250998000,Citations*,16,Ten Years
+Chris Dyer,2119216958,Citations*,17,Ten Years
+Jeffrey Pennington,2517910439,Citations*,18,Ten Years
+Bart van Merriënboer,256273151,Citations*,19,Ten Years
+Holger Schwenk,2160549261,Citations*,20,Ten Years
+Roberto Navigli,3356812,Citations*,21,Ten Years
+Li Deng,2101552792,Citations*,22,Ten Years
+Phil Blunsom,297118547,Citations*,23,Ten Years
+Philipp Koehn,2647056301,Citations*,24,Ten Years
+Chris Callison-Burch,718457853,Citations*,25,Ten Years
+Joakim Nivre,70153750,Citations*,26,Ten Years
+Marco Baroni,2318310288,Citations*,27,Ten Years
+Christopher Potts,2114426036,Citations*,28,Ten Years
+Caglar Gulcehre,152899538,Citations*,29,Ten Years
+Aaron C. Courville,2328522601,Citations*,30,Ten Years
+Mirella Lapata,2019867208,Citations*,31,Ten Years
+Jianfeng Gao,2104437897,Citations*,32,Ten Years
+Yoon Kim,2516971438,Citations*,33,Ten Years
+Paul Smolensky,350473989,Citations*,34,Ten Years
+Alan Prince,2106782824,Citations*,35,Ten Years
+Xiaodong He,2106698597,Citations*,36,Ten Years
+Fethi Bougares,184786478,Citations*,37,Ten Years
+Dan Roth,2122007671,Citations*,38,Ten Years
+David M. Blei,2289542319,Citations*,39,Ten Years
+Steven Bethard,2133231644,Citations*,40,Ten Years
+Pascal Vincent,2397241174,Citations*,41,Ten Years
+Saif M. Mohammad,2105560112,Citations*,42,Ten Years
+Yoav Goldberg,2144962531,Citations*,43,Ten Years
+Ronan Collobert,130200899,Citations*,44,Ten Years
+Luke S. Zettlemoyer,334758317,Citations*,45,Ten Years
+Rada Mihalcea,2068190112,Citations*,46,Ten Years
+Geoffrey Zweig,2090483681,Citations*,47,Ten Years
+Alan Ritter,2154095546,Citations*,48,Ten Years
+D. Klein,2618175022,Citations*,49,Ten Years
+John Bauer,2607791192,Citations*,50,Ten Years
+Pavel P. Kuksa,371500171,Citations*,51,Ten Years
+Brendan O'Connor,2342552992,Citations*,52,Ten Years
+Léon Bottou,712415982,Citations*,53,Ten Years
+Koray Kavukcuoglu,1111049960,Citations*,54,Ten Years
+Michael Karlen,2018810797,Citations*,55,Ten Years
+James H. Martin,2154435596,Citations*,56,Ten Years
+Peter D. Turney,2084625574,Citations*,57,Ten Years
+Oren Etzioni,57747768,Citations*,58,Ten Years
+Jun’ichi Tsujii,710867540,Citations*,59,Ten Years
+David McClosky,2113976098,Citations*,60,Ten Years
+Marc Brysbaert,24323327,Citations*,61,Ten Years
+Bing Liu,2244698799,Citations*,62,Ten Years
+Mihai Surdeanu,39770428,Citations*,63,Ten Years
+Eduard H. Hovy,2046588481,Citations*,64,Ten Years
+Jenny Rose Finkel,2111429548,Citations*,65,Ten Years
+Percy Liang,2171686691,Citations*,66,Ten Years
+Ting Liu,2142255895,Citations*,67,Ten Years
+Edward Grefenstette,12494109,Citations*,68,Ten Years
+Ryan T. McDonald,2336868835,Citations*,69,Ten Years
+Wen-tau Yih,2116578203,Citations*,70,Ten Years
+Steven Bird,2120683996,Citations*,71,Ten Years
+Mona T. Diab,2124289572,Citations*,72,Ten Years
+Dipanjan Das,2181087466,Citations*,73,Ten Years
+Erik Cambria,2806062742,Citations*,74,Ten Years
+Nizar Habash,2025107431,Citations*,75,Ten Years
+Timothy Baldwin,2436269535,Citations*,76,Ten Years
+Preslav Nakov,1989325080,Citations*,77,Ten Years
+Lukas Burget,2091894999,Citations*,78,Ten Years
+Tom M. Mitchell,2151014374,Citations*,79,Ten Years
+Daniel Povey,2779265140,Citations*,80,Ten Years
+Samy Bengio,2016539005,Citations*,81,Ten Years
+Dong Yu,2103789662,Citations*,82,Ten Years
+Rion Snow,2144630512,Citations*,83,Ten Years
+Ewan Klein,2108735911,Citations*,84,Ten Years
+Andrej Karpathy,46106380,Citations*,85,Ten Years
+Yejin Choi,2133417374,Citations*,86,Ten Years
+Eneko Agirre,1956093140,Citations*,87,Ten Years
+Ronan Collobert,2944425899,Citations*,88,Ten Years
+Björn W. Schuller,2079380910,Citations*,89,Ten Years
+Thang Luong,2251056627,Citations*,90,Ten Years
+Edward Loper,1524421012,Citations*,91,Ten Years
+David M. W. Powers,2140899347,Citations*,92,Ten Years
+Christof Monz,2109806231,Citations*,93,Ten Years
+Antoine Bordes,2160652726,Citations*,94,Ten Years
+Danielle S. McNamara,2220320017,Citations*,95,Ten Years
+Oriol Vinyals,2921330922,Citations*,96,Ten Years
+Slav Petrov,2344539050,Citations*,97,Ten Years
+Arnab Ghoshal,2289669855,Citations*,98,Ten Years
+Karel Vesely,2087441203,Citations*,99,Ten Years
+Claire Cardie,229573375,Citations*,100,Ten Years
+Pushpak Bhattacharyya,2156071728,Publications,1,Ten Years
+Iryna Gurevych,40109512,Publications,2,Ten Years
+Andy Way,2110815193,Publications,3,Ten Years
+Paolo Rosso,2157200871,Publications,4,Ten Years
+Nizar Habash,2025107431,Publications,5,Ten Years
+Danielle S. McNamara,2220320017,Publications,6,Ten Years
+Joakim Nivre,70153750,Publications,7,Ten Years
+Christopher D. Manning,2149153931,Publications,8,Ten Years
+Hermann Ney,2293758362,Publications,9,Ten Years
+Dan Roth,2122007671,Publications,10,Ten Years
+Qun Liu,2573745738,Publications,11,Ten Years
+Noah A. Smith,2250998000,Publications,12,Ten Years
+Yuji Matsumoto,2131749055,Publications,13,Ten Years
+Philipp Koehn,2647056301,Publications,14,Ten Years
+Rada Mihalcea,2068190112,Publications,15,Ten Years
+Timothy Baldwin,2436269535,Publications,16,Ten Years
+Graham Neubig,277131583,Publications,17,Ten Years
+Lucia Specia,321534654,Publications,18,Ten Years
+Satoshi Nakamura,2209481840,Publications,19,Ten Years
+Martha Palmer,2135488253,Publications,20,Ten Years
+Sivaji Bandyopadhyay,2121266603,Publications,21,Ten Years
+Alexander F. Gelbukh,331132414,Publications,22,Ten Years
+Mona T. Diab,2124289572,Publications,23,Ten Years
+Sadao Kurohashi,112209514,Publications,24,Ten Years
+Jun’ichi Tsujii,710867540,Publications,25,Ten Years
+Chris Dyer,2119216958,Publications,26,Ten Years
+R. E. Batchelor,2490521720,Publications,27,Ten Years
+Haizhou Li,2096728398,Publications,28,Ten Years
+Chu-Ren Huang,2115489339,Publications,29,Ten Years
+Preslav Nakov,1989325080,Publications,30,Ten Years
+Eduard H. Hovy,2046588481,Publications,31,Ten Years
+Eiichiro Sumita,100988613,Publications,32,Ten Years
+Chris Callison-Burch,718457853,Publications,33,Ten Years
+Marie-Francine Moens,1931663571,Publications,34,Ten Years
+Ting Liu,2142255895,Publications,35,Ten Years
+Guodong Zhou,2147795187,Publications,36,Ten Years
+Min Zhang,2428533358,Publications,37,Ten Years
+Dilek Hakkani-Tür,2090472531,Publications,38,Ten Years
+Alessandro Moschitti,48142092,Publications,39,Ten Years
+Walter Daelemans,2234963844,Publications,40,Ten Years
+Piek Vossen,2153862313,Publications,41,Ten Years
+Mirella Lapata,2019867208,Publications,42,Ten Years
+Josef van Genabith,93711912,Publications,43,Ten Years
+Veronique Hoste,2227650618,Publications,44,Ten Years
+Sophia Ananiadou,2141504082,Publications,45,Ten Years
+Erik Cambria,2806062742,Publications,46,Ten Years
+Ido Dagan,356610775,Publications,47,Ten Years
+Owen Rambow,2042484151,Publications,48,Ten Years
+Fuji Ren,2131525672,Publications,49,Ten Years
+Arthur C. Graesser,197912803,Publications,50,Ten Years
+James Pustejovsky,1991518691,Publications,51,Ten Years
+Alex Waibel,2061074560,Publications,52,Ten Years
+Eneko Agirre,1956093140,Publications,53,Ten Years
+Horacio Saggion,157790613,Publications,54,Ten Years
+Hinrich Schütze,2035156685,Publications,55,Ten Years
+Ming Zhou,2143584880,Publications,56,Ten Years
+Chengqing Zong,2160997121,Publications,57,Ten Years
+Jörg Tiedemann,1899304389,Publications,58,Ten Years
+Oliver Lemon,275989945,Publications,59,Ten Years
+Marco Baroni,2318310288,Publications,60,Ten Years
+Roberto Navigli,3356812,Publications,61,Ten Years
+Scott A. Crossley,2155955995,Publications,62,Ten Years
+Alessandro Lenci,437040006,Publications,63,Ten Years
+Anna Korhonen,2110381519,Publications,64,Ten Years
+Daniel Jurafsky,2089131864,Publications,65,Ten Years
+Nikola Ljubešić,1207396082,Publications,66,Ten Years
+Wolfgang Minker,1976697852,Publications,67,Ten Years
+Jianfeng Gao,2104437897,Publications,68,Ten Years
+Massimo Poesio,314690538,Publications,69,Ten Years
+Alan W. Black,2138706875,Publications,70,Ten Years
+Kevin Knight,2330030585,Publications,71,Ten Years
+Leo Wanner,1828080704,Publications,72,Ten Years
+Maciej Piasecki,2000608503,Publications,73,Ten Years
+Philipp Cimiano,2086393978,Publications,74,Ten Years
+Benjamin Van Durme,2113965177,Publications,75,Ten Years
+K. P. Soman,2430005511,Publications,76,Ten Years
+Muñoz Baell,2087118541,Publications,77,Ten Years
+Irma María,2151162878,Publications,78,Ten Years
+耕己 小浜,2732219054,Publications,79,Ten Years
+Hans Uszkoreit,61376119,Publications,80,Ten Years
+Eric Atwell,2098126988,Publications,81,Ten Years
+Dipti Misra Sharma,2146442305,Publications,82,Ten Years
+Kentaro Inui,2084773436,Publications,83,Ten Years
+Shrikanth Narayanan,2171036777,Publications,84,Ten Years
+D. Klein,2618175022,Publications,85,Ten Years
+Angela D. Friederici,320532414,Publications,86,Ten Years
+Chris Biemann,1441874829,Publications,87,Ten Years
+Vasile Rus,2012676518,Publications,88,Ten Years
+Anders Søgaard,2100615786,Publications,89,Ten Years
+Asif Ekbal,2292569446,Publications,90,Ten Years
+Heng Ji,2617049578,Publications,91,Ten Years
+David R. Traum,693463813,Publications,92,Ten Years
+Yusuke Miyao,2036428500,Publications,93,Ten Years
+Kevin Duh,2046721439,Publications,94,Ten Years
+Xiaodong He,2106698597,Publications,95,Ten Years
+Emiel Krahmer,2128248289,Publications,96,Ten Years
+Veronika Vincze,2144956867,Publications,97,Ten Years
+Trevor Cohn,2198766192,Publications,98,Ten Years
+Li Deng,2101552792,Publications,99,Ten Years
+James R. Glass,2154846939,Publications,100,Ten Years
+Christopher D. Manning,2149153931,H-Index,1,Ten Years
+Noah A. Smith,2250998000,H-Index,2,Ten Years
+Chris Dyer,2119216958,H-Index,3,Ten Years
+Mirella Lapata,2019867208,H-Index,4,Ten Years
+Daniel Jurafsky,2089131864,H-Index,5,Ten Years
+Joakim Nivre,70153750,H-Index,6,Ten Years
+Chris Callison-Burch,718457853,H-Index,7,Ten Years
+Rada Mihalcea,2068190112,H-Index,8,Ten Years
+D. Klein,2618175022,H-Index,9,Ten Years
+Roberto Navigli,3356812,H-Index,10,Ten Years
+Jianfeng Gao,2104437897,H-Index,11,Ten Years
+Philipp Koehn,2647056301,H-Index,12,Ten Years
+Phil Blunsom,297118547,H-Index,13,Ten Years
+Jun’ichi Tsujii,710867540,H-Index,14,Ten Years
+Nizar Habash,2025107431,H-Index,15,Ten Years
+Alessandro Moschitti,48142092,H-Index,16,Ten Years
+Luke S. Zettlemoyer,334758317,H-Index,17,Ten Years
+Preslav Nakov,1989325080,H-Index,18,Ten Years
+Dan Roth,2122007671,H-Index,19,Ten Years
+Mona T. Diab,2124289572,H-Index,20,Ten Years
+Marco Baroni,2318310288,H-Index,21,Ten Years
+Hwee Tou Ng,2146810117,H-Index,22,Ten Years
+Hermann Ney,2293758362,H-Index,23,Ten Years
+Erik Cambria,2806062742,H-Index,24,Ten Years
+Iryna Gurevych,40109512,H-Index,25,Ten Years
+Eneko Agirre,1956093140,H-Index,26,Ten Years
+Li Deng,2101552792,H-Index,27,Ten Years
+Ting Liu,2142255895,H-Index,28,Ten Years
+Yoav Goldberg,2144962531,H-Index,29,Ten Years
+Paolo Rosso,2157200871,H-Index,30,Ten Years
+Yoshua Bengio,161269817,H-Index,31,Ten Years
+Richard Socher,1964982643,H-Index,32,Ten Years
+Regina Barzilay,2080327427,H-Index,33,Ten Years
+Saif M. Mohammad,2105560112,H-Index,34,Ten Years
+Xiaodong He,2106698597,H-Index,35,Ten Years
+Ming Zhou,2143584880,H-Index,36,Ten Years
+Percy Liang,2171686691,H-Index,37,Ten Years
+Timothy Baldwin,2436269535,H-Index,38,Ten Years
+Guergana Savova,705491505,H-Index,39,Ten Years
+Danielle S. McNamara,2220320017,H-Index,40,Ten Years
+Kevin Knight,2330030585,H-Index,41,Ten Years
+Ido Dagan,356610775,H-Index,42,Ten Years
+Marie-Francine Moens,1931663571,H-Index,43,Ten Years
+Eduard H. Hovy,2046588481,H-Index,44,Ten Years
+Yejin Choi,2133417374,H-Index,45,Ten Years
+Martha Palmer,2135488253,H-Index,46,Ten Years
+Raymond J. Mooney,2167433806,H-Index,47,Ten Years
+Lucia Specia,321534654,H-Index,48,Ten Years
+Philip Resnik,574844396,H-Index,49,Ten Years
+James Pustejovsky,1991518691,H-Index,50,Ten Years
+Owen Rambow,2042484151,H-Index,51,Ten Years
+Dilek Hakkani-Tür,2090472531,H-Index,52,Ten Years
+Janyce Wiebe,2118264585,H-Index,53,Ten Years
+Steve J. Young,2125228453,H-Index,54,Ten Years
+Andrew McCallum,2131293038,H-Index,55,Ten Years
+Qun Liu,2573745738,H-Index,56,Ten Years
+Oren Etzioni,57747768,H-Index,57,Ten Years
+Arthur C. Graesser,197912803,H-Index,58,Ten Years
+Sampo Pyysalo,305445708,H-Index,59,Ten Years
+Joel R. Tetreault,2084122671,H-Index,60,Ten Years
+Haizhou Li,2096728398,H-Index,61,Ten Years
+Anna Korhonen,2110381519,H-Index,62,Ten Years
+Jacob Eisenstein,2142862529,H-Index,63,Ten Years
+Nianwen Xue,2153745389,H-Index,64,Ten Years
+Trevor Cohn,2198766192,H-Index,65,Ten Years
+Ryan T. McDonald,2336868835,H-Index,66,Ten Years
+Min Zhang,2428533358,H-Index,67,Ten Years
+Kyunghyun Cho,2462121670,H-Index,68,Ten Years
+Claire Cardie,229573375,H-Index,69,Ten Years
+Oliver Lemon,275989945,H-Index,70,Ten Years
+Massimo Poesio,314690538,H-Index,71,Ten Years
+Hal Daumé,1204061966,H-Index,72,Ten Years
+Julia Hirschberg,1983359683,H-Index,73,Ten Years
+Soujanya Poria,1992239148,H-Index,74,Ten Years
+Mohit Bansal,2070810387,H-Index,75,Ten Years
+Björn W. Schuller,2079380910,H-Index,76,Ten Years
+Philipp Cimiano,2086393978,H-Index,77,Ten Years
+Geoffrey Zweig,2090483681,H-Index,78,Ten Years
+Tom M. Mitchell,2151014374,H-Index,79,Ten Years
+James R. Glass,2154846939,H-Index,80,Ten Years
+Holger Schwenk,2160549261,H-Index,81,Ten Years
+Barry Haddow,2179150568,H-Index,82,Ten Years
+Dipanjan Das,2181087466,H-Index,83,Ten Years
+Michel Galley,2509907281,H-Index,84,Ten Years
+Yue Zhang,2681817313,H-Index,85,Ten Years
+Jason Weston,2945754415,H-Index,86,Ten Years
+Jordan L. Boyd-Graber,337671685,H-Index,87,Ten Years
+David R. Traum,693463813,H-Index,88,Ten Years
+Mark Dredze,2023626662,H-Index,89,Ten Years
+Andy Way,2110815193,H-Index,90,Ten Years
+Xiaodan Zhu,2128951412,H-Index,91,Ten Years
+Sophia Ananiadou,2141504082,H-Index,92,Ten Years
+Jason D. Williams,2143360327,H-Index,93,Ten Years
+Alan Ritter,2154095546,H-Index,94,Ten Years
+Pushpak Bhattacharyya,2156071728,H-Index,95,Ten Years
+Slav Petrov,2344539050,H-Index,96,Ten Years
+Mark Johnson,2570615947,H-Index,97,Ten Years
+Josef van Genabith,93711912,H-Index,98,Ten Years
+Sebastian Padó,204135759,H-Index,99,Ten Years
+Graham Neubig,277131583,H-Index,100,Ten Years
+Christopher D. Manning,2149153931,Saliency,1,All
+Tomas Mikolov,292626543,Saliency,2,All
+Yoshua Bengio,161269817,Saliency,3,All
+Jeffrey Dean,2429370538,Saliency,4,All
+Gregory S. Corrado,2107276858,Saliency,5,All
+Kai Chen,2146330397,Saliency,6,All
+Ilya Sutskever,215131072,Saliency,7,All
+Richard Socher,1964982643,Saliency,8,All
+Kyunghyun Cho,2462121670,Saliency,9,All
+Daniel Jurafsky,2089131864,Saliency,10,All
+Quoc V. Le,2148448995,Saliency,11,All
+Dzmitry Bahdanau,2509101809,Saliency,12,All
+Philipp Koehn,2647056301,Saliency,13,All
+Hermann Ney,2293758362,Saliency,14,All
+Jason Weston,2945754415,Saliency,15,All
+Andrew Y. Ng,2104401652,Saliency,16,All
+Oriol Vinyals,2634174050,Saliency,17,All
+Eduard H. Hovy,2046588481,Saliency,18,All
+Martha Palmer,2135488253,Saliency,19,All
+D. Klein,2618175022,Saliency,20,All
+Rada Mihalcea,2068190112,Saliency,21,All
+Noah A. Smith,2250998000,Saliency,22,All
+Joakim Nivre,70153750,Saliency,23,All
+Chris Dyer,2119216958,Saliency,24,All
+Dan Roth,2122007671,Saliency,25,All
+Christiane Fellbaum,2156989404,Saliency,26,All
+Jianfeng Gao,2104437897,Saliency,27,All
+Phil Blunsom,297118547,Saliency,28,All
+Janyce Wiebe,2118264585,Saliency,29,All
+Michael Collins,2170865064,Saliency,30,All
+Kevin Knight,2330030585,Saliency,31,All
+Franz Josef Och,2233053262,Saliency,32,All
+Chris Callison-Burch,718457853,Saliency,33,All
+Fabrizio Sebastiani,2130902957,Saliency,34,All
+Li Deng,2101552792,Saliency,35,All
+Salim Roukos,2336572873,Saliency,36,All
+Mirella Lapata,2019867208,Saliency,37,All
+Daniel Marcu,1853234685,Saliency,38,All
+Holger Schwenk,2160549261,Saliency,39,All
+Lillian Lee,2124867291,Saliency,40,All
+Jun’ichi Tsujii,710867540,Saliency,41,All
+Peter D. Turney,2084625574,Saliency,42,All
+Xiaodong He,2106698597,Saliency,43,All
+Andreas Stolcke,684032073,Saliency,44,All
+Jeffrey Pennington,2517910439,Saliency,45,All
+Roberto Navigli,3356812,Saliency,46,All
+Ryan T. McDonald,2336868835,Saliency,47,All
+James Pustejovsky,1991518691,Saliency,48,All
+Christopher Potts,2114426036,Saliency,49,All
+Geoffrey Zweig,2090483681,Saliency,50,All
+Nizar Habash,2025107431,Saliency,51,All
+Bo Pang,2129095822,Saliency,52,All
+Pascal Vincent,2397241174,Saliency,53,All
+Bart van Merriënboer,256273151,Saliency,54,All
+Marco Baroni,2318310288,Saliency,55,All
+Luke S. Zettlemoyer,334758317,Saliency,56,All
+Fernando Pereira,2291088731,Saliency,57,All
+Kathleen R. McKeown,613661480,Saliency,58,All
+Claire Cardie,229573375,Saliency,59,All
+Ido Dagan,356610775,Saliency,60,All
+Andrew McCallum,2131293038,Saliency,61,All
+James H. Martin,2154435596,Saliency,62,All
+Timothy Baldwin,2436269535,Saliency,63,All
+Steve J. Young,2125228453,Saliency,64,All
+Regina Barzilay,2080327427,Saliency,65,All
+Kishore Papineni,2307082980,Saliency,66,All
+Philip Resnik,574844396,Saliency,67,All
+George A. Miller,2122820242,Saliency,68,All
+Eugene Charniak,103415842,Saliency,69,All
+Steven Bethard,2133231644,Saliency,70,All
+Todd Ward,2183616845,Saliency,71,All
+Aaron C. Courville,2328522601,Saliency,72,All
+Caglar Gulcehre,152899538,Saliency,73,All
+Wen-tau Yih,2116578203,Saliency,74,All
+Percy Liang,2171686691,Saliency,75,All
+Alan W. Black,2138706875,Saliency,76,All
+Raymond J. Mooney,2167433806,Saliency,77,All
+Ian Horrocks,2010142017,Saliency,78,All
+Hwee Tou Ng,2146810117,Saliency,79,All
+Alex Waibel,2061074560,Saliency,80,All
+Oren Etzioni,57747768,Saliency,81,All
+Kenneth Ward Church,2172397963,Saliency,82,All
+Vincent J. Della Pietra,659797136,Saliency,83,All
+Owen Rambow,2042484151,Saliency,84,All
+Robert L. Mercer,2327604212,Saliency,85,All
+Yoav Goldberg,2144962531,Saliency,86,All
+Mona T. Diab,2124289572,Saliency,87,All
+Fethi Bougares,184786478,Saliency,88,All
+Saif M. Mohammad,2105560112,Saliency,89,All
+Yejin Choi,2133417374,Saliency,90,All
+Steven Bird,2120683996,Saliency,91,All
+Wei-Jing Zhu,2139306235,Saliency,92,All
+David Yarowsky,2042800127,Saliency,93,All
+Eneko Agirre,1956093140,Saliency,94,All
+Yoon Kim,2516971438,Saliency,95,All
+John Bauer,2607791192,Saliency,96,All
+Dragomir R. Radev,678127074,Saliency,97,All
+Graeme Hirst,2103053954,Saliency,98,All
+Mihai Surdeanu,39770428,Saliency,99,All
+Aravind K. Joshi,2101398122,Saliency,100,All
+Jeffrey Pennington,2517910439,Prestige,1,All
+Gregory S. Corrado,2107276858,Prestige,2,All
+Kai Chen,2146330397,Prestige,3,All
+Jeffrey Dean,2429370538,Prestige,4,All
+Dzmitry Bahdanau,2509101809,Prestige,5,All
+Ilya Sutskever,215131072,Prestige,6,All
+Pascal Vincent,2397241174,Prestige,7,All
+Bart van Merriënboer,256273151,Prestige,8,All
+Oriol Vinyals,2634174050,Prestige,9,All
+Tomas Mikolov,292626543,Prestige,10,All
+Wei-Jing Zhu,2139306235,Prestige,11,All
+Caglar Gulcehre,152899538,Prestige,12,All
+Quoc V. Le,2148448995,Prestige,13,All
+Bo Pang,2129095822,Prestige,14,All
+Andrew Y. Ng,2104401652,Prestige,15,All
+Yoon Kim,2516971438,Prestige,16,All
+Yoshua Bengio,161269817,Prestige,17,All
+Richard Socher,1964982643,Prestige,18,All
+Kishore Papineni,2307082980,Prestige,19,All
+Todd Ward,2183616845,Prestige,20,All
+Aaron C. Courville,2328522601,Prestige,21,All
+Jason Weston,2945754415,Prestige,22,All
+Kyunghyun Cho,2462121670,Prestige,23,All
+John Bauer,2607791192,Prestige,24,All
+Fabrizio Sebastiani,2130902957,Prestige,25,All
+Vincent J. Della Pietra,659797136,Prestige,26,All
+Peter D. Turney,2084625574,Prestige,27,All
+Christopher D. Manning,2149153931,Prestige,28,All
+Fethi Bougares,184786478,Prestige,29,All
+Lillian Lee,2124867291,Prestige,30,All
+Franz Josef Och,2233053262,Prestige,31,All
+Ryan T. McDonald,2336868835,Prestige,32,All
+Christopher Potts,2114426036,Prestige,33,All
+Michael Collins,2170865064,Prestige,34,All
+Geoffrey Zweig,2090483681,Prestige,35,All
+Salim Roukos,2336572873,Prestige,36,All
+Wen-tau Yih,2116578203,Prestige,37,All
+Mihai Surdeanu,39770428,Prestige,38,All
+Percy Liang,2171686691,Prestige,39,All
+Phil Blunsom,297118547,Prestige,40,All
+George A. Miller,2122820242,Prestige,41,All
+Daniel Jurafsky,2089131864,Prestige,42,All
+Holger Schwenk,2160549261,Prestige,43,All
+Oren Etzioni,57747768,Prestige,44,All
+D. Klein,2618175022,Prestige,45,All
+Steven Bethard,2133231644,Prestige,46,All
+James H. Martin,2154435596,Prestige,47,All
+Andrew McCallum,2131293038,Prestige,48,All
+Christiane Fellbaum,2156989404,Prestige,49,All
+Fernando Pereira,2291088731,Prestige,50,All
+Andreas Stolcke,684032073,Prestige,51,All
+Ian Horrocks,2010142017,Prestige,52,All
+Xiaodong He,2106698597,Prestige,53,All
+Janyce Wiebe,2118264585,Prestige,54,All
+Luke S. Zettlemoyer,334758317,Prestige,55,All
+Robert L. Mercer,2327604212,Prestige,56,All
+Philipp Koehn,2647056301,Prestige,57,All
+Yejin Choi,2133417374,Prestige,58,All
+Li Deng,2101552792,Prestige,59,All
+Kenneth Ward Church,2172397963,Prestige,60,All
+Chris Dyer,2119216958,Prestige,61,All
+Saif M. Mohammad,2105560112,Prestige,62,All
+Regina Barzilay,2080327427,Prestige,63,All
+Claire Cardie,229573375,Prestige,64,All
+Daniel Marcu,1853234685,Prestige,65,All
+Steven Bird,2120683996,Prestige,66,All
+Yoav Goldberg,2144962531,Prestige,67,All
+Jianfeng Gao,2104437897,Prestige,68,All
+Noah A. Smith,2250998000,Prestige,69,All
+Eugene Charniak,103415842,Prestige,70,All
+Chris Callison-Burch,718457853,Prestige,71,All
+Roberto Navigli,3356812,Prestige,72,All
+Marco Baroni,2318310288,Prestige,73,All
+David Yarowsky,2042800127,Prestige,74,All
+Mirella Lapata,2019867208,Prestige,75,All
+Rada Mihalcea,2068190112,Prestige,76,All
+Hwee Tou Ng,2146810117,Prestige,77,All
+Steve J. Young,2125228453,Prestige,78,All
+Raymond J. Mooney,2167433806,Prestige,79,All
+Dragomir R. Radev,678127074,Prestige,80,All
+Philip Resnik,574844396,Prestige,81,All
+Joakim Nivre,70153750,Prestige,82,All
+Kevin Knight,2330030585,Prestige,83,All
+Eduard H. Hovy,2046588481,Prestige,84,All
+Dan Roth,2122007671,Prestige,85,All
+Hermann Ney,2293758362,Prestige,86,All
+Martha Palmer,2135488253,Prestige,87,All
+Ido Dagan,356610775,Prestige,88,All
+Alan W. Black,2138706875,Prestige,89,All
+James Pustejovsky,1991518691,Prestige,90,All
+Kathleen R. McKeown,613661480,Prestige,91,All
+Mona T. Diab,2124289572,Prestige,92,All
+Nizar Habash,2025107431,Prestige,93,All
+Jun’ichi Tsujii,710867540,Prestige,94,All
+Graeme Hirst,2103053954,Prestige,95,All
+Eneko Agirre,1956093140,Prestige,96,All
+Owen Rambow,2042484151,Prestige,97,All
+Timothy Baldwin,2436269535,Prestige,98,All
+Aravind K. Joshi,2101398122,Prestige,99,All
+Alex Waibel,2061074560,Prestige,100,All
+M. A. K. Halliday,2589294338,Citations*,1,All
+Christopher D. Manning,2149153931,Citations*,2,All
+Noam Chomsky,2049461923,Citations*,3,All
+Tomas Mikolov,292626543,Citations*,4,All
+Yoshua Bengio,161269817,Citations*,5,All
+Daniel Jurafsky,2089131864,Citations*,6,All
+George A. Miller,2122820242,Citations*,7,All
+Christiane Fellbaum,2156989404,Citations*,8,All
+Jeffrey Dean,2429370538,Citations*,9,All
+Gregory S. Corrado,2107276858,Citations*,10,All
+Kai Chen,2146330397,Citations*,11,All
+Philipp Koehn,2647056301,Citations*,12,All
+Thomas R. Gruber,2114115367,Citations*,13,All
+Ilya Sutskever,215131072,Citations*,14,All
+Ruqaiya Hasan,2790986719,Citations*,15,All
+Kenneth Ward Church,2172397963,Citations*,16,All
+Ivan A. Sag,189016263,Citations*,17,All
+Richard Socher,1964982643,Citations*,18,All
+Martha Palmer,2135488253,Citations*,19,All
+Hermann Ney,2293758362,Citations*,20,All
+Thomas K. Landauer,2114332599,Citations*,21,All
+Douglas Biber,580177505,Citations*,22,All
+Robert L. Mercer,2327604212,Citations*,23,All
+Vincent J. Della Pietra,659797136,Citations*,24,All
+Kyunghyun Cho,2462121670,Citations*,25,All
+Fabrizio Sebastiani,2130902957,Citations*,26,All
+Mitchell P. Marcus,2167829816,Citations*,27,All
+Eduard H. Hovy,2046588481,Citations*,28,All
+Rod Ellis,2308571788,Citations*,29,All
+Jack C. Richards,2130175591,Citations*,30,All
+James L. McClelland,2129568668,Citations*,31,All
+Quoc V. Le,2148448995,Citations*,32,All
+Daniel Marcu,1853234685,Citations*,33,All
+Mark S. Seidenberg,2083885058,Citations*,34,All
+D. Klein,2618175022,Citations*,35,All
+Rada Mihalcea,2068190112,Citations*,36,All
+Dzmitry Bahdanau,2509101809,Citations*,37,All
+Kevin Knight,2330030585,Citations*,38,All
+Eugene Charniak,103415842,Citations*,39,All
+Peter F. Brown,2128083561,Citations*,40,All
+James Pustejovsky,1991518691,Citations*,41,All
+Willem J. M. Levelt,2148657795,Citations*,42,All
+Stephen Della Pietra,2256065893,Citations*,43,All
+Franz Josef Och,2233053262,Citations*,44,All
+Lillian Lee,2124867291,Citations*,45,All
+Michael Collins,2170865064,Citations*,46,All
+Fernando Pereira,2291088731,Citations*,47,All
+Jeffrey L. Elman,2014120117,Citations*,48,All
+Salim Roukos,2336572873,Citations*,49,All
+Lawrence R. Rabiner,2020830328,Citations*,50,All
+Andreas Stolcke,684032073,Citations*,51,All
+Hinrich Schütze,2787602311,Citations*,52,All
+Walter Kintsch,103109707,Citations*,53,All
+Aravind K. Joshi,2101398122,Citations*,54,All
+Kathleen R. McKeown,613661480,Citations*,55,All
+John Sinclair,2162406372,Citations*,56,All
+Bo Pang,2129095822,Citations*,57,All
+Philip Resnik,574844396,Citations*,58,All
+Janyce Wiebe,2118264585,Citations*,59,All
+John F. Sowa,2101903223,Citations*,60,All
+Joakim Nivre,70153750,Citations*,61,All
+Allan Collins,2111318876,Citations*,62,All
+Biing-Hwang Juang,2031054747,Citations*,63,All
+James H. Martin,2154435596,Citations*,64,All
+Carl Pollard,2152404725,Citations*,65,All
+Jason Weston,2945754415,Citations*,66,All
+David Yarowsky,2042800127,Citations*,67,All
+Teun A. van Dijk,2140963055,Citations*,68,All
+Peter D. Turney,2084625574,Citations*,69,All
+James F. Allen,2235393145,Citations*,70,All
+Steven P. Abney,320694338,Citations*,71,All
+Barbara J. Grosz,328532754,Citations*,72,All
+Karl G. Jöreskog,603763253,Citations*,73,All
+Dag Sörbom,1564953315,Citations*,74,All
+Mark Steedman,2112881711,Citations*,75,All
+Geoffrey Leech,2134242458,Citations*,76,All
+Chris Callison-Burch,718457853,Citations*,77,All
+Elizabeth F. Loftus,2099951371,Citations*,78,All
+Oriol Vinyals,2634174050,Citations*,79,All
+Andrew Y. Ng,2104401652,Citations*,80,All
+Mirella Lapata,2019867208,Citations*,81,All
+Dan Roth,2122007671,Citations*,82,All
+Marti A. Hearst,2169348332,Citations*,83,All
+Noah A. Smith,2250998000,Citations*,84,All
+Kishore Papineni,2307082980,Citations*,85,All
+Susan T. Dumais,676500258,Citations*,86,All
+Graeme Hirst,2103053954,Citations*,87,All
+Jun’ichi Tsujii,710867540,Citations*,88,All
+W. Bruce Croft,2127889770,Citations*,89,All
+Todd Ward,2183616845,Citations*,90,All
+Patrick Hanks,1998125120,Citations*,91,All
+Pascal Vincent,2397241174,Citations*,92,All
+Ray Jackendoff,1990829728,Citations*,93,All
+Mary Ann Marcinkiewicz,2065742556,Citations*,94,All
+Ryan T. McDonald,2336868835,Citations*,95,All
+Wei-Jing Zhu,2139306235,Citations*,96,All
+Ted Pedersen,2120321692,Citations*,97,All
+Roberto Navigli,3356812,Citations*,98,All
+Edward Gibson,2208201573,Citations*,99,All
+Chris Dyer,2119216958,Citations*,100,All
+Hermann Ney,2293758362,Publications,1,All
+Walter Daelemans,2234963844,Publications,2,All
+Martha Palmer,2135488253,Publications,3,All
+Yuji Matsumoto,2131749055,Publications,4,All
+Eduard H. Hovy,2046588481,Publications,5,All
+Alex Waibel,2061074560,Publications,6,All
+Pushpak Bhattacharyya,2156071728,Publications,7,All
+Andy Way,2110815193,Publications,8,All
+Jun’ichi Tsujii,710867540,Publications,9,All
+Iryna Gurevych,40109512,Publications,10,All
+Yorick Wilks,2073488377,Publications,11,All
+Christopher D. Manning,2149153931,Publications,12,All
+Paolo Rosso,2157200871,Publications,13,All
+Alexander F. Gelbukh,331132414,Publications,14,All
+Timothy Baldwin,2436269535,Publications,15,All
+Aravind K. Joshi,2101398122,Publications,16,All
+Joakim Nivre,70153750,Publications,17,All
+Dan Roth,2122007671,Publications,18,All
+Nizar Habash,2025107431,Publications,19,All
+Rada Mihalcea,2068190112,Publications,20,All
+Chu-Ren Huang,2115489339,Publications,21,All
+Sadao Kurohashi,112209514,Publications,22,All
+Danielle S. McNamara,2220320017,Publications,23,All
+James Pustejovsky,1991518691,Publications,24,All
+Hitoshi Isahara,282814008,Publications,25,All
+Philipp Koehn,2647056301,Publications,26,All
+Eiichiro Sumita,100988613,Publications,27,All
+Sergei Nirenburg,25760396,Publications,28,All
+Kathleen R. McKeown,613661480,Publications,29,All
+Kevin Knight,2330030585,Publications,30,All
+Arthur C. Graesser,197912803,Publications,31,All
+Diane J. Litman,2090150330,Publications,32,All
+Josef van Genabith,93711912,Publications,33,All
+Owen Rambow,2042484151,Publications,34,All
+Udo Hahn,2049587962,Publications,35,All
+Bonnie J. Dorr,2141255014,Publications,36,All
+Sophia Ananiadou,2141504082,Publications,37,All
+Ralph Grishman,157725375,Publications,38,All
+Fuji Ren,2131525672,Publications,39,All
+Marilyn A. Walker,2152519802,Publications,40,All
+Satoshi Nakamura,2209481840,Publications,41,All
+Eneko Agirre,1956093140,Publications,42,All
+Bonnie Webber,2161790590,Publications,43,All
+Massimo Poesio,314690538,Publications,44,All
+Eric Atwell,2098126988,Publications,45,All
+James F. Allen,2235393145,Publications,46,All
+Noah A. Smith,2250998000,Publications,47,All
+Qun Liu,2573745738,Publications,48,All
+Ido Dagan,356610775,Publications,49,All
+Daniel Jurafsky,2089131864,Publications,50,All
+Graeme Hirst,2103053954,Publications,51,All
+Dilek Hakkani-Tür,2090472531,Publications,52,All
+Mirella Lapata,2019867208,Publications,53,All
+Lucia Specia,321534654,Publications,54,All
+Hsin-Hsi Chen,2102355148,Publications,55,All
+Tatsuya Kawahara,2137932240,Publications,56,All
+Alan W. Black,2138706875,Publications,57,All
+Piek Vossen,2153862313,Publications,58,All
+Mona T. Diab,2124289572,Publications,59,All
+Nicoletta Calzolari,1115692902,Publications,60,All
+Julia Hirschberg,1983359683,Publications,61,All
+Alessandro Moschitti,48142092,Publications,62,All
+Alessandro Lenci,437040006,Publications,63,All
+Mark Steedman,2112881711,Publications,64,All
+Haizhou Li,2096728398,Publications,65,All
+Hans Uszkoreit,61376119,Publications,66,All
+Mark Johnson,2570615947,Publications,67,All
+Preslav Nakov,1989325080,Publications,68,All
+Sivaji Bandyopadhyay,2121266603,Publications,69,All
+Chris Callison-Burch,718457853,Publications,70,All
+Jörg Tiedemann,1899304389,Publications,71,All
+Shrikanth Narayanan,2171036777,Publications,72,All
+Robert Dale,2232810675,Publications,73,All
+Graham Neubig,277131583,Publications,74,All
+Wolfgang Minker,1976697852,Publications,75,All
+Key-Sun Choi,2147393859,Publications,76,All
+Ting Liu,2142255895,Publications,77,All
+Rodolfo Delmonte,238127602,Publications,78,All
+Jianfeng Gao,2104437897,Publications,79,All
+Francis Bond,2194944715,Publications,80,All
+Ming Zhou,2143584880,Publications,81,All
+David R. Traum,693463813,Publications,82,All
+Roberto Basili,1633289514,Publications,83,All
+Giuseppe Riccardi,2132686256,Publications,84,All
+Horacio Saggion,157790613,Publications,85,All
+James R. Glass,2154846939,Publications,86,All
+Philip Resnik,574844396,Publications,87,All
+Chris Dyer,2119216958,Publications,88,All
+Guodong Zhou,2147795187,Publications,89,All
+Stephanie Seneff,2200470702,Publications,90,All
+R. E. Batchelor,2490521720,Publications,91,All
+Bernardo Magnini,6113618,Publications,92,All
+Marie-Francine Moens,1931663571,Publications,93,All
+Jaime G. Carbonell,2100444261,Publications,94,All
+Veronique Hoste,2227650618,Publications,95,All
+Oliver Lemon,275989945,Publications,96,All
+German Rigau,1596863116,Publications,97,All
+Chengqing Zong,2160997121,Publications,98,All
+Dan I. Moldovan,2311416189,Publications,99,All
+Robert J. Gaizauskas,677346422,Publications,100,All
+Christopher D. Manning,2149153931,H-Index,1,All
+Daniel Jurafsky,2089131864,H-Index,2,All
+Kevin Knight,2330030585,H-Index,3,All
+Hermann Ney,2293758362,H-Index,4,All
+Rada Mihalcea,2068190112,H-Index,5,All
+Eduard H. Hovy,2046588481,H-Index,6,All
+Mirella Lapata,2019867208,H-Index,7,All
+Martha Palmer,2135488253,H-Index,8,All
+Philipp Koehn,2647056301,H-Index,9,All
+Joakim Nivre,70153750,H-Index,10,All
+Daniel Marcu,1853234685,H-Index,11,All
+Aravind K. Joshi,2101398122,H-Index,12,All
+Noah A. Smith,2250998000,H-Index,13,All
+Kathleen R. McKeown,613661480,H-Index,14,All
+Marilyn A. Walker,2152519802,H-Index,15,All
+Diane J. Litman,2090150330,H-Index,16,All
+Julia Hirschberg,1983359683,H-Index,17,All
+James Pustejovsky,1991518691,H-Index,18,All
+Raymond J. Mooney,2167433806,H-Index,19,All
+Jun’ichi Tsujii,710867540,H-Index,20,All
+Eugene Charniak,103415842,H-Index,21,All
+Dan Roth,2122007671,H-Index,22,All
+D. Klein,2618175022,H-Index,23,All
+Chris Callison-Burch,718457853,H-Index,24,All
+Philip Resnik,574844396,H-Index,25,All
+Eneko Agirre,1956093140,H-Index,26,All
+Jianfeng Gao,2104437897,H-Index,27,All
+Janyce Wiebe,2118264585,H-Index,28,All
+Andreas Stolcke,684032073,H-Index,29,All
+Hwee Tou Ng,2146810117,H-Index,30,All
+Fernando Pereira,2291088731,H-Index,31,All
+Mark Johnson,2570615947,H-Index,32,All
+Claire Cardie,229573375,H-Index,33,All
+Ido Dagan,356610775,H-Index,34,All
+Yorick Wilks,2073488377,H-Index,35,All
+Mark Steedman,2112881711,H-Index,36,All
+Chris Dyer,2119216958,H-Index,37,All
+David Yarowsky,2042800127,H-Index,38,All
+Alex Waibel,2061074560,H-Index,39,All
+Graeme Hirst,2103053954,H-Index,40,All
+Steve J. Young,2125228453,H-Index,41,All
+Kenneth Ward Church,2172397963,H-Index,42,All
+Dan I. Moldovan,2311416189,H-Index,43,All
+Roberto Navigli,3356812,H-Index,44,All
+Arthur C. Graesser,197912803,H-Index,45,All
+Nizar Habash,2025107431,H-Index,46,All
+Timothy Baldwin,2436269535,H-Index,47,All
+Owen Rambow,2042484151,H-Index,48,All
+Regina Barzilay,2080327427,H-Index,49,All
+Elizabeth Shriberg,2000023593,H-Index,50,All
+Ming Zhou,2143584880,H-Index,51,All
+Walter Daelemans,2234963844,H-Index,52,All
+John A. Carroll,2104823391,H-Index,53,All
+Mona T. Diab,2124289572,H-Index,54,All
+Bonnie Webber,2161790590,H-Index,55,All
+Carol Friedman,2164709683,H-Index,56,All
+Alessandro Moschitti,48142092,H-Index,57,All
+Ralph Grishman,157725375,H-Index,58,All
+Stuart M. Shieber,1985347978,H-Index,59,All
+Ellen Riloff,2078106182,H-Index,60,All
+James F. Allen,2235393145,H-Index,61,All
+Robert L. Mercer,2327604212,H-Index,62,All
+Alan W. Black,2138706875,H-Index,63,All
+James R. Glass,2154846939,H-Index,64,All
+Stephanie Seneff,2200470702,H-Index,65,All
+Danielle S. McNamara,2220320017,H-Index,66,All
+Marco Baroni,2318310288,H-Index,67,All
+Iryna Gurevych,40109512,H-Index,68,All
+Michael Collins,2170865064,H-Index,69,All
+Edward Gibson,2208201573,H-Index,70,All
+Jerry R. Hobbs,2220962793,H-Index,71,All
+William D. Marslen-Wilson,82887884,H-Index,72,All
+Massimo Poesio,314690538,H-Index,73,All
+Luke S. Zettlemoyer,334758317,H-Index,74,All
+Ian Horrocks,2010142017,H-Index,75,All
+Frederick Jelinek,2019534230,H-Index,76,All
+Mari Ostendorf,2046206377,H-Index,77,All
+Dilek Hakkani-Tür,2090472531,H-Index,78,All
+Jaime G. Carbonell,2100444261,H-Index,79,All
+Andrew McCallum,2131293038,H-Index,80,All
+Johanna D. Moore,2170207220,H-Index,81,All
+Robert Dale,2232810675,H-Index,82,All
+Franz Josef Och,2233053262,H-Index,83,All
+Ryan T. McDonald,2336868835,H-Index,84,All
+Bernardo Magnini,6113618,H-Index,85,All
+Adam Kilgarriff,22492467,H-Index,86,All
+Oliver Lemon,275989945,H-Index,87,All
+Phil Blunsom,297118547,H-Index,88,All
+Robert J. Gaizauskas,677346422,H-Index,89,All
+Preslav Nakov,1989325080,H-Index,90,All
+Luc Steels,2038851124,H-Index,91,All
+Hamish Cunningham,2073298952,H-Index,92,All
+Philipp Cimiano,2086393978,H-Index,93,All
+Michael K. Tanenhaus,2087072028,H-Index,94,All
+Giuseppe Riccardi,2132686256,H-Index,95,All
+Bonnie J. Dorr,2141255014,H-Index,96,All
+Paolo Rosso,2157200871,H-Index,97,All
+Alon Lavie,2215739635,H-Index,98,All
+Srinivas Bangalore,2236378493,H-Index,99,All
+Salim Roukos,2336572873,H-Index,100,All
