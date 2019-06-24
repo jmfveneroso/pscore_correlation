@@ -298,7 +298,7 @@ More formally, we can write:
 where $\gamma$ is a row matrix with $|S|+|T|$ elements, 
 where each row represents the transition probabilities of a node in the set $S\cup T$. 
 %
-This system of linear equations can be easily solved by standard Markov chain techniques. %TODO do we need to cite one?
+This system of linear equations can be solved by standard Markov chain techniques. %TODO do we need to cite one?
 Then, from Equation~\eqref{eq:ggP}, we obtain the steady state probabilities of all nodes in $S\cup T$, a.k.a. reputation sources and reputation targets.
 
 \subsection{Flow Equations}\label{sec:flow-equations}
@@ -337,7 +337,7 @@ From decomposition theory~\cite{meyer89}, we can obtain values for ranking the s
 \noindent where $P^\prime = P\bkt{ST} \times P\bkt{TS}$ is a stochastic matrix and $\bgamma\bkt{S}$ is a row matrix with $|S|$ elements, where each one represents the probability of a node in the set $S$ of reputation sources.
 %
 Note that matrix $P'$ has dimension $|S| \times |S|$ only and can be easily solved by standard Markov chain techniques.
-Then, from Equation~\eqref{eq:venue-rank}, we obtain the reputation of all reputation \emph{targets} linked by the reputation sources:
+Then we obtain the reputation of all reputation \emph{targets} linked by the reputation sources:
 \begin{align}
 \label{eq:venue-rank}
 \bgamma\bkt{T} = \bgamma\bkt{S} \times P\bkt{ST}
@@ -377,9 +377,9 @@ of matrix $P$. That is:
 P =
 \left[
 \begin{array}{r | r}
-Group \rightarrow Group & Group \rightarrow Venue \\
+Group \rightarrow {Group\ } & Group \rightarrow Venue \\
 \hline
-Venue \rightarrow Group & Venue \rightarrow Venue \\
+Venue \rightarrow {Group\ } & Venue \rightarrow Venue \\
 \end{array}
 \right]
 %\]
@@ -405,9 +405,9 @@ other ones by the academic community.
 
 We should note that, while our network model allows modeling citations in the fourth quadrant, it is possible to compute 
 steady state probabilities for the network without consideration to citations. This is accomplished by setting the parameter 
-$d\bkt{T} = 0$. 
-Thus, it should be clear that in all experiments described in this work, P-scores 
+$d\bkt{T} = 0$. Thus, it should be clear that in all experiments described in this work, P-scores 
 are computed without taking citations into account. 
+Similarly, we do not consider co-authorship relations in this work (first quadrant), i.e., we use $d\bkt{S} = 0$ in all experiments. The use of academic relationships among nodes of the same type in P-score is an interesting direction of research but it is not the focus of this work.%TODO: check ds value used
 
 Figure \ref{fig:ex1-MC} shows an example with two research groups used as reputation sources, Group 1 and Group 2, and three venues used as reputation targets, venues $\mbox{v}_1$, $\mbox{v}_2$ and $\mbox{v}_3$.
 %
@@ -418,18 +418,19 @@ Figure \ref{fig:ex1-MC} shows an example with two research groups used as reputa
    \caption{Markov chain for an example with 2 research groups and 3 publication venues.}
    \label{fig:ex1-MC}
 \end{figure}
-
-From Figure \ref{fig:ex1-MC}, Group 1 published $3$ papers in venue $\mbox{v}_1$, $2$ papers in venue $\mbox{v}_2$, and $1$ paper in venue $\mbox{v}_3$. The number of publications of Group 1 is $6$. Venue $\mbox{v}_1$ receives $3$ papers of Group 1, and 2 papers of Group 2. The fractions of publications from groups to venues and from venues to groups are the edge weights. We have:
+%
+%From Figure \ref{fig:ex1-MC}, 
+Group 1 published $3$ papers in venue $\mbox{v}_1$, $2$ papers in venue $\mbox{v}_2$, and $1$ paper in venue $\mbox{v}_3$. The number of publications of Group 1 is $6$. Venue $\mbox{v}_1$ receives $3$ papers of Group 1, and 2 papers of Group 2. The fractions of publications from groups to venues and from venues to groups are the edge weights. We have:
 \[
 P =
 \left[
 \begin{array}{c c | c c c }
-0            &0             &3/6       &2/6         &1/6    \\
-0            &0             &2/8       &4/8         &2/8    \\
+0            &0             & \  3/6 & \ 2/6     & \  1/6    \\
+0            &0             & \  2/8 & \ 4/8     & \  2/8    \\
 \hline
-3/5          &2/5           &0         &0           &0       \\
-2/6          &4/6           &0         &0           &0       \\
-1/3          &2/3           &0         &0           &0       \\
+3/5        & \ {2/5\ }       &0         &0           &0       \\
+2/6        & \ {4/6\ }       &0         &0           &0       \\
+1/3        & \ {2/3\ }       &0         &0           &0       \\
 \end{array}
 \right]
 \]
@@ -440,19 +441,19 @@ This stochastic matrix corresponds to the Markov chain displayed in Figure~\ref{
 P^\prime = 
 \left[
 \begin{array}{c c }
-0.467   &0.533 \\
-0.400   &0.600
+0.467   & \ 0.533 \\
+0.400   & \ 0.600
 \end{array}
 \right]
 \]
-\noindent which is the stochastic matrix we use in the solution of Equation (\ref{eq:top-rank}). (Recall that the dimension of $P^\prime$ is $T \times T$ and, as such, much smaller than that of $P$ for real size problems.) Solving Equation (\ref{eq:top-rank}) and applying Equation~\eqref{eq:venue-rank}, we obtain the ranking for the three venues: 
+\noindent which is the stochastic matrix we use in the solution of Equation (\ref{eq:top-rank}). Recall that the dimension of $P^\prime$ is $T \times T$ and, as such, much smaller than that of $P$ for real size problems. Solving Equation (\ref{eq:top-rank}) and applying Equation~\eqref{eq:venue-rank}, we obtain the ranking for the three venues: 
 \begin{equation}
 \bgamma\bkt{T} = \langle 0.36, 0.43, 0.21 \rangle
 \end{equation}
 
 Venue $\mbox{v}_2$ has the highest rank, followed by $\mbox{v}_1$, and then by $\mbox{v}_3$. We remark that the individual values give the {\em relative reputation} of each publication venue. 
 %
-Then, we can apply Equation (\ref{eq:pscore}) to compute the P-score of each entity in the reputation graph.
+When we are insterested in computing the P-scores of collateral nodes in the reputation graph, we use the Equation (\ref{eq:pscore}).
 
 
 \subsection{Reputation Sources}
@@ -480,7 +481,7 @@ model described in the last section. A run of that procedure works as follows:
 \begin{enumerate}
 \item Randomly select 10 departments from the set of top CS departments and use them as the set $s$ of reputation sources
 \item Compute steady state probabilities for all nodes using the method described in the last section
-\item Using the steady state probabilities of reputation collaterals as a score, select the 10 entities with 
+\item Using the steady state probabilities of reputation collaterals as a score, select the 10 nodes with 
 highest scores and use them as a new set $s_{new}$ of reputation sources
 \item If $s_{new} \not \equiv s$ then $s \leftarrow s_{new}$ and go back to step 1
 \item $s_{auto} \leftarrow s_{new}$ 
@@ -527,8 +528,7 @@ not use information on citation counts in the model.
 
 \subsection{Summary} 
 
-The basic idea of the P-score metric is to associate a reputation with publication venues based on the publication patterns of 
-a {\em reference set} of research groups in a given area or sub-area of knowledge. Given a pre-selected set of reference research groups, P-score associates weights with the publication venues the researchers in the reference groups publish in. Further, these weights can be used to rank other research groups or authors.
+The basic idea of the P-score index is to capture the transference of reputation among source, target, and collateral nodes via their relationships in academia. In particular, in the instantiation we focus in this work, P-score takes into account only the  researchers and their publication records (i.e., papers in publication venues): given a pre-selected set of reference research groups as reputation sources, P-score associates weights with the venues the researchers in the reference groups publish in, producing ranking of publication venues (reputation targets). Further, these weights can be used to rank other research groups or authors (reputation collaterals).
 
 The reputation of a research group is strongly influenced by the reputation of its members, which is largely dependent on their publication records. We assume that:
 \begin{enumerate}
@@ -1084,6 +1084,30 @@ an estimate of the conference's reputation among peers in the field of interest.
   \bottomrule
   \end{tabular}
   \caption{Conferences (short names) ranked by P-score (top10 authors by MS H-Index) in four CS subareas: NLP, Art. NN, IR, and ML.}
+  \label{tab:subareas-hindex}
+\end{table}
+
+
+\begin{table}[ht!]
+  \small
+  \centering
+  \begin{tabular}{c c c c c | c c c c} 
+  \toprule
+  \# & NLP & NN & ML & IR & NLP & NN & ML & IR \\ 
+  \midrule
+  1  & ACL	&	VPR	&	CVPR	&	SIGIR	&	ACL	&	NeurIPS	&	NeurIPS	&	SIGIR\\
+  2  & EMNLP	&	NeurIPS	&	NeurIPS	&	CIKM	&	EMNLP	&	SMC	&	ICML	&	WWW\\
+  3  & NAACL	&	ICLR	&	ICML	&	WWW	&	NAACL	&	IJCNN	&	CVPR	&	CIKM\\
+  4  & LREC	&	IJCNN	&	AAAI	&	TREC	&	COLING	&	CVPR	&	SMC	&	TREC\\
+  5  & COLING	&	ICML	&	SMC	&	VLDB	&	LREC	&	ICASSP	&	KDD	&	VLDB\\
+  6  & INTERSPEECH	&	ICASSP	&	ICLR	&	SIGMOD	&	INTERSPEECH	&	ICLR	&	ECCV	&	SIGMOD\\
+  7  & IJCNLP	&	SMC	&	KDD	&	ACL	&	ICASSP	&	ICML	&	AAAI	&	ACL\\
+  8  & ICLR	&	INTERSPEECH	&	ECCV	&	WSDM	&	EACL	&	ISNN	&	IJCAI	&	MM\\
+  9  & NeurIPS	&	ISNN	&	ACL	&	ECIR	&	AAAI	&	ICRA	&	ACL	&	WSDM\\
+  10 & AAAI	&	ICCV	&	ICCV	&	MM	&	IJCNLP	&	INTERSPEECH	&	ICCV	&	ICDE\\
+  \bottomrule
+  \end{tabular}
+  \caption{(Left) Conferences ranked by MS by Saliency and (right) by H-index.}
   \label{tab:subareas-hindex}
 \end{table}
 

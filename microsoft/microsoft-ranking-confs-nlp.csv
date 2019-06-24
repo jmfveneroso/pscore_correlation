@@ -1,0 +1,2001 @@
+Name,Entity Id,Rank type,Rank value,Time span
+ACL,1188739475,Saliency,1,One Year
+EMNLP,1192655580,Saliency,2,One Year
+NAACL,1173951661,Saliency,3,One Year
+ICLR,2584161585,Saliency,4,One Year
+LREC,1164963593,Saliency,5,One Year
+EACL,1188587990,Saliency,6,One Year
+AAAI,1184914352,Saliency,7,One Year
+COLING,1169674987,Saliency,8,One Year
+ICASSP,1121227772,Saliency,9,One Year
+INTERSPEECH,1177287137,Saliency,10,One Year
+IJCNLP,1126706392,Saliency,11,One Year
+IJCAI,1203999783,Saliency,12,One Year
+NeurIPS,1127325140,Saliency,13,One Year
+CVPR,1158167855,Saliency,14,One Year
+SIGDIAL,2724712181,Saliency,15,One Year
+ICML,1180662882,Saliency,16,One Year
+CoNLL,2724687765,Saliency,17,One Year
+FLAIRS,1194143745,Saliency,18,One Year
+WWW,1135342153,Saliency,19,One Year
+SIGIR,1140684652,Saliency,20,One Year
+CHI,1163450153,Saliency,21,One Year
+INLG,1166923268,Saliency,22,One Year
+ICCV,1164975091,Saliency,23,One Year
+RANLP,1143871959,Saliency,24,One Year
+AMTA,1167145961,Saliency,25,One Year
+IALP,1145175409,Saliency,26,One Year
+TSD,1142381819,Saliency,27,One Year
+ICWSM,1124713781,Saliency,28,One Year
+UNLPBEA,2759993800,Saliency,29,One Year
+SLT,1196016004,Saliency,30,One Year
+SLATE,1199437547,Saliency,31,One Year
+WSDM,1120384002,Saliency,32,One Year
+Resource Track - ICSC,2898613818,Saliency,33,One Year
+ISWC,1155608529,Saliency,34,One Year
+COMMA,1200891582,Saliency,35,One Year
+MM,1135237122,Saliency,36,One Year
+CLEF,1156586875,Saliency,37,One Year
+ALRLIP,2754632699,Saliency,38,One Year
+ECIR,1180513217,Saliency,39,One Year
+NLDB,1128394114,Saliency,40,One Year
+BIBM,1156210184,Saliency,41,One Year
+JCLCS,2757804692,Saliency,42,One Year
+KDD,1130985203,Saliency,43,One Year
+CIKM,1194094125,Saliency,44,One Year
+Big Data,2623113034,Saliency,45,One Year
+VSRNLP,2757454588,Saliency,46,One Year
+SOCO,1123077274,Saliency,47,One Year
+ICDM,1183478919,Saliency,48,One Year
+ICSE,1174403976,Saliency,49,One Year
+AIED,1172379331,Saliency,50,One Year
+CHIIR,2626279626,Saliency,51,One Year
+ICDAR,1150099070,Saliency,52,One Year
+CLIN,1139922478,Saliency,53,One Year
+IJCNN,1140449422,Saliency,54,One Year
+CICC,2755020506,Saliency,55,One Year
+SIGCSE,1124504716,Saliency,56,One Year
+APSIPA,2754583030,Saliency,57,One Year
+ICAART,1200979010,Saliency,58,One Year
+ICHI,2754124166,Saliency,59,One Year
+AAMAS,1168671587,Saliency,60,One Year
+EDM,1193731136,Saliency,61,One Year
+PAKDD,1178327129,Saliency,62,One Year
+SAC,2754781246,Saliency,63,One Year
+IUI,1170221290,Saliency,64,One Year
+SMC,1170695740,Saliency,65,One Year
+ACC,1190039108,Saliency,66,One Year
+AINL,2898313343,Saliency,67,One Year
+ESWC,1180003657,Saliency,68,One Year
+ILAKC,2754404193,Saliency,69,One Year
+LDK,2898587229,Saliency,70,One Year
+PROPOR,2760054250,Saliency,71,One Year
+ICONIP,1183580825,Saliency,72,One Year
+RO-MAN,1184553942,Saliency,73,One Year
+RecSys,1134284382,Saliency,74,One Year
+ICMLA,1138691947,Saliency,75,One Year
+ACII,1171689754,Saliency,76,One Year
+HRI,1129075963,Saliency,77,One Year
+HICSS,1164519180,Saliency,78,One Year
+IDA,1201250571,Saliency,79,One Year
+CIT,1120281879,Saliency,80,One Year
+DASFAA,1184699546,Saliency,81,One Year
+ICSC,2756369731,Saliency,82,One Year
+ICTIR,2756630716,Saliency,83,One Year
+WI,1200067787,Saliency,84,One Year
+MOL,1156437979,Saliency,85,One Year
+UbiComp,1171345118,Saliency,86,One Year
+SANER,2754456056,Saliency,87,One Year
+ICoICT,2735555832,Saliency,88,One Year
+PLDI,1127352206,Saliency,89,One Year
+VL/HCC,2623670289,Saliency,90,One Year
+ASIST,2537396833,Saliency,91,One Year
+VAST,1161805661,Saliency,92,One Year
+IWPT,1132363081,Saliency,93,One Year
+BigComp,2756267278,Saliency,94,One Year
+AISTATS,2622962978,Saliency,95,One Year
+SLE,1165606533,Saliency,96,One Year
+BRACIS,2754155910,Saliency,97,One Year
+CLOUD,1137657189,Saliency,98,One Year
+SIU,2735422400,Saliency,99,One Year
+BIOINFORMATICS,1199066382,Saliency,100,One Year
+PLDI,1127352206,Prestige,1,One Year
+NeurIPS,1127325140,Prestige,2,One Year
+ICLR,2584161585,Prestige,3,One Year
+ICCV,1164975091,Prestige,4,One Year
+CVPR,1158167855,Prestige,5,One Year
+ICWSM,1124713781,Prestige,6,One Year
+ICML,1180662882,Prestige,7,One Year
+KDD,1130985203,Prestige,8,One Year
+VSRNLP,2757454588,Prestige,9,One Year
+ICASSP,1121227772,Prestige,10,One Year
+CHIIR,2626279626,Prestige,11,One Year
+WSDM,1120384002,Prestige,12,One Year
+ACL,1188739475,Prestige,13,One Year
+VAST,1161805661,Prestige,14,One Year
+AAAI,1184914352,Prestige,15,One Year
+ILAKC,2754404193,Prestige,16,One Year
+CHI,1163450153,Prestige,17,One Year
+EACL,1188587990,Prestige,18,One Year
+SIGIR,1140684652,Prestige,19,One Year
+SMC,1170695740,Prestige,20,One Year
+WI,1200067787,Prestige,21,One Year
+WWW,1135342153,Prestige,22,One Year
+INTERSPEECH,1177287137,Prestige,23,One Year
+RecSys,1134284382,Prestige,24,One Year
+EMNLP,1192655580,Prestige,25,One Year
+SANER,2754456056,Prestige,26,One Year
+VL/HCC,2623670289,Prestige,27,One Year
+ECIR,1180513217,Prestige,28,One Year
+NAACL,1173951661,Prestige,29,One Year
+HICSS,1164519180,Prestige,30,One Year
+MM,1135237122,Prestige,31,One Year
+AISTATS,2622962978,Prestige,32,One Year
+IUI,1170221290,Prestige,33,One Year
+EDM,1193731136,Prestige,34,One Year
+ICTIR,2756630716,Prestige,35,One Year
+SLT,1196016004,Prestige,36,One Year
+IJCAI,1203999783,Prestige,37,One Year
+ISWC,1155608529,Prestige,38,One Year
+SIGCSE,1124504716,Prestige,39,One Year
+CoNLL,2724687765,Prestige,40,One Year
+ACII,1171689754,Prestige,41,One Year
+SIGDIAL,2724712181,Prestige,42,One Year
+ICHI,2754124166,Prestige,43,One Year
+IJCNN,1140449422,Prestige,44,One Year
+JCLCS,2757804692,Prestige,45,One Year
+IJCNLP,1126706392,Prestige,46,One Year
+AAMAS,1168671587,Prestige,47,One Year
+ICDAR,1150099070,Prestige,48,One Year
+CIKM,1194094125,Prestige,49,One Year
+ICDM,1183478919,Prestige,50,One Year
+AIED,1172379331,Prestige,51,One Year
+HRI,1129075963,Prestige,52,One Year
+UNLPBEA,2759993800,Prestige,53,One Year
+ASIST,2537396833,Prestige,54,One Year
+DASFAA,1184699546,Prestige,55,One Year
+ESWC,1180003657,Prestige,56,One Year
+AMTA,1167145961,Prestige,57,One Year
+BIBM,1156210184,Prestige,58,One Year
+CICC,2755020506,Prestige,59,One Year
+APSIPA,2754583030,Prestige,60,One Year
+PAKDD,1178327129,Prestige,61,One Year
+CLEF,1156586875,Prestige,62,One Year
+COLING,1169674987,Prestige,63,One Year
+RO-MAN,1184553942,Prestige,64,One Year
+UbiComp,1171345118,Prestige,65,One Year
+CLIN,1139922478,Prestige,66,One Year
+LREC,1164963593,Prestige,67,One Year
+BRACIS,2754155910,Prestige,68,One Year
+LDK,2898587229,Prestige,69,One Year
+COMMA,1200891582,Prestige,70,One Year
+ICMLA,1138691947,Prestige,71,One Year
+ICSE,1174403976,Prestige,72,One Year
+IDA,1201250571,Prestige,73,One Year
+Resource Track - ICSC,2898613818,Prestige,74,One Year
+SOCO,1123077274,Prestige,75,One Year
+INLG,1166923268,Prestige,76,One Year
+ALRLIP,2754632699,Prestige,77,One Year
+SAC,2754781246,Prestige,78,One Year
+Big Data,2623113034,Prestige,79,One Year
+ACC,1190039108,Prestige,80,One Year
+IWPT,1132363081,Prestige,81,One Year
+SLATE,1199437547,Prestige,82,One Year
+AINL,2898313343,Prestige,83,One Year
+BigComp,2756267278,Prestige,84,One Year
+PROPOR,2760054250,Prestige,85,One Year
+SLE,1165606533,Prestige,86,One Year
+NLDB,1128394114,Prestige,87,One Year
+TSD,1142381819,Prestige,88,One Year
+ICONIP,1183580825,Prestige,89,One Year
+FLAIRS,1194143745,Prestige,90,One Year
+RANLP,1143871959,Prestige,91,One Year
+MOL,1156437979,Prestige,92,One Year
+SIU,2735422400,Prestige,93,One Year
+ICAART,1200979010,Prestige,94,One Year
+ICSC,2756369731,Prestige,95,One Year
+BIOINFORMATICS,1199066382,Prestige,96,One Year
+CIT,1120281879,Prestige,97,One Year
+IALP,1145175409,Prestige,98,One Year
+ICoICT,2735555832,Prestige,99,One Year
+CLOUD,1137657189,Prestige,100,One Year
+ACL,1188739475,Citations*,1,One Year
+EMNLP,1192655580,Citations*,2,One Year
+ICLR,2584161585,Citations*,3,One Year
+NAACL,1173951661,Citations*,4,One Year
+EACL,1188587990,Citations*,5,One Year
+AAAI,1184914352,Citations*,6,One Year
+ICASSP,1121227772,Citations*,7,One Year
+NeurIPS,1127325140,Citations*,8,One Year
+IJCNLP,1126706392,Citations*,9,One Year
+INTERSPEECH,1177287137,Citations*,10,One Year
+ICML,1180662882,Citations*,11,One Year
+CVPR,1158167855,Citations*,12,One Year
+LREC,1164963593,Citations*,13,One Year
+IJCAI,1203999783,Citations*,14,One Year
+COLING,1169674987,Citations*,15,One Year
+CoNLL,2724687765,Citations*,16,One Year
+ICCV,1164975091,Citations*,17,One Year
+ICWSM,1124713781,Citations*,18,One Year
+WWW,1135342153,Citations*,19,One Year
+SIGDIAL,2724712181,Citations*,20,One Year
+SIGIR,1140684652,Citations*,21,One Year
+MM,1135237122,Citations*,22,One Year
+VSRNLP,2757454588,Citations*,23,One Year
+AMTA,1167145961,Citations*,24,One Year
+RANLP,1143871959,Citations*,25,One Year
+SMC,1170695740,Citations*,26,One Year
+CHI,1163450153,Citations*,27,One Year
+FLAIRS,1194143745,Citations*,28,One Year
+JCLCS,2757804692,Citations*,29,One Year
+CHIIR,2626279626,Citations*,30,One Year
+ALRLIP,2754632699,Citations*,31,One Year
+CIKM,1194094125,Citations*,32,One Year
+KDD,1130985203,Citations*,33,One Year
+INLG,1166923268,Citations*,34,One Year
+WSDM,1120384002,Citations*,35,One Year
+SOCO,1123077274,Citations*,36,One Year
+ISWC,1155608529,Citations*,37,One Year
+SIGCSE,1124504716,Citations*,38,One Year
+IJCNN,1140449422,Citations*,39,One Year
+ECIR,1180513217,Citations*,40,One Year
+TSD,1142381819,Citations*,41,One Year
+NLDB,1128394114,Citations*,42,One Year
+ICDAR,1150099070,Citations*,43,One Year
+SLT,1196016004,Citations*,44,One Year
+CLEF,1156586875,Citations*,45,One Year
+SANER,2754456056,Citations*,46,One Year
+ICSE,1174403976,Citations*,47,One Year
+UNLPBEA,2759993800,Citations*,48,One Year
+SLATE,1199437547,Citations*,49,One Year
+PLDI,1127352206,Citations*,50,One Year
+Resource Track - ICSC,2898613818,Citations*,51,One Year
+RecSys,1134284382,Citations*,52,One Year
+VAST,1161805661,Citations*,53,One Year
+HRI,1129075963,Citations*,54,One Year
+ASIST,2537396833,Citations*,55,One Year
+POPL,1160032607,Citations*,56,One Year
+MSR,1162521816,Citations*,57,One Year
+Big Data,2623113034,Citations*,58,One Year
+AIED,1172379331,Citations*,59,One Year
+PAKDD,1178327129,Citations*,60,One Year
+ESWC,1180003657,Citations*,61,One Year
+ACII,1171689754,Citations*,62,One Year
+CICC,2755020506,Citations*,63,One Year
+REFSQ,1169379829,Citations*,64,One Year
+DSS,1182309694,Citations*,65,One Year
+AmI,1197908299,Citations*,66,One Year
+AINL,2898313343,Citations*,67,One Year
+ILAKC,2754404193,Citations*,68,One Year
+CLIN,1139922478,Citations*,69,One Year
+IALP,1145175409,Citations*,70,One Year
+AAMAS,1168671587,Citations*,71,One Year
+ICER,1169202245,Citations*,72,One Year
+VLDB,1133523790,Citations*,73,One Year
+ICDKE,1168542559,Citations*,74,One Year
+IUI,1170221290,Citations*,75,One Year
+CSEDU,1193534515,Citations*,76,One Year
+APSIPA,2754583030,Citations*,77,One Year
+LDK,2898587229,Citations*,78,One Year
+ICAART,1200979010,Citations*,79,One Year
+ICRA,1163902177,Citations*,80,One Year
+ICSC,2756369731,Citations*,81,One Year
+SocialCom,1196552754,Citations*,82,One Year
+ICTIR,2756630716,Citations*,83,One Year
+ICME,1126322613,Citations*,84,One Year
+HICSS,1164519180,Citations*,85,One Year
+COMMA,1200891582,Citations*,86,One Year
+IDA,1201250571,Citations*,87,One Year
+ECCV,1124077590,Citations*,88,One Year
+SUM,1154921601,Citations*,89,One Year
+ICIP,1163163559,Citations*,90,One Year
+FSE,1199533187,Citations*,91,One Year
+PerCom,2606000596,Citations*,92,One Year
+WEBIST,1156749314,Citations*,93,One Year
+ICPC,1159024683,Citations*,94,One Year
+ECML,2755314191,Citations*,95,One Year
+NLPCS,2757406217,Citations*,96,One Year
+KDIR,1128718661,Citations*,97,One Year
+SDM,1142743330,Citations*,98,One Year
+ISMIR,1144674403,Citations*,99,One Year
+BIBM,1156210184,Citations*,100,One Year
+ACL,1188739475,Publications,1,One Year
+EMNLP,1192655580,Publications,2,One Year
+NAACL,1173951661,Publications,3,One Year
+LREC,1164963593,Publications,4,One Year
+COLING,1169674987,Publications,5,One Year
+EACL,1188587990,Publications,6,One Year
+AAAI,1184914352,Publications,7,One Year
+FLAIRS,1194143745,Publications,8,One Year
+IJCNLP,1126706392,Publications,9,One Year
+INTERSPEECH,1177287137,Publications,10,One Year
+IJCAI,1203999783,Publications,11,One Year
+IALP,1145175409,Publications,12,One Year
+ICASSP,1121227772,Publications,13,One Year
+RANLP,1143871959,Publications,14,One Year
+SIGDIAL,2724712181,Publications,15,One Year
+ICLR,2584161585,Publications,16,One Year
+TSD,1142381819,Publications,17,One Year
+INLG,1166923268,Publications,18,One Year
+CoNLL,2724687765,Publications,19,One Year
+SLATE,1199437547,Publications,20,One Year
+NLDB,1128394114,Publications,21,One Year
+ALRLIP,2754632699,Publications,22,One Year
+Resource Track - ICSC,2898613818,Publications,23,One Year
+WWW,1135342153,Publications,24,One Year
+COMMA,1200891582,Publications,25,One Year
+AMTA,1167145961,Publications,26,One Year
+CLEF,1156586875,Publications,27,One Year
+Big Data,2623113034,Publications,28,One Year
+UNLPBEA,2759993800,Publications,29,One Year
+SOCO,1123077274,Publications,30,One Year
+ICAART,1200979010,Publications,31,One Year
+WCLS,2754966267,Publications,32,One Year
+ICSE,1174403976,Publications,33,One Year
+SIGIR,1140684652,Publications,34,One Year
+BIBM,1156210184,Publications,35,One Year
+CLOUD,1137657189,Publications,36,One Year
+ICML,1180662882,Publications,37,One Year
+CHI,1163450153,Publications,38,One Year
+ICAI,2755283090,Publications,39,One Year
+CVPR,1158167855,Publications,40,One Year
+SLT,1196016004,Publications,41,One Year
+CIT,1120281879,Publications,42,One Year
+ISWC,1155608529,Publications,43,One Year
+ICoICT,2735555832,Publications,44,One Year
+AINL,2898313343,Publications,45,One Year
+CLIN,1139922478,Publications,46,One Year
+ACC,1190039108,Publications,47,One Year
+ICONIP,1183580825,Publications,48,One Year
+CIKM,1194094125,Publications,49,One Year
+SAC,2754781246,Publications,50,One Year
+ICSC,2756369731,Publications,51,One Year
+JCLCS,2757804692,Publications,52,One Year
+MM,1135237122,Publications,53,One Year
+PROPOR,2760054250,Publications,54,One Year
+CI,1120693805,Publications,55,One Year
+MOL,1156437979,Publications,56,One Year
+IIAIAAI,2754506284,Publications,57,One Year
+ICDM,1183478919,Publications,58,One Year
+APL,2625190319,Publications,59,One Year
+WorldCIST,2754803852,Publications,60,One Year
+AIED,1172379331,Publications,61,One Year
+ECIR,1180513217,Publications,62,One Year
+BIOINFORMATICS,1199066382,Publications,63,One Year
+APSIPA,2754583030,Publications,64,One Year
+CICC,2755020506,Publications,65,One Year
+NeurIPS,1127325140,Publications,66,One Year
+ICDAR,1150099070,Publications,67,One Year
+AICCSA,1203219439,Publications,68,One Year
+SIU,2735422400,Publications,69,One Year
+ICNLP,2898139291,Publications,70,One Year
+WSDM,1120384002,Publications,71,One Year
+IWPT,1132363081,Publications,72,One Year
+CSSE,1151131449,Publications,73,One Year
+SLE,1165606533,Publications,74,One Year
+PAKDD,1178327129,Publications,75,One Year
+BigComp,2756267278,Publications,76,One Year
+LDK,2898587229,Publications,77,One Year
+ICMLA,1138691947,Publications,78,One Year
+ISDA,1171527391,Publications,79,One Year
+IDA,1201250571,Publications,80,One Year
+IJCNN,1140449422,Publications,81,One Year
+RO-MAN,1184553942,Publications,82,One Year
+ICPRAM,1193120152,Publications,83,One Year
+FIRE,2626823158,Publications,84,One Year
+SIGCSE,1124504716,Publications,85,One Year
+AAMAS,1168671587,Publications,86,One Year
+ESWC,1180003657,Publications,87,One Year
+CSEDU,1193534515,Publications,88,One Year
+ECCE,2755585586,Publications,89,One Year
+ACIIDS,1123338449,Publications,90,One Year
+INTERACT,1127419992,Publications,91,One Year
+NLG,1163887669,Publications,92,One Year
+UbiComp,1171345118,Publications,93,One Year
+ICNC,2622723275,Publications,94,One Year
+ICHI,2754124166,Publications,95,One Year
+SLTU,2898487891,Publications,96,One Year
+AIMSA,1121493235,Publications,97,One Year
+ICMI,1131590914,Publications,98,One Year
+WebMedia,1145183445,Publications,99,One Year
+ICONS,1159975077,Publications,100,One Year
+ACL,1188739475,H-Index,1,One Year
+ICLR,2584161585,H-Index,2,One Year
+EMNLP,1192655580,H-Index,3,One Year
+EACL,1188587990,H-Index,4,One Year
+NAACL,1173951661,H-Index,5,One Year
+AAAI,1184914352,H-Index,6,One Year
+ICASSP,1121227772,H-Index,7,One Year
+IJCAI,1203999783,H-Index,8,One Year
+INTERSPEECH,1177287137,H-Index,9,One Year
+IJCNLP,1126706392,H-Index,10,One Year
+CVPR,1158167855,H-Index,11,One Year
+CoNLL,2724687765,H-Index,12,One Year
+NeurIPS,1127325140,H-Index,13,One Year
+LREC,1164963593,H-Index,14,One Year
+COLING,1169674987,H-Index,15,One Year
+SIGIR,1140684652,H-Index,16,One Year
+ICML,1180662882,H-Index,17,One Year
+SIGDIAL,2724712181,H-Index,18,One Year
+WWW,1135342153,H-Index,19,One Year
+CHI,1163450153,H-Index,20,One Year
+KDD,1130985203,H-Index,21,One Year
+MM,1135237122,H-Index,22,One Year
+RANLP,1143871959,H-Index,23,One Year
+ICCV,1164975091,H-Index,24,One Year
+WSDM,1120384002,H-Index,25,One Year
+SOCO,1123077274,H-Index,26,One Year
+IJCNN,1140449422,H-Index,27,One Year
+TSD,1142381819,H-Index,28,One Year
+ISWC,1155608529,H-Index,29,One Year
+INLG,1166923268,H-Index,30,One Year
+ECIR,1180513217,H-Index,31,One Year
+CIKM,1194094125,H-Index,32,One Year
+FLAIRS,1194143745,H-Index,33,One Year
+SLT,1196016004,H-Index,34,One Year
+CHIIR,2626279626,H-Index,35,One Year
+SANER,2754456056,H-Index,36,One Year
+ALRLIP,2754632699,H-Index,37,One Year
+VSRNLP,2757454588,H-Index,38,One Year
+JCLCS,2757804692,H-Index,39,One Year
+SIGCSE,1124504716,H-Index,40,One Year
+ICWSM,1124713781,H-Index,41,One Year
+NLDB,1128394114,H-Index,42,One Year
+ICDAR,1150099070,H-Index,43,One Year
+CLEF,1156586875,H-Index,44,One Year
+WEBIST,1156749314,H-Index,45,One Year
+AMTA,1167145961,H-Index,46,One Year
+ICER,1169202245,H-Index,47,One Year
+IUI,1170221290,H-Index,48,One Year
+SMC,1170695740,H-Index,49,One Year
+AIED,1172379331,H-Index,50,One Year
+PAKDD,1178327129,H-Index,51,One Year
+ESWC,1180003657,H-Index,52,One Year
+ICDM,1183478919,H-Index,53,One Year
+SocialCom,1196552754,H-Index,54,One Year
+AmI,1197908299,H-Index,55,One Year
+IDA,1201250571,H-Index,56,One Year
+ILAKC,2754404193,H-Index,57,One Year
+CICC,2755020506,H-Index,58,One Year
+UNLPBEA,2759993800,H-Index,59,One Year
+AINL,2898313343,H-Index,60,One Year
+Resource Track - ICSC,2898613818,H-Index,61,One Year
+ECCV,1124077590,H-Index,62,One Year
+AIME,1127759574,H-Index,63,One Year
+KDIR,1128718661,H-Index,64,One Year
+HRI,1129075963,H-Index,65,One Year
+ICPR,1131605622,H-Index,66,One Year
+DS,1132231445,H-Index,67,One Year
+RecSys,1134284382,H-Index,68,One Year
+CLIN,1139922478,H-Index,69,One Year
+SDM,1142743330,H-Index,70,One Year
+ISMIR,1144674403,H-Index,71,One Year
+IALP,1145175409,H-Index,72,One Year
+WebMedia,1145183445,H-Index,73,One Year
+WACV,1149655676,H-Index,74,One Year
+SUM,1154921601,H-Index,75,One Year
+MOL,1156437979,H-Index,76,One Year
+ICPC,1159024683,H-Index,77,One Year
+POPL,1160032607,H-Index,78,One Year
+MSR,1162521816,H-Index,79,One Year
+ICIP,1163163559,H-Index,80,One Year
+ICRA,1163902177,H-Index,81,One Year
+HICSS,1164519180,H-Index,82,One Year
+SLE,1165606533,H-Index,83,One Year
+K-CAP,1166500626,H-Index,84,One Year
+ASE,1166511975,H-Index,85,One Year
+AAMAS,1168671587,H-Index,86,One Year
+REFSQ,1169379829,H-Index,87,One Year
+UbiComp,1171345118,H-Index,88,One Year
+ACII,1171689754,H-Index,89,One Year
+ICSE,1174403976,H-Index,90,One Year
+DSS,1182309694,H-Index,91,One Year
+ICONIP,1183580825,H-Index,92,One Year
+SNPD,1184170611,H-Index,93,One Year
+RO-MAN,1184553942,H-Index,94,One Year
+DASFAA,1184699546,H-Index,95,One Year
+MIPRO,1186381103,H-Index,96,One Year
+ACC,1190039108,H-Index,97,One Year
+CSEDU,1193534515,H-Index,98,One Year
+SLATE,1199437547,H-Index,99,One Year
+COMMA,1200891582,H-Index,100,One Year
+EMNLP,1192655580,Saliency,1,Five Years
+ACL,1188739475,Saliency,2,Five Years
+NAACL,1173951661,Saliency,3,Five Years
+ICLR,2584161585,Saliency,4,Five Years
+LREC,1164963593,Saliency,5,Five Years
+NeurIPS,1127325140,Saliency,6,Five Years
+COLING,1169674987,Saliency,7,Five Years
+IJCNLP,1126706392,Saliency,8,Five Years
+AAAI,1184914352,Saliency,9,Five Years
+CVPR,1158167855,Saliency,10,Five Years
+ICML,1180662882,Saliency,11,Five Years
+INTERSPEECH,1177287137,Saliency,12,Five Years
+ICASSP,1121227772,Saliency,13,Five Years
+EACL,1188587990,Saliency,14,Five Years
+CoNLL,2724687765,Saliency,15,Five Years
+SIGDIAL,2724712181,Saliency,16,Five Years
+IJCAI,1203999783,Saliency,17,Five Years
+ICCV,1164975091,Saliency,18,Five Years
+JCLCS,2757804692,Saliency,19,Five Years
+WWW,1135342153,Saliency,20,Five Years
+WSMT,2760662195,Saliency,21,Five Years
+FLAIRS,1194143745,Saliency,22,Five Years
+TSD,1142381819,Saliency,23,Five Years
+RANLP,1143871959,Saliency,24,Five Years
+CIKM,1194094125,Saliency,25,Five Years
+CLEF,1156586875,Saliency,26,Five Years
+CHI,1163450153,Saliency,27,Five Years
+UNLPBEA,2759993800,Saliency,28,Five Years
+IALP,1145175409,Saliency,29,Five Years
+CICLing,1126288421,Saliency,30,Five Years
+ICAI,2755283090,Saliency,31,Five Years
+SLATE,1199437547,Saliency,32,Five Years
+NLDB,1128394114,Saliency,33,Five Years
+SLT,1196016004,Saliency,34,Five Years
+SIGIR,1140684652,Saliency,35,Five Years
+ISWC,1155608529,Saliency,36,Five Years
+LAW,2758839271,Saliency,37,Five Years
+COMMA,1200891582,Saliency,38,Five Years
+CI,1120693805,Saliency,39,Five Years
+ICDAR,1150099070,Saliency,40,Five Years
+ASRU,2606697348,Saliency,41,Five Years
+INLG,1166923268,Saliency,42,Five Years
+SLE,1165606533,Saliency,43,Five Years
+RSS,2606075370,Saliency,44,Five Years
+AMIA,2757487807,Saliency,45,Five Years
+MM,1135237122,Saliency,46,Five Years
+Resource Track - ICSC,2898613818,Saliency,47,Five Years
+ICSE,1174403976,Saliency,48,Five Years
+WSDM,1120384002,Saliency,49,Five Years
+NLG,1163887669,Saliency,50,Five Years
+CLIN,1139922478,Saliency,51,Five Years
+EDM,1193731136,Saliency,52,Five Years
+PACLIC,2754041620,Saliency,53,Five Years
+AIED,1172379331,Saliency,54,Five Years
+CACS,2756868253,Saliency,55,Five Years
+VSRNLP,2757454588,Saliency,56,Five Years
+KDD,1130985203,Saliency,57,Five Years
+Big Data,2623113034,Saliency,58,Five Years
+ICSC,2756369731,Saliency,59,Five Years
+ALRLIP,2754632699,Saliency,60,Five Years
+ACC,1190039108,Saliency,61,Five Years
+WCLS,2754966267,Saliency,62,Five Years
+ICWSM,1124713781,Saliency,63,Five Years
+SOCO,1123077274,Saliency,64,Five Years
+ESWC,1180003657,Saliency,65,Five Years
+FSE,1199533187,Saliency,66,Five Years
+ICRA,1163902177,Saliency,67,Five Years
+SMC,1170695740,Saliency,68,Five Years
+AMTA,1167145961,Saliency,69,Five Years
+ECIR,1180513217,Saliency,70,Five Years
+ECCV,1124077590,Saliency,71,Five Years
+APSIPA,2754583030,Saliency,72,Five Years
+SAC,2754781246,Saliency,73,Five Years
+AKBC,2942832808,Saliency,74,Five Years
+ICoICT,2735555832,Saliency,75,Five Years
+IJCNN,1140449422,Saliency,76,Five Years
+ISMIR,1144674403,Saliency,77,Five Years
+ECML,2755314191,Saliency,78,Five Years
+BIBM,1156210184,Saliency,79,Five Years
+INTERACT,1127419992,Saliency,80,Five Years
+CICC,2755020506,Saliency,81,Five Years
+CIT,1120281879,Saliency,82,Five Years
+HICSS,1164519180,Saliency,83,Five Years
+PROPOR,2760054250,Saliency,84,Five Years
+ICFHR,1161412788,Saliency,85,Five Years
+ICTAI,1153494057,Saliency,86,Five Years
+ICAART,1200979010,Saliency,87,Five Years
+ICDM,1183478919,Saliency,88,Five Years
+SIGCSE,1124504716,Saliency,89,Five Years
+ASIST,2537396833,Saliency,90,Five Years
+O-COCOSDA/CASLRE,2756182441,Saliency,91,Five Years
+ICC,1130451194,Saliency,92,Five Years
+MICAI,1121391727,Saliency,93,Five Years
+ESWC,2755653720,Saliency,94,Five Years
+HRI,1129075963,Saliency,95,Five Years
+LAK,2626590808,Saliency,96,Five Years
+IUI,1170221290,Saliency,97,Five Years
+CSS,2898296554,Saliency,98,Five Years
+FIRE,2626823158,Saliency,99,Five Years
+UIST,1166315290,Saliency,100,Five Years
+NeurIPS,1127325140,Prestige,1,Five Years
+ICLR,2584161585,Prestige,2,Five Years
+CVPR,1158167855,Prestige,3,Five Years
+ICML,1180662882,Prestige,4,Five Years
+ICCV,1164975091,Prestige,5,Five Years
+RSS,2606075370,Prestige,6,Five Years
+KDD,1130985203,Prestige,7,Five Years
+FSE,1199533187,Prestige,8,Five Years
+ICWSM,1124713781,Prestige,9,Five Years
+EMNLP,1192655580,Prestige,10,Five Years
+ESWC,2755653720,Prestige,11,Five Years
+UIST,1166315290,Prestige,12,Five Years
+ICASSP,1121227772,Prestige,13,Five Years
+ECML,2755314191,Prestige,14,Five Years
+CoNLL,2724687765,Prestige,15,Five Years
+WSDM,1120384002,Prestige,16,Five Years
+ACL,1188739475,Prestige,17,Five Years
+IJCNLP,1126706392,Prestige,18,Five Years
+ASRU,2606697348,Prestige,19,Five Years
+CACS,2756868253,Prestige,20,Five Years
+ECCV,1124077590,Prestige,21,Five Years
+WSMT,2760662195,Prestige,22,Five Years
+LAK,2626590808,Prestige,23,Five Years
+AAAI,1184914352,Prestige,24,Five Years
+CHI,1163450153,Prestige,25,Five Years
+VSRNLP,2757454588,Prestige,26,Five Years
+NAACL,1173951661,Prestige,27,Five Years
+CIKM,1194094125,Prestige,28,Five Years
+JCLCS,2757804692,Prestige,29,Five Years
+WWW,1135342153,Prestige,30,Five Years
+CI,1120693805,Prestige,31,Five Years
+ICRA,1163902177,Prestige,32,Five Years
+ESWC,1180003657,Prestige,33,Five Years
+SIGDIAL,2724712181,Prestige,34,Five Years
+AMIA,2757487807,Prestige,35,Five Years
+AKBC,2942832808,Prestige,36,Five Years
+EACL,1188587990,Prestige,37,Five Years
+ICDAR,1150099070,Prestige,38,Five Years
+SLT,1196016004,Prestige,39,Five Years
+MM,1135237122,Prestige,40,Five Years
+LAW,2758839271,Prestige,41,Five Years
+ISWC,1155608529,Prestige,42,Five Years
+SIGIR,1140684652,Prestige,43,Five Years
+SIGCSE,1124504716,Prestige,44,Five Years
+HICSS,1164519180,Prestige,45,Five Years
+ICAI,2755283090,Prestige,46,Five Years
+SLE,1165606533,Prestige,47,Five Years
+CSS,2898296554,Prestige,48,Five Years
+IJCAI,1203999783,Prestige,49,Five Years
+IUI,1170221290,Prestige,50,Five Years
+UNLPBEA,2759993800,Prestige,51,Five Years
+INTERSPEECH,1177287137,Prestige,52,Five Years
+ISMIR,1144674403,Prestige,53,Five Years
+ICFHR,1161412788,Prestige,54,Five Years
+ASIST,2537396833,Prestige,55,Five Years
+ICC,1130451194,Prestige,56,Five Years
+ECIR,1180513217,Prestige,57,Five Years
+CLEF,1156586875,Prestige,58,Five Years
+COLING,1169674987,Prestige,59,Five Years
+EDM,1193731136,Prestige,60,Five Years
+AIED,1172379331,Prestige,61,Five Years
+IJCNN,1140449422,Prestige,62,Five Years
+SMC,1170695740,Prestige,63,Five Years
+SAC,2754781246,Prestige,64,Five Years
+HRI,1129075963,Prestige,65,Five Years
+LREC,1164963593,Prestige,66,Five Years
+ICSE,1174403976,Prestige,67,Five Years
+APSIPA,2754583030,Prestige,68,Five Years
+AMTA,1167145961,Prestige,69,Five Years
+ICTAI,1153494057,Prestige,70,Five Years
+ICDM,1183478919,Prestige,71,Five Years
+CICC,2755020506,Prestige,72,Five Years
+COMMA,1200891582,Prestige,73,Five Years
+BIBM,1156210184,Prestige,74,Five Years
+Big Data,2623113034,Prestige,75,Five Years
+CICLing,1126288421,Prestige,76,Five Years
+CLIN,1139922478,Prestige,77,Five Years
+NLG,1163887669,Prestige,78,Five Years
+Resource Track - ICSC,2898613818,Prestige,79,Five Years
+ICSC,2756369731,Prestige,80,Five Years
+MICAI,1121391727,Prestige,81,Five Years
+NLDB,1128394114,Prestige,82,Five Years
+ALRLIP,2754632699,Prestige,83,Five Years
+ACC,1190039108,Prestige,84,Five Years
+RANLP,1143871959,Prestige,85,Five Years
+SOCO,1123077274,Prestige,86,Five Years
+TSD,1142381819,Prestige,87,Five Years
+O-COCOSDA/CASLRE,2756182441,Prestige,88,Five Years
+INLG,1166923268,Prestige,89,Five Years
+SLATE,1199437547,Prestige,90,Five Years
+FLAIRS,1194143745,Prestige,91,Five Years
+PROPOR,2760054250,Prestige,92,Five Years
+INTERACT,1127419992,Prestige,93,Five Years
+PACLIC,2754041620,Prestige,94,Five Years
+ICoICT,2735555832,Prestige,95,Five Years
+FIRE,2626823158,Prestige,96,Five Years
+ICAART,1200979010,Prestige,97,Five Years
+IALP,1145175409,Prestige,98,Five Years
+CIT,1120281879,Prestige,99,Five Years
+WCLS,2754966267,Prestige,100,Five Years
+EMNLP,1192655580,Citations*,1,Five Years
+ACL,1188739475,Citations*,2,Five Years
+NeurIPS,1127325140,Citations*,3,Five Years
+NAACL,1173951661,Citations*,4,Five Years
+ICLR,2584161585,Citations*,5,Five Years
+IJCNLP,1126706392,Citations*,6,Five Years
+LREC,1164963593,Citations*,7,Five Years
+COLING,1169674987,Citations*,8,Five Years
+CVPR,1158167855,Citations*,9,Five Years
+ICML,1180662882,Citations*,10,Five Years
+AAAI,1184914352,Citations*,11,Five Years
+ICASSP,1121227772,Citations*,12,Five Years
+CoNLL,2724687765,Citations*,13,Five Years
+EACL,1188587990,Citations*,14,Five Years
+INTERSPEECH,1177287137,Citations*,15,Five Years
+ICCV,1164975091,Citations*,16,Five Years
+JCLCS,2757804692,Citations*,17,Five Years
+SIGDIAL,2724712181,Citations*,18,Five Years
+IJCAI,1203999783,Citations*,19,Five Years
+WWW,1135342153,Citations*,20,Five Years
+WSMT,2760662195,Citations*,21,Five Years
+CIKM,1194094125,Citations*,22,Five Years
+ICAI,2755283090,Citations*,23,Five Years
+CI,1120693805,Citations*,24,Five Years
+RANLP,1143871959,Citations*,25,Five Years
+ICDAR,1150099070,Citations*,26,Five Years
+CLEF,1156586875,Citations*,27,Five Years
+LAW,2758839271,Citations*,28,Five Years
+CICLing,1126288421,Citations*,29,Five Years
+UNLPBEA,2759993800,Citations*,30,Five Years
+SLE,1165606533,Citations*,31,Five Years
+SIGIR,1140684652,Citations*,32,Five Years
+CHI,1163450153,Citations*,33,Five Years
+TSD,1142381819,Citations*,34,Five Years
+ISWC,1155608529,Citations*,35,Five Years
+ASRU,2606697348,Citations*,36,Five Years
+FLAIRS,1194143745,Citations*,37,Five Years
+NLDB,1128394114,Citations*,38,Five Years
+FSE,1199533187,Citations*,39,Five Years
+SLT,1196016004,Citations*,40,Five Years
+MM,1135237122,Citations*,41,Five Years
+ICSE,1174403976,Citations*,42,Five Years
+CACS,2756868253,Citations*,43,Five Years
+ICWSM,1124713781,Citations*,44,Five Years
+KDD,1130985203,Citations*,45,Five Years
+COMMA,1200891582,Citations*,46,Five Years
+WSDM,1120384002,Citations*,47,Five Years
+AIED,1172379331,Citations*,48,Five Years
+ECCV,1124077590,Citations*,49,Five Years
+VSRNLP,2757454588,Citations*,50,Five Years
+SLATE,1199437547,Citations*,51,Five Years
+SAC,2754781246,Citations*,52,Five Years
+ECML,2755314191,Citations*,53,Five Years
+DSS,1182309694,Citations*,54,Five Years
+CIDR,1201561728,Citations*,55,Five Years
+ICRA,1163902177,Citations*,56,Five Years
+NLG,1163887669,Citations*,57,Five Years
+ISER,1199774281,Citations*,58,Five Years
+IALP,1145175409,Citations*,59,Five Years
+MSR,1162521816,Citations*,60,Five Years
+ESWC,2755653720,Citations*,61,Five Years
+ESWC,1180003657,Citations*,62,Five Years
+SMC,1170695740,Citations*,63,Five Years
+VLDB,1133523790,Citations*,64,Five Years
+INLG,1166923268,Citations*,65,Five Years
+RSS,2606075370,Citations*,66,Five Years
+EDM,1193731136,Citations*,67,Five Years
+AMIA,2757487807,Citations*,68,Five Years
+IROS,1143279144,Citations*,69,Five Years
+HICSS,1164519180,Citations*,70,Five Years
+IJCNN,1140449422,Citations*,71,Five Years
+ICPC,1159024683,Citations*,72,Five Years
+AKBC,2942832808,Citations*,73,Five Years
+PACLIC,2754041620,Citations*,74,Five Years
+SOCO,1123077274,Citations*,75,Five Years
+ICDE,1163988186,Citations*,76,Five Years
+LAK,2626590808,Citations*,77,Five Years
+HRI,1129075963,Citations*,78,Five Years
+Essen,2756014080,Citations*,79,Five Years
+CLIN,1139922478,Citations*,80,Five Years
+ACC,1190039108,Citations*,81,Five Years
+ICSC,2756369731,Citations*,82,Five Years
+MICAI,1121391727,Citations*,83,Five Years
+ECIR,1180513217,Citations*,84,Five Years
+ALRLIP,2754632699,Citations*,85,Five Years
+Resource Track - ICSC,2898613818,Citations*,86,Five Years
+AEECT,2756054205,Citations*,87,Five Years
+INTERACT,1127419992,Citations*,88,Five Years
+SDM,1142743330,Citations*,89,Five Years
+APSIPA,2754583030,Citations*,90,Five Years
+ER,1176514135,Citations*,91,Five Years
+Big Data,2623113034,Citations*,92,Five Years
+IIT,2624055407,Citations*,93,Five Years
+ICAIL,1140656204,Citations*,94,Five Years
+ASE,1166511975,Citations*,95,Five Years
+SPLC,1190643002,Citations*,96,Five Years
+ASIST,2537396833,Citations*,97,Five Years
+CSS,2898296554,Citations*,98,Five Years
+ICFHR,1161412788,Citations*,99,Five Years
+AMTA,1167145961,Citations*,100,Five Years
+LREC,1164963593,Publications,1,Five Years
+ACL,1188739475,Publications,2,Five Years
+NAACL,1173951661,Publications,3,Five Years
+EMNLP,1192655580,Publications,4,Five Years
+COLING,1169674987,Publications,5,Five Years
+INTERSPEECH,1177287137,Publications,6,Five Years
+IJCNLP,1126706392,Publications,7,Five Years
+EACL,1188587990,Publications,8,Five Years
+AAAI,1184914352,Publications,9,Five Years
+FLAIRS,1194143745,Publications,10,Five Years
+IALP,1145175409,Publications,11,Five Years
+TSD,1142381819,Publications,12,Five Years
+SIGDIAL,2724712181,Publications,13,Five Years
+RANLP,1143871959,Publications,14,Five Years
+ICASSP,1121227772,Publications,15,Five Years
+SLATE,1199437547,Publications,16,Five Years
+IJCAI,1203999783,Publications,17,Five Years
+CoNLL,2724687765,Publications,18,Five Years
+CICLing,1126288421,Publications,19,Five Years
+NLDB,1128394114,Publications,20,Five Years
+WCLS,2754966267,Publications,21,Five Years
+CLEF,1156586875,Publications,22,Five Years
+JCLCS,2757804692,Publications,23,Five Years
+INLG,1166923268,Publications,24,Five Years
+COMMA,1200891582,Publications,25,Five Years
+ICLR,2584161585,Publications,26,Five Years
+PACLIC,2754041620,Publications,27,Five Years
+WWW,1135342153,Publications,28,Five Years
+UNLPBEA,2759993800,Publications,29,Five Years
+Resource Track - ICSC,2898613818,Publications,30,Five Years
+WSMT,2760662195,Publications,31,Five Years
+ICAI,2755283090,Publications,32,Five Years
+NLG,1163887669,Publications,33,Five Years
+CIT,1120281879,Publications,34,Five Years
+CLIN,1139922478,Publications,35,Five Years
+ICoICT,2735555832,Publications,36,Five Years
+ALRLIP,2754632699,Publications,37,Five Years
+ACC,1190039108,Publications,38,Five Years
+SOCO,1123077274,Publications,39,Five Years
+ICSC,2756369731,Publications,40,Five Years
+CIKM,1194094125,Publications,41,Five Years
+SIGIR,1140684652,Publications,42,Five Years
+ICAART,1200979010,Publications,43,Five Years
+Big Data,2623113034,Publications,44,Five Years
+INTERACT,1127419992,Publications,45,Five Years
+ISWC,1155608529,Publications,46,Five Years
+SLT,1196016004,Publications,47,Five Years
+PROPOR,2760054250,Publications,48,Five Years
+LAW,2758839271,Publications,49,Five Years
+BIOINFORMATICS,1199066382,Publications,50,Five Years
+FIRE,2626823158,Publications,51,Five Years
+CHI,1163450153,Publications,52,Five Years
+ICSE,1174403976,Publications,53,Five Years
+ICON,1174934631,Publications,54,Five Years
+KMIS,1158252963,Publications,55,Five Years
+LTC,2760407404,Publications,56,Five Years
+EDM,1193731136,Publications,57,Five Years
+SLE,1165606533,Publications,58,Five Years
+AIED,1172379331,Publications,59,Five Years
+ICNLP,2898139291,Publications,60,Five Years
+ICDAR,1150099070,Publications,61,Five Years
+CVPR,1158167855,Publications,62,Five Years
+AMTA,1167145961,Publications,63,Five Years
+NeurIPS,1127325140,Publications,64,Five Years
+O-COCOSDA/CASLRE,2756182441,Publications,65,Five Years
+APSIPA,2754583030,Publications,66,Five Years
+CI,1120693805,Publications,67,Five Years
+ICML,1180662882,Publications,68,Five Years
+BIBM,1156210184,Publications,69,Five Years
+MICAI,1121391727,Publications,70,Five Years
+AICCSA,1203219439,Publications,71,Five Years
+IIAIAAI,2754506284,Publications,72,Five Years
+CogInfoCom,2755063170,Publications,73,Five Years
+SMC,1170695740,Publications,74,Five Years
+FedCSIS,1185931494,Publications,75,Five Years
+MM,1135237122,Publications,76,Five Years
+SIU,2735422400,Publications,77,Five Years
+ISAI,2756058035,Publications,78,Five Years
+MOL,1156437979,Publications,79,Five Years
+AMIA,2757487807,Publications,80,Five Years
+ICALT,1177171125,Publications,81,Five Years
+SAC,2754781246,Publications,82,Five Years
+CICC,2755020506,Publications,83,Five Years
+LaTeCH,2757250901,Publications,84,Five Years
+CLOUD,1137657189,Publications,85,Five Years
+ECIR,1180513217,Publications,86,Five Years
+ICONIP,1183580825,Publications,87,Five Years
+ICTAI,1153494057,Publications,88,Five Years
+ICDM,1183478919,Publications,89,Five Years
+IJCNN,1140449422,Publications,90,Five Years
+ISCSLP,1191598575,Publications,91,Five Years
+FUZZ-IEEE,2606228224,Publications,92,Five Years
+KSE,1174168622,Publications,93,Five Years
+WI,1200067787,Publications,94,Five Years
+AINL,2898313343,Publications,95,Five Years
+ASRU,2606697348,Publications,96,Five Years
+AIMSA,1121493235,Publications,97,Five Years
+ICMLA,1138691947,Publications,98,Five Years
+ISMIR,1144674403,Publications,99,Five Years
+ICTer,2624615226,Publications,100,Five Years
+ACL,1188739475,H-Index,1,Five Years
+EMNLP,1192655580,H-Index,2,Five Years
+NAACL,1173951661,H-Index,3,Five Years
+IJCNLP,1126706392,H-Index,4,Five Years
+LREC,1164963593,H-Index,5,Five Years
+ICLR,2584161585,H-Index,6,Five Years
+COLING,1169674987,H-Index,7,Five Years
+AAAI,1184914352,H-Index,8,Five Years
+ICASSP,1121227772,H-Index,9,Five Years
+CoNLL,2724687765,H-Index,10,Five Years
+NeurIPS,1127325140,H-Index,11,Five Years
+EACL,1188587990,H-Index,12,Five Years
+INTERSPEECH,1177287137,H-Index,13,Five Years
+CVPR,1158167855,H-Index,14,Five Years
+SIGDIAL,2724712181,H-Index,15,Five Years
+ICML,1180662882,H-Index,16,Five Years
+JCLCS,2757804692,H-Index,17,Five Years
+IJCAI,1203999783,H-Index,18,Five Years
+ICCV,1164975091,H-Index,19,Five Years
+ICAI,2755283090,H-Index,20,Five Years
+CIKM,1194094125,H-Index,21,Five Years
+WSMT,2760662195,H-Index,22,Five Years
+CLEF,1156586875,H-Index,23,Five Years
+WWW,1135342153,H-Index,24,Five Years
+ICDAR,1150099070,H-Index,25,Five Years
+CHI,1163450153,H-Index,26,Five Years
+NLDB,1128394114,H-Index,27,Five Years
+SIGIR,1140684652,H-Index,28,Five Years
+RANLP,1143871959,H-Index,29,Five Years
+SLT,1196016004,H-Index,30,Five Years
+CICLing,1126288421,H-Index,31,Five Years
+ISWC,1155608529,H-Index,32,Five Years
+ASRU,2606697348,H-Index,33,Five Years
+LAW,2758839271,H-Index,34,Five Years
+UNLPBEA,2759993800,H-Index,35,Five Years
+TSD,1142381819,H-Index,36,Five Years
+COMMA,1200891582,H-Index,37,Five Years
+CACS,2756868253,H-Index,38,Five Years
+VSRNLP,2757454588,H-Index,39,Five Years
+WSDM,1120384002,H-Index,40,Five Years
+ECCV,1124077590,H-Index,41,Five Years
+NLG,1163887669,H-Index,42,Five Years
+ICRA,1163902177,H-Index,43,Five Years
+SLE,1165606533,H-Index,44,Five Years
+ICSE,1174403976,H-Index,45,Five Years
+EDM,1193731136,H-Index,46,Five Years
+FLAIRS,1194143745,H-Index,47,Five Years
+ASIST,2537396833,H-Index,48,Five Years
+AMIA,2757487807,H-Index,49,Five Years
+SOCO,1123077274,H-Index,50,Five Years
+HRI,1129075963,H-Index,51,Five Years
+KDD,1130985203,H-Index,52,Five Years
+MM,1135237122,H-Index,53,Five Years
+IJCNN,1140449422,H-Index,54,Five Years
+IALP,1145175409,H-Index,55,Five Years
+IVA,1151209843,H-Index,56,Five Years
+INLG,1166923268,H-Index,57,Five Years
+ICDKE,1168542559,H-Index,58,Five Years
+SMC,1170695740,H-Index,59,Five Years
+AIED,1172379331,H-Index,60,Five Years
+ESWC,1180003657,H-Index,61,Five Years
+ECIR,1180513217,H-Index,62,Five Years
+DSS,1182309694,H-Index,63,Five Years
+SLATE,1199437547,H-Index,64,Five Years
+FSE,1199533187,H-Index,65,Five Years
+Big Data,2623113034,H-Index,66,Five Years
+CI,1120693805,H-Index,67,Five Years
+SIGCSE,1124504716,H-Index,68,Five Years
+ICWSM,1124713781,H-Index,69,Five Years
+ICC,1130451194,H-Index,70,Five Years
+ICMI,1131590914,H-Index,71,Five Years
+CLIN,1139922478,H-Index,72,Five Years
+IROS,1143279144,H-Index,73,Five Years
+ISMIR,1144674403,H-Index,74,Five Years
+DAS,1154283601,H-Index,75,Five Years
+ICFHR,1161412788,H-Index,76,Five Years
+ECAI,1162831978,H-Index,77,Five Years
+HICSS,1164519180,H-Index,78,Five Years
+ASE,1166511975,H-Index,79,Five Years
+AAMAS,1168671587,H-Index,80,Five Years
+ACII,1171689754,H-Index,81,Five Years
+ASSETS,1175428454,H-Index,82,Five Years
+ACC,1190039108,H-Index,83,Five Years
+SPLC,1190643002,H-Index,84,Five Years
+ITS,2607379586,H-Index,85,Five Years
+LAK,2626590808,H-Index,86,Five Years
+ICoICT,2735555832,H-Index,87,Five Years
+PACLIC,2754041620,H-Index,88,Five Years
+SANER,2754456056,H-Index,89,Five Years
+APSIPA,2754583030,H-Index,90,Five Years
+ALRLIP,2754632699,H-Index,91,Five Years
+CogInfoCom,2755063170,H-Index,92,Five Years
+ICCSIT,2755549812,H-Index,93,Five Years
+ICSC,2756369731,H-Index,94,Five Years
+Resource Track - ICSC,2898613818,H-Index,95,Five Years
+AKBC,2942832808,H-Index,96,Five Years
+CIT,1120281879,H-Index,97,Five Years
+MICAI,1121391727,H-Index,98,Five Years
+INTERACT,1127419992,H-Index,99,Five Years
+VLDB,1133523790,H-Index,100,Five Years
+ACL,1188739475,Saliency,1,Ten Years
+EMNLP,1192655580,Saliency,2,Ten Years
+NAACL,1173951661,Saliency,3,Ten Years
+LREC,1164963593,Saliency,4,Ten Years
+COLING,1169674987,Saliency,5,Ten Years
+ICLR,2584161585,Saliency,6,Ten Years
+IJCNLP,1126706392,Saliency,7,Ten Years
+NeurIPS,1127325140,Saliency,8,Ten Years
+INTERSPEECH,1177287137,Saliency,9,Ten Years
+AAAI,1184914352,Saliency,10,Ten Years
+ICML,1180662882,Saliency,11,Ten Years
+EACL,1188587990,Saliency,12,Ten Years
+CoNLL,2724687765,Saliency,13,Ten Years
+ICASSP,1121227772,Saliency,14,Ten Years
+CVPR,1158167855,Saliency,15,Ten Years
+SIGDIAL,2724712181,Saliency,16,Ten Years
+WSMT,2760662195,Saliency,17,Ten Years
+CLEF,1156586875,Saliency,18,Ten Years
+IJCAI,1203999783,Saliency,19,Ten Years
+CIKM,1194094125,Saliency,20,Ten Years
+FLAIRS,1194143745,Saliency,21,Ten Years
+JCLCS,2757804692,Saliency,22,Ten Years
+ASRU,2606697348,Saliency,23,Ten Years
+WWW,1135342153,Saliency,24,Ten Years
+TSD,1142381819,Saliency,25,Ten Years
+RANLP,1143871959,Saliency,26,Ten Years
+ICCV,1164975091,Saliency,27,Ten Years
+AMIA,2757487807,Saliency,28,Ten Years
+IALP,1145175409,Saliency,29,Ten Years
+COMMA,1200891582,Saliency,30,Ten Years
+ICNLP,2898139291,Saliency,31,Ten Years
+CHI,1163450153,Saliency,32,Ten Years
+LAW,2758839271,Saliency,33,Ten Years
+SLT,1196016004,Saliency,34,Ten Years
+WSDM,1120384002,Saliency,35,Ten Years
+ISWC,1155608529,Saliency,36,Ten Years
+NLDB,1128394114,Saliency,37,Ten Years
+UNLPBEA,2759993800,Saliency,38,Ten Years
+SLATE,1199437547,Saliency,39,Ten Years
+SIGIR,1140684652,Saliency,40,Ten Years
+SLE,1165606533,Saliency,41,Ten Years
+NLG,1163887669,Saliency,42,Ten Years
+Resource Track - ICSC,2898613818,Saliency,43,Ten Years
+ICDAR,1150099070,Saliency,44,Ten Years
+INLG,1166923268,Saliency,45,Ten Years
+PACLIC,2754041620,Saliency,46,Ten Years
+ICAI,2755283090,Saliency,47,Ten Years
+CICLing,1126288421,Saliency,48,Ten Years
+ICSE,1174403976,Saliency,49,Ten Years
+SMC,1170695740,Saliency,50,Ten Years
+AIED,1172379331,Saliency,51,Ten Years
+CI,1120693805,Saliency,52,Ten Years
+ICWSM,1124713781,Saliency,53,Ten Years
+KDD,1130985203,Saliency,54,Ten Years
+LTC,2760407404,Saliency,55,Ten Years
+ESWC,1180003657,Saliency,56,Ten Years
+EDM,1193731136,Saliency,57,Ten Years
+WI,1200067787,Saliency,58,Ten Years
+MM,1135237122,Saliency,59,Ten Years
+ICMI,1131590914,Saliency,60,Ten Years
+SAC,2754781246,Saliency,61,Ten Years
+PROPOR,2760054250,Saliency,62,Ten Years
+ECIR,1180513217,Saliency,63,Ten Years
+ICRA,1163902177,Saliency,64,Ten Years
+APSIPA,2754583030,Saliency,65,Ten Years
+ECAI,1162831978,Saliency,66,Ten Years
+HRI,1129075963,Saliency,67,Ten Years
+ICDM,1183478919,Saliency,68,Ten Years
+IWPT,1132363081,Saliency,69,Ten Years
+IMCSIT,1131086423,Saliency,70,Ten Years
+CLIN,1139922478,Saliency,71,Ten Years
+ACII,1171689754,Saliency,72,Ten Years
+RSS,2606075370,Saliency,73,Ten Years
+ISMIR,1144674403,Saliency,74,Ten Years
+ICFHR,1161412788,Saliency,75,Ten Years
+IUI,1170221290,Saliency,76,Ten Years
+SOCO,1123077274,Saliency,77,Ten Years
+WCLS,2754966267,Saliency,78,Ten Years
+CNL,2756714439,Saliency,79,Ten Years
+ICDKE,1168542559,Saliency,80,Ten Years
+ACC,1190039108,Saliency,81,Ten Years
+AMTA,1167145961,Saliency,82,Ten Years
+IVA,1151209843,Saliency,83,Ten Years
+ICGI,1130809216,Saliency,84,Ten Years
+ITS,2607379586,Saliency,85,Ten Years
+MICAI,1121391727,Saliency,86,Ten Years
+MoDELS,1191550517,Saliency,87,Ten Years
+ECML,2755314191,Saliency,88,Ten Years
+FUZZ-IEEE,2606228224,Saliency,89,Ten Years
+DSS,1182309694,Saliency,90,Ten Years
+CACS,2756868253,Saliency,91,Ten Years
+VSRNLP,2757454588,Saliency,92,Ten Years
+ICAART,1200979010,Saliency,93,Ten Years
+ICALT,1177171125,Saliency,94,Ten Years
+OOPSLA,1138732554,Saliency,95,Ten Years
+Big Data,2623113034,Saliency,96,Ten Years
+ESWC,2755653720,Saliency,97,Ten Years
+ICSC,2756369731,Saliency,98,Ten Years
+IJCNN,1140449422,Saliency,99,Ten Years
+ALRLIP,2754632699,Saliency,100,Ten Years
+NeurIPS,1127325140,Prestige,1,Ten Years
+ICLR,2584161585,Prestige,2,Ten Years
+ICML,1180662882,Prestige,3,Ten Years
+CVPR,1158167855,Prestige,4,Ten Years
+ICCV,1164975091,Prestige,5,Ten Years
+RSS,2606075370,Prestige,6,Ten Years
+WSDM,1120384002,Prestige,7,Ten Years
+ASRU,2606697348,Prestige,8,Ten Years
+EMNLP,1192655580,Prestige,9,Ten Years
+ICWSM,1124713781,Prestige,10,Ten Years
+DSS,1182309694,Prestige,11,Ten Years
+CoNLL,2724687765,Prestige,12,Ten Years
+ACL,1188739475,Prestige,13,Ten Years
+CIKM,1194094125,Prestige,14,Ten Years
+KDD,1130985203,Prestige,15,Ten Years
+ESWC,2755653720,Prestige,16,Ten Years
+ICASSP,1121227772,Prestige,17,Ten Years
+CHI,1163450153,Prestige,18,Ten Years
+IJCNLP,1126706392,Prestige,19,Ten Years
+WWW,1135342153,Prestige,20,Ten Years
+WSMT,2760662195,Prestige,21,Ten Years
+ESWC,1180003657,Prestige,22,Ten Years
+ICRA,1163902177,Prestige,23,Ten Years
+ECML,2755314191,Prestige,24,Ten Years
+CACS,2756868253,Prestige,25,Ten Years
+NAACL,1173951661,Prestige,26,Ten Years
+ICDKE,1168542559,Prestige,27,Ten Years
+VSRNLP,2757454588,Prestige,28,Ten Years
+AAAI,1184914352,Prestige,29,Ten Years
+HRI,1129075963,Prestige,30,Ten Years
+AMIA,2757487807,Prestige,31,Ten Years
+JCLCS,2757804692,Prestige,32,Ten Years
+ICDAR,1150099070,Prestige,33,Ten Years
+ISWC,1155608529,Prestige,34,Ten Years
+ACII,1171689754,Prestige,35,Ten Years
+EACL,1188587990,Prestige,36,Ten Years
+IJCAI,1203999783,Prestige,37,Ten Years
+SIGDIAL,2724712181,Prestige,38,Ten Years
+ICMI,1131590914,Prestige,39,Ten Years
+MM,1135237122,Prestige,40,Ten Years
+OOPSLA,1138732554,Prestige,41,Ten Years
+MoDELS,1191550517,Prestige,42,Ten Years
+SLT,1196016004,Prestige,43,Ten Years
+ICSE,1174403976,Prestige,44,Ten Years
+SIGIR,1140684652,Prestige,45,Ten Years
+ECAI,1162831978,Prestige,46,Ten Years
+ISMIR,1144674403,Prestige,47,Ten Years
+SMC,1170695740,Prestige,48,Ten Years
+LAW,2758839271,Prestige,49,Ten Years
+IUI,1170221290,Prestige,50,Ten Years
+ICDM,1183478919,Prestige,51,Ten Years
+SLE,1165606533,Prestige,52,Ten Years
+EDM,1193731136,Prestige,53,Ten Years
+ICFHR,1161412788,Prestige,54,Ten Years
+ECIR,1180513217,Prestige,55,Ten Years
+INTERSPEECH,1177287137,Prestige,56,Ten Years
+UNLPBEA,2759993800,Prestige,57,Ten Years
+LREC,1164963593,Prestige,58,Ten Years
+COLING,1169674987,Prestige,59,Ten Years
+IVA,1151209843,Prestige,60,Ten Years
+CI,1120693805,Prestige,61,Ten Years
+SAC,2754781246,Prestige,62,Ten Years
+APSIPA,2754583030,Prestige,63,Ten Years
+AIED,1172379331,Prestige,64,Ten Years
+CLEF,1156586875,Prestige,65,Ten Years
+CNL,2756714439,Prestige,66,Ten Years
+ICAI,2755283090,Prestige,67,Ten Years
+COMMA,1200891582,Prestige,68,Ten Years
+ITS,2607379586,Prestige,69,Ten Years
+IJCNN,1140449422,Prestige,70,Ten Years
+NLG,1163887669,Prestige,71,Ten Years
+Resource Track - ICSC,2898613818,Prestige,72,Ten Years
+AMTA,1167145961,Prestige,73,Ten Years
+WI,1200067787,Prestige,74,Ten Years
+FUZZ-IEEE,2606228224,Prestige,75,Ten Years
+IWPT,1132363081,Prestige,76,Ten Years
+ICNLP,2898139291,Prestige,77,Ten Years
+Big Data,2623113034,Prestige,78,Ten Years
+INLG,1166923268,Prestige,79,Ten Years
+MICAI,1121391727,Prestige,80,Ten Years
+RANLP,1143871959,Prestige,81,Ten Years
+NLDB,1128394114,Prestige,82,Ten Years
+PROPOR,2760054250,Prestige,83,Ten Years
+IMCSIT,1131086423,Prestige,84,Ten Years
+CICLing,1126288421,Prestige,85,Ten Years
+ACC,1190039108,Prestige,86,Ten Years
+ICSC,2756369731,Prestige,87,Ten Years
+CLIN,1139922478,Prestige,88,Ten Years
+ALRLIP,2754632699,Prestige,89,Ten Years
+SLATE,1199437547,Prestige,90,Ten Years
+TSD,1142381819,Prestige,91,Ten Years
+FLAIRS,1194143745,Prestige,92,Ten Years
+SOCO,1123077274,Prestige,93,Ten Years
+LTC,2760407404,Prestige,94,Ten Years
+ICALT,1177171125,Prestige,95,Ten Years
+PACLIC,2754041620,Prestige,96,Ten Years
+IALP,1145175409,Prestige,97,Ten Years
+ICAART,1200979010,Prestige,98,Ten Years
+WCLS,2754966267,Prestige,99,Ten Years
+ICGI,1130809216,Prestige,100,Ten Years
+ACL,1188739475,Citations*,1,Ten Years
+EMNLP,1192655580,Citations*,2,Ten Years
+NAACL,1173951661,Citations*,3,Ten Years
+LREC,1164963593,Citations*,4,Ten Years
+COLING,1169674987,Citations*,5,Ten Years
+NeurIPS,1127325140,Citations*,6,Ten Years
+ICLR,2584161585,Citations*,7,Ten Years
+IJCNLP,1126706392,Citations*,8,Ten Years
+ICML,1180662882,Citations*,9,Ten Years
+CoNLL,2724687765,Citations*,10,Ten Years
+INTERSPEECH,1177287137,Citations*,11,Ten Years
+AAAI,1184914352,Citations*,12,Ten Years
+CVPR,1158167855,Citations*,13,Ten Years
+EACL,1188587990,Citations*,14,Ten Years
+ICASSP,1121227772,Citations*,15,Ten Years
+WSMT,2760662195,Citations*,16,Ten Years
+SIGDIAL,2724712181,Citations*,17,Ten Years
+CIKM,1194094125,Citations*,18,Ten Years
+CLEF,1156586875,Citations*,19,Ten Years
+ASRU,2606697348,Citations*,20,Ten Years
+JCLCS,2757804692,Citations*,21,Ten Years
+IJCAI,1203999783,Citations*,22,Ten Years
+WWW,1135342153,Citations*,23,Ten Years
+ICCV,1164975091,Citations*,24,Ten Years
+WSDM,1120384002,Citations*,25,Ten Years
+RANLP,1143871959,Citations*,26,Ten Years
+AMIA,2757487807,Citations*,27,Ten Years
+LAW,2758839271,Citations*,28,Ten Years
+FLAIRS,1194143745,Citations*,29,Ten Years
+SLE,1165606533,Citations*,30,Ten Years
+COMMA,1200891582,Citations*,31,Ten Years
+ICNLP,2898139291,Citations*,32,Ten Years
+ICDAR,1150099070,Citations*,33,Ten Years
+TSD,1142381819,Citations*,34,Ten Years
+ISWC,1155608529,Citations*,35,Ten Years
+CHI,1163450153,Citations*,36,Ten Years
+NLG,1163887669,Citations*,37,Ten Years
+SLT,1196016004,Citations*,38,Ten Years
+SIGIR,1140684652,Citations*,39,Ten Years
+UNLPBEA,2759993800,Citations*,40,Ten Years
+NLDB,1128394114,Citations*,41,Ten Years
+ICSE,1174403976,Citations*,42,Ten Years
+ICAI,2755283090,Citations*,43,Ten Years
+ICWSM,1124713781,Citations*,44,Ten Years
+CI,1120693805,Citations*,45,Ten Years
+INLG,1166923268,Citations*,46,Ten Years
+SAC,2754781246,Citations*,47,Ten Years
+Resource Track - ICSC,2898613818,Citations*,48,Ten Years
+DSS,1182309694,Citations*,49,Ten Years
+AIED,1172379331,Citations*,50,Ten Years
+SMC,1170695740,Citations*,51,Ten Years
+KDD,1130985203,Citations*,52,Ten Years
+ESWC,1180003657,Citations*,53,Ten Years
+ECAI,1162831978,Citations*,54,Ten Years
+ICDKE,1168542559,Citations*,55,Ten Years
+PACLIC,2754041620,Citations*,56,Ten Years
+IALP,1145175409,Citations*,57,Ten Years
+HRI,1129075963,Citations*,58,Ten Years
+ICMI,1131590914,Citations*,59,Ten Years
+SLATE,1199437547,Citations*,60,Ten Years
+IWPT,1132363081,Citations*,61,Ten Years
+ACII,1171689754,Citations*,62,Ten Years
+EC,1174915412,Citations*,63,Ten Years
+ICRA,1163902177,Citations*,64,Ten Years
+ILP,1200006883,Citations*,65,Ten Years
+ECIR,1180513217,Citations*,66,Ten Years
+CICLing,1126288421,Citations*,67,Ten Years
+WI,1200067787,Citations*,68,Ten Years
+PROPOR,2760054250,Citations*,69,Ten Years
+ICDM,1183478919,Citations*,70,Ten Years
+MM,1135237122,Citations*,71,Ten Years
+CNL,2756714439,Citations*,72,Ten Years
+IVA,1151209843,Citations*,73,Ten Years
+MoDELS,1191550517,Citations*,74,Ten Years
+EDM,1193731136,Citations*,75,Ten Years
+LTC,2760407404,Citations*,76,Ten Years
+ECML,2755314191,Citations*,77,Ten Years
+ISMIR,1144674403,Citations*,78,Ten Years
+ICPC,1159024683,Citations*,79,Ten Years
+ICDE,1163988186,Citations*,80,Ten Years
+APSIPA,2754583030,Citations*,81,Ten Years
+OOPSLA,1138732554,Citations*,82,Ten Years
+KR,1155137614,Citations*,83,Ten Years
+ICAIL,1140656204,Citations*,84,Ten Years
+IMCSIT,1131086423,Citations*,85,Ten Years
+ITS,2607379586,Citations*,86,Ten Years
+ESWC,2755653720,Citations*,87,Ten Years
+EKAW,1148330047,Citations*,88,Ten Years
+ICME,1126322613,Citations*,89,Ten Years
+MICAI,1121391727,Citations*,90,Ten Years
+ICFHR,1161412788,Citations*,91,Ten Years
+FSE,1199533187,Citations*,92,Ten Years
+SPLC,1190643002,Citations*,93,Ten Years
+ICGI,1130809216,Citations*,94,Ten Years
+BMVC,1198654179,Citations*,95,Ten Years
+UAI,1204606053,Citations*,96,Ten Years
+AISTATS,2622962978,Citations*,97,Ten Years
+FUZZ-IEEE,2606228224,Citations*,98,Ten Years
+ECMDA,2755158973,Citations*,99,Ten Years
+CACS,2756868253,Citations*,100,Ten Years
+LREC,1164963593,Publications,1,Ten Years
+ACL,1188739475,Publications,2,Ten Years
+COLING,1169674987,Publications,3,Ten Years
+NAACL,1173951661,Publications,4,Ten Years
+EMNLP,1192655580,Publications,5,Ten Years
+INTERSPEECH,1177287137,Publications,6,Ten Years
+IJCNLP,1126706392,Publications,7,Ten Years
+FLAIRS,1194143745,Publications,8,Ten Years
+AAAI,1184914352,Publications,9,Ten Years
+EACL,1188587990,Publications,10,Ten Years
+IALP,1145175409,Publications,11,Ten Years
+TSD,1142381819,Publications,12,Ten Years
+SIGDIAL,2724712181,Publications,13,Ten Years
+CLEF,1156586875,Publications,14,Ten Years
+RANLP,1143871959,Publications,15,Ten Years
+ICASSP,1121227772,Publications,16,Ten Years
+CoNLL,2724687765,Publications,17,Ten Years
+PACLIC,2754041620,Publications,18,Ten Years
+SLATE,1199437547,Publications,19,Ten Years
+NLDB,1128394114,Publications,20,Ten Years
+ICNLP,2898139291,Publications,21,Ten Years
+IJCAI,1203999783,Publications,22,Ten Years
+COMMA,1200891582,Publications,23,Ten Years
+WSMT,2760662195,Publications,24,Ten Years
+INLG,1166923268,Publications,25,Ten Years
+JCLCS,2757804692,Publications,26,Ten Years
+WCLS,2754966267,Publications,27,Ten Years
+CICLing,1126288421,Publications,28,Ten Years
+ICGI,1130809216,Publications,29,Ten Years
+NLG,1163887669,Publications,30,Ten Years
+Resource Track - ICSC,2898613818,Publications,31,Ten Years
+LTC,2760407404,Publications,32,Ten Years
+LAW,2758839271,Publications,33,Ten Years
+CIKM,1194094125,Publications,34,Ten Years
+AMIA,2757487807,Publications,35,Ten Years
+UNLPBEA,2759993800,Publications,36,Ten Years
+SLT,1196016004,Publications,37,Ten Years
+WWW,1135342153,Publications,38,Ten Years
+ICAI,2755283090,Publications,39,Ten Years
+PROPOR,2760054250,Publications,40,Ten Years
+SLE,1165606533,Publications,41,Ten Years
+ICLR,2584161585,Publications,42,Ten Years
+CLIN,1139922478,Publications,43,Ten Years
+ICAART,1200979010,Publications,44,Ten Years
+SOCO,1123077274,Publications,45,Ten Years
+SIGIR,1140684652,Publications,46,Ten Years
+ISWC,1155608529,Publications,47,Ten Years
+CIT,1120281879,Publications,48,Ten Years
+INTERACT,1127419992,Publications,49,Ten Years
+IMCSIT,1131086423,Publications,50,Ten Years
+WI,1200067787,Publications,51,Ten Years
+ACC,1190039108,Publications,52,Ten Years
+AIED,1172379331,Publications,53,Ten Years
+ICALT,1177171125,Publications,54,Ten Years
+BIOINFORMATICS,1199066382,Publications,55,Ten Years
+CHI,1163450153,Publications,56,Ten Years
+IWPT,1132363081,Publications,57,Ten Years
+CI,1120693805,Publications,58,Ten Years
+ICDAR,1150099070,Publications,59,Ten Years
+ICoICT,2735555832,Publications,60,Ten Years
+ICSE,1174403976,Publications,61,Ten Years
+SMC,1170695740,Publications,62,Ten Years
+MICAI,1121391727,Publications,63,Ten Years
+ALRLIP,2754632699,Publications,64,Ten Years
+ICSC,2756369731,Publications,65,Ten Years
+FSMNLP,1189274801,Publications,66,Ten Years
+ISCSLP,1191598575,Publications,67,Ten Years
+SAC,2754781246,Publications,68,Ten Years
+IUCS,2624595023,Publications,69,Ten Years
+EDM,1193731136,Publications,70,Ten Years
+Big Data,2623113034,Publications,71,Ten Years
+AMTA,1167145961,Publications,72,Ten Years
+KMIS,1158252963,Publications,73,Ten Years
+ICMLC,1120608147,Publications,74,Ten Years
+FSKD,1181068974,Publications,75,Ten Years
+APSIPA,2754583030,Publications,76,Ten Years
+ICML,1180662882,Publications,77,Ten Years
+FUZZ-IEEE,2606228224,Publications,78,Ten Years
+ASRU,2606697348,Publications,79,Ten Years
+NeurIPS,1127325140,Publications,80,Ten Years
+FIRE,2626823158,Publications,81,Ten Years
+SIU,2735422400,Publications,82,Ten Years
+CVPR,1158167855,Publications,83,Ten Years
+ECIR,1180513217,Publications,84,Ten Years
+ITS,2607379586,Publications,85,Ten Years
+ICON,1174934631,Publications,86,Ten Years
+FedCSIS,1185931494,Publications,87,Ten Years
+CogInfoCom,2755063170,Publications,88,Ten Years
+CNL,2756714439,Publications,89,Ten Years
+MM,1135237122,Publications,90,Ten Years
+ISAI,2756058035,Publications,91,Ten Years
+ICTAI,1153494057,Publications,92,Ten Years
+CLOUD,1137657189,Publications,93,Ten Years
+BIBM,1156210184,Publications,94,Ten Years
+ICDM,1183478919,Publications,95,Ten Years
+ICMI,1131590914,Publications,96,Ten Years
+AIMSA,1121493235,Publications,97,Ten Years
+IJCNN,1140449422,Publications,98,Ten Years
+ECAI,1162831978,Publications,99,Ten Years
+ICIC,1134271186,Publications,100,Ten Years
+ACL,1188739475,H-Index,1,Ten Years
+EMNLP,1192655580,H-Index,2,Ten Years
+NAACL,1173951661,H-Index,3,Ten Years
+LREC,1164963593,H-Index,4,Ten Years
+COLING,1169674987,H-Index,5,Ten Years
+IJCNLP,1126706392,H-Index,6,Ten Years
+AAAI,1184914352,H-Index,7,Ten Years
+EACL,1188587990,H-Index,8,Ten Years
+ICLR,2584161585,H-Index,9,Ten Years
+CoNLL,2724687765,H-Index,10,Ten Years
+INTERSPEECH,1177287137,H-Index,11,Ten Years
+ICASSP,1121227772,H-Index,12,Ten Years
+SIGDIAL,2724712181,H-Index,13,Ten Years
+WSMT,2760662195,H-Index,14,Ten Years
+CLEF,1156586875,H-Index,15,Ten Years
+NeurIPS,1127325140,H-Index,16,Ten Years
+IJCAI,1203999783,H-Index,17,Ten Years
+CVPR,1158167855,H-Index,18,Ten Years
+CIKM,1194094125,H-Index,19,Ten Years
+JCLCS,2757804692,H-Index,20,Ten Years
+ICML,1180662882,H-Index,21,Ten Years
+SLE,1165606533,H-Index,22,Ten Years
+AMIA,2757487807,H-Index,23,Ten Years
+LAW,2758839271,H-Index,24,Ten Years
+WWW,1135342153,H-Index,25,Ten Years
+RANLP,1143871959,H-Index,26,Ten Years
+ISWC,1155608529,H-Index,27,Ten Years
+CHI,1163450153,H-Index,28,Ten Years
+COMMA,1200891582,H-Index,29,Ten Years
+ICDAR,1150099070,H-Index,30,Ten Years
+FLAIRS,1194143745,H-Index,31,Ten Years
+SLT,1196016004,H-Index,32,Ten Years
+NLDB,1128394114,H-Index,33,Ten Years
+SIGIR,1140684652,H-Index,34,Ten Years
+NLG,1163887669,H-Index,35,Ten Years
+ICCV,1164975091,H-Index,36,Ten Years
+ICAI,2755283090,H-Index,37,Ten Years
+ICNLP,2898139291,H-Index,38,Ten Years
+TSD,1142381819,H-Index,39,Ten Years
+INLG,1166923268,H-Index,40,Ten Years
+UNLPBEA,2759993800,H-Index,41,Ten Years
+Resource Track - ICSC,2898613818,H-Index,42,Ten Years
+ICMI,1131590914,H-Index,43,Ten Years
+IWPT,1132363081,H-Index,44,Ten Years
+IVA,1151209843,H-Index,45,Ten Years
+ECAI,1162831978,H-Index,46,Ten Years
+MoDELS,1191550517,H-Index,47,Ten Years
+ASRU,2606697348,H-Index,48,Ten Years
+WSDM,1120384002,H-Index,49,Ten Years
+ICWSM,1124713781,H-Index,50,Ten Years
+KDD,1130985203,H-Index,51,Ten Years
+ICRA,1163902177,H-Index,52,Ten Years
+AIED,1172379331,H-Index,53,Ten Years
+ICSE,1174403976,H-Index,54,Ten Years
+ESWC,1180003657,H-Index,55,Ten Years
+EDM,1193731136,H-Index,56,Ten Years
+CNL,2756714439,H-Index,57,Ten Years
+MM,1135237122,H-Index,58,Ten Years
+ICFHR,1161412788,H-Index,59,Ten Years
+IUI,1170221290,H-Index,60,Ten Years
+SMC,1170695740,H-Index,61,Ten Years
+ECIR,1180513217,H-Index,62,Ten Years
+DSS,1182309694,H-Index,63,Ten Years
+SLATE,1199437547,H-Index,64,Ten Years
+WI,1200067787,H-Index,65,Ten Years
+ITS,2607379586,H-Index,66,Ten Years
+PROPOR,2760054250,H-Index,67,Ten Years
+IMCSIT,1131086423,H-Index,68,Ten Years
+ICDKE,1168542559,H-Index,69,Ten Years
+PACLIC,2754041620,H-Index,70,Ten Years
+SAC,2754781246,H-Index,71,Ten Years
+LTC,2760407404,H-Index,72,Ten Years
+MICAI,1121391727,H-Index,73,Ten Years
+CICLing,1126288421,H-Index,74,Ten Years
+HRI,1129075963,H-Index,75,Ten Years
+OOPSLA,1138732554,H-Index,76,Ten Years
+ICAIL,1140656204,H-Index,77,Ten Years
+ISMIR,1144674403,H-Index,78,Ten Years
+IALP,1145175409,H-Index,79,Ten Years
+ICPC,1159024683,H-Index,80,Ten Years
+ACII,1171689754,H-Index,81,Ten Years
+ASSETS,1175428454,H-Index,82,Ten Years
+ER,1176514135,H-Index,83,Ten Years
+ICDM,1183478919,H-Index,84,Ten Years
+FUZZ-IEEE,2606228224,H-Index,85,Ten Years
+SOCO,1123077274,H-Index,86,Ten Years
+SIGCSE,1124504716,H-Index,87,Ten Years
+LACL,1136791909,H-Index,88,Ten Years
+IROS,1143279144,H-Index,89,Ten Years
+EKAW,1148330047,H-Index,90,Ten Years
+DAS,1154283601,H-Index,91,Ten Years
+KR,1155137614,H-Index,92,Ten Years
+AMTA,1167145961,H-Index,93,Ten Years
+AAMAS,1168671587,H-Index,94,Ten Years
+ICALT,1177171125,H-Index,95,Ten Years
+RE,2606605052,H-Index,96,Ten Years
+VL/HCC,2623670289,H-Index,97,Ten Years
+ECML,2755314191,H-Index,98,Ten Years
+CACS,2756868253,H-Index,99,Ten Years
+AND,2757391641,H-Index,100,Ten Years
+ACL,1188739475,Saliency,1,All
+EMNLP,1192655580,Saliency,2,All
+NAACL,1173951661,Saliency,3,All
+LREC,1164963593,Saliency,4,All
+COLING,1169674987,Saliency,5,All
+INTERSPEECH,1177287137,Saliency,6,All
+IJCNLP,1126706392,Saliency,7,All
+ICLR,2584161585,Saliency,8,All
+NeurIPS,1127325140,Saliency,9,All
+AAAI,1184914352,Saliency,10,All
+ICASSP,1121227772,Saliency,11,All
+EACL,1188587990,Saliency,12,All
+CoNLL,2724687765,Saliency,13,All
+ICML,1180662882,Saliency,14,All
+IJCAI,1203999783,Saliency,15,All
+CLEF,1156586875,Saliency,16,All
+SIGDIAL,2724712181,Saliency,17,All
+SIGIR,1140684652,Saliency,18,All
+CVPR,1158167855,Saliency,19,All
+WSMT,2760662195,Saliency,20,All
+AMIA,2757487807,Saliency,21,All
+TSD,1142381819,Saliency,22,All
+FLAIRS,1194143745,Saliency,23,All
+CIKM,1194094125,Saliency,24,All
+WWW,1135342153,Saliency,25,All
+HLT,2532822031,Saliency,26,All
+ASRU,2606697348,Saliency,27,All
+ANLP,2756391745,Saliency,28,All
+ICNLP,2898139291,Saliency,29,All
+RANLP,1143871959,Saliency,30,All
+CHI,1163450153,Saliency,31,All
+JCLCS,2757804692,Saliency,32,All
+ISWC,1155608529,Saliency,33,All
+AMTA,1167145961,Saliency,34,All
+ICDAR,1150099070,Saliency,35,All
+NLG,1163887669,Saliency,36,All
+NLDB,1128394114,Saliency,37,All
+SMC,1170695740,Saliency,38,All
+ICCV,1164975091,Saliency,39,All
+INLG,1166923268,Saliency,40,All
+HLTR,2754870155,Saliency,41,All
+LTC,2760407404,Saliency,42,All
+LAW,2758839271,Saliency,43,All
+IALP,1145175409,Saliency,44,All
+COMMA,1200891582,Saliency,45,All
+SLT,1196016004,Saliency,46,All
+IWPT,1132363081,Saliency,47,All
+TREC,2534788800,Saliency,48,All
+ISMIR,1144674403,Saliency,49,All
+SLATE,1199437547,Saliency,50,All
+WSDM,1120384002,Saliency,51,All
+IUI,1170221290,Saliency,52,All
+KDD,1130985203,Saliency,53,All
+AAMAS,1168671587,Saliency,54,All
+UNLPBEA,2759993800,Saliency,55,All
+PACLIC,2754041620,Saliency,56,All
+CICLing,1126288421,Saliency,57,All
+SLP,2755183362,Saliency,58,All
+ECAI,1162831978,Saliency,59,All
+AIED,1172379331,Saliency,60,All
+CI,1120693805,Saliency,61,All
+SLE,1165606533,Saliency,62,All
+ICDM,1183478919,Saliency,63,All
+ICSE,1174403976,Saliency,64,All
+EKAW,1148330047,Saliency,65,All
+Resource Track - ICSC,2898613818,Saliency,66,All
+ICMI,1131590914,Saliency,67,All
+ICDKE,1168542559,Saliency,68,All
+ICAI,2755283090,Saliency,69,All
+KR,1155137614,Saliency,70,All
+OOPSLA,1138732554,Saliency,71,All
+ESWC,1180003657,Saliency,72,All
+SAC,2754781246,Saliency,73,All
+CLIN,1139922478,Saliency,74,All
+ECIR,1180513217,Saliency,75,All
+WI,1200067787,Saliency,76,All
+ICGI,1130809216,Saliency,77,All
+PROPOR,2760054250,Saliency,78,All
+MM,1135237122,Saliency,79,All
+ICWSM,1124713781,Saliency,80,All
+ICCS,1137878512,Saliency,81,All
+ICFHR,1161412788,Saliency,82,All
+ITS,2607379586,Saliency,83,All
+ICALT,1177171125,Saliency,84,All
+ACII,1171689754,Saliency,85,All
+SIGCSE,1124504716,Saliency,86,All
+ICTAI,1153494057,Saliency,87,All
+IVA,1151209843,Saliency,88,All
+K-CAP,1166500626,Saliency,89,All
+ECML,2755314191,Saliency,90,All
+EDM,1193731136,Saliency,91,All
+INTERACT,1127419992,Saliency,92,All
+SIGMOD,1175089206,Saliency,93,All
+HRI,1129075963,Saliency,94,All
+MICAI,1121391727,Saliency,95,All
+HICSS,1164519180,Saliency,96,All
+CIT,1120281879,Saliency,97,All
+LACL,1136791909,Saliency,98,All
+ICAIL,1140656204,Saliency,99,All
+SOCO,1123077274,Saliency,100,All
+NeurIPS,1127325140,Prestige,1,All
+ICLR,2584161585,Prestige,2,All
+CVPR,1158167855,Prestige,3,All
+ICCV,1164975091,Prestige,4,All
+ICML,1180662882,Prestige,5,All
+WSDM,1120384002,Prestige,6,All
+HLTR,2754870155,Prestige,7,All
+EMNLP,1192655580,Prestige,8,All
+ICWSM,1124713781,Prestige,9,All
+WWW,1135342153,Prestige,10,All
+KDD,1130985203,Prestige,11,All
+CIKM,1194094125,Prestige,12,All
+ACL,1188739475,Prestige,13,All
+ASRU,2606697348,Prestige,14,All
+CoNLL,2724687765,Prestige,15,All
+ESWC,1180003657,Prestige,16,All
+EKAW,1148330047,Prestige,17,All
+WSMT,2760662195,Prestige,18,All
+SIGIR,1140684652,Prestige,19,All
+ISWC,1155608529,Prestige,20,All
+ANLP,2756391745,Prestige,21,All
+ISMIR,1144674403,Prestige,22,All
+NAACL,1173951661,Prestige,23,All
+ICDM,1183478919,Prestige,24,All
+IJCNLP,1126706392,Prestige,25,All
+K-CAP,1166500626,Prestige,26,All
+CHI,1163450153,Prestige,27,All
+ICASSP,1121227772,Prestige,28,All
+HRI,1129075963,Prestige,29,All
+IUI,1170221290,Prestige,30,All
+KR,1155137614,Prestige,31,All
+AAAI,1184914352,Prestige,32,All
+JCLCS,2757804692,Prestige,33,All
+ECML,2755314191,Prestige,34,All
+AAMAS,1168671587,Prestige,35,All
+TREC,2534788800,Prestige,36,All
+ACII,1171689754,Prestige,37,All
+ICAIL,1140656204,Prestige,38,All
+ECIR,1180513217,Prestige,39,All
+SIGDIAL,2724712181,Prestige,40,All
+AMIA,2757487807,Prestige,41,All
+SIGMOD,1175089206,Prestige,42,All
+ICDAR,1150099070,Prestige,43,All
+IVA,1151209843,Prestige,44,All
+ICMI,1131590914,Prestige,45,All
+MM,1135237122,Prestige,46,All
+EACL,1188587990,Prestige,47,All
+AMTA,1167145961,Prestige,48,All
+ICDKE,1168542559,Prestige,49,All
+SLT,1196016004,Prestige,50,All
+LAW,2758839271,Prestige,51,All
+ICSE,1174403976,Prestige,52,All
+IJCAI,1203999783,Prestige,53,All
+OOPSLA,1138732554,Prestige,54,All
+ICFHR,1161412788,Prestige,55,All
+SLE,1165606533,Prestige,56,All
+LREC,1164963593,Prestige,57,All
+EDM,1193731136,Prestige,58,All
+HLT,2532822031,Prestige,59,All
+UNLPBEA,2759993800,Prestige,60,All
+COLING,1169674987,Prestige,61,All
+IWPT,1132363081,Prestige,62,All
+CLEF,1156586875,Prestige,63,All
+LTC,2760407404,Prestige,64,All
+SAC,2754781246,Prestige,65,All
+AIED,1172379331,Prestige,66,All
+INTERSPEECH,1177287137,Prestige,67,All
+SLP,2755183362,Prestige,68,All
+HICSS,1164519180,Prestige,69,All
+COMMA,1200891582,Prestige,70,All
+SMC,1170695740,Prestige,71,All
+CI,1120693805,Prestige,72,All
+Resource Track - ICSC,2898613818,Prestige,73,All
+ITS,2607379586,Prestige,74,All
+WI,1200067787,Prestige,75,All
+NLG,1163887669,Prestige,76,All
+SIGCSE,1124504716,Prestige,77,All
+ICTAI,1153494057,Prestige,78,All
+ICNLP,2898139291,Prestige,79,All
+ICAI,2755283090,Prestige,80,All
+RANLP,1143871959,Prestige,81,All
+INLG,1166923268,Prestige,82,All
+LACL,1136791909,Prestige,83,All
+MICAI,1121391727,Prestige,84,All
+CICLing,1126288421,Prestige,85,All
+ICCS,1137878512,Prestige,86,All
+PROPOR,2760054250,Prestige,87,All
+NLDB,1128394114,Prestige,88,All
+ECAI,1162831978,Prestige,89,All
+TSD,1142381819,Prestige,90,All
+SLATE,1199437547,Prestige,91,All
+ICALT,1177171125,Prestige,92,All
+FLAIRS,1194143745,Prestige,93,All
+SOCO,1123077274,Prestige,94,All
+CIT,1120281879,Prestige,95,All
+CLIN,1139922478,Prestige,96,All
+IALP,1145175409,Prestige,97,All
+ICGI,1130809216,Prestige,98,All
+PACLIC,2754041620,Prestige,99,All
+INTERACT,1127419992,Prestige,100,All
+ACL,1188739475,Citations*,1,All
+EMNLP,1192655580,Citations*,2,All
+COLING,1169674987,Citations*,3,All
+NAACL,1173951661,Citations*,4,All
+LREC,1164963593,Citations*,5,All
+INTERSPEECH,1177287137,Citations*,6,All
+AAAI,1184914352,Citations*,7,All
+IJCAI,1203999783,Citations*,8,All
+NeurIPS,1127325140,Citations*,9,All
+ICASSP,1121227772,Citations*,10,All
+EACL,1188587990,Citations*,11,All
+IJCNLP,1126706392,Citations*,12,All
+ICLR,2584161585,Citations*,13,All
+SIGIR,1140684652,Citations*,14,All
+CoNLL,2724687765,Citations*,15,All
+HLT,2532822031,Citations*,16,All
+ICML,1180662882,Citations*,17,All
+ANLP,2756391745,Citations*,18,All
+AMIA,2757487807,Citations*,19,All
+CLEF,1156586875,Citations*,20,All
+SIGDIAL,2724712181,Citations*,21,All
+CVPR,1158167855,Citations*,22,All
+WSMT,2760662195,Citations*,23,All
+WWW,1135342153,Citations*,24,All
+CHI,1163450153,Citations*,25,All
+ASRU,2606697348,Citations*,26,All
+CIKM,1194094125,Citations*,27,All
+NLG,1163887669,Citations*,28,All
+AMTA,1167145961,Citations*,29,All
+SLP,2755183362,Citations*,30,All
+SMC,1170695740,Citations*,31,All
+FLAIRS,1194143745,Citations*,32,All
+RANLP,1143871959,Citations*,33,All
+ICDAR,1150099070,Citations*,34,All
+ISWC,1155608529,Citations*,35,All
+IWPT,1132363081,Citations*,36,All
+ICNLP,2898139291,Citations*,37,All
+TSD,1142381819,Citations*,38,All
+ECML,2755314191,Citations*,39,All
+TREC,2534788800,Citations*,40,All
+KR,1155137614,Citations*,41,All
+OOPSLA,1138732554,Citations*,42,All
+ECAI,1162831978,Citations*,43,All
+HLTR,2754870155,Citations*,44,All
+EKAW,1148330047,Citations*,45,All
+INLG,1166923268,Citations*,46,All
+LACL,1136791909,Citations*,47,All
+JCLCS,2757804692,Citations*,48,All
+ISPD,1164762582,Citations*,49,All
+ICDKE,1168542559,Citations*,50,All
+LTC,2760407404,Citations*,51,All
+AAMAS,1168671587,Citations*,52,All
+ISMIR,1144674403,Citations*,53,All
+KDD,1130985203,Citations*,54,All
+CI,1120693805,Citations*,55,All
+SIGMOD,1175089206,Citations*,56,All
+NLDB,1128394114,Citations*,57,All
+ICCV,1164975091,Citations*,58,All
+WSDM,1120384002,Citations*,59,All
+COMMA,1200891582,Citations*,60,All
+IUI,1170221290,Citations*,61,All
+PSB,1183637428,Citations*,62,All
+LAW,2758839271,Citations*,63,All
+AIED,1172379331,Citations*,64,All
+ICDM,1183478919,Citations*,65,All
+ISMB,1140680567,Citations*,66,All
+TINLAP,2625962009,Citations*,67,All
+IA,1195874795,Citations*,68,All
+SAC,2754781246,Citations*,69,All
+ICCS,1137878512,Citations*,70,All
+ICGI,1130809216,Citations*,71,All
+ESWC,1180003657,Citations*,72,All
+ICSE,1174403976,Citations*,73,All
+SCAMC,2757030968,Citations*,74,All
+Hypertext,2532863000,Citations*,75,All
+SVL,2755658758,Citations*,76,All
+ILP,1200006883,Citations*,77,All
+ACCS,2898133633,Citations*,78,All
+SLE,1165606533,Citations*,79,All
+SLT,1196016004,Citations*,80,All
+ICMI,1131590914,Citations*,81,All
+STOC,1190910084,Citations*,82,All
+ITS,2607379586,Citations*,83,All
+PerCom,2606000596,Citations*,84,All
+ICFP,1162793720,Citations*,85,All
+VLDB,1133523790,Citations*,86,All
+CLIN,1139922478,Citations*,87,All
+ECOOP,1177184315,Citations*,88,All
+K-CAP,1166500626,Citations*,89,All
+UAI,1204606053,Citations*,90,All
+ECIR,1180513217,Citations*,91,All
+ICAI,2755283090,Citations*,92,All
+ICAIL,1140656204,Citations*,93,All
+ICWSM,1124713781,Citations*,94,All
+HICSS,1164519180,Citations*,95,All
+PACLIC,2754041620,Citations*,96,All
+NCC,2626428507,Citations*,97,All
+ICPR,1131605622,Citations*,98,All
+INTERACT,1127419992,Citations*,99,All
+SIGCSE,1124504716,Citations*,100,All
+ACL,1188739475,Publications,1,All
+LREC,1164963593,Publications,2,All
+COLING,1169674987,Publications,3,All
+NAACL,1173951661,Publications,4,All
+INTERSPEECH,1177287137,Publications,5,All
+EMNLP,1192655580,Publications,6,All
+EACL,1188587990,Publications,7,All
+IJCNLP,1126706392,Publications,8,All
+AAAI,1184914352,Publications,9,All
+TSD,1142381819,Publications,10,All
+FLAIRS,1194143745,Publications,11,All
+ICASSP,1121227772,Publications,12,All
+CLEF,1156586875,Publications,13,All
+IJCAI,1203999783,Publications,14,All
+SIGDIAL,2724712181,Publications,15,All
+ICNLP,2898139291,Publications,16,All
+RANLP,1143871959,Publications,17,All
+IALP,1145175409,Publications,18,All
+CoNLL,2724687765,Publications,19,All
+NLDB,1128394114,Publications,20,All
+PACLIC,2754041620,Publications,21,All
+AMIA,2757487807,Publications,22,All
+HLT,2532822031,Publications,23,All
+NLG,1163887669,Publications,24,All
+INLG,1166923268,Publications,25,All
+SLATE,1199437547,Publications,26,All
+SIGIR,1140684652,Publications,27,All
+SMC,1170695740,Publications,28,All
+ICGI,1130809216,Publications,29,All
+COMMA,1200891582,Publications,30,All
+WSMT,2760662195,Publications,31,All
+CICLing,1126288421,Publications,32,All
+AIMSA,1121493235,Publications,33,All
+CLIN,1139922478,Publications,34,All
+ECAI,1162831978,Publications,35,All
+INTERACT,1127419992,Publications,36,All
+AMTA,1167145961,Publications,37,All
+LTC,2760407404,Publications,38,All
+IWPT,1132363081,Publications,39,All
+ICDAR,1150099070,Publications,40,All
+CHI,1163450153,Publications,41,All
+JCLCS,2757804692,Publications,42,All
+WCLS,2754966267,Publications,43,All
+ICAI,2755283090,Publications,44,All
+SLP,2755183362,Publications,45,All
+ASRU,2606697348,Publications,46,All
+CIKM,1194094125,Publications,47,All
+ANLP,2756391745,Publications,48,All
+CI,1120693805,Publications,49,All
+PROPOR,2760054250,Publications,50,All
+Resource Track - ICSC,2898613818,Publications,51,All
+LAW,2758839271,Publications,52,All
+ICALT,1177171125,Publications,53,All
+WWW,1135342153,Publications,54,All
+SLT,1196016004,Publications,55,All
+ICCS,1137878512,Publications,56,All
+AIED,1172379331,Publications,57,All
+CIT,1120281879,Publications,58,All
+WI,1200067787,Publications,59,All
+ICML,1180662882,Publications,60,All
+SOCO,1123077274,Publications,61,All
+BIOINFORMATICS,1199066382,Publications,62,All
+UNLPBEA,2759993800,Publications,63,All
+ISWC,1155608529,Publications,64,All
+TREC,2534788800,Publications,65,All
+ICMC,2754492142,Publications,66,All
+SAC,2754781246,Publications,67,All
+MICAI,1121391727,Publications,68,All
+DEXA,1192664773,Publications,69,All
+KES,2754242139,Publications,70,All
+SVL,2755658758,Publications,71,All
+SIGCSE,1124504716,Publications,72,All
+ICTAI,1153494057,Publications,73,All
+FSMNLP,1189274801,Publications,74,All
+IJCNN,1140449422,Publications,75,All
+SLE,1165606533,Publications,76,All
+ITS,2607379586,Publications,77,All
+TKE,1132255490,Publications,78,All
+ICLR,2584161585,Publications,79,All
+LACL,1136791909,Publications,80,All
+ICAART,1200979010,Publications,81,All
+ICSE,1174403976,Publications,82,All
+ISCSLP,1191598575,Publications,83,All
+ICCPOL,1120010468,Publications,84,All
+IMCSIT,1131086423,Publications,85,All
+ICMLC,1120608147,Publications,86,All
+OOPSLA,1138732554,Publications,87,All
+ICDKE,1168542559,Publications,88,All
+FUZZ-IEEE,2606228224,Publications,89,All
+AAMAS,1168671587,Publications,90,All
+ICMI,1131590914,Publications,91,All
+NeurIPS,1127325140,Publications,92,All
+SBIA,1152661919,Publications,93,All
+IUI,1170221290,Publications,94,All
+HICSS,1164519180,Publications,95,All
+ACC,1190039108,Publications,96,All
+TINLAP,2625962009,Publications,97,All
+ACCS,2898133633,Publications,98,All
+IFIP,2755927266,Publications,99,All
+AI,1185151044,Publications,100,All
+ACL,1188739475,H-Index,1,All
+EMNLP,1192655580,H-Index,2,All
+NAACL,1173951661,H-Index,3,All
+COLING,1169674987,H-Index,4,All
+LREC,1164963593,H-Index,5,All
+INTERSPEECH,1177287137,H-Index,6,All
+ICASSP,1121227772,H-Index,7,All
+EACL,1188587990,H-Index,8,All
+AAAI,1184914352,H-Index,9,All
+IJCNLP,1126706392,H-Index,10,All
+IJCAI,1203999783,H-Index,11,All
+CoNLL,2724687765,H-Index,12,All
+SIGIR,1140684652,H-Index,13,All
+HLT,2532822031,H-Index,14,All
+AMIA,2757487807,H-Index,15,All
+ANLP,2756391745,H-Index,16,All
+CLEF,1156586875,H-Index,17,All
+SIGDIAL,2724712181,H-Index,18,All
+CHI,1163450153,H-Index,19,All
+WSMT,2760662195,H-Index,20,All
+ICLR,2584161585,H-Index,21,All
+ICML,1180662882,H-Index,22,All
+NeurIPS,1127325140,H-Index,23,All
+NLG,1163887669,H-Index,24,All
+SLP,2755183362,H-Index,25,All
+ICDAR,1150099070,H-Index,26,All
+ECAI,1162831978,H-Index,27,All
+CIKM,1194094125,H-Index,28,All
+WWW,1135342153,H-Index,29,All
+FLAIRS,1194143745,H-Index,30,All
+TREC,2534788800,H-Index,31,All
+RANLP,1143871959,H-Index,32,All
+ISWC,1155608529,H-Index,33,All
+INLG,1166923268,H-Index,34,All
+ASRU,2606697348,H-Index,35,All
+IWPT,1132363081,H-Index,36,All
+AMTA,1167145961,H-Index,37,All
+ICNLP,2898139291,H-Index,38,All
+CVPR,1158167855,H-Index,39,All
+AAMAS,1168671587,H-Index,40,All
+TSD,1142381819,H-Index,41,All
+KR,1155137614,H-Index,42,All
+ICDKE,1168542559,H-Index,43,All
+SMC,1170695740,H-Index,44,All
+OOPSLA,1138732554,H-Index,45,All
+HLTR,2754870155,H-Index,46,All
+JCLCS,2757804692,H-Index,47,All
+LTC,2760407404,H-Index,48,All
+CI,1120693805,H-Index,49,All
+ICMI,1131590914,H-Index,50,All
+NLDB,1128394114,H-Index,51,All
+ISMIR,1144674403,H-Index,52,All
+SLE,1165606533,H-Index,53,All
+AIED,1172379331,H-Index,54,All
+COMMA,1200891582,H-Index,55,All
+SVL,2755658758,H-Index,56,All
+IUI,1170221290,H-Index,57,All
+SCAMC,2757030968,H-Index,58,All
+LAW,2758839271,H-Index,59,All
+ICGI,1130809216,H-Index,60,All
+KDD,1130985203,H-Index,61,All
+EKAW,1148330047,H-Index,62,All
+SLT,1196016004,H-Index,63,All
+Hypertext,2532863000,H-Index,64,All
+TINLAP,2625962009,H-Index,65,All
+SIGCSE,1124504716,H-Index,66,All
+ISPD,1164762582,H-Index,67,All
+ITS,2607379586,H-Index,68,All
+SAC,2754781246,H-Index,69,All
+ICAI,2755283090,H-Index,70,All
+CICLing,1126288421,H-Index,71,All
+FOIS,1131777435,H-Index,72,All
+LACL,1136791909,H-Index,73,All
+ICCS,1137878512,H-Index,74,All
+ICAIL,1140656204,H-Index,75,All
+ICFHR,1161412788,H-Index,76,All
+ECOOP,1177184315,H-Index,77,All
+DALT,1178744818,H-Index,78,All
+ESWC,1180003657,H-Index,79,All
+ECIR,1180513217,H-Index,80,All
+NCC,2626428507,H-Index,81,All
+ICPR,1131605622,H-Index,82,All
+HICSS,1164519180,H-Index,83,All
+ICSE,1174403976,H-Index,84,All
+SIGMOD,1175089206,H-Index,85,All
+ASSETS,1175428454,H-Index,86,All
+PSB,1183637428,H-Index,87,All
+MoDELS,1191550517,H-Index,88,All
+AIMSA,1121493235,H-Index,89,All
+MM,1135237122,H-Index,90,All
+CLIN,1139922478,H-Index,91,All
+IVA,1151209843,H-Index,92,All
+ICFP,1162793720,H-Index,93,All
+ICCV,1164975091,H-Index,94,All
+ACII,1171689754,H-Index,95,All
+WI,1200067787,H-Index,96,All
+ECML,2755314191,H-Index,97,All
+INTERACT,1127419992,H-Index,98,All
+CAiSE,1134069326,H-Index,99,All
+K-CAP,1166500626,H-Index,100,All
