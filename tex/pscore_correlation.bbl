@@ -111,15 +111,18 @@ Langville, A.N., Meyer, C.D.: {Google's pagerank and beyond: The science of
   search engine rankings}.
 \newblock Princeton University Press (2006)
 
+\bibitem{Lee2019}
+Lee, D.H.: Predictive power of conference-related factors on citation rates of
+  conference papers.
+\newblock Scientometrics \textbf{118}(1), 281--304 (2019).
+\newblock \doi{10.1007/s11192-018-2943-z}.
+\newblock \urlprefix\url{https://doi.org/10.1007/s11192-018-2943-z}
+
 \bibitem{Leydesdorff2009}
 Leydesdorff, L.: {How are new citation-based journal indicators adding to the
   bibliometric toolbox?}
 \newblock Journal of the American Society for Information Science and
   Technology \textbf{60}(7), 1327--1336 (2009)
-
-\bibitem{Loach2015}
-Loach, T.V., Evans, T.S.: Ranking journals using altmetrics.
-\newblock CoRR \textbf{abs/1507.00451} (2015)
 
 \bibitem{Martins2009}
 Martins, W.S., Gon{\c{c}}alves, M.A., Laender, A.H., Pappa, G.L.: {Learning to
