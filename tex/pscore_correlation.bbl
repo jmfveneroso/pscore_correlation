@@ -9,6 +9,14 @@
 \bibitem{Thomson2017}
 Ahmed, K.M.: {Thomson Reuters Impact Factor 2017}  (2017)
 
+\bibitem{Babic2016}
+Babi{\'{c}}, D., Kutla{\v{c}}a, {\DJ}., {\v{Z}}ivkovi{\'{c}}, L., {\v{S}}trbac,
+  D., Semen{\v{c}}enko, D.: Evaluation of the quality of scientific performance
+  of the selected countries of southeast europe.
+\newblock Scientometrics \textbf{106}(1), 405--434 (2016).
+\newblock \doi{10.1007/s11192-015-1649-8}.
+\newblock \urlprefix\url{https://doi.org/10.1007/s11192-015-1649-8}
+
 \bibitem{Baeza-Yates2011}
 Baeza-Yates, R., Ribeiro-Neto, B.: {Modern Information Retrieval: the Concepts
   and Technology Behind Search (2nd ed.)}.
@@ -90,11 +98,6 @@ Hirsch, J.E.: {An index to quantify an individual's scientific research
 Hirsch, J.E.: {Does the h index have predictive power?}
 \newblock Proceedings of the National Academy of Sciences \textbf{104}(49),
   19193--19198 (2007)
-
-\bibitem{Hoonlor2013}
-Hoonlor, A., Szymanski, B.K., Zaki, M.J.: {Trends in Computer Science
-  Research}.
-\newblock Communications of the ACM \textbf{56}(10), 74--83 (2013)
 
 \bibitem{Kellner2008}
 Kellner, A.W.A., Ponciano, L.C.M.O.: {H-index in the Brazilian Academy of

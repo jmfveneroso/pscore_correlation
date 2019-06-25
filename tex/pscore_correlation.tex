@@ -26,6 +26,8 @@
 \author{
  João Mateus de Freitas Veneroso \and
  Marlon Dias \and
+ Alberto Ueda \and
+ Sabir Ribas \and
  Berthier Ribeiro-Neto \and
  Nivio Ziviani \and
  Edmundo de Souza e Silva
@@ -38,12 +40,14 @@
  Tel.: +55 (31) 99436-0909 \\
  \email{jmfveneroso@gmail.com} \and
  Marlon Dias              \at Universidade Federal de Minas Gerais \and
+ Alberto Ueda             \at Universidade Federal de Minas Gerais \and
+ Sabir Ribas              \at Universidade Federal de Minas Gerais \and
  Berthier Ribeiro-Neto    \at Universidade Federal de Minas Gerais \and
  Nivio Ziviani            \at Universidade Federal de Minas Gerais \and
  Edmundo de Souza e Silva \at Universidade Federal do Rio de Janeiro
 }
 
-\authorrunning{J. M. F. Veneroso, M. Dias, B. Ribeiro-Neto, N. Ziviani, and E. S. Silva} % if too long for running head
+\authorrunning{J. Veneroso, M. Dias, A. Ueda, S. Ribas, B. Ribeiro-Neto, N. Ziviani, and E. Silva} % if too long for running head
 
 % \providecommand{\keywords}[1]{\textbf{\textit{Index terms---}} #1}
 
@@ -570,27 +574,27 @@ can then be computed by solving a system of linear equations relating publicatio
 research groups in the reputation graph, as exemplified in Section~\ref{sec:example}.
 
 
-\section{Correlation with H-indices} 
+\section{Correlation between P-score and citation based indices} 
 \label{sec:correlation}
 
-Bibliometric indicators can be roughly divided into two types. The attention indicators usually 
-estimate researcher attention or the diffusion of a venues's articles through different 
-forms of citation counts. 
-The reputation indicators try to estimate a researcher's reputation based on the researcher's 
-overall scientific production.
-What we argue in this paper is that both perspectives have a complementary nature,
+Bibliometric indicators can be roughly divided into two types. Popularity indicators 
+estimate the diffusion of a venues's articles by measuring the number of
+endorsements received by that venue (usually in the form of citation counts). Reputation
+indicators are similar, but they also try account for the relative reputations of each
+endorsing agent, although the concept of reputation may be hard to define.
+We argue in this paper that both perspectives have a complementary nature,
 since indicators of different types are measuring similar but distinct aspects of
 a venue's scientific relevance. 
 
 We performed a combined analysis of conference rankings in Computer Science based on 
-P-score, a reputation indicator, and the H-index. Additionally, we provide comparisons between
-P-score, total citations and the number of citations per publications to shed light on the
-correlation between P-score and citation based indices.
+P-score, a reputation indicator, and the H-index, a popularity indicator. Additionally, 
+we provide comparisons between P-score, Total Citations and the number of Citations per 
+Publication to shed light on the relation between P-score and citation based indices.
 In computer-related fields, conferences are important channels of dissemination for cutting-edge
-research findings~\cite{Lee2019}. Therefore, conference rankings can be valuable assets to help
+research findings~\cite{Lee2019}. Therefore, conference rankings can be valuable to help
 identifying promising research topics and good funding opportunities. Unfortunately, some
 popular bibliometric indices such as the Impact Factor are only available for journals.
-We chose the H-index as the principal indicator of attention because of its popularity 
+We chose the H-index as the principal indicator of popularity because of its acceptance 
 and availability for conferences in bibliometric search engines such as Google Scholar, 
 Web of Science and Scopus. 
 
@@ -621,25 +625,27 @@ same problems as any other citation-based indices. Some of its major disadvantag
 
 \begin{itemize}
 \item H-index does not distinguish citations from prestigious and peripheral journals, thus 
-it measures popularity rather than quality.
+it measures popularity rather than quality. Although the concepts can have a significant overlap.
 \item The time to first citation can be very long.
-\item It is not easy to collect all relevant information.
+\item It is not easy to collect all the relevant information.
 \item H-index is field-dependent~\cite{Wendl2007}.
 \item Major sources do not always agree on its value~\cite{Bar-Ilan2008}. 
 \end{itemize}
 
 We propose to use P-score as a complementary index to deal with some of the problems
 presented by citation-based indices such as the H-index.
-P-score is a index of reputation among peers based on the publication pattern of a set of
+P-score is an index of reputation among peers based on the publication pattern of a set of
 reference groups of researchers, the reference seeds. It differs from other network-based 
 indices because the venues' reputations derive exclusively from the reference seeds, which 
 allows better control of the actual reputation flows. Additionally, to calculate P-scores we 
-do not need citation data, which make P-scores easier to obtain than H-indices and avoids 
+do not need any citation data, what makes P-scores easier to obtain than H-indices and avoids 
 the problem of lack of data that arises from the long time to first citation.
 
 We conducted experiments to investigate the relationship between P-scores, H-indices, Total Citations
-and Citations per Paper in conference rankings. In particular, we wanted to estimate the degree of correlation 
-between P-scores and citation based indices. The data set consists of 794
+and Citations per Paper in CS conference rankings. In particular, we wanted to estimate the degree of 
+correlation between P-scores and citation based indices, attenting to where they differ.
+
+The data set consists of 794
 Computer Science~\footnote{
 While our data set is entirely composed of Computer Science conferences, nothing in our method is
 particular to this field. That is, our index is applicable to any field of knowledge.
@@ -651,8 +657,11 @@ data obtained from DBLP \footnote{http://dblp.uni-trier.de/}. The number of publ
 total number of citations and citations per publication were obtained from Microsoft
 Academic~\footnote{https://academic.microsoft.com}.
 The reference set of research groups
-was selected through the randomization process described in the previous section, 
+was selected with the randomization procedure described in the previous section, 
 yielding the 12 departments listed in Table \ref{tab:departments}.
+
+
+\subsection{P-score and H-index Behavior}
 
 \begin{figure}[ht]
 \centering
@@ -707,76 +716,13 @@ yielding the 12 departments listed in Table \ref{tab:departments}.
   \caption{Normal Probability Plots}
 \end{figure}
 
-We first plotted normal probability plots for P-scores and H-indices in our conference data set 
-to identify any departures from normality. A normal probability plot shows the theoretical Z-scores
+We plotted normal probability plots for P-scores and H-indices in the CS conference data set 
+to identify departures from normality. A normal probability plot shows the theoretical Z-scores
 according to the standard normal quantile function on the horizontal axis. For example, at the 90th
 percentile (the value below which 90\% of the observations will fall), the normal distribution has a
-Z-score of 1.28, meaning that the distribution value at this point is 1.28 standard deviations above the median value. On the vertical axis, if
-we plot the Z-scores according to the quantile function described by our sample, we can verify
-whether it is consistent with a sample from a normal distribution.
-
-We compared theoretical and sample Z-scores for 794 quantiles (one for each data point) in Figures
-\ref{fig:hindex_normality} and \ref{fig:pscore_normality}. The dotted line is the identity line for
-which sample and theoretical Z-scores converge. As becomes clear from the plots, both distributions
-are significantly skewed, indicating that P-scores and H-indices do not follow normal
-distributions. For this reason, it may be appropriate to measure correlations in terms of the
-Kendall-Tau coefficient or the Spearman coefficient, even though Pearson's Product 
-Moment Correlation is also presented.
-
-All correlation coefficients presented in this section assume a value between
--1 and 1. A value of 1 indicates that two rankings are identical and a value of -1 
-indicates that rankings are the inverse of each other, with values varying between
--1 and 1 for partial correlation. A coefficient close to zero
-indicates no correlation~\cite{Kendall1955,Baeza-Yates2011}.
-% The Spearman coefficient is essentially Pearson's 
-% Coefficient using rank positions instead of values
-
-Figure~\label{fig:scatter_plots} compares rankings of the 794 conferences produced with
-P-score, H-index, Total Citations and Citations per Paper.
-Points that are closer to the origin have better ranks (i.e. a data point at position 1 is 
-better ranked than a data point at position 200). Table~\ref{tab:correlations} presents the
-correlations between indices in terms of their Kendall-Tau, Spearman and Pearson coefficients.
-The first fact to point out is that H-indices are significantly correlated to the total number 
-of citations received by a conference but not as much to the number of Citations per Publication,
-what is also observed in P-score. Both indices seem to be somewhat reliant on the number of 
-publications, so it is not unexpected that they are less correlated to citations per publication
-than to total citation counts.
-
-% Conforms to power law: https://link.springer.com/article/10.1007/s11192-018-2996-z#Sec3
-
-Assuming that both P-scores and H-indices conform to a power law:
-
-\begin{equation}
-H = C * N^k
-\end{equation}
-
-We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k = 0.4303 $ for the H-index.
-
-
-
-
-\begin{table}[ht!]
-  \small
-  \centering
-  \begin{tabular}{lllll} 
-  \toprule
-  First & Second & Kendall-Tau & Spearman & Pearson \\ 
-  \midrule
-  P-score     & H-index               & 0.5153 & 0.6939 & 0.7089 \\
-  P-score     & Total Citations       & 0.5028 & 0.6751 & 0.7798 \\
-  P-score     & Citations/Publication & 0.3894 & 0.5555 & 0.2383 \\
-  H-index     & Total Citations       & 0.6141 & 0.7623 & 0.6848 \\
-  N. Pscore   & N. H-index            & 0.4148 & 0.5822 & 0.4957 \\
-  H-index     & Citations/Publication & 0.4862 & 0.6557 & 0.2765 \\
-  \bottomrule
-  \end{tabular}
-  \caption{Correlations between P-scores, H-indices, Total Citations 
-  and Citations per Paper in a set of 794 conferences in Computer Science.}
-  \label{tab:correlations}
-\end{table}
-
-
-
+Z-score of 1.28, meaning that the distribution value at this point is 1.28 standard deviations above 
+the median value. On the vertical axis, if we plot the Z-scores according to the quantile function 
+described by our sample, we can verify whether it is consistent with a sample from a normal distribution.
 
 \begin{figure}[ht]
 \centering
@@ -786,8 +732,8 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
-          xlabel=Log Num Publications,
-          ylabel=Log H-index,
+          xlabel=Log(Num Publications),
+          ylabel=Log(H-index),
           xmin=2.0,
           ymin=0.0,
           xmax=5.0,
@@ -813,8 +759,8 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
-          xlabel=Log Num Publications,
-          ylabel=Log P-score,
+          xlabel=Log(Num Publications),
+          ylabel=Log(P-score),
           xmin=2.0,
           ymin=0.0,
           xmax=5.0,
@@ -836,12 +782,48 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
   \caption{
     Log(H-index) versus Log(Num Publications) for the CS conferences only considering conferences with more 
     than 1000 publications and averaging the number of publications for conferences with identical indices.}
+  \label{fig:powerlaw}
 \end{figure}
 
+We compared theoretical and sample Z-scores for 794 quantiles (one for each data point) in Figures
+\ref{fig:hindex_normality} and \ref{fig:pscore_normality}. The dotted line is the identity line for
+which sample and theoretical Z-scores converge. As becomes clear from the plots, both distributions
+are significantly skewed, indicating that P-scores and H-indices do not follow normal distributions.
+In fact, the values of H-indices and P-scores tend to increase with the number of publications $ N $ 
+and their behavior is better described by a power-law model: 
+%
+\begin{equation}
+X_i = C \times N_i^a
+\end{equation}
+%
+where $ C $ and $ a $ are index-specific constants and $ X_i $ is the index value and $ N_i $ is the 
+number of publications for observation $ i $. Figure~\ref{fig:powerlaw} presents the 
+log-log plots for P-scores and H-indices versus the number of publications. A linear 
+relationship between the logarithms indicate a power-law behavior. The estimated parameters
+for the constants of the power-law model in the best linear fit are 
+$ C = 2.0591 $ and $ a = 0.4303 $ for the H-index,
+$ C = 1.8498 $ and $ a = 0.5525 $ for P-score.
+
+The tendence of P-scores and H-indices to increase with the number of publications may hurt the comparison of venues 
+with a largely different size, obfuscating less prolific conferences. To account for this fact, we also plot 
+correlations for the normalized P-scores and H-indices using a measure introduced in~\cite{Babic2016}
+called the SPQL level (although the authors only consider the H-index in the referenced article). 
+The SPQL level is defined as:
+%
+\begin{equation}
+SPQL(i) = 100 \cdot \frac{\tilde{X_i}}{X_i}
+\end{equation}
+%
+where $ \tilde{X_i} $ is the value for the index in point $ i $ and $ X_i $ is the corresponding
+value in the best fit line. In our case, 
+$ X_i = 2.0591 \times N_i^{0.4303} $ for the H-index and 
+$ X_i = 1.8498 \times N_i^{0.5525} $ for P-score.
+This way, we have a measure that indicates
+the degree of deviation from average that is independent of the number of publications and allows
+the comparison of venues with different sizes.
 
 
-
-
+\subsection{P-score Correlations}
 
 \begin{figure}[ht]
 \centering
@@ -852,7 +834,7 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
           xlabel=H-index ranks,
-          ylabel=Citations ranks,
+          ylabel=Total Citations ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -864,7 +846,6 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
       \end{axis}
     \end{tikzpicture}
     \caption{H-index $ \times $ Total Citations}
-    \label{fig:scatter_plots}
   \end{subfigure}
   ~
   \begin{subfigure}{.475\linewidth}  
@@ -874,7 +855,7 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
           xlabel=H-index ranks,
-          ylabel=Citations ranks,
+          ylabel=Citations Per Publication ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -885,8 +866,7 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
 
       \end{axis}
     \end{tikzpicture}
-    \caption{H-index $ \times $ Citations per Publication}
-    \label{fig:scatter_plots}
+    \caption{H-index $ \times $ Citations Per Publication}
   \end{subfigure}
 
   \begin{subfigure}{.475\linewidth}  
@@ -896,7 +876,7 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
           xlabel=P-score ranks,
-          ylabel=Total Citations ranks,
+          ylabel=Total Citation ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -908,7 +888,6 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
       \end{axis}
     \end{tikzpicture}
     \caption{P-score $ \times $ Total Citations}
-    \label{fig:angle_strategy}
   \end{subfigure}
   ~
   \begin{subfigure}{.475\linewidth}  
@@ -918,7 +897,7 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
           xlabel=P-score ranks,
-          ylabel=Citations Per Paper ranks,
+          ylabel=Citations Per Publication ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -930,7 +909,6 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
       \end{axis}
     \end{tikzpicture}
     \caption{P-score $ \times $ Citations Per Publication}
-    \label{fig:angle_strategy}
   \end{subfigure}
 
   \begin{subfigure}{.475\linewidth}
@@ -952,7 +930,6 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
       \end{axis}
     \end{tikzpicture}
     \caption{P-score $ \times $ H-index}
-    \label{fig:angle_strategy}
   \end{subfigure}
   ~
   \begin{subfigure}{.475\linewidth}
@@ -961,8 +938,8 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
-          xlabel=P-score ranks,
-          ylabel=H-index ranks,
+          xlabel=SPQL P-score ranks,
+          ylabel=SPQL H-index ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -973,14 +950,71 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
 
       \end{axis}
     \end{tikzpicture}
-    \caption{Normalized P-score $ \times $ Normalized H-index}
-    \label{fig:angle_strategy}
+    \caption{SPQL P-score $ \times $ SPQL H-index}
   \end{subfigure}
   \caption{
   Scatter plots comparing the rankings produced with P-scores, H-indices, Total Citations 
   and Citations per Paper in a set of 794 conferences in Computer Science.
   }
+  \label{fig:scatter_plots}
 \end{figure}
+
+\begin{table}[ht!]
+  \small
+  \centering
+  \begin{tabular}{lllll} 
+  \toprule
+  First & Second & Kendall-Tau & Spearman & Pearson \\ 
+  \midrule
+  H-index     & Total Citations           & 0.6141 & 0.7623 & 0.6848 \\
+  H-index     & Citations Per Publication & 0.4862 & 0.6557 & 0.2765 \\
+  P-score     & Total Citations           & 0.5028 & 0.6751 & 0.7798 \\
+  P-score     & Citations Per Publication & 0.3894 & 0.5555 & 0.2383 \\
+  P-score     & H-index                   & 0.5153 & 0.6939 & 0.7089 \\
+  SPQL Pscore & SPQL H-index              & 0.4148 & 0.5822 & 0.4957 \\
+  \bottomrule
+  \end{tabular}
+  \caption{Correlations between P-scores, H-indices, Total Citations 
+  and Citations per Paper in a set of 794 conferences in Computer Science.}
+  \label{tab:correlations}
+\end{table}
+
+Figure~\ref{fig:scatter_plots} compares rankings of the 794 CS conferences produced with
+P-score, H-index, Total Citations and Citations per Paper.
+Points that are closer to the origin have better ranks (i.e. a data point at position 1 is 
+better ranked than a data point at position 200). Also, Table~\ref{tab:correlations} presents the
+correlations between indices in terms of their Kendall-Tau, Spearman and Pearson coefficients.
+The Spearman coefficient is essentially a Pearson Correlation of ranking positions. The
+Kendall-Tau is another correlation measure based on ranks that is deemed less
+sensitive to errors than the Spearman coefficient~\cite{Kendall1955,Baeza-Yates2011}. All these 
+correlation coefficients assume a value between -1 and 1. A value of 1 indicates that two rankings are 
+identical and a value of -1 indicates that rankings are the inverse of each other, with values varying 
+between -1 and 1 for partial correlation. A coefficient close to zero indicates no correlation.
+
+The first fact to point out is that H-indices are significantly correlated to the Total Citations
+received by a conference but not as much to Citations per Publication,
+what is also observed in P-score. Both indices seem to be somewhat reliant on the number of 
+publications, so it is not unexpected that they are less correlated to Citations per Publication
+than to Total Citation counts. 
+
+Also, P-scores seem to be quite correlated to H-indices, assuming a Kendall-Tau of 0.5153.
+The Kendall-Tau is defined in terms of concordant and discordant pairs of ranks.
+P-scores agree aproximately 76\% of the time with H-indices on which conference should be
+ranked above the other. However, normalized P-scores and H-indices in the form of the SPQL
+measure have a significantly smaller degree of correlation (a Kendall-Tau of 0.4148) 
+showing that, once we control for the number of publications, P-scores and H-indices seem
+to be more clearly capturing different aspects of a conference's scientific impact. 
+
+In our assessment, we are especially interested in conferences for which popularity 
+and reputation measures are most disagreeing. These would be conferences with high P-scores 
+and low H-indices or high H-indices and low P-scores. These interesting outliers can both
+be captured by plotting H-indices against P-scores or the normalized version of the measures.
+We will proceed in the next Section with the assessment of P-scores versus H-indices.
+
+
+\section{Assessing conferences in CS}
+\label{sec:notifications}
+
 
 \begin{figure}[ht]
 \centering
@@ -999,10 +1033,10 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
         ]
         \draw[red]
             (axis cs:0,0) -- 
-            (axis cs:700.207670245,1000);
+            (axis cs:1732.0508,1000);
         \draw[red]
             (axis cs:0,0) -- 
-            (axis cs:1000,700.207670245);
+            (axis cs:1000,1732.0508);
         \addplot[blue, only marks, mark size=0.75pt] 
         table[x=pscore,y=hindex,col sep=comma] {data/ranks.csv}; 
 
@@ -1027,10 +1061,10 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
         ]
         \draw[red]
             (axis cs:-100,-100) -- 
-            (axis cs:700.207670245,1000);
+            (axis cs:1632.05081,900);
         \draw[red]
             (axis cs:-100,-100) -- 
-            (axis cs:1000,700.207670245);
+            (axis cs:900,1632.0508);
         \addplot[blue, only marks, mark size=0.75pt] 
         table[x=pscore,y=hindex,col sep=comma] {data/ranks.csv}; 
   
@@ -1069,32 +1103,34 @@ We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k
 
       \end{axis}
     \end{tikzpicture}
-    \caption{P-score VS H-index}
+    \caption{P-score ranks $ \times $H-index ranks scatter plot with markings showing conference names.}
+    \label{fig:markings}
   \end{center}
 \end{figure}
 
-\section{Assessing conferences in CS}
-\label{sec:notifications}
-
 Since P-scores and H-indices are strongly correlated, most data points in our example are clustered close to the identity 
 line, showing an apparent agreement between the indices. However, there are noticeable differences, 
-particularly in those cases for which the P-score rank position is high and the H-index rank is low 
-(top left corner of Figure \ref{fig:pscore_hindex_ranks}), or for which the H-index rank is high and the 
-P-score rank is low (bottom right corner of Figure \ref{fig:pscore_hindex_ranks}). Therefore, we 
+particularly in those cases for which the P-score rank position is high and the H-index rank is low,
+or for which the H-index rank is high and the 
+P-score rank is low. Therefore, we 
 can distinguish between three groups of interest in the data set:
-
+%
 \begin{itemize}
-\item \textit{Center Group}: highly correlated data points. These are the venues that are popular (i.e. high H-index) and reputable (i.e. high P-score), or venues that are unpopular and not very reputable.
-\item \textit{Top Group}: venues with a high P-score and low H-index. These are the venues that are reputable (i.e. endorsed by researchers at top CS departments), but not very popular.
-\item \textit{Bottom Group}: venues with a high H-index and low P-score. There are the venues that are popular, but not very reputable.
-
+\item \textit{Center Group}: highly correlated data points. These are the 
+venues that are popular (i.e. high H-index) and reputable (i.e. high P-score), 
+or venues that are unpopular and not very reputable.
+\item \textit{Top Group}: venues with a high P-score and low H-index. These 
+are the venues that are reputable (i.e. endorsed by researchers at top CS departments), 
+but not very popular.
+\item \textit{Bottom Group}: venues with a high H-index and low P-score. 
+These are the venues that are popular, but not very reputable in the sense 
+that it is not endorsed by the reference set of researchers.
 \end{itemize}
-
-
+%
 Next, we devise a strategy for delimiting the three sets
 presented above. We draw two line segments, starting from
 the origin, separated by an angle $ \theta $, and examine
-how the Kendall-Tau coefficient for the data points in the 
+how the correlation between the data points in the 
 Center Group varies with respect to variations in the angle 
 $ \theta $. It is what we call the "angle strategy", as 
 illustrated in Figure \ref{fig:angle_strategy}. We immediately 
@@ -1129,13 +1165,14 @@ Center Group.
  \label{tab:angle_strategy}
 \end{table}
 
-Table \ref{tab:angle_strategy} describes how the Kendall-Tau coefficients vary for items 
+Table \ref{tab:angle_strategy} describes how the Kendall-Tau and Spearman coefficients vary for items 
 in the Center Group, as we vary the angle $ \theta $, with the pivot positioned behind 
-the origin as in Figure \ref{fig:angle_strategy_adapted}. We notice that for $ \theta = 20^{\circ} $, 
-616 conferences are included in the Center
-Group (close to 70\% of all conferences in the data set) and, that is accomplished with a very high Kendall-Tau 
-coefficient (i.e. above 0.7). Thus, in our subsequent 
-analysis, we employed the angle strategy with $ \theta = 20^{\circ} $, since it provides 
+the origin as in Figure \ref{fig:angle_strategy_adapted}. We notice that for $ \theta = 30^{\circ} $, 
+689 conferences are included in the Center
+Group (close to 87\% of all conferences in the data set). What leaves only a handful of conferences to
+be analyzed individually outside the Center Group.
+Thus, in our subsequent 
+analysis, we employed the angle strategy with $ \theta = 30^{\circ} $, since it provides 
 a good trade off between correlation and coverage in our data set.
 
 \begin{table}[ht!]
@@ -1181,9 +1218,11 @@ a good trade off between correlation and coverage in our data set.
   \label{tab:conferences}
 \end{table}
 
-With the pivot positioned at (-100, -100) and $ \theta=30^{\circ} $, the Top Group ended with 127 conferences, the 
-Center Group with 616 conferences, and the Bottom Group with 139 conferences. Table 
-\ref{tab:conferences} presents the top 30 conferences, ranked by P-score, for each of our three groups.
+With the pivot positioned at (-100, -100) and $ \theta=30^{\circ} $, the Top Group ended with 56 conferences, the 
+Center Group with 689 conferences, and the Bottom Group with 49 conferences. Table 
+\ref{tab:conferences} presents the top 30 conferences, ranked by P-score, for each of the three groups
+and Figure~\ref{fig:markings} shows the P-score $ \times $ H-index scatter plots showing all conference
+names for the Bottom and Top groups.
 
 The Center Group consists of conferences that have a high correlation between reputation and
 popularity. The reputation of these conferences is well represented by the number of citations
@@ -1191,23 +1230,33 @@ they receive. This group represents conferences that are relatively easy to clas
 their scientific impact. Among them we find WWW, CVPR and KDD, to name a few.
 
 The Top Group consists of conferences with a high P-score rank and low H-index rank. While these conferences
-receive a relatively low number of citations, reputable researchers (i.e. our reference set of top researchers in Computer Science) still publish 
+receive a relatively low number of citations, reputable researchers 
+(i.e. our reference set of top researchers in Computer Science) still publish 
 in them consistently, as we can observe from their high P-score ranks. The primary reason is that
-conferences in the Top Group are usually venues associated with smaller subareas of Computer Science, and are therefore venues that receive a smaller
-number of citations. Because of that, their H-indices tend to be smaller and their H-index rank positions tend to be worse. Despite that, many of these venues might have a high reputation in their subareas and thus, high P-scores. 
-For example, ICPP, SPAA, LCPC and PPSC are conferences related to parallel processing that capture
-considerable attention from the top CS departments, as we can observe from their high P-scores. However,
-due to their modest H-indices, they may end up being neglected by funding councils and committees in
-their assessment. The total number of publications in Parallel Processing is comparatively low 
-compared to other subareas of Computer Science such as Algorithms or Database Management Systems~\cite{Hoonlor2013}. So, it is reasonable to assume that conferences 
-in this subarea are expected to receive fewer citations than their counterparts in more popular subareas.
-P-scores can assist human evaluators with funding decisions by shedding light on these conferences.
+conferences in the Top Group are usually venues associated with smaller subareas of Computer Science, 
+and are therefore venues that receive a smaller number of citations. Because of that, their H-indices 
+tend to be smaller and their H-index rank positions tend to be worse. Despite that, many of these 
+venues might have a high reputation in their subareas and thus, high P-scores. 
+For example, ICPP, and LCPC are conferences related to parallel processing that capture
+considerable attention from the top CS departments, as we can observe from their high P-scores. 
+Similarly IROS, WAFR, and HUMANOIDS are conferences in Robotics that have high P-scores
+and relatively small H-indices. These conferences may end up being neglected by funding councils and 
+committees in their assessment if we look only at the H-index, because these subareas do not receive 
+as many citations as others.
+
+% The total number of publications in Parallel Processing is comparatively low 
+% compared to other subareas of Computer Science such as Algorithms or Database 
+% Management Systems~\cite{Hoonlor2013}. 
+% So, it is reasonable to assume that conferences 
+% in this subarea are expected to receive fewer citations than their counterparts in more popular subareas.
+% P-scores can assist human evaluators with funding decisions by shedding light on these conferences.
 
 The Bottom Group consists of conferences with a low P-score rank and high H-index rank. These conferences
-receive a high number of citations, but their reputation among top computer scientists is comparatively low, as reflected by their P-scores. Conferences in this
+receive a high number of citations, but their reputation among top computer scientists is comparatively low, 
+as reflected by their P-scores. Conferences in this
 group are usually situated in the intersection between Computer Science and other areas of knowledge. Some examples of such venues are
-ISMB, GECCO and PSB, which are related to Biocomputing, ISMIR, which is related to Music Information Retrieval, and
-ISCAS, and VTC which are related to Engineering and Electronics. Because these are large research communities, venue H-indices tend to be 
+BIBE, related to Biocomputing, IHI, MMVR, related to Health, ISMIR, which is related to Music Information Retrieval, and
+DFT, and VNC which are related to Engineering and Electronics. Because these are large research communities, venue H-indices tend to be 
 relatively high (particularly with regard to Computer Science). In the case of these events, funding councils in Computer Science should consider not only the high H-indexes, but also the venue reputation among computer
 scientists. Indeed, an exceptionally popular and reputable conference in electronics may not be as 
 popular or prestigious when being considered from the point of view of computer scientists. That is, P-scores may aid 
