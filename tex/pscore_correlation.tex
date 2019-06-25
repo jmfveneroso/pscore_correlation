@@ -738,15 +738,21 @@ better ranked than a data point at position 200). Table~\ref{tab:correlations} p
 correlations between indices in terms of their Kendall-Tau, Spearman and Pearson coefficients.
 The first fact to point out is that H-indices are significantly correlated to the total number 
 of citations received by a conference but not as much to the number of Citations per Publication,
-what is also observed in P-score. In fact, the number of citations received by a conference does
-not seem to be widely correlated to the number of publications in that conference. That is, only
-because a conference holds a larger number of publications, this does not mean that it will also have
-a larger P-score, H-index or Total Number of Citations. 
+what is also observed in P-score. Both indices seem to be somewhat reliant on the number of 
+publications, so it is not unexpected that they are less correlated to citations per publication
+than to total citation counts.
+
+% Conforms to power law: https://link.springer.com/article/10.1007/s11192-018-2996-z#Sec3
+
+Assuming that both P-scores and H-indices conform to a power law:
+
+\begin{equation}
+H = C * N^k
+\end{equation}
+
+We have $ C = 1.8498 $ and $ k = 0.5525 $ for P-score and $ C = 2.0591 $ and $ k = 0.4303 $ for the H-index.
 
 
-The plot shows an evident correlation between the ranks that is confirmed
-by a high Kendall-Tau of 0.5200259445. With a p-value smaller than 0.000001, we can safely reject the null 
-hypothesis (that the rankings are uncorrelated) with a reasonable margin.
 
 
 \begin{table}[ht!]
@@ -760,6 +766,8 @@ hypothesis (that the rankings are uncorrelated) with a reasonable margin.
   P-score     & Total Citations       & 0.5028 & 0.6751 & 0.7798 \\
   P-score     & Citations/Publication & 0.3894 & 0.5555 & 0.2383 \\
   H-index     & Total Citations       & 0.6141 & 0.7623 & 0.6848 \\
+  N. Pscore   & N. H-index            & 0.4148 & 0.5822 & 0.4957 \\
+  H-index     & Citations/Publication & 0.4862 & 0.6557 & 0.2765 \\
   \bottomrule
   \end{tabular}
   \caption{Correlations between P-scores, H-indices, Total Citations 
@@ -778,22 +786,65 @@ hypothesis (that the rankings are uncorrelated) with a reasonable margin.
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
-          xlabel=H-index ranks,
-          ylabel=Citations ranks,
-          xmin=-100,
-          ymin=-100,
-          xmax=900,
-          ymax=900
+          xlabel=Log Num Publications,
+          ylabel=Log H-index,
+          xmin=2.0,
+          ymin=0.0,
+          xmax=5.0,
+          ymax=3.0,
         ]
+        \draw[red]
+            (axis cs:0,0.3137) -- 
+            (axis cs:10,4.6167);
         \addplot[blue, only marks, mark size=0.75pt] 
-        table[x=hindex,y=perpaper,col sep=comma] {data/ranks.csv}; 
+        table[x=publications,y=hindex,col sep=comma] {data/hindex_power_law.csv}; 
+        \node[above,red] at (215,50) { $ R^2 = 0.3636 $ };
+        \node[above,red] at (230,20) { $ \text{Pearson} = 0.6030 $ };
+  
+      \end{axis}
+    \end{tikzpicture}
+    \caption{H-index}
+    \label{fig:hindex_powerlaw}
+  \end{subfigure}
+  ~
+  \begin{subfigure}{.475\linewidth}
+  \centering
+    \begin{tikzpicture} [scale=0.6]
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=Log Num Publications,
+          ylabel=Log P-score,
+          xmin=2.0,
+          ymin=0.0,
+          xmax=5.0,
+          ymax=4.0,
+        ]
+        \draw[red]
+            (axis cs:0,0.2671) -- 
+            (axis cs:10,5.7921);
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=publications,y=pscore,col sep=comma] {data/pscore_power_law.csv}; 
+        \node[above,red] at (215,60) { $ R^2 = 0.2705 $ };
+        \node[above,red] at (230,20) { $ \text{Pearson} = 0.5201 $ };
 
       \end{axis}
     \end{tikzpicture}
-    \caption{H-index $ \times $ Citations per Publication}
-    \label{fig:scatter_plots}
+    \caption{P-score}
+    \label{fig:pscore_powerlaw}
   \end{subfigure}
-  ~
+  \caption{
+    Log(H-index) versus Log(Num Publications) for the CS conferences only considering conferences with more 
+    than 1000 publications and averaging the number of publications for conferences with identical indices.}
+\end{figure}
+
+
+
+
+
+
+\begin{figure}[ht]
+\centering
   \begin{subfigure}{.475\linewidth}  
   \centering
     \begin{tikzpicture} [scale=0.6]
@@ -815,29 +866,29 @@ hypothesis (that the rankings are uncorrelated) with a reasonable margin.
     \caption{H-index $ \times $ Total Citations}
     \label{fig:scatter_plots}
   \end{subfigure}
-
+  ~
   \begin{subfigure}{.475\linewidth}  
   \centering
     \begin{tikzpicture} [scale=0.6]
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
-          xlabel=P-score ranks,
-          ylabel=Citations Per Paper ranks,
+          xlabel=H-index ranks,
+          ylabel=Citations ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
-          ymax=900,
+          ymax=900
         ]
         \addplot[blue, only marks, mark size=0.75pt] 
-        table[x=pscore,y=perpaper,col sep=comma] {data/ranks.csv}; 
+        table[x=hindex,y=perpaper,col sep=comma] {data/ranks.csv}; 
 
       \end{axis}
     \end{tikzpicture}
-    \caption{P-score $ \times $ Citations Per Publication}
-    \label{fig:angle_strategy}
+    \caption{H-index $ \times $ Citations per Publication}
+    \label{fig:scatter_plots}
   \end{subfigure}
-  ~
+
   \begin{subfigure}{.475\linewidth}  
   \centering
     \begin{tikzpicture} [scale=0.6]
@@ -859,6 +910,28 @@ hypothesis (that the rankings are uncorrelated) with a reasonable margin.
     \caption{P-score $ \times $ Total Citations}
     \label{fig:angle_strategy}
   \end{subfigure}
+  ~
+  \begin{subfigure}{.475\linewidth}  
+  \centering
+    \begin{tikzpicture} [scale=0.6]
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=P-score ranks,
+          ylabel=Citations Per Paper ranks,
+          xmin=-100,
+          ymin=-100,
+          xmax=900,
+          ymax=900,
+        ]
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=pscore,y=perpaper,col sep=comma] {data/ranks.csv}; 
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{P-score $ \times $ Citations Per Publication}
+    \label{fig:angle_strategy}
+  \end{subfigure}
 
   \begin{subfigure}{.475\linewidth}
   \centering
@@ -874,11 +947,33 @@ hypothesis (that the rankings are uncorrelated) with a reasonable margin.
           ymax=900,
         ]
         \addplot[blue, only marks, mark size=0.75pt] 
-        table[x=npscore,y=nhindex,col sep=comma] {data/ranks.csv}; 
+        table[x=pscore,y=hindex,col sep=comma] {data/ranks.csv}; 
 
       \end{axis}
     \end{tikzpicture}
     \caption{P-score $ \times $ H-index}
+    \label{fig:angle_strategy}
+  \end{subfigure}
+  ~
+  \begin{subfigure}{.475\linewidth}
+  \centering
+    \begin{tikzpicture} [scale=0.6]
+      \begin{axis}[
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=P-score ranks,
+          ylabel=H-index ranks,
+          xmin=-100,
+          ymin=-100,
+          xmax=900,
+          ymax=900,
+        ]
+        \addplot[blue, only marks, mark size=0.75pt] 
+        table[x=pscore,y=hindex,col sep=comma] {data/normalized.csv}; 
+
+      \end{axis}
+    \end{tikzpicture}
+    \caption{Normalized P-score $ \times $ Normalized H-index}
     \label{fig:angle_strategy}
   \end{subfigure}
   \caption{
