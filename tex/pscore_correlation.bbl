@@ -127,6 +127,13 @@ Leydesdorff, L.: {How are new citation-based journal indicators adding to the
 \newblock Journal of the American Society for Information Science and
   Technology \textbf{60}(7), 1327--1336 (2009)
 
+\bibitem{leydesdorff13}
+Leydesdorff, L., Zhou, P., Bornmann, L.: How can journal impact factors be
+  normalized across fields of science? an assessment in terms of percentile
+  ranks and fractional counts.
+\newblock Journal of the American Society for Information Science and
+  Technology \textbf{64}(1), 96--107 (2013)
+
 \bibitem{Martins2009}
 Martins, W.S., Gon{\c{c}}alves, M.A., Laender, A.H., Pappa, G.L.: {Learning to
   assess the quality of scientific conferences: a case study in computer
@@ -200,6 +207,16 @@ Sun, Y., Giles, C.L.: Popularity weighted ranking for academic digital
   libraries.
 \newblock In: Proceedings of the 29th European Conference on IR Research,
   ECIR'07, pp. 605--612. Springer-Verlag, Berlin, Heidelberg (2007)
+
+\bibitem{wainer13}
+Wainer, J., Eckmann, M., Goldenstein, S., Rocha, A.: How productivity and
+  impact differ across computer science subareas.
+\newblock Communications of the ACM \textbf{56}(8), 67--73 (2013)
+
+\bibitem{waltman13}
+Waltman, L., Eck, N.: Source normalized indicators of citation impact: An
+  overview of different approaches and an empirical comparison.
+\newblock Scientometrics \textbf{96}(3), 699--716 (2013)
 
 \bibitem{Wendl2007}
 Wendl, M.C.: {H-index: However ranked, citations need context}.

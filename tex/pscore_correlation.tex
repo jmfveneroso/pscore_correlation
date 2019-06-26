@@ -487,7 +487,7 @@ researchers.
 To provide a general ranking of CS conferences, we can use the top CS departments as 
 a reference group.
 One way to determine the top CS departments is through a simple randomization procedure.
-It starts with all 126 research groups evaluated by the NRC \footnote{http://www.nap.edu/rdp/}
+It starts with all 126 research groups evaluated by the NRC\footnote{http://www.nap.edu/rdp}
 in its 2011 evaluation of CS graduate programs in the USA. 
 First, we need to instantiate the model described previously with a single difference, 
 a subset of 10 groups from the NRC evaluation is chosen randomly and used as reputation sources, while the remaining 116 groups
@@ -607,8 +607,7 @@ definition of the H-index holds. A journal's H-index can be computed
 in the same way by considering all publications and their collective citation data over a 
 definite period as suggested by Braun et al.~\cite{Braun2006}.
 Since the H-index was proposed in 2005, the original paper~\cite{Hirsch2005} was 
-cited 7,949 times, which attests to its popularity 
-\footnote{According to Google Scholar, up to the end of 2017.}.
+cited 7,949 times, which attests to its popularity\footnote{According to Google Scholar, up to the end of 2017.}.
 
 As any scientific impact index, the H-index has advantages and disadvantages. 
 Some of its advantages are:
@@ -642,20 +641,18 @@ do not need any citation data, what makes P-scores easier to obtain than H-indic
 the problem of lack of data that arises from the long time to first citation.
 
 We conducted experiments to investigate the relationship between P-scores, H-indices, Total Citations
-and Citations per Paper in CS conference rankings. In particular, we wanted to estimate the degree of 
-correlation between P-scores and citation based indices, attenting to where they differ.
-
-The data set consists of 794
-Computer Science~\footnote{
+and Citations per Paper in conference rankings. In particular, we wanted to estimate the degree of correlation 
+between P-scores and citation based indices. The data set consists of 794
+Computer Science\footnote{
 While our data set is entirely composed of Computer Science conferences, nothing in our method is
 particular to this field. That is, our index is applicable to any field of knowledge.
 } 
 conferences
-for which the H-index was available on Google Scholar~\footnote{https://scholar.google.com.br/}
+for which the H-index was available on Google Scholar\footnote{http://scholar.google.com.br}
 in 2012. P-scores were calculated with
-data obtained from DBLP \footnote{http://dblp.uni-trier.de/}. The number of publications,
+data obtained from DBLP\footnote{http://dblp.uni-trier.de}. The number of publications,
 total number of citations and citations per publication were obtained from Microsoft
-Academic~\footnote{https://academic.microsoft.com}.
+Academic\footnote{http://academic.microsoft.com}.
 The reference set of research groups
 was selected with the randomization procedure described in the previous section, 
 yielding the 12 departments listed in Table \ref{tab:departments}.
@@ -898,6 +895,7 @@ the comparison of venues with different sizes.
           grid style={dashed,gray!30}, % Set the style
           xlabel=P-score ranks,
           ylabel=Citations Per Publication ranks,
+          ylabel=Citations Per Paper ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -1263,76 +1261,86 @@ popular or prestigious when being considered from the point of view of computer 
 human evaluators with funding decisions by pinpointing conferences that intersect multiple areas of knowledge and by providing
 an estimate of the conference's reputation among peers in the field of interest.
 
-\begin{table}[ht!]
+\subsection{P-score on a per Subarea Basis}
+
+In the previous experiments, we showed how to use P-score as a complementary index to citation-based indicators, such as H-index, to assess the reputation of conferences in Computer Science. However, it is important to note that the index P-score captures the transference of reputation \textit{from} source nodes \textit{to} target and collateral nodes. Therefore, the choice of reputation sources defines the context where the reputation flows will be assessed and it can be adjusted to specific information needs. For instance, %it is common that a funding council has to distinguish
+one can be interested in determining which are the most relevant conferences in a given \textit{subarea} of Computer Science. This is an important piece of information for funding councils when evaluating the productivity of individual researchers or research groups. In contrast to H-index, P-score is capable of quickly produce results also on a per subarea basis. % if starting from highly reputable sources
+
+\begin{table}[ht]
   \small
   \centering
-  \begin{tabular}{c c c c c} 
+  \begin{tabular}{c c c } 
   \toprule
-  \# & NLP & NN & ML & IR  \\ 
+  Natural Language Processing  & Machine Learning & Information Retrieval  \\ 
   \midrule
-  1  & NIPS & NIPS & NIPS & SIGIR \\
-  2  & ACL & ICML & ICML & CIKM \\
-  3  & EMNLP & CVPR & CVPR & WWW \\
-  4  & ICML & ICASSP & ECCV & SIGMOD \\
-  5  & NAACL & ECCV & ICCV & VLDB \\
-  6  & INTERSPEECH & AAAI & ICASSP & ICDE \\
-  7  & CONLL & ICANN & BMVC & TREC \\
-  8  & ICASSP & INTERSPEECH & IJCAI & WSDM \\
-  9  & ICANN & UAI & AAAI & ECIR \\
-  10 & IJCNN & ESANN & ICANN & KDD \\
+  NIPS & NIPS & SIGIR \\
+  ACL  & ICML & CIKM \\
+  EMNLP & CVPR & WWW \\
+  ICML  & ECCV & SIGMOD \\
+  NAACL & ICCV & VLDB \\
+  INTERSPEECH & ICASSP & ICDE \\
+  CONLL  & BMVC & TREC \\
+  ICASSP  & IJCAI & WSDM \\
+  ICANN  & AAAI & ECIR \\
+  IJCNN  & ICANN & KDD \\
   \bottomrule
   \end{tabular}
-  \caption{Conferences (short names) ranked by P-score (top10 authors by MS Saliency) in four CS subareas: NLP, Art. NN, IR, and ML.}
-  \label{tab:subareas-saliency}
+  \caption{Conferences (short names) selected by P-score in three subareas of Computer Science.}
+  \label{tab:subareas}
 \end{table}
 
+In Table~\ref{tab:subareas}, we show different sets of conferences in Computer Science highly ranked by P-score in three subareas: Natural Language Processing (NLP), Machine Learning (ML), and Information Retrieval (IR). In this experiment, we used as reputation sources the first ten individual researchers in each subarea according to Microsoft Academic.\footnote{http://academic.microsoft.com/authors} % in terms of \textit{saliency}, a measure of research impact that leverages the [xxx]. 
+Indeed, although the information available in Microsoft Academic was used in this experiment, there are other effective strategies to choose the reputation sources, such as: i) to ask experts in each subarea to provide a list of the most reputable researchers and then aggregate the results using a voting method, ii) to use curated lists of impactful researchers in each subarea (when available), iii) to build a list only with awarded researchers in each subarea.
 
-\begin{table}[ht!]
-  \small
-  \centering
-  \begin{tabular}{c c c c c} 
-  \toprule
-  \# & NLP & NN & ML & IR  \\ 
-  \midrule
-  1  & ACL & NIPS & NIPS & SIGIR \\
-  2  & NAACL & ISNN & KDD & TREC \\
-  3  & EMNLP & IJCNN & ICDM & CIKM \\
-  4  & LREC & CDC & ICDE & ECIR \\
-  5  & INTERSPEECH & ISCAS & ICML & WWW \\
-  6  & COLING & ICML & SDM & WSDM \\
-  7  & CONLL & ICRA & SIGMOD & RIAO \\
-  8  & ICASSP & ADPRL & CIKM & NAACL \\
-  9  & AAAI & IEEEISIC & VLDB & KDD \\
-  10 & IWSLT & ICANN & UAI & CHI \\
-  \bottomrule
-  \end{tabular}
-  \caption{Conferences (short names) ranked by P-score (top10 authors by MS H-Index) in four CS subareas: NLP, Art. NN, IR, and ML.}
-  \label{tab:subareas-hindex}
-\end{table}
+With a few reputation sources, P-score can correctly find reputable conferences on each subarea of knowledge, a problem that has been the subject of study in the literature~\cite{wainer13,leydesdorff13,waltman13}. Moreover, we can find conferences with low popularity but high reputation, such as CONLL in NLP, ICANN in ML, and WSDM in IR. On the other hand, well-known conferences that have both popularity and reputation within their respective subareas are also presented, as expected --- e.g., ACL and INTERSPEECH in NLP, ICML and CVPR in ML, NIPS both in NLP and ML, SIGIR and CIKM in IR. This information may be useful to support decisions of research funding councils focused on specific subareas instead of broad areas of knowledge. 
 
+Nevertheless, it is noteworthy that these results should not be considered as standard rankings of conferences for each subarea. Instead, similarly to the results for the broad area of Computer Science, these results should be used to complement other indicators, such as H-index, on a per subarea basis. 
 
-\begin{table}[ht!]
-  \small
-  \centering
-  \begin{tabular}{c c c c c | c c c c} 
-  \toprule
-  \# & NLP & NN & ML & IR & NLP & NN & ML & IR \\ 
-  \midrule
-  1  & ACL	&	VPR	&	CVPR	&	SIGIR	&	ACL	&	NeurIPS	&	NeurIPS	&	SIGIR\\
-  2  & EMNLP	&	NeurIPS	&	NeurIPS	&	CIKM	&	EMNLP	&	SMC	&	ICML	&	WWW\\
-  3  & NAACL	&	ICLR	&	ICML	&	WWW	&	NAACL	&	IJCNN	&	CVPR	&	CIKM\\
-  4  & LREC	&	IJCNN	&	AAAI	&	TREC	&	COLING	&	CVPR	&	SMC	&	TREC\\
-  5  & COLING	&	ICML	&	SMC	&	VLDB	&	LREC	&	ICASSP	&	KDD	&	VLDB\\
-  6  & INTERSPEECH	&	ICASSP	&	ICLR	&	SIGMOD	&	INTERSPEECH	&	ICLR	&	ECCV	&	SIGMOD\\
-  7  & IJCNLP	&	SMC	&	KDD	&	ACL	&	ICASSP	&	ICML	&	AAAI	&	ACL\\
-  8  & ICLR	&	INTERSPEECH	&	ECCV	&	WSDM	&	EACL	&	ISNN	&	IJCAI	&	MM\\
-  9  & NeurIPS	&	ISNN	&	ACL	&	ECIR	&	AAAI	&	ICRA	&	ACL	&	WSDM\\
-  10 & AAAI	&	ICCV	&	ICCV	&	MM	&	IJCNLP	&	INTERSPEECH	&	ICCV	&	ICDE\\
-  \bottomrule
-  \end{tabular}
-  \caption{(Left) Conferences ranked by MS by Saliency and (right) by H-index.}
-  \label{tab:subareas-hindex}
-\end{table}
+% NN: NIPS ICML  CVPR ICASSP ECCV AAAI ICANN INTERSPEECH UAI ESANN
+% \begin{table}[ht!]
+%   \small
+%   \centering
+%   \begin{tabular}{c c c c c} 
+%   \toprule
+%   \# & NLP & NN & ML & IR  \\ 
+%   \midrule
+%   1  & ACL & NIPS & NIPS & SIGIR \\
+%   2  & NAACL & ISNN & KDD & TREC \\
+%   3  & EMNLP & IJCNN & ICDM & CIKM \\
+%   4  & LREC & CDC & ICDE & ECIR \\
+%   5  & INTERSPEECH & ISCAS & ICML & WWW \\
+%   6  & COLING & ICML & SDM & WSDM \\
+%   7  & CONLL & ICRA & SIGMOD & RIAO \\
+%   8  & ICASSP & ADPRL & CIKM & NAACL \\
+%   9  & AAAI & IEEEISIC & VLDB & KDD \\
+%   10 & IWSLT & ICANN & UAI & CHI \\
+%   \bottomrule
+%   \end{tabular}
+%   \caption{Conferences (short names) ranked by P-score (top10 authors by MS H-Index) in four CS subareas: NLP, Art. NN, IR, and ML.}
+%   \label{tab:subareas-hindex}
+% \end{table}
+% \begin{table}[ht!]
+%   \small
+%   \centering
+%   \begin{tabular}{c c c c c | c c c c} 
+%   \toprule
+%   \# & NLP & NN & ML & IR & NLP & NN & ML & IR \\ 
+%   \midrule
+%   1  & ACL	&	VPR	&	CVPR	&	SIGIR	&	ACL	&	NeurIPS	&	NeurIPS	&	SIGIR\\
+%   2  & EMNLP	&	NeurIPS	&	NeurIPS	&	CIKM	&	EMNLP	&	SMC	&	ICML	&	WWW\\
+%   3  & NAACL	&	ICLR	&	ICML	&	WWW	&	NAACL	&	IJCNN	&	CVPR	&	CIKM\\
+%   4  & LREC	&	IJCNN	&	AAAI	&	TREC	&	COLING	&	CVPR	&	SMC	&	TREC\\
+%   5  & COLING	&	ICML	&	SMC	&	VLDB	&	LREC	&	ICASSP	&	KDD	&	VLDB\\
+%   6  & INTERSPEECH	&	ICASSP	&	ICLR	&	SIGMOD	&	INTERSPEECH	&	ICLR	&	ECCV	&	SIGMOD\\
+%   7  & IJCNLP	&	SMC	&	KDD	&	ACL	&	ICASSP	&	ICML	&	AAAI	&	ACL\\
+%   8  & ICLR	&	INTERSPEECH	&	ECCV	&	WSDM	&	EACL	&	ISNN	&	IJCAI	&	MM\\
+%   9  & NeurIPS	&	ISNN	&	ACL	&	ECIR	&	AAAI	&	ICRA	&	ACL	&	WSDM\\
+%   10 & AAAI	&	ICCV	&	ICCV	&	MM	&	IJCNLP	&	INTERSPEECH	&	ICCV	&	ICDE\\
+%   \bottomrule
+%   \end{tabular}
+%   \caption{(Left) Conferences ranked by MS by Saliency and (right) by H-index.}
+%   \label{tab:subareas-hindex}
+% \end{table}
 
 \section{Conclusions}
 \label{sec:conclusions}
@@ -1349,5 +1357,46 @@ the scientific relevance of venues and researchers and thus, take more informed 
 
 \bibliographystyle{spmpsci}
 \bibliography{pscore_correlation}
+
+% \section*{Appendix: Abbreviations}
+% \begin{table}[ht]
+%   \small
+%   \centering
+%   \begin{tabular}{ l l } 
+%   \toprule
+%   Short name  & Full name \\ 
+%   \midrule
+%   AAAI & Conference on Artificial Intelligence \\ 
+%   ACL & Meeting of the Association for Computational Linguistics  \\ 
+%   BMVC & British Machine Vision Conference \\ 
+%   CIKM & International Conference on Information and Knowledge Management \\ 
+%   CONLL & Computational Natural Language Learning \\ 
+%   CVPR & Computer Vision and Pattern Recognition \\ 
+%   ECCV & European Conference on Computer Vision \\ 
+%   ECIR & European Conference on IR Research \\ 
+%   EMNLP & Empirical Methods in Natural Language Processing \\ 
+%   ICANN & International Conference on Artificial Neural Networks \\ 
+%   ICASSP & International Conference on Acoustics, Speech, and Signal Processing \\ 
+%   ICCV & IEEE International Conference on Computer Vision \\ 
+%   ICDE & International Conference on Data Engineering \\ 
+%   ICML & International Conference on Machine Learning \\ 
+%   IJCAI & International Joint Conference on Artificial Intelligence \\ 
+%   IJCNN & International Joint Conference on Neural Networks \\ 
+%   INTERSPEECH & International Speech Communication Association \\ 
+%   KDD & Knowledge Discovery and Data Mining \\ 
+%   NAACL & North American Chapter of the Association for Computational Linguistics \\ 
+%   NIPS & Neural Information Processing Systems (NeurIPS) \\ 
+%   SIGIR & International Conference on Research and Development in Information Retrieval  \\ 
+%   SIGMOD &  International Conference on Management of Data \\ 
+%   TREC & Text REtrieval Conference \\ 
+%   VLDB & Very Large Data Bases Conference  \\ 
+%   WSDM & Web Search and Data Mining \\ 
+%   WWW & International World Wide Web Conferences \\
+%   \bottomrule
+%   \end{tabular}
+%   % \caption{}
+%   \label{tab:subareas-saliency}
+% \end{table}
+
 
 \end{document}
