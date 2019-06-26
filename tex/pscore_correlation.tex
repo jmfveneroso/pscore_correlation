@@ -67,18 +67,20 @@
 The notions of reputation and popularity in academia are critical for taking 
 decisions on research grants, faculty position tenure, and research excellence awards. 
 These notions are almost always associated with the publication track 
-records of the researchers. Thus, it is important to assess 
-publication track records quantitatively. To quantify a publication record, 
-bibliographic indices are usually adopted. Among these, citation-based indices
+records of researchers. Thus, it is important to assess 
+publication track records quantitatively. To quantify publication records, 
+bibliographic indices are usually adopted and, among these, citation-based indices
 such as the H-index are frequently considered. 
 In this paper we study the correlation between P-score, a publication record index
-and H-index, the most popular citation-based index. 
-While H-indices reflect the popularity of a given
-publication or researcher in academia, P-scores reflect the reputation of a publication or
-researcher among its peers. Popularity and reputation are frequently considered 
-to be equivalent properties, however they are not identical. Indeed, 
+and H-index, a very popular citation-based index, in the setting of conference 
+ranking. While H-indices reflect the popularity of a given
+publication or researcher in academia, P-scores can reflect the reputation of 
+a publication or researcher among its peers, considering a reference set of 
+reputable researchers. Popularity and reputation are frequently considered 
+to be equivalent properties in the formulation of citation based indices, however 
+these properties are not identical. Indeed, 
 we first show that H-indices and P-scores are correlated with a Kendall-Tau coefficient 
-that exceeds 0.5. However, we also notice that they have important differences. 
+that exceeds 0.5. However, we also notice that they show important differences. 
 Particularly, we identify publication venues with high H-indices and low 
 P-scores, as well as venues with low H-indices and high P-scores. We provide interpretations 
 for these findings and discuss how they can be used by research funding councils and committees
@@ -91,19 +93,19 @@ to better support their funding decisions.
 \label{sec:introduction}
 
 Academic research evaluation is a topic of interest to universities, research groups,
-research funding institutions, and the public at large. It is used to decide laboratory space
-allocation, research grants, tenure track, university choice by students, and more. It also 
-has a direct impact on the reputation of the university or institution, which
-affects the ability of the institution to attract the best possible talent. While evaluation of
+research funding institutions, and the public at large. An effective evaluation helps 
+in the decisions regarding laboratory space allocation, research grants, tenure track, 
+and university choice by students. It also 
+has a direct impact on the reputation of universities and research institutions, which
+affects their ability to attract the best possible talent. While evaluation of
 academic research is complex, usually a function of multiple variables, a dominant variable in
-most evaluation procedures is the research output of the institution. In particular, considerable
-emphasis is given to the papers published by the professors and students of the institution, as
-well as the quality of these papers in terms of their impact on scientific knowledge. A rather
-popular approach to evaluate publication impact is to compare journals, conferences or papers
-through the usage of academic impact indicators. A popular and moderately effective approach is to
-compute an index based on the number of citations received by a given piece of research and
-assume that the number of citations is a good proxy for research quality. However,
-this approach has multiple shortcomings. 
+most evaluation procedures is the research output of an institution. In particular, considerable
+emphasis is given to the papers published by professors and students in this institution, as
+well as the quality of these papers in terms of their impact on scientific knowledge. A
+popular approach to the evaluation of scientific impact consists in comparing journals, 
+conferences or papers with the usage of academic impact indices. Most often, these indices are based on 
+the number of citations received by scientific publications, assuming that citation
+counts act as a good proxy for research quality. However, this method has multiple shortcomings. 
 
 First, in the evaluation and bibliometrics research communities, citations are understood
 as a measure of popularity rather than a proxy for scientific impact, which is a similar but not
@@ -137,11 +139,11 @@ authors influence venue reputations and vice versa.
 reputations to venues based on the publication patterns of a reference group of researchers,
 without relying on citation information. Reputation is a subjective concept that can be 
 quite difficult to define and quantify in the form of a bibliometric index. Thus,
-instead of relying on a precise definition of reputation, {\em P-score} takes an agnostic 
+instead of relying on a precise definition of reputation, P-score takes an agnostic 
 view, exploiting the transference of this quantity called reputation among entities in order 
 to identify the most reputable ones. The concept of reputation is determined by the choice of 
 a reference group, which is presumed to be composed of reputable entities that act as sources
-of reputation. {\em P-score} can deal with the three problems discussed previously. 
+of reputation. P-score can deal with the three problems discussed previously. 
 
 First, instead of measuring the amount of researcher attention, P-score measures reputations
 which, under certain assumptions, provide a better proxy for academic impact as was shown by 
@@ -151,7 +153,7 @@ promptly estimated using P-scores computed on the newest publication data. Third
 not require citation data to be computed, which means that they can be recomputed quickly whenever 
 one finds fit or convenient.
 
-In this work, we show that the {\em Pscores} of conferences in Computer Science show a significant 
+In this work, we show that the Pscores of conferences in Computer Science show a significant 
 correlation with citation based indices, such as the H-index. Yet, there are important cases where 
 the indices diverge. 
 Our interpretation of these results are based on the intuition that while H-indices provide a 
@@ -473,21 +475,21 @@ When we are insterested in computing the P-scores of collateral nodes in the rep
 \subsection{Reputation Sources}
 \label{sec:rep-sources}
 
-The choice of the reputation sources is an important part of the method since 
+The choice of reputation sources is an important part of the method since 
 its composition has a direct impact on the final rankings. 
 There is no definitive way to make this choice, because it depends on what we want 
 to measure. If we select a group of researchers that is generally considered 
 to be prestigious, then we will be transferring this group's prestige across nodes in the 
 reputation graph by following their publication patterns. If we select a group of 
 researchers that share an interest in a research topic, then we will be privileging
-conferences related to this topic in the final ranking. An interpretation 
-of P-scores is the amount of focused attention devoted to a conference by a reference group of 
-researchers.
+conferences related to this topic in the final ranking. A possible interpretation 
+of P-scores in the context of conference ranking is the amount of attention devoted 
+to a conference by a reference group of researchers.
 
-To provide a general ranking of CS conferences, we can use the top CS departments as 
+To provide a general ranking of CS conferences, we can use top CS departments as 
 a reference group.
 One way to determine the top CS departments is through a simple randomization procedure.
-It starts with all 126 research groups evaluated by the NRC\footnote{http://www.nap.edu/rdp}
+This procedure starts with all 126 research groups evaluated by the NRC\footnote{http://www.nap.edu/rdp}
 in its 2011 evaluation of CS graduate programs in the USA. 
 First, we need to instantiate the model described previously with a single difference, 
 a subset of 10 groups from the NRC evaluation is chosen randomly and used as reputation sources, while the remaining 116 groups
@@ -542,7 +544,7 @@ described in Table \ref{tab:departments}.
  \label{tab:departments}
 \end{table}
 
-All the 12 departments above are among the top 5th percentile in the ranking produced by NRC. 
+All 12 departments listed above are among the top 5th percentile in the ranking produced by NRC. 
 Moreover, the first 8 listed groups appeared among the top 10 at every single run.
 This suggests that our recursive procedure is able to take advantage of patterns in the publication 
 streams of the various CS departments to determine the most reputable ones in fully automatic fashion.
@@ -793,7 +795,7 @@ and their behavior is better described by a power-law model:
 X_i = C \times N_i^a
 \end{equation}
 %
-where $ C $ and $ a $ are index-specific constants and $ X_i $ is the index value and $ N_i $ is the 
+where $ C $ and $ a $ are index-specific constants, $ X_i $ is the index value and $ N_i $ is the 
 number of publications for observation $ i $. Figure~\ref{fig:powerlaw} presents the 
 log-log plots for P-scores and H-indices versus the number of publications. A linear 
 relationship between the logarithms indicate a power-law behavior. The estimated parameters
@@ -803,15 +805,16 @@ $ C = 1.8498 $ and $ a = 0.5525 $ for P-score.
 
 The tendence of P-scores and H-indices to increase with the number of publications may hurt the comparison of venues 
 with a largely different size, obfuscating less prolific conferences. To account for this fact, we also plot 
-correlations for the normalized P-scores and H-indices using a measure introduced in~\cite{Babic2016}
-called the SPQL level (although the authors only consider the H-index in the referenced article). 
-The SPQL level is defined as:
+correlations for the normalized P-scores and H-indices using a measure called the Scientific Performance 
+QuaLity (SPQL) level~\cite{Babic2016}.
+Originally, the SPQL level only handles H-indices, but we also use it as a normalization procedure for
+P-score. The SPQL level can be defined as:
 %
 \begin{equation}
 SPQL(i) = 100 \cdot \frac{\tilde{X_i}}{X_i}
 \end{equation}
 %
-where $ \tilde{X_i} $ is the value for the index in point $ i $ and $ X_i $ is the corresponding
+where $ \tilde{X_i} $ is the observed value for the index in point $ i $ and $ X_i $ is the corresponding
 value in the best fit line. In our case, 
 $ X_i = 2.0591 \times N_i^{0.4303} $ for the H-index and 
 $ X_i = 1.8498 \times N_i^{0.5525} $ for P-score.
@@ -830,8 +833,8 @@ the comparison of venues with different sizes.
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
-          xlabel=H-index ranks,
-          ylabel=Total Citations ranks,
+          xlabel=H-index Ranks,
+          ylabel=Total Citations Ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -851,8 +854,8 @@ the comparison of venues with different sizes.
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
-          xlabel=H-index ranks,
-          ylabel=Citations Per Publication ranks,
+          xlabel=H-index Ranks,
+          ylabel=Citations Per Publication Ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -866,14 +869,16 @@ the comparison of venues with different sizes.
     \caption{H-index $ \times $ Citations Per Publication}
   \end{subfigure}
 
+  \vspace{0.4cm}%
+
   \begin{subfigure}{.475\linewidth}  
   \centering
     \begin{tikzpicture} [scale=0.6]
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
-          xlabel=P-score ranks,
-          ylabel=Total Citation ranks,
+          xlabel=P-score Ranks,
+          ylabel=Total Citation Ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -893,9 +898,8 @@ the comparison of venues with different sizes.
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
-          xlabel=P-score ranks,
-          ylabel=Citations Per Publication ranks,
-          ylabel=Citations Per Paper ranks,
+          xlabel=P-score Ranks,
+          ylabel=Citations Per Publication Ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -909,14 +913,16 @@ the comparison of venues with different sizes.
     \caption{P-score $ \times $ Citations Per Publication}
   \end{subfigure}
 
+  \vspace{0.4cm}%
+
   \begin{subfigure}{.475\linewidth}
   \centering
     \begin{tikzpicture} [scale=0.6]
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
-          xlabel=P-score ranks,
-          ylabel=H-index ranks,
+          xlabel=P-score Ranks,
+          ylabel=H-index Ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -936,8 +942,8 @@ the comparison of venues with different sizes.
       \begin{axis}[
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
-          xlabel=SPQL P-score ranks,
-          ylabel=SPQL H-index ranks,
+          xlabel=SPQL P-score Ranks,
+          ylabel=SPQL H-index Ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -951,7 +957,7 @@ the comparison of venues with different sizes.
     \caption{SPQL P-score $ \times $ SPQL H-index}
   \end{subfigure}
   \caption{
-  Scatter plots comparing the rankings produced with P-scores, H-indices, Total Citations 
+  Scatter plots comparing the rankings produced with P-scores, H-index, Total Citations 
   and Citations per Paper in a set of 794 conferences in Computer Science.
   }
   \label{fig:scatter_plots}
@@ -972,7 +978,7 @@ the comparison of venues with different sizes.
   SPQL Pscore & SPQL H-index              & 0.4148 & 0.5822 & 0.4957 \\
   \bottomrule
   \end{tabular}
-  \caption{Correlations between P-scores, H-indices, Total Citations 
+  \caption{Correlations between P-scores, H-index, Total Citations 
   and Citations per Paper in a set of 794 conferences in Computer Science.}
   \label{tab:correlations}
 \end{table}
