@@ -23,15 +23,7 @@
 
 \title{P-score: a Reputation Bibliographic Index that Complements Citation Counts} 
 
-\author{
- João Mateus de Freitas Veneroso \and
- Marlon Dias \and
- Alberto Ueda \and
- Sabir Ribas \and
- Berthier Ribeiro-Neto \and
- Nivio Ziviani \and
- Edmundo de Souza e Silva
-}
+\author{João Mateus de Freitas Veneroso \and Marlon Dias \and Alberto Ueda \and Sabir Ribas \and Berthier Ribeiro-Neto \and Nivio Ziviani \and Edmundo de Souza e Silva}
 
 \institute{
  João Mateus de Freitas Veneroso \at
@@ -219,7 +211,7 @@ research conferences and journals, which ties the selectivity of the publication
 the reputation of its authors' institutions. The proposed measure was shown to be a better indicator 
 of the selectivity of a research venue than the acceptance ratio.
 
-\section{P-score: a network-based index} 
+\section{P-score: a Network Based Index} 
 \label{pscore} 
 
 Contrary to citation counts such as the Impact 
@@ -260,11 +252,27 @@ propagate the reputation of the targets to the collaterals.
 
 The reputation flows framework allows for different configurations.
 In this work, we adopt research groups as reputation sources and publication 
-venues as reputation targets, however collaterals (such as individual researchers) 
-are absent from the ranking model, because we are only interested in calculating the 
-P-scores of publication venues (weights of target nodes). Therefore, we do not need to
-perform the second phase when calculating venue P-scores.
+venues as reputation targets to produce a conference ranking, 
+where P-scores are the weights of target nodes. Additionally, we can include
+research groups in the model as collaterals to rank them
+in terms of the publication patterns of the reputation sources. In fact, this 
+formulation can be used to produce the reputation sources automatically in a
+procedure described in Section~\ref{sec:rep-sources}. However, 
+once we have determined the reputation sources, there is no need to add
+collaterals to the model and we can skip the second phase altogether if we 
+only wish to produce conference rankings.
 
+% the collaterals
+% are not needed and we can skip the second phase if we only wish to produce a 
+% conference ranking with already chosen reputation sources.
+
+% however collaterals (such as individual researchers) 
+% are absent from the ranking model, 
+% and th
+% because we are only interested in calculating the 
+% P-scores of publication venues (weights of target nodes). 
+% Therefore, we do not need to
+% perform the second phase when calculating venue P-scores.
 
 The interaction between reputation sources and reputation targets is inspired by the 
 notion of {\em eigenvalue centrality} in complex 
@@ -557,10 +565,10 @@ The basic idea of the P-score index is to capture the transference of reputation
 target, and collateral nodes through their relationships in academia. In particular, in the 
 instantiation used in this work, P-score only takes into account researchers and 
 their publication records (i.e., papers in publication venues): given a pre-selected 
-set of reference research groups as reputation sources, P-score associates weights to
-venues according to the publications of researchers in the reference set, producing a ranking of 
-publication venues (reputation targets). Furthermore, these weights could also be used to rank other 
-research groups or authors (reputation collaterals).
+set of reference research groups (reputation sources), 
+P-score associates weights to venues according to the publications of these research groups, 
+producing a ranking of publication venues (reputation targets). Furthermore, these weights could 
+also be used to rank other research groups or authors (reputation collaterals).
 
 The reputation of a research group is strongly influenced by the reputation of its members, 
 which is largely dependent on their publication records. We assume that:
@@ -576,11 +584,11 @@ can then be computed by solving a system of linear equations relating publicatio
 research groups in the reputation graph, as exemplified in Section~\ref{sec:example}.
 
 
-\section{Correlation between P-score and citation based indices} 
+\section{Correlation Between P-score and Citation Based Indices} 
 \label{sec:correlation}
 
 Bibliometric indicators can be roughly divided into two types. Popularity indicators 
-estimate the diffusion of a venues's articles by measuring the number of
+estimate the diffusion of a venues' articles by measuring the number of
 endorsements received by that venue (usually in the form of citation counts). Reputation
 indicators are similar, but they also try account for the relative reputations of each
 endorsing agent, although the concept of reputation may be hard to define.
@@ -589,9 +597,12 @@ since indicators of different types are measuring similar but distinct aspects o
 a venue's scientific relevance. 
 
 We performed a combined analysis of conference rankings in Computer Science based on 
-P-score, a reputation indicator, and the H-index, a popularity indicator. Additionally, 
-we provide comparisons between P-score, Total Citations and the number of Citations per 
-Publication to shed light on the relation between P-score and citation based indices.
+P-score, a reputation indicator, and the H-index, a popularity indicator, 
+taking into consideration that the concepts of reputation and popularity are
+partially related, but also considering that our interest lies exactly in the points
+where they diverge more dramatically. Additionally, 
+we provide comparisons between P-score, Total Citations and the Impact Factor
+to shed light on the relation between P-score and citation based indices.
 In computer-related fields, conferences are important channels of dissemination for cutting-edge
 research findings~\cite{Lee2019}. Therefore, conference rankings can be valuable to help
 identifying promising research topics and good funding opportunities. Unfortunately, some
@@ -599,6 +610,125 @@ popular bibliometric indices such as the Impact Factor are only available for jo
 We chose the H-index as the principal indicator of popularity because of its acceptance 
 and availability for conferences in bibliometric search engines such as Google Scholar, 
 Web of Science and Scopus. 
+
+% BLANK SPACE.
+% http://delivery.acm.org/10.1145/2810000/2809462/p181-ribas.pdf?ip=150.164.3.7&id=2809462&acc=ACTIVE%20SERVICE&key=344E943C9DC262BB%2E7F628E3FAF8B9462%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1566856133_4390837b2aa1945e1dc3d4ffe5cafa0d
+
+The validity of P-score as a reputation gauge was discussed in the article by Ribas et. al. [!].
+P-score's effectiveness as a method of venue ranking was attested by comparing its
+performance to citation based indices such as total citations and the H-index using ground truth 
+data obtained from the Qualis system maintained
+by CAPES, a government agency linked to the Brazilian Ministry of Education. CAPES1
+assigns a committee of experts to each area of knowledge and these experts are responsible 
+for evaluating all information acquired about thevenues and produce a classification. This classification is
+updated annually and follows a set of criteria, such as: the
+number of publications in each venue, the number of repositories in which it is indexed, 
+the amount of institutions publishing in it, citation information whenever available, among
+others. P-score scored notably higher than the other indices in terms of its nDCG compared to the
+Qualis ranking. Naturally, to provide that this a proof of P-scores effectiveness, we must accept
+that the Qualis ranking is a measure of reputation. This ranking is carefully produced by a
+comittee of specialists, but a different comittee could yield a different ranking.
+Most researchers can probably agree about the relative reputations of some top conferences
+in their field of expertise but the matter gets trickier as we move to less widely known
+conferences or those that overlap many fields of knowledge.
+In fact, any ground truth could be questioned to some extent since the concept of reputation
+cannot be defined objectively.
+
+For this reason, instead of relying on a precise
+definition of reputation, P-score takes an agnostic view, exploiting the transference of this
+quantity called reputation among entities in order to identify the most reputable ones. The
+concept of reputation is determined by the choice of a reference group, which is presumed
+to be composed of reputable entities that act as sources of reputation. P-score relies on two
+assumptions: 1) a research group conveys reputation to a publication venue proportionally
+to its own reputation. 2) a publication venue conveys reputation to a research group propor-
+tionally to its own reputation. Given that these are true, it follows from the model definition
+that venues will be ranked according to their reputation. In the context of this work, all 
+P-score rankings were produced using a reference group of CS departments that are generally 
+considered to be prestigious. It follows from P-score's definition that the rankings will
+
+% conferences related to this topic in the final ranking. A possible interpretation 
+% of P-scores in the context of conference ranking is the amount of attention devoted 
+% to a conference by a reference group of researchers.
+
+% The focus of the present work is to show that different indices can capture different aspects
+% of the scientific relevance of a venue (which we call popularity and reputation) and, by
+% comparing these indices, which are similar but not identical, we can highlight interesting
+% cases where measures based on citation counts may be insufficient to provide a good measure
+% of research quality.
+
+% There is no definitive way to make this choice, because it depends on what we want 
+% to measure. If we select a group of researchers that is generally considered 
+% to be prestigious, then we will be transferring this group's prestige across nodes in the 
+% reputation graph by following their publication patterns. If we select a group of 
+% researchers that share an interest in a research topic, then we will be privileging
+% conferences related to this topic in the final ranking. A possible interpretation 
+% of P-scores in the context of conference ranking is the amount of attention devoted 
+% to a conference by a reference group of researchers.
+
+
+% The concept of reputation is hard to define. 
+% For this reason, instead of relying on a precise
+% definition of reputation, P-score takes an agnostic view, exploiting the transference of this
+% quantity called reputation among entities in order to identify the most reputable ones. The
+% concept of reputation is determined by the choice of a reference group, which is presumed
+% to be composed of reputable entities that act as sources of reputation. P-score relies on two
+% assumptions: 1) a research group conveys reputation to a publication venue proportionally
+% to its own reputation. 2) a publication venue conveys reputation to a research group propor-
+% tionally to its own reputation. Given that these are true, it follows from the model definition
+% that venues will be ranked according to their reputation.
+
+% The concept of reputation is hard to define. For this reason, instead of relying on a precise
+% definition of reputation, P-score takes an agnostic view, exploiting the transference of this
+% quantity called reputation among entities in order to identify the most reputable ones. The
+% concept of reputation is determined by the choice of a reference group, which is presumed
+% to be composed of reputable entities that act as sources of reputation. P-score relies on two
+% assumptions: 1) a research group conveys reputation to a publication venue proportionally
+% to its own reputation. 2) a publication venue conveys reputation to a research group propor-
+% tionally to its own reputation. Given that these are true, it follows from the model definition
+% that venues will be ranked according to their reputation.
+
+% There is no definitive way to make this choice, because it depends on what we want 
+% to measure. If we select a group of researchers that is generally considered 
+% to be prestigious, then we will be transferring this group's prestige across nodes in the 
+% reputation graph by following their publication patterns. If we select a group of 
+% researchers that share an interest in a research topic, then we will be privileging
+% conferences related to this topic in the final ranking. A possible interpretation 
+% of P-scores in the context of conference ranking is the amount of attention devoted 
+% to a conference by a reference group of researchers.
+
+% The concept of reputation is hard to define and it is also difficult to imagine a definition
+% that will be consensual among all evaluators when ranking venue A over venue B. So, instead
+% of relying on a precise definition of reputation, P-score takes an agnostic view, exploiting
+% the transference of a quantity called reputation among entities in order to identify the most
+% reputable ones. The concept of reputation is determined by the choice of reputation sources,
+% which depends on the use case. A funding institution may select their preferred group of
+% reputable researchers as reputation sources, and P-score will attribute reputations to venues
+% according to the publications patterns of these researchers expressed in a reputation flows
+% graph.
+
+% P-score is based on two assumptions: 1) a research group conveys reputation to a publication
+% venue proportionally to its own reputation. 2) a publication venue conveys reputation to a
+% research group proportionally to its own reputation. Considering that these assumptions are
+% valid, the framework of reputation flows assigns this reputation quantity to actors based on
+% the publication patterns of the reputation sources. For example, if an institution is interested
+% in ranking CS conferences according to the conference’s reputation among researchers in the
+% field of Natural Language Processing, it can choose NLP researchers as reputation sources.
+% This will yield a ranking that is different from the one produced using a more diverse set of
+% reputation sources. We added Subsection 5.2 for an experimental analysis of how rankings
+% can be affected by the choice of reputation sources.
+% In this article, we used a selection of CS departments that are generally considered reputable
+% 
+% among computer scientists to produce a ranking of general reputation, but the usage of P-
+% score is not limited to this selection. In the ICTIR article by Ribas et. al. [1], we use the
+% 
+% same selection of reputation sources to demonstrate the effectiveness of P-score compared to
+% ground truths on venue ranking.
+% The focus of the present work is to show that different indices can capture different aspects
+% of the scientific relevance of a venue (which we call popularity and reputation) and, by
+% comparing these indices, which are similar but not identical, we can highlight interesting
+% cases where measures based on citation counts may be insufficient to provide a good measure
+% of research quality.
+
 
 The H-index~\cite{Hirsch2005} is a composite index of lifelong scientific contribution that takes 
 into account the productivity of researchers and the citation impact of their publications.
@@ -609,7 +739,7 @@ definition of the H-index holds. A journal's H-index can be computed
 in the same way by considering all publications and their collective citation data over a 
 definite period as suggested by Braun et al.~\cite{Braun2006}.
 Since the H-index was proposed in 2005, the original paper~\cite{Hirsch2005} was 
-cited 7,949 times, which attests to its popularity\footnote{According to Google Scholar, up to the end of 2017.}.
+cited 7,949 times, which attests to its popularity.\footnote{According to Google Scholar, up to the end of 2017.}
 
 As any scientific impact index, the H-index has advantages and disadvantages. 
 Some of its advantages are:
@@ -626,7 +756,7 @@ same problems as any other citation-based indices. Some of its major disadvantag
 
 \begin{itemize}
 \item H-index does not distinguish citations from prestigious and peripheral journals, thus 
-it measures popularity rather than quality. Although the concepts can have a significant overlap.
+it measures popularity rather than quality, although the concepts can have a significant overlap.
 \item The time to first citation can be very long.
 \item It is not easy to collect all the relevant information.
 \item H-index is field-dependent~\cite{Wendl2007}.
@@ -636,14 +766,14 @@ it measures popularity rather than quality. Although the concepts can have a sig
 We propose to use P-score as a complementary index to deal with some of the problems
 presented by citation-based indices such as the H-index.
 P-score is an index of reputation among peers based on the publication pattern of a set of
-reference groups of researchers, the reference seeds. It differs from other network-based 
-indices because the venues' reputations derive exclusively from the reference seeds, which 
+reference groups of researchers, the reputation sources. It differs from other network-based 
+indices because the venues' reputations derive exclusively from the reputation sources, which 
 allows better control of the actual reputation flows. Additionally, to calculate P-scores we 
 do not need any citation data, what makes P-scores easier to obtain than H-indices and avoids 
 the problem of lack of data that arises from the long time to first citation.
 
 We conducted experiments to investigate the relationship between P-scores, H-indices, Total Citations
-and Citations per Paper in conference rankings. In particular, we wanted to estimate the degree of correlation 
+and Impact Factors in conference rankings. In particular, we wanted to estimate the degree of correlation 
 between P-scores and citation based indices. The data set consists of 794
 Computer Science\footnote{
 While our data set is entirely composed of Computer Science conferences, nothing in our method is
@@ -652,12 +782,15 @@ particular to this field. That is, our index is applicable to any field of knowl
 conferences
 for which the H-index was available on Google Scholar\footnote{http://scholar.google.com.br}
 in 2012. P-scores were calculated with
-data obtained from DBLP\footnote{http://dblp.uni-trier.de}. The number of publications,
-total number of citations and citations per publication were obtained from Microsoft
-Academic\footnote{http://academic.microsoft.com}.
-The reference set of research groups
-was selected with the randomization procedure described in the previous section, 
-yielding the 12 departments listed in Table \ref{tab:departments}.
+data obtained from DBLP.\footnote{http://dblp.uni-trier.de} The number of publications,
+total number of citations the Impact Factors were obtained from the Microsoft
+Academic Graph.\footnote{http://academic.microsoft.com}
+The reputation sources
+were selected with the randomization procedure described in the previous section, 
+yielding the 12 departments listed in Table \ref{tab:departments}. The Impact Factors 
+were calculated over a five year period and they correspond to the yearly 
+average number of citations received by articles published in each conference during 
+this period.
 
 
 \subsection{P-score and H-index Behavior}
@@ -825,7 +958,7 @@ the comparison of venues with different sizes.
 
 \subsection{P-score Correlations}
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
 \centering
   \begin{subfigure}{.475\linewidth}  
   \centering
@@ -855,7 +988,7 @@ the comparison of venues with different sizes.
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
           xlabel=H-index Ranks,
-          ylabel=Citations Per Publication Ranks,
+          ylabel=Impact Factor Ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -866,7 +999,7 @@ the comparison of venues with different sizes.
 
       \end{axis}
     \end{tikzpicture}
-    \caption{H-index $ \times $ Citations Per Publication}
+    \caption{H-index $ \times $ Impact Factor}
   \end{subfigure}
 
   \vspace{0.4cm}%
@@ -899,7 +1032,7 @@ the comparison of venues with different sizes.
           grid=major, % Display a grid
           grid style={dashed,gray!30}, % Set the style
           xlabel=P-score Ranks,
-          ylabel=Citations Per Publication Ranks,
+          ylabel=Impact Factor Ranks,
           xmin=-100,
           ymin=-100,
           xmax=900,
@@ -910,7 +1043,7 @@ the comparison of venues with different sizes.
 
       \end{axis}
     \end{tikzpicture}
-    \caption{P-score $ \times $ Citations Per Publication}
+    \caption{P-score $ \times $ Impact Factor}
   \end{subfigure}
 
   \vspace{0.4cm}%
@@ -957,11 +1090,17 @@ the comparison of venues with different sizes.
     \caption{SPQL P-score $ \times $ SPQL H-index}
   \end{subfigure}
   \caption{
-  Scatter plots comparing the rankings produced with P-scores, H-index, Total Citations 
-  and Citations per Paper in a set of 794 conferences in Computer Science.
+  Scatter plots comparing the rankings produced with P-scores, H-indices, Total Citations 
+  and Impact Factors in a set of 794 conferences in Computer Science.
   }
   \label{fig:scatter_plots}
 \end{figure}
+
+We studied the correlation between P-score and various citation-based indices 
+in the context of Computer Science conference ranking to understand how reputation
+and popularity indices diverge, and to understand if the combined assessment of 
+reputation and popularity indices can reveal interesting conferences that are
+not perceived in the rankings produced with a single index.
 
 \begin{table}[ht!]
   \small
@@ -971,34 +1110,34 @@ the comparison of venues with different sizes.
   First & Second & Kendall-Tau & Spearman & Pearson \\ 
   \midrule
   H-index     & Total Citations           & 0.6141 & 0.7623 & 0.6848 \\
-  H-index     & Citations Per Publication & 0.4862 & 0.6557 & 0.2765 \\
+  H-index     & Impact Factor             & 0.3786 & 0.5306 & 0.5276 \\ 		
   P-score     & Total Citations           & 0.5028 & 0.6751 & 0.7798 \\
-  P-score     & Citations Per Publication & 0.3894 & 0.5555 & 0.2383 \\
+  P-score     & Impact Factor             & 0.3353 & 0.4851 & 0.3120 \\ 		
   P-score     & H-index                   & 0.5153 & 0.6939 & 0.7089 \\
   SPQL Pscore & SPQL H-index              & 0.4148 & 0.5822 & 0.4957 \\
   \bottomrule
   \end{tabular}
   \caption{Correlations between P-scores, H-index, Total Citations 
-  and Citations per Paper in a set of 794 conferences in Computer Science.}
+  and Impact Factors in a set of 794 conferences in Computer Science.}
   \label{tab:correlations}
 \end{table}
 
-Figure~\ref{fig:scatter_plots} compares rankings of the 794 CS conferences produced with
-P-score, H-index, Total Citations and Citations per Paper.
+Figure~\ref{fig:scatter_plots} compares rankings of the 794 CS conferences in terms of their
+P-score, H-index, Total Citations and Impact Factors.
 Points that are closer to the origin have better ranks (i.e. a data point at position 1 is 
 better ranked than a data point at position 200). Also, Table~\ref{tab:correlations} presents the
 correlations between indices in terms of their Kendall-Tau, Spearman and Pearson coefficients.
 The Spearman coefficient is essentially a Pearson Correlation of ranking positions. The
 Kendall-Tau is another correlation measure based on ranks that is deemed less
-sensitive to errors than the Spearman coefficient~\cite{Kendall1955,Baeza-Yates2011}. All these 
+sensitive to errors than the Spearman coefficient~\cite{Kendall1955,Baeza-Yates2011}. These 
 correlation coefficients assume a value between -1 and 1. A value of 1 indicates that two rankings are 
-identical and a value of -1 indicates that rankings are the inverse of each other, with values varying 
-between -1 and 1 for partial correlation. A coefficient close to zero indicates no correlation.
+identical and a value of -1 indicates that rankings are the inverse of each other, with values 
+inbetween indicating partial correlation. A coefficient close to zero indicates no correlation.
 
 The first fact to point out is that H-indices are significantly correlated to the Total Citations
-received by a conference but not as much to Citations per Publication,
+received by a conference but not as much to the Impact Factor,
 what is also observed in P-score. Both indices seem to be somewhat reliant on the number of 
-publications, so it is not unexpected that they are less correlated to Citations per Publication
+publications, so it is not unexpected that they are less correlated to Impact Factors
 than to Total Citation counts. 
 
 Also, P-scores seem to be quite correlated to H-indices, assuming a Kendall-Tau of 0.5153.
@@ -1016,7 +1155,7 @@ be captured by plotting H-indices against P-scores or the normalized version of 
 We will proceed in the next Section with the assessment of P-scores versus H-indices.
 
 
-\section{Assessing conferences in CS}
+\section{Assessing Conferences in CS}
 \label{sec:notifications}
 
 
@@ -1112,7 +1251,7 @@ We will proceed in the next Section with the assessment of P-scores versus H-ind
   \end{center}
 \end{figure}
 
-Since P-scores and H-indices are strongly correlated, most data points in our example are clustered close to the identity 
+Since P-scores and H-indices are fairly correlated, most data points in our example are clustered close to the identity 
 line, showing an apparent agreement between the indices. However, there are noticeable differences, 
 particularly in those cases for which the P-score rank position is high and the H-index rank is low,
 or for which the H-index rank is high and the 
@@ -1128,12 +1267,16 @@ are the venues that are reputable (i.e. endorsed by researchers at top CS depart
 but not very popular.
 \item \textit{Bottom Group}: venues with a high H-index and low P-score. 
 These are the venues that are popular, but not very reputable in the sense 
-that it is not endorsed by the reference set of researchers.
+that they are not endorsed by the reputation sources.
 \end{itemize}
 %
-Next, we devise a strategy for delimiting the three sets
-presented above. We draw two line segments, starting from
-the origin, separated by an angle $ \theta $, and examine
+
+\subsection{Delimitation of Interest Groups}
+\label{ssec:delimitation_strategy}
+
+We devised a strategy for delimiting the Top, Center and Bottom sets. 
+It consists of drawing two line segments, starting from
+the origin, separated by an angle $ \theta $, and examining
 how the correlation between the data points in the 
 Center Group varies with respect to variations in the angle 
 $ \theta $. It is what we call the "angle strategy", as 
@@ -1235,7 +1378,7 @@ their scientific impact. Among them we find WWW, CVPR and KDD, to name a few.
 
 The Top Group consists of conferences with a high P-score rank and low H-index rank. While these conferences
 receive a relatively low number of citations, reputable researchers 
-(i.e. our reference set of top researchers in Computer Science) still publish 
+(i.e. our reference set of top research groups in Computer Science) still publish 
 in them consistently, as we can observe from their high P-score ranks. The primary reason is that
 conferences in the Top Group are usually venues associated with smaller subareas of Computer Science, 
 and are therefore venues that receive a smaller number of citations. Because of that, their H-indices 
@@ -1244,7 +1387,7 @@ venues might have a high reputation in their subareas and thus, high P-scores.
 For example, ICPP, and LCPC are conferences related to parallel processing that capture
 considerable attention from the top CS departments, as we can observe from their high P-scores. 
 Similarly IROS, WAFR, and HUMANOIDS are conferences in Robotics that have high P-scores
-and relatively small H-indices. These conferences may end up being neglected by funding councils and 
+and relatively low H-indices. These conferences may end up being neglected by funding councils and 
 committees in their assessment if we look only at the H-index, because these subareas do not receive 
 as many citations as others.
 
@@ -1259,7 +1402,7 @@ The Bottom Group consists of conferences with a low P-score rank and high H-inde
 receive a high number of citations, but their reputation among top computer scientists is comparatively low, 
 as reflected by their P-scores. Conferences in this
 group are usually situated in the intersection between Computer Science and other areas of knowledge. Some examples of such venues are
-BIBE, related to Biocomputing, IHI, MMVR, related to Health, ISMIR, which is related to Music Information Retrieval, and
+BIBE, related to Biocomputing, IHI, MMVR, related to Health, and
 DFT, and VNC which are related to Engineering and Electronics. Because these are large research communities, venue H-indices tend to be 
 relatively high (particularly with regard to Computer Science). In the case of these events, funding councils in Computer Science should consider not only the high H-indexes, but also the venue reputation among computer
 scientists. Indeed, an exceptionally popular and reputable conference in electronics may not be as 
@@ -1267,10 +1410,23 @@ popular or prestigious when being considered from the point of view of computer 
 human evaluators with funding decisions by pinpointing conferences that intersect multiple areas of knowledge and by providing
 an estimate of the conference's reputation among peers in the field of interest.
 
-\subsection{P-score on a per Subarea Basis}
+\subsection{P-score on a Per Subarea Basis}
 
-In the previous experiments, we showed how to use P-score as a complementary index to citation-based indicators, such as H-index, to assess the reputation of conferences in Computer Science. However, it is important to note that the index P-score captures the transference of reputation \textit{from} source nodes \textit{to} target and collateral nodes. Therefore, the choice of reputation sources defines the context where the reputation flows will be assessed and it can be adjusted to specific information needs. For instance, %it is common that a funding council has to distinguish
-one can be interested in determining which are the most relevant conferences in a given \textit{subarea} of Computer Science. This is an important piece of information for funding councils when evaluating the productivity of individual researchers or research groups. In contrast to H-index, P-score is capable of quickly produce results also on a per subarea basis. % if starting from highly reputable sources
+In the previous experiments, we showed how to use P-score as a complementary 
+index to citation-based indicators, such as H-index, to assess the reputation 
+of conferences in Computer Science. However, it is important to note that the 
+index P-score captures the transference of reputation \textit{from} source nodes 
+\textit{to} target and collateral nodes. Therefore, the choice of reputation 
+sources defines the context where the reputation flows will be assessed and 
+it can be adjusted to specific information needs. In this article, we used P-score 
+to investigate Computer Science conference reputations from the point of view of
+a general reference set of computer scientists. But,
+%it is common that a funding council has to distinguish
+one could be interested, for example, in determining which are the most relevant conferences 
+in a given \textit{subarea} of Computer Science. This is an important piece of 
+information for funding councils when evaluating the productivity of individual 
+researchers or research groups. In contrast to H-index, P-score is capable 
+of producing results on a per subarea basis. % if starting from highly reputable sources
 
 \begin{table}[ht]
   \small
@@ -1298,9 +1454,9 @@ one can be interested in determining which are the most relevant conferences in 
 In Table~\ref{tab:subareas}, we show different sets of conferences in Computer Science highly ranked by P-score in three subareas: Natural Language Processing (NLP), Machine Learning (ML), and Information Retrieval (IR). In this experiment, we used as reputation sources the first ten individual researchers in each subarea according to Microsoft Academic.\footnote{http://academic.microsoft.com/authors} % in terms of \textit{saliency}, a measure of research impact that leverages the [xxx]. 
 Indeed, although the information available in Microsoft Academic was used in this experiment, there are other effective strategies to choose the reputation sources, such as: i) to ask experts in each subarea to provide a list of the most reputable researchers and then aggregate the results using a voting method, ii) to use curated lists of impactful researchers in each subarea (when available), iii) to build a list only with awarded researchers in each subarea.
 
-With a few reputation sources, P-score can correctly find reputable conferences on each subarea of knowledge, a problem that has been the subject of study in the literature~\cite{wainer13,leydesdorff13,waltman13}. Moreover, we can find conferences with low popularity but high reputation, such as CONLL in NLP, ICANN in ML, and WSDM in IR. On the other hand, well-known conferences that have both popularity and reputation within their respective subareas are also presented, as expected --- e.g., ACL and INTERSPEECH in NLP, ICML and CVPR in ML, NIPS both in NLP and ML, SIGIR and CIKM in IR. This information may be useful to support decisions of research funding councils focused on specific subareas instead of broad areas of knowledge. 
+With a few reputation sources, P-score can correctly find reputable conferences on each subarea of knowledge, a problem that has been the subject of study in the literature~\cite{wainer13,leydesdorff13,waltman13}. Moreover, we can find conferences with low popularity but high reputation, such as CONLL in NLP, ICANN in ML, and WSDM in IR. On the other hand, well-known conferences that have both popularity and reputation within their respective subareas are also presented, as expected --- e.g., ACL and INTERSPEECH in NLP, ICML and CVPR in ML, NIPS both in NLP and ML, SIGIR and CIKM in IR. This information may be useful to support decisions of research funding councils focused on specific subareas instead of broad areas of knowledge by assessing the subarea-specific P-scores in comparison with conference H-indices, as presented in Section~\ref{ssec:delimitation_strategy}. It is noteworthy that these subarea-specific rankings were produced with only a small subset of reputable researchers to demonstrate the flexibility of P-scores, however they should not be taken authoritatively.
 
-Nevertheless, it is noteworthy that these results should not be considered as standard rankings of conferences for each subarea. Instead, similarly to the results for the broad area of Computer Science, these results should be used to complement other indicators, such as H-index, on a per subarea basis. 
+% It is noteworthy that these subarea-specific ranking should not be considered as standard rankings of conferences for each subarea. Instead, similarly to the results for the broad area of Computer Science, these results should be used to complement other indicators, such as H-index, on a per subarea basis. 
 
 % NN: NIPS ICML  CVPR ICASSP ECCV AAAI ICANN INTERSPEECH UAI ESANN
 % \begin{table}[ht!]
@@ -1351,15 +1507,41 @@ Nevertheless, it is noteworthy that these results should not be considered as st
 \section{Conclusions}
 \label{sec:conclusions}
 
-We have compared the P-scores and H-indices of 794 conferences in Computer Science. 
-We have found that P-scores and H-indices have a very high correlation reflected by a Kendall-Tau of 
-approximately 0.52. However,
-we have also found important differences between the two indices.
-Our interpretation of these results are based on the intuition that while H-indices provide a quantification of the popularity of a publication or researcher among their peers, P-scores provide a quantification of the reputation of a publication or researcher among peers. We can then distinguish three separate cases. First, when P-scores and H-indices are strongly correlated, we have venues that are popular and of high reputation among computer scientists. Second, when P-scores are large (better rank position) and H-indices are small (worse rank position) we have venues of good reputation among computer scientists that are associated with small research communities or subareas. Third, when P-scores are small (worse rank position) and H-indices are large, we have venues of good popularity (usually associated with large research communities outside Computer Science) that do not count with high reputation among computer scientists (in the sense that they do not publish frequently there).
-These differences indicate a complementary aspect to the indices. P-scores, used in conjunction with H-indices, allow distinguishing the three distinct types of venues mentioned above. This provides useful information which
-can be employed
-by research funding councils and committees to better understand 
-the scientific relevance of venues and researchers and thus, take more informed funding decisions.
+We have compared the P-scores and H-indices of 794 conferences in Computer Science to
+understand how P-score, a reputation based index that does not rely on citation data, can be 
+used in conjunction with citation based indices to provide insight on scientific impact
+assessment.
+We found that P-score and H-index have a significant correlation reflected 
+by a Kendall-Tau of approximately 0.5153. However,
+there are important differences between the two indices.
+Our interpretation of these results are based on the intuition that while H-indices 
+provide a quantification of the popularity of a publication or researcher among their 
+peers, P-scores provide a quantification of the reputation of a publication or 
+researcher among peers.
+We can distinguish three separate cases. First, when P-scores and 
+H-indices agree, we find venues that have proportionate amounts of popularity and 
+reputation among computer scientists. Second, when P-scores 
+are high (better rank position) and H-indices are low (worse rank position) we have 
+venues of good reputation among computer scientists that are associated with small 
+research communities or subareas. Third, when P-scores are low (worse rank position) 
+and H-indices are high, we have venues of good popularity (usually associated with 
+large research communities outside Computer Science) that do not stand with a high
+reputation among computer scientists, that is, computer scientists do not publish 
+frequently there. These differences indicate a complementary aspect to these indices. P-scores, 
+used in conjunction with H-indices, allow us to distinguish the three types of 
+venues mentioned above. This provides useful information which can be employed
+by research funding councils and committees to better understand the scientific relevance 
+of venues and researchers and thus, take more informed funding decisions. 
+
+There are several directions for further research using P-score. 
+Given the flexibility of P-score to grasp the relative importance of different fields
+and subareas, an interesting topic for future research would be to analyze
+the development of research interest over time in different fields and countries.
+Also, considering that citation counts for newly published articles take at least a couple 
+of years to develop and, since P-scores can be promptly obtained, future work
+could study the capacity of P-score to predict the future
+scientific impact of research articles, venues and authors. This capacity would be especially 
+useful to help identifying promising research in advance.
 
 \bibliographystyle{spmpsci}
 \bibliography{pscore_correlation}
