@@ -15,6 +15,7 @@
 \usepackage{subcaption} % For subfigures.
 \captionsetup{compatibility=false} % For subcaption.
 \usepackage{tabularx}
+\usepackage{xcolor}
 
 \include{macros}
 \providecommand{\keywords}[1]{\textbf{\textit{Keywords:}} #1}
@@ -590,7 +591,7 @@ research groups in the reputation graph, as exemplified in Section~\ref{sec:exam
 Bibliometric indicators can be roughly divided into two types. Popularity indicators 
 estimate the diffusion of a venues' articles by measuring the number of
 endorsements received by that venue (usually in the form of citation counts). Reputation
-indicators are similar, but they also try account for the relative reputations of each
+indicators are similar, but they also try to account for the relative reputations of each
 endorsing agent, although the concept of reputation may be hard to define.
 We argue in this paper that both perspectives have a complementary nature,
 since indicators of different types are measuring similar but distinct aspects of
@@ -601,7 +602,7 @@ P-score, a reputation indicator, and the H-index, a popularity indicator,
 taking into consideration that the concepts of reputation and popularity are
 partially related, but also considering that our interest lies exactly in the points
 where they diverge more dramatically. Additionally, 
-we provide comparisons between P-score, Total Citations and the Impact Factor
+we provide comparisons between P-score, Total Citations and the \textcolor{red}{Impact Factor}
 to shed light on the relation between P-score and citation based indices.
 In computer-related fields, conferences are important channels of dissemination for cutting-edge
 research findings~\cite{Lee2019}. Therefore, conference rankings can be valuable to help
@@ -653,29 +654,32 @@ do not need any citation data, what makes P-scores easier to obtain than H-indic
 the problem of lack of data that arises from the long time to first citation.
 
 %%%%
+\textcolor{red}{
 The empirical validation of P-score as a measure of reputation was discussed in the 
-article by Ribas et al.~\cite{Ribas2015}.
+research article by Ribas et al.~\cite{Ribas2015}.
 The effectiveness of P-score as a method of venue ranking was attested by comparing its
 performance to the H-index baseline in terms of their normalized discounted cumulative 
 gains (nDCG)~\cite{Jarvelin2002} at various ranking cutoffs using ground truth 
-data obtained from the Qualis system maintained by CAPES\footnore{http://www.capes.gov.br/}, 
+data obtained from the Qualis system maintained by CAPES\footnote{http://www.capes.gov.br/}, 
 a foundation within the Brazilian Ministry of Education. Qualis is an official
-brazilian system that annually classifies publication venues in eight grades. % (A1, A2, B1, B2, B3, B4, B5, C)
+Brazilian system that annually classifies publication venues in a 1-8 scale. % (A1, A2, B1, B2, B3, B4, B5, C)
 The grades are assigned by a committee of experts in each field of knowledge 
 following a set of criteria, such as: the number of issues, the number of publications, 
-the number of repositories that list this venue, citation information, among others.
+the number of repositories that list the venue, citation information, among others.
 Using the reference group of departments listed in Table~\ref{tab:departments} and
 no citation information, P-score scored consistently higher than the H-index in every 
-ranking cutoff, showing that the rankings produced with P-score more closely
-conforms to the proxy reputation measure provided by the Qualis classification system.
+ranking cutoff, showing that the ranking produced with P-score more closely
+resembles the proxy reputation measure provided by the Qualis classification system.
 Naturally, to understand this evidence as a proof of P-score's ability to capture a
 venue's reputation, we must first accept that the Qualis ranking provides a reliable 
-measure of venue reputations. The Qualis rankings are carefully produced by a
-comittee of specialists, but a different choice of comittee could possibly produce
-a slightly different ranking. 
+measure of venue reputation. The Qualis rankings are carefully produced by a
+committee of specialists in each field of knowledge, yet we can expect
+that a different committee would probably produce a slightly different ranking. 
+}
 
+\textcolor{red}{
 While most researchers can probably agree on the relative reputations of some top conferences 
-in their fields of expertise, the distinction gets blurred as we move to lower positions in the
+in their fields of expertise, the distinction becomes blurrier as we get to lower positions in the
 ranking. In fact, any ground truth that tries to capture venue reputations can be questioned 
 to some extent on the basis of the subjective nature of the concept of reputation. 
 P-score does not impose a particular view on reputation, but it relies on two assumptions: 
@@ -683,21 +687,15 @@ P-score does not impose a particular view on reputation, but it relies on two as
 to its own reputation; 2) a publication venue conveys reputation to a research group proportionally 
 to its own reputation. Considering that these assumptions are valid, the framework of reputation flows 
 assigns reputations to venues based on the publication patterns of the reputation sources. 
-% Given that these assumptions are true, it follows from the 
-% model definition that venues will be ranked according to the reputations of the reference group. 
 In the context of this work, all P-score rankings were produced using a reference group 
-of CS departments that are generally considered to be reputable, so these rankings capture
+of CS departments that is generally considered to be reputable, so these P-score rankings capture
 the reputations of Computer Science conferences according to the publication patterns of these 
-groups.
-% The focus of the present work is to show that different indices can capture different aspects
-% of the scientific relevance of a venue (which we call popularity and reputation) and, by
-% comparing these indices, which are similar but not identical, we can highlight interesting
-% cases where measures based on citation counts may be insufficient to provide a good measure
-% of research quality.
+reputable groups.
+}
 %%%%
 
 We conducted experiments to investigate the relationship between P-scores, H-indices, Total Citations
-and Impact Factors in conference rankings. In particular, we wanted to estimate the degree of correlation 
+and \textcolor{red}{Impact Factors} in conference rankings. In particular, we wanted to estimate the degree of correlation 
 between P-scores and citation based indices. The data set consists of 794
 Computer Science\footnote{
 While our data set is entirely composed of Computer Science conferences, nothing in our method is
@@ -707,14 +705,14 @@ conferences
 for which the H-index was available on Google Scholar\footnote{http://scholar.google.com.br}
 in 2012. P-scores were calculated with
 data obtained from DBLP.\footnote{http://dblp.uni-trier.de} The number of publications,
-total number of citations and the Impact Factors were obtained from the Microsoft
-Academic Graph.\footnote{http://academic.microsoft.com}
+total number of citations and the \textcolor{red}{Impact Factors were obtained from the Microsoft
+Academic Graph.}\footnote{http://academic.microsoft.com}
 The reputation sources
 were selected with the randomization procedure described in the previous section, 
-yielding the 12 departments listed in Table \ref{tab:departments}. The Impact Factors 
+yielding the 12 departments listed in Table \ref{tab:departments}. \textcolor{red}{The Impact Factors 
 were calculated over a five year period and they correspond to the yearly 
 average number of citations received by articles published in each conference during 
-this period.
+this period.}
 
 
 \subsection{P-score and H-index Behavior}
@@ -923,7 +921,7 @@ the comparison of venues with different sizes.
 
       \end{axis}
     \end{tikzpicture}
-    \caption{H-index $ \times $ Impact Factor}
+    \caption{\textcolor{red}{H-index $ \times $ Impact Factor}}
   \end{subfigure}
 
   \vspace{0.4cm}%
@@ -967,7 +965,7 @@ the comparison of venues with different sizes.
 
       \end{axis}
     \end{tikzpicture}
-    \caption{P-score $ \times $ Impact Factor}
+    \caption{\textcolor{red}{P-score $ \times $ Impact Factor}}
   \end{subfigure}
 
   \vspace{0.4cm}%
@@ -1033,12 +1031,12 @@ not perceived in the rankings produced with a single index.
   \toprule
   First & Second & Kendall-Tau & Spearman & Pearson \\ 
   \midrule
-  H-index     & Total Citations           & 0.6141 & 0.7623 & 0.6848 \\
-  H-index     & Impact Factor             & 0.3786 & 0.5306 & 0.5276 \\ 		
-  P-score     & Total Citations           & 0.5028 & 0.6751 & 0.7798 \\
-  P-score     & Impact Factor             & 0.3353 & 0.4851 & 0.3120 \\ 		
-  P-score     & H-index                   & 0.5153 & 0.6939 & 0.7089 \\
-  SPQL Pscore & SPQL H-index              & 0.4148 & 0.5822 & 0.4957 \\
+  H-index     & Total Citations                & 0.6141 & 0.7623 & 0.6848 \\
+  \textcolor{red}{H-index}     & \textcolor{red}{Impact Factor} & \textcolor{red}{0.3786} & \textcolor{red}{0.5306} & \textcolor{red}{0.5276} \\ 		
+  P-score     & Total Citations                & 0.5028 & 0.6751 & 0.7798 \\
+  \textcolor{red}{P-score}     & \textcolor{red}{Impact Factor} & \textcolor{red}{0.3353} & \textcolor{red}{0.4851} & \textcolor{red}{0.3120} \\ 		
+  P-score     & H-index                        & 0.5153 & 0.6939 & 0.7089 \\
+  SPQL Pscore & SPQL H-index                   & 0.4148 & 0.5822 & 0.4957 \\
   \bottomrule
   \end{tabular}
   \caption{Correlations between P-scores, H-index, Total Citations 
@@ -1059,8 +1057,8 @@ identical and a value of -1 indicates that rankings are the inverse of each othe
 inbetween indicating partial correlation. A coefficient close to zero indicates no correlation.
 
 The first fact to point out is that H-indices are significantly correlated to the Total Citations
-received by a conference but not as much to the Impact Factor,
-what is also observed in P-score. Both indices seem to be somewhat reliant on the number of 
+received by a conference \textcolor{red}{but not as much to the Impact Factor,
+what is also observed in P-score}. Both indices seem to be somewhat reliant on the number of 
 publications, so it is not unexpected that they are less correlated to Impact Factors
 than to Total Citation counts. 
 

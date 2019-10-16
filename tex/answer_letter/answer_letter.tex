@@ -1,0 +1,167 @@
+% Joao: 27/aug/2019
+\documentclass[a4wide,11pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{pdfpages}
+\usepackage{url}
+\usepackage{a4wide}
+% \usepackage{natbib}
+
+\parindent0pt
+\parskip8pt
+\sloppy
+
+\newcommand{\mytem}[1]{\item{\textbf{#1}}}
+
+\begin{document}
+
+\begin{flushright}
+Belo Horizonte, Brazil, August 27, 2019
+\end{flushright}
+\begin{flushleft}
+To\\
+Dr. Wolfgang Glänzel\\
+Editor in Chief\\
+Scientometrics
+\end{flushleft}
+
+\noindent
+{\bf Ref:} 
+Second answer to reviewers’ report on Manuscript ID SCIM-D-18-01173R1 Article Title :
+``P-score: a Reputation Bibliographic Index that Complements Citation Counts'' by João
+Mateus de Freitas Veneroso, Marlon Dias, Alberto Ueda, Sabir Ribas, Berthier Ribeiro-Neto,
+Nivio Ziviani and Edmundo de Souza e Silva, submitted for publication in Scientometrics.\\
+
+\noindent
+Dear Dr. Wolfgang,
+
+We very carefully addressed the remaining issues that were raised by the reviewers and revised our
+paper accordingly. We thank the editor and the reviewers for the thoughtful feedback, and
+look forward to seeing our paper accepted for publication in Scientometrics.
+
+Best regards,\\
+João Mateus de Freitas Veneroso, Marlon Dias, Alberto Ueda, Sabir Ribas, Berthier
+Ribeiro-Neto, Nivio Ziviani and Edmundo de Souza e Silva.\\
+
+\textbf{Reviewers' Comments to Author:}
+
+{\bf Reviewer 1}\\
+\noindent
+Comments:
+
+The revised manuscript has been improved. I appreciate the effort of authors in addressing 
+my comments. However, there are still some issues that remain to be addressed.
+
+{\bf Our answer:}
+We thank Reviewer 1 for appreciating the improvement of the text. The answers to the remaining
+issues are provided below.
+\\
+
+The following are the remaining issues pointed by Reviewer 1.
+
+
+1.  I understand that calculating Q index [Science 354, 6312 (2016)] is probably out of the scope of this work. However, I still believing it is important to calculate the impact factor for conference proceedings for comparison of the P-scores. In the reply, the authors claim that "Impact Factors are unfortunately not available for Computer Science conferences." But I think it can be naturally calculated once you have the citation time series of papers published in a conference. 
+
+{\bf Our answer:}
+Indeed, Reviewer 1 is correct in pointing that Impact Factors can be obtained from the citation 
+time series. But since the JCR does not provide an official Impact Factor for Computer Science 
+conferences, we calculated Impact Factors for the 794 conferences present in our 
+dataset using the Microsoft Academic Graph. The Impact Factors were calculated over 
+a five year period and they correspond to the yearly average number of citations received
+by articles published in each conference the same way the 5-year journal Impact Factor 
+provided by JCR is calculated.
+
+In the previous submission we provided a comparison between P-scores and the 
+Citations Per Paper index, which is similar to the Impact Factor but uses a longer time frame
+(the entire conference history). We thought that the inclusion of both indices was redundant 
+so we only kept the plots showing the comparison between P-scores and Impact Factors and 
+H-indices and Impact Factors. The remaining plots are unchanged.
+
+The comparison between P-scores and Impact Factors and H-indices and Impact Factors is 
+provided in pages 15 and 16 in Section 4.2. All changes are marked in red.
+\\
+
+
+2. In my second comment, I raised the question about ground truth data. However, in the authors' reply, I did not see any discussion of the ground truth data. I expect to see some discussion regarding whether it is possible to collect such data (e.g. a list of some well-recognized conferences), and how it can be used to evaluate the effectiveness of the p-scores.
+
+{\bf Our answer:}
+
+We inserted two paragraphs in Section 4 (page 12) discussing the ground truth 
+data used for evaluating P-scores, which we reproduce below.
+
+The empirical validation of P-score as a measure of reputation was discussed in the 
+research article by Ribas et al.~\cite{Ribas2015}.
+The effectiveness of P-score as a method of venue ranking was attested by comparing its
+performance to the H-index baseline in terms of their normalized discounted cumulative 
+gains (nDCG)~\cite{Jarvelin2002} at various ranking cutoffs using ground truth 
+data obtained from the Qualis system maintained by CAPES\footnote{http://www.capes.gov.br/}, 
+a foundation within the Brazilian Ministry of Education. Qualis is an official
+Brazilian system that annually classifies publication venues in a 1-8 scale. % (A1, A2, B1, B2, B3, B4, B5, C)
+The grades are assigned by a committee of experts in each field of knowledge 
+following a set of criteria, such as: the number of issues, the number of publications, 
+the number of repositories that list the venue, citation information, among others.
+Using the reference group of departments listed in Table 1 (shown in the manuscript) and
+no citation information, P-score scored consistently higher than the H-index in every 
+ranking cutoff, showing that the ranking produced with P-score more closely
+resembles the proxy reputation measure provided by the Qualis classification system.
+Naturally, to understand this evidence as a proof of P-score's ability to capture a
+venue's reputation, we must first accept that the Qualis ranking provides a reliable 
+measure of venue reputation. The Qualis rankings are carefully produced by a
+committee of specialists in each field of knowledge, yet we can expect
+that a different committee would probably produce a slightly different ranking. 
+
+While most researchers can probably agree on the relative reputations of some top conferences 
+in their fields of expertise, the distinction becomes blurrier as we get to lower positions in the
+ranking. In fact, any ground truth that tries to capture venue reputations can be questioned 
+to some extent on the basis of the subjective nature of the concept of reputation. 
+P-score does not impose a particular view on reputation, but it relies on two assumptions: 
+1) a research group conveys reputation to a publication venue proportionally
+to its own reputation; 2) a publication venue conveys reputation to a research group proportionally 
+to its own reputation. Considering that these assumptions are valid, the framework of reputation flows 
+assigns reputations to venues based on the publication patterns of the reputation sources. 
+In the context of this work, all P-score rankings were produced using a reference group 
+of CS departments that is generally considered to be reputable, so these P-score rankings capture
+the reputations of Computer Science conferences according to the publication patterns of these 
+reputable groups.
+\\
+
+3. This is a minor comment. In the revised manuscript, the revisions are not marked by a different color. It is very difficult to see what the authors have modified. I would suggest the authors to highlight their revisions in next round of resubmission (it can be either red or blue, but NOT black).
+
+{\bf Our answer:}
+
+We apologize for the inconvenience. All the modifications in the new manuscript 
+are now marked with a red color.
+\\
+
+
+{\bf Reviewer 2}
+
+\noindent
+Comments:
+
+1. The issues raised by this reviewer have been adequatly dealt with by the authors.
+My suggestions have either been kindly accepted or reasonably dodged.
+I do not see any reason to further delay the publication of the manuscript in Scientometrics.
+
+{\bf Our answer:}
+We thank Reviewer 2 for his comments.
+
+\bibliographystyle{spmpsci}
+\begin{thebibliography}{}
+
+\bibitem{Ribas2015}
+Ribas, S., Ribeiro-Neto, B., Santos, R.L., de Souza e Silva, E., Ueda, A., and Ziviani, N. (2015) 
+Random walks on the reputation graph. 
+In {\it Proceedings of the 2015 International Conference on The Theory of Information Retrieval (ICTIR ’15)},
+pp. 181–190, New York: ACM.
+
+\bibitem{Jarvelin2002}
+Järvelin, K., Kekäläinen, J. (2002)
+Cumulated gain-based evaluation of IR techniques. 
+{\it ACM Transactions on Information Systems}
+{\bf 20(4)}: 422--446.
+
+\end{thebibliography}
+
+\end{document}
